@@ -159,26 +159,44 @@ Data/code-only tooling for Call to Arms: Gates of Hell modding — no 3D/animati
     cd frontend && npm install && npm run dev    (http://localhost:5173, proxies /api)
 
 ## Deployment (Vercel)
-- `vercel.json` + `api/index.ts` wrap the existing Express app (`backend/src/app.ts`)
-  as a Vercel serverless function - no code duplication, same `createApp()`
-  used for local dev (`backend/src/server.ts`) and production.
-- Verified: `api/index.ts` typechecks, and was tested by actually booting it
-  through a plain Node `http.createServer()` locally (not just via
-  `backend/src/server.ts`) - confirmed it serves real parsed data
-  correctly through the exact module Vercel will use.
-- Verified: the exact `buildCommand` from `vercel.json`
-  (`cd frontend && npm install && npm run build`) run from the repo root
-  produces a correct `frontend/dist/` with the SEO meta tags and
-  `robots.txt`/`sitemap.xml` all present in the output.
-- NOT verified: an actual live Vercel deployment (not possible from the
-  sandbox this was built in). The main risk is `includeFiles` in
-  `vercel.json` - Vercel's serverless bundler needs to be told explicitly
-  to include `backend/src/data/samples/**` since the loader reads those
-  files at runtime via a dynamically-built path
-  (`readFileSync(path.join(__dirname, ...))`), which static bundler
-  analysis can miss. If squads/tech-tree data comes back empty after
-  deploying, check the Vercel function logs first - that's the most
-  likely culprit, and the fix is adjusting that glob.
+Uses Vercel's **Services** feature (Beta, confirmed current via Vercel's
+own docs as of this writing) rather than a serverless-function wrapper.
+This runs the backend as an actual persistent Express server (via
+`backend/src/server.ts`, which already respects `process.env.PORT` -
+required for this to work as a Vercel Web Service), not a serverless
+function - simpler than the api-wrapper approach, and avoids the
+serverless bundler's file-inclusion gotcha entirely since the backend
+reads its data files normally from disk at runtime.
+
+`vercel.json` defines two services (`frontend`, `backend`) and two
+top-level rewrites exposing them: `/api/*` routes to the backend
+(matching the existing `/api/...` routes already defined in
+`backend/src/app.ts` - no path rewriting needed), everything else routes
+to the frontend.
+
+When importing the repo into Vercel:
+- **Root Directory** must be the repo root (`./`), NOT a subfolder like
+  `backend` or `frontend` - the services model needs the top-level
+  `vercel.json` to see both folders. If Vercel's import UI defaults the
+  Root Directory field to something else, change it back to `./` /
+  leave it blank before deploying.
+- **Project Name**: use the umbrella project name (e.g.
+  `gates-of-hell-toolkit`), not something like
+  `gates-of-hell-toolkit-backend` - this one project serves both
+  services together on one domain.
+- Vercel's own auto-detection already correctly identified the frontend
+  as Vite and the backend as Express with a `/api` mount point in
+  testing - left `vercel.json` deliberately minimal (no manually-specified
+  `framework`/`entrypoint` overrides) to defer to that auto-detection
+  rather than risk a wrong hand-written value for a feature this new.
+
+NOT verified: an actual live deployment through this exact flow (not
+possible from the sandbox this was built in, and this specific Vercel
+feature is very new). If the backend service fails to start, check
+whether it's actually running `npm start` (which runs
+`tsx src/server.ts`) and whether `PORT` is being respected - both should
+already be correct based on the code, but this is the first thing to
+check.
 
 ### SEO
 - `frontend/index.html` has a real `<title>`/meta description mentioning
@@ -187,6 +205,6 @@ Data/code-only tooling for Call to Arms: Gates of Hell modding — no 3D/animati
 - `frontend/public/robots.txt` and `sitemap.xml` (currently one URL - this
   is a single-page app with no distinct routes yet; expand the sitemap if
   that changes).
-- Recommended repo/Vercel project name: `gates-of-hell-toolkit` - the
-  literal phrase match matters more for the domain than "GOH" alone, and
-  the page content (title/meta) already covers the abbreviation.
+- Recommended project name: `gates-of-hell-toolkit` - the literal phrase
+  match matters more for the domain than "GOH" alone, and the page
+  content (title/meta) already covers the abbreviation.
