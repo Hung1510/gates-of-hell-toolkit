@@ -1,6 +1,6 @@
 # Gates of Hell Toolkit
 
-Data/code-only tooling for Call to Arms: Gates of Hell modding — no 3D/animation assets.
+Data/code-only tooling for Call to Arms: Gates of Hell modding - no 3D/animation assets.
 
 ## Structure
 - `backend/` - Express + TypeScript API that parses the game's `.set` config
