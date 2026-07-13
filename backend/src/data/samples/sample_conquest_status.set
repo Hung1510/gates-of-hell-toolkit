@@ -1,0 +1,209 @@
+{saveinfo
+	{version 9}
+	{gameVersion "1.063.0"}
+	{timestamp 1783924649}
+	{mods
+		"mod_3644303998:0"
+		"mod_3548575715:0"
+		"mod_3468002019:0"
+		"mod_3747615523:0"
+		"mod_2982780555:0"
+	}
+	{mp 1.00966e+06}
+	{sp 19998}
+	{ap 1.01e+06}
+	{rp 19953}
+	{seed 2927159967}
+	{name "Conquest 8"}
+	{army eng}
+	{enemyArmy ger}
+	{difficulty hard}
+	{duration 2}
+	{resources 2}
+	{fogofwar fog_off}
+	{manualControlMode 3}
+	{selectedMapPoint point_2_3}
+	{attacking 0}
+	{region west_fh}
+	{playedGames 1}
+	{wonGames 0}
+	{unlockedResearch {"reinforcement_stage_2"}
+		{"reinforcement_stage_3"}
+		{"reinforcement_stage_4"}
+		{"reinforcement_stage_5"}
+		{"single_riflegrenade_con(eng)"}
+		{"single_sniper(eng)"}
+		{"squad_brig_defense_mid_con(eng)"}
+		{"squad_carrier_early_con(eng)"}
+		{"squad_com_early_con(eng)"}
+		{"squad_com_rifle_mid_con(eng)"}
+		{"squad_div_defense_mg_mid_con(eng)"}
+		{"squad_officer_carrier_con"}
+		{"squad_officer_con(eng)"}
+		{"squad_officer_m5a1_halftrack_con"}
+		{"squad_pio_early_con(eng)"}
+		{"squad_r_eng_mid_con(eng)"}
+		{"squad_rec_mc_early_con(eng)"}
+		{"squad_rec_scout_early_con(eng)"}
+		{"squad_recce_assault_mid_con(eng)"}
+		{"squad_recce_carrier_mid_con(eng)"}
+		{"squad_rifle_early_con(eng)"}
+		{"squad_rifle_mid_con(eng)"}
+		{"squad_rm_com_assault_mid_con(eng)"}
+		{"squad_rn_com_beach_mid_con(eng)"}
+	}
+	{mapPoints {
+			{name hq_a}
+			{landscape wood}
+			{gamemode campaign_capture_the_flag}
+			{ownerTeam a}
+			{adjacentMaps {"point_1_1"}}
+			{risk low}
+			{reward none}
+			{map "multi/dcg_vlissingen_breach_aut:campaign_capture_the_flag:4x4"}
+			{texmod camo}
+		}
+		{
+			{name point_1_1}
+			{landscape winter}
+			{gamemode campaign_capture_the_flag}
+			{ownerTeam a}
+			{adjacentMaps {"hq_a" "point_2_1" "point_2_3"}}
+			{risk low}
+			{reward none}
+			{map "multi/dcg_deulin_chataeu:campaign_capture_the_flag:4x4"}
+			{texmod winter}
+		}
+		{
+			{name point_2_1}
+			{landscape winter}
+			{gamemode campaign_capture_the_flag}
+			{ownerTeam b}
+			{adjacentMaps {"point_1_1" "point_3_3" "point_3_2" "point_3_1"}}
+			{risk low}
+			{reward bonus}
+			{map "multi/dcg_samree:campaign_capture_the_flag:4x4"}
+			{texmod winter}
+		}
+		{
+			{name point_2_3}
+			{landscape desert}
+			{gamemode campaign_capture_the_flag}
+			{ownerTeam b}
+			{adjacentMaps {"point_1_1" "point_3_3"}}
+			{risk standard}
+			{reward factory}
+			{map "multi/dcg_heistern:campaign_capture_the_flag:4x4"}
+			{texmod camo}
+		}
+		{
+			{name point_3_3}
+			{landscape wood}
+			{gamemode campaign_capture_the_flag}
+			{ownerTeam b}
+			{adjacentMaps {"point_2_1" "point_2_3" "point_4_2" "point_4_3" "point_4_4"}}
+			{risk standard}
+			{reward none}
+			{map "multi/dcg_bretteville_sur_odon:campaign_capture_the_flag:4x4"}
+			{texmod camo}
+		}
+		{
+			{name point_3_2}
+			{landscape wood}
+			{gamemode campaign_capture_the_flag}
+			{ownerTeam b}
+			{adjacentMaps {"point_2_1" "point_4_2"}}
+			{risk standard}
+			{reward none}
+			{map "multi/dcg_flooded_lowlands:campaign_capture_the_flag:4x4"}
+			{texmod camo}
+		}
+		{
+			{name point_3_1}
+			{landscape winter}
+			{gamemode campaign_capture_the_flag}
+			{ownerTeam b}
+			{adjacentMaps {"point_2_1" "point_4_2"}}
+			{risk standard}
+			{reward none}
+			{map "multi/dcg_schoppen:campaign_capture_the_flag:4x4"}
+			{texmod winter}
+		}
+		{
+			{name point_4_2}
+			{landscape wood}
+			{gamemode campaign_capture_the_flag}
+			{ownerTeam b}
+			{adjacentMaps {"point_3_3" "point_3_2" "point_3_1" "point_5_3"}}
+			{risk standard}
+			{reward none}
+			{map "multi/dcg_anctoville_sum:campaign_capture_the_flag:4x4"}
+			{texmod camo}
+		}
+		{
+			{name point_4_3}
+			{landscape wood}
+			{gamemode campaign_capture_the_flag}
+			{ownerTeam b}
+			{adjacentMaps {"point_3_3" "point_5_3"}}
+			{risk standard}
+			{reward none}
+			{map "multi/dcg_utah_beach:campaign_capture_the_flag:4x4"}
+			{texmod camo}
+		}
+		{
+			{name point_4_4}
+			{landscape wood}
+			{gamemode campaign_capture_the_flag}
+			{ownerTeam b}
+			{adjacentMaps {"point_3_3" "point_5_4" "point_5_3"}}
+			{risk standard}
+			{reward none}
+			{map "multi/dcg_martinville_ridge:campaign_capture_the_flag:4x4"}
+			{texmod camo}
+		}
+		{
+			{name point_5_4}
+			{landscape desert}
+			{gamemode campaign_capture_the_flag}
+			{ownerTeam b}
+			{adjacentMaps {"point_4_4" "point_6_3"}}
+			{risk standard}
+			{reward none}
+			{map "multi/dcg_sieg_river:campaign_capture_the_flag:4x4"}
+			{texmod camo}
+		}
+		{
+			{name point_5_3}
+			{landscape desert}
+			{gamemode campaign_capture_the_flag}
+			{ownerTeam b}
+			{adjacentMaps {"point_4_2" "point_4_3" "point_4_4" "point_6_3"}}
+			{risk standard}
+			{reward none}
+			{map "multi/dcg_westkapelle_aut:campaign_capture_the_flag:4x4"}
+		}
+		{
+			{name point_6_3}
+			{landscape desert}
+			{gamemode campaign_capture_the_flag}
+			{ownerTeam b}
+			{adjacentMaps {"point_5_4" "point_5_3" "hq_b"}}
+			{risk standard}
+			{reward none}
+			{map "multi/dcg_elden_landings:campaign_capture_the_flag:4x4"}
+		}
+		{
+			{name hq_b}
+			{landscape wood}
+			{gamemode campaign_capture_the_flag}
+			{ownerTeam b}
+			{adjacentMaps {"point_6_3"}}
+			{risk standard}
+			{reward none}
+			{map "multi/dcg_flanders_fields_sum:campaign_capture_the_flag:4x4"}
+			{texmod camo}
+		}
+	}
+	{roundsHistory}
+}

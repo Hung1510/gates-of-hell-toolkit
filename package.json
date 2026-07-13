@@ -1,0 +1,7 @@
+{
+  "name": "goh-toolkit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Gates of Hell modding toolkit: cross-mod unit database, squad/tech-tree builder, and save editor.",
+  "workspaces": ["backend", "frontend"]
+}

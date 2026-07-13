@@ -1,0 +1,3764 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell British MP soldiers\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 2.3\n"
+
+msgctxt "desc/human/mp/eng/early/51hl_at_boys"
+msgid "51st Highland Div. AT Inf. [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_at_boys_asst"
+msgid "51st Highland Div. AT Asst. [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_bat_2ic"
+msgid "51st Highland Div. Battalion 2IC [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_bat_com"
+msgid "51st Highland Div. Battalion Commander [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_bat_signalman"
+msgid "51st Highland Div. Battalion Signalman [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_batman"
+msgid "51st Highland Div. Batman [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_coy_2ic"
+msgid "51st Highland Div. Company 2IC [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_coy_com"
+msgid "51st Highland Div. Company Commander [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_coy_signalman"
+msgid "51st Highland Div. Company Signalman [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_crew"
+msgid "51st Highland Div. Crew [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_detach_com_cpl"
+msgid "51st Highland Div. Detachment Commander [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_detach_com_sgt"
+msgid "51st Highland Div. Detachment Commander [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_driver"
+msgid "51st Highland Div. Driver [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_medic"
+msgid "51st Highland Div. Medic [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_mg"
+msgid "51st Highland Div. MG Operator [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_mg_asst"
+msgid "51st Highland Div. MG Asst. [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_pio"
+msgid "51st Highland Div. Pioneer [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_pio_builder"
+msgid "51st Highland Div. Pioneer Builder [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_pio_sec_com"
+msgid "51st Highland Div. Pioneer Section Commander [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_plt_batman"
+msgid "51st Highland Div. Platoon Batman [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_plt_com"
+msgid "51st Highland Div. Platoon Commander [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_plt_com_wo3"
+msgid "51st Highland Div. Platoon Commander [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_plt_sgt"
+msgid "51st Highland Div. Platoon Sergeant [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_rifle"
+msgid "51st Highland Div. Rifleman [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_rifle_band"
+msgid "51st Highland Div. Rifleman [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_rifle_gren"
+msgid "51st Highland Div. Rifle Grenadier [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_sec_2ic"
+msgid "51st Highland Div. Section 2IC [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_sec_com"
+msgid "51st Highland Div. Section Commander [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_sec_com_lcpl"
+msgid "51st Highland Div. Section Commander [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_sec_com_sgt"
+msgid "51st Highland Div. Section Commander [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_sniper"
+msgid "51st Highland Div. Sniper [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/antitank_boys"
+msgid "AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/antitank_boys_asst"
+msgid "AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/antitank_gren"
+msgid "Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/artilleryman"
+msgid "Royal Artilleryman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/bat_2ic"
+msgid "Battalion 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/bat_com"
+msgid "Battalion Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/bat_rsm"
+msgid "Battalion Regimental Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/bat_signalman"
+msgid "Battalion Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/batman"
+msgid "Batman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_detach_com"
+msgid "Commando Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_mg"
+msgid "Commando MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_mg_asst"
+msgid "Commando MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_rifle"
+msgid "Commando Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_rifle_band"
+msgid "Commando Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_rifle_gren"
+msgid "Commando Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_sec_com"
+msgid "Commando Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_smg"
+msgid "Commando SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_sniper"
+msgid "Commando Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_subsec_2ic"
+msgid "Commando Sub-Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_subsec_com"
+msgid "Commando Sub-Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/coy_2ic"
+msgid "Company 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/coy_com"
+msgid "Company Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/coy_qm_sgt"
+msgid "Company Quarter Master Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/coy_sgt_maj"
+msgid "Company Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/coy_signalman"
+msgid "Company Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/crew"
+msgid "Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/detach_com_cpl"
+msgid "Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/detach_com_sgt"
+msgid "Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/driver"
+msgid "Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/fo"
+msgid "Forward Artillery Observer Officer [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/fo_radio_88"
+msgid "Forward Artillery Observer Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/fo_radio_127"
+msgid "Forward Artillery Observer Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/fo_radio_152"
+msgid "Forward Artillery Observer Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/fo_radio_203"
+msgid "Forward Artillery Observer Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_at_boys"
+msgid "Guards AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_at_boys_asst"
+msgid "Guards AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_bat_2ic"
+msgid "Guards Battalion 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_bat_com"
+msgid "Guards Battalion Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_bat_signalman"
+msgid "Guards Battalion Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_batman"
+msgid "Guards Batman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_coy_2ic"
+msgid "Guards Company 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_coy_com"
+msgid "Guards Company Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_coy_signalman"
+msgid "Guards Company Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_crew"
+msgid "Guards Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_detach_com_cpl"
+msgid "Guards Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_detach_com_sgt"
+msgid "Guards Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_driver"
+msgid "Guards Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_medic"
+msgid "Guards Medic [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_mg"
+msgid "Guards MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_mg_asst"
+msgid "Guards MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_pio"
+msgid "Guards Pioneer [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_pio_builder"
+msgid "Guards Pioneer Builder [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_pio_sec_com"
+msgid "Guards Pioneer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_plt_batman"
+msgid "Guards Platoon Batman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_plt_com"
+msgid "Guards Platoon Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_plt_com_wo3"
+msgid "Guards Platoon Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_plt_sgt"
+msgid "Guards Platoon Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_rifle"
+msgid "Guards Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_rifle_band"
+msgid "Guards Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_rifle_gren"
+msgid "Guards Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_sec_2ic"
+msgid "Guards Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_sec_com"
+msgid "Guards Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_sec_com_lcpl"
+msgid "Guards Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_sec_com_sgt"
+msgid "Guards Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_sniper"
+msgid "Guards Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_at_boys"
+msgid "Royal HL. Black Watch AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_at_boys_asst"
+msgid "Royal HL. Black Watch AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_batman"
+msgid "Royal HL. Black Watch Batman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_coy_2ic"
+msgid "Royal HL. Black Watch Company 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_coy_com"
+msgid "Royal HL. Black Watch Company Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_coy_signalman"
+msgid "Royal HL. Black Watch Company Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_crew"
+msgid "Royal HL. Black Watch Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_detach_com_cpl"
+msgid "Royal HL. Black Watch Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_detach_com_sgt"
+msgid "Royal HL. Black Watch Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_driver"
+msgid "Royal HL. Black Watch Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_medic"
+msgid "Royal HL. Black Watch Medic [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_mg"
+msgid "Royal HL. Black Watch MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_mg_asst"
+msgid "Royal HL. Black Watch MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_pio"
+msgid "Royal HL. Black Watch Pioneer [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_pio_builder"
+msgid "Royal HL. Black Watch Pioneer Builder [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_pio_sec_com"
+msgid "Royal HL. Black Watch Pioneer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_plt_batman"
+msgid "Royal HL. Black Watch Platoon Batman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_plt_com"
+msgid "Royal HL. Black Watch Platoon Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_plt_sgt"
+msgid "Royal HL. Black Watch Platoon Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_rifle"
+msgid "Royal HL. Black Watch Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_rifle_band"
+msgid "Royal HL. Black Watch Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_sec_2ic"
+msgid "Royal HL. Black Watch Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_sec_com"
+msgid "Royal HL. Black Watch Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_sec_com_sgt"
+msgid "Royal HL. Black Watch Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_sec_sniper"
+msgid "Royal HL. Black Watch Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/medic"
+msgid "Medic [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mg"
+msgid "MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mg_asst"
+msgid "MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mg_crew"
+msgid "MG Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mg_crew_asst"
+msgid "MG Crew Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_boys"
+msgid "Motor AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_boys_asst"
+msgid "Motor AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_mg"
+msgid "Motor MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_mg_asst"
+msgid "Motor MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_rifle"
+msgid "Motor Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_rifle_band"
+msgid "Motor Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_scout_detach_com_cpl"
+msgid "Motor Scout Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_scout_detach_com_lcpl"
+msgid "Motor Scout Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_scout_driver"
+msgid "Motor Scout Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_scout_gunner"
+msgid "Motor Scout Gunner [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_scout_sec_com"
+msgid "Motor Scout Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_sec_2ic"
+msgid "Motor Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_sec_com"
+msgid "Motor Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mp_detach_com"
+msgid "Military Police Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mp_pistol"
+msgid "Military Police [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mp_rifle"
+msgid "Military Police [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/pilot"
+msgid "Pilot [RAF]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/pio"
+msgid "Pioneer [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/pio_band"
+msgid "Pioneer [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/pio_boys"
+msgid "Pioneer AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/pio_boys_asst"
+msgid "Pioneer AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/pio_builder"
+msgid "Pioneer Builder [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/pio_gren"
+msgid "Pioneer Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/pio_mg"
+msgid "Pioneer MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/pio_mg_asst"
+msgid "Pioneer MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/pio_sec_com"
+msgid "Pioneer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/plt_batman"
+msgid "Platoon Batman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/plt_com"
+msgid "Platoon Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/plt_com_wo3"
+msgid "Platoon Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/plt_sgt"
+msgid "Platoon Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/r_eng_boys"
+msgid "Royal Engineer AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/r_eng_boys_asst"
+msgid "Royal Engineer AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/r_eng_builder"
+msgid "Royal Engineer Builder [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/r_eng_mg"
+msgid "Royal Engineer MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/r_eng_mg_asst"
+msgid "Royal Engineer MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/r_eng_mine_ap"
+msgid "Royal Engineer AP Miner [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/r_eng_mine_at"
+msgid "Royal Engineer AT Miner [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/r_eng_sapper"
+msgid "Royal Engineer Sapper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/r_eng_sec_2ic"
+msgid "Royal Engineer Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/r_eng_sec_com"
+msgid "Royal Engineer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rear_echelon_rifle"
+msgid "Rear Echelon Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rec_carrier_detach_com_cpl"
+msgid "Recce Carrier Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rec_carrier_detach_com_sgt"
+msgid "Recce Carrier Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rec_carrier_driver"
+msgid "Recce Carrier Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rec_carrier_gunner"
+msgid "Recce Carrier Gunner [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rec_carrier_rifle"
+msgid "Recce Carrier Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rec_rifle"
+msgid "Recce Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rec_sec_com"
+msgid "Recce Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rec_troop_com"
+msgid "Recce Troop Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rec_troop_com_wo3"
+msgid "Recce Troop Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rifle"
+msgid "Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rifle_band"
+msgid "Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rifle_gren"
+msgid "Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/sec_2ic"
+msgid "Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/sec_com"
+msgid "Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/sec_com_lcpl"
+msgid "Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/sec_com_m1928"
+msgid "Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/sec_com_sgt"
+msgid "Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/sniper"
+msgid "Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/tank_commander"
+msgid "Tank Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/tank_commander_sgt"
+msgid "Tank Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/tankman"
+msgid "Tank Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/vehicle_com_cpl"
+msgid "Vehicle Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/vehicle_com_sgt"
+msgid "Vehicle Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/vehicle_crew"
+msgid "Vehicle Crew [BA]"
+msgstr ""
+
+
+
+
+
+
+
+
+
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_boys"
+msgid "1st Airlanding AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_boys_asst"
+msgid "1st Airlanding AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_crew"
+msgid "1st Airlanding Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_mg"
+msgid "1st Airlanding MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_mg_asst"
+msgid "1st Airlanding MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_piat"
+msgid "1st Airlanding AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_piat_asst"
+msgid "1st Airlanding AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_pio"
+msgid "1st Airlanding Pioneer [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_pio_sec_com"
+msgid "1st Airlanding Pioneer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_pio_sec_com_cpl"
+msgid "1st Airlanding Pioneer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_rec_mg"
+msgid "1st Airlanding Recon MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_rec_mg_asst"
+msgid "1st Airlanding Recon MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_rec_rifle"
+msgid "1st Airlanding Recon [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_rec_sec_2ic"
+msgid "1st Airlanding Recon Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_rec_sec_com"
+msgid "1st Airlanding Recon Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_rec_sec_com_bino"
+msgid "1st Airlanding Recon Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_rec_smg"
+msgid "1st Airlanding Recon [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_rec_sniper"
+msgid "1st Airlanding Recon Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_rifle"
+msgid "1st Airlanding Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_rifle_band"
+msgid "1st Airlanding Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_sec_2ic"
+msgid "1st Airlanding Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_sec_com"
+msgid "1st Airlanding Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_sec_com_cpl"
+msgid "1st Airlanding Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_smg"
+msgid "1st Airlanding SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_sniper"
+msgid "1st Airlanding Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_batman"
+msgid "1st Airborne Batman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_boys"
+msgid "1st Airborne AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_boys_asst"
+msgid "1st Airborne AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_coy_2ic"
+msgid "1st Airborne Company 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_coy_com"
+msgid "1st Airborne Company Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_coy_sgt_maj"
+msgid "1st Airborne Company Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_crew"
+msgid "1st Airborne Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng"
+msgid "1st Airborne Engineer [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng_at_mine"
+msgid "1st Airborne Engineer AT Miner [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng_boys"
+msgid "1st Airborne Engineer AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng_boys_asst"
+msgid "1st Airborne Engineer AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng_mg"
+msgid "1st Airborne Engineer MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng_mg_asst"
+msgid "1st Airborne Engineer MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng_piat"
+msgid "1st Airborne Engineer AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng_piat_asst"
+msgid "1st Airborne Engineer AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng_sapper"
+msgid "1st Airborne Engineer Sapper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng_sec_2ic"
+msgid "1st Airborne Engineer Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng_sec_com"
+msgid "1st Airborne Engineer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_medic"
+msgid "1st Airborne Medic [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_mg"
+msgid "1st Airborne MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_mg_asst"
+msgid "1st Airborne MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_mortar"
+msgid "1st Airborne Mortarman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_mortar_asst"
+msgid "1st Airborne Mortar Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_piat"
+msgid "1st Airborne AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_piat_asst"
+msgid "1st Airborne AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_plt_com"
+msgid "1st Airborne Platoon Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_plt_sgt"
+msgid "1st Airborne Platoon Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rec_mg"
+msgid "1st Airborne Recce MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rec_mg_asst"
+msgid "1st Airborne Recce MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rec_rifle"
+msgid "1st Airborne Recce [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rec_sec_2ic"
+msgid "1st Airborne Recce Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rec_sec_com"
+msgid "1st Airborne Recce Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rec_sec_com_bino"
+msgid "1st Airborne Recce Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rec_sec_mortar"
+msgid "1st Airborne Recce Section Mortarman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rec_smg"
+msgid "1st Airborne Recce [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rifle"
+msgid "1st Airborne Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rifle_band"
+msgid "1st Airborne Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rifle_gren"
+msgid "1st Airborne Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_sec_2ic"
+msgid "1st Airborne Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_sec_com"
+msgid "1st Airborne Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_sec_com_cpl"
+msgid "1st Airborne Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_sec_mortar"
+msgid "1st Airborne Section Mortarman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_smg"
+msgid "1st Airborne SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_sniper"
+msgid "1st Airborne Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_at_boys"
+msgid "51st Highland Div. AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_at_boys_asst"
+msgid "51st Highland Div. AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_at_piat"
+msgid "51st Highland Div. AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_at_piat_asst"
+msgid "51st Highland Div. AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_batman"
+msgid "51st Highland Div. Batman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_coy_2ic"
+msgid "51st Highland Div. Company 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_coy_com"
+msgid "51st Highland Div. Company Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_crew"
+msgid "51st Highland Div. Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_detach_com"
+msgid "51st Highland Div. Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_driver"
+msgid "51st Highland Div. Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_medic"
+msgid "51st Highland Div. Medic [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_mg"
+msgid "51st Highland Div. MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_mg_asst"
+msgid "51st Highland Div. MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_pio"
+msgid "51st Highland Div. Pioneer [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_pio_builder"
+msgid "51st Highland Div. Pioneer Builder [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_pio_sec_com_cpl"
+msgid "51st Highland Div. Pioneer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_pio_sec_com_sgt"
+msgid "51st Highland Div. Pioneer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_plt_com"
+msgid "51st Highland Div. Platoon Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_plt_sgt"
+msgid "51st Highland Div. Platoon Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_rifle"
+msgid "51st Highland Div. Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_rifle_band"
+msgid "51st Highland Div. Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_rifle_gren"
+msgid "51st Highland Div. Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_rifle_sniper"
+msgid "51st Highland Div. Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_sec_2ic"
+msgid "51st Highland Div. Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_sec_com"
+msgid "51st Highland Div. Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_sec_com_sgt"
+msgid "51st Highland Div. Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_sec_subcom"
+msgid "51st Highland Div. Sub-Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_smg"
+msgid "51st Highland Div. SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_smg_mk2"
+msgid "51st Highland Div. SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_at_boys"
+msgid "7th AD. AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_at_boys_asst"
+msgid "7th AD. AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_at_piat"
+msgid "7th AD. AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_at_piat_asst"
+msgid "7th AD. AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_batman"
+msgid "7th AD. Batman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_coy_2ic"
+msgid "7th AD. Company 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_coy_com"
+msgid "7th AD. Company Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_coy_sgt_maj"
+msgid "7th AD. Company Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_crew"
+msgid "7th AD. Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_detach_com"
+msgid "7th AD. Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_driver"
+msgid "7th AD. Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_medic"
+msgid "7th AD. Medic [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_mg"
+msgid "7th AD. MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_mg_asst"
+msgid "7th AD. MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_plt_batman"
+msgid "7th AD. Platoon Batman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_plt_com"
+msgid "7th AD. Platoon Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_plt_sgt"
+msgid "7th AD. Platoon Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_rifle"
+msgid "7th AD. Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_rifle_band"
+msgid "7th AD. Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_rifle_gren"
+msgid "7th AD. Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_rifle_sniper"
+msgid "7th AD. Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_sec_2ic"
+msgid "7th AD. Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_sec_com"
+msgid "7th AD. Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_sec_com_sgt"
+msgid "7th AD. Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_sec_subcom"
+msgid "7th AD. Sub-Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_smg"
+msgid "7th AD. SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_smg_mk2"
+msgid "7th AD. SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_tank_com"
+msgid "7th AD. Tank Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_tank_com_m1928"
+msgid "7th AD. Tank Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_tankman"
+msgid "7th AD. Tank Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_vehicle_com_cpl"
+msgid "7th AD. Vehicle Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_vehicle_com_sgt"
+msgid "7th AD. Vehicle Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_vehicle_crew"
+msgid "7th AD. Vehicle Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/antitank_boys"
+msgid "AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/antitank_boys_asst"
+msgid "AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/antitank_gren"
+msgid "Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/antitank_piat"
+msgid "AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/antitank_piat_asst"
+msgid "AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/artilleryman"
+msgid "Royal Artilleryman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/bat_2ic"
+msgid "Battalion 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/bat_com"
+msgid "Battalion Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/bat_rsm"
+msgid "Battalion Regimental Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/bat_signalman"
+msgid "Battalion Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/batman"
+msgid "Batman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/batman_smg"
+msgid "Batman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_boys"
+msgid "Commando AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_boys_asst"
+msgid "Commando AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_crew"
+msgid "Commando Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_driver"
+msgid "Commando Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_mg"
+msgid "Commando MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_mg_asst"
+msgid "Commando MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_piat"
+msgid "Commando AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_piat_asst"
+msgid "Commando AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_rifle"
+msgid "Commando Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_rifle_band"
+msgid "Commando Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_rifle_gren"
+msgid "Commando Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_sec_com"
+msgid "Commando Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_smg"
+msgid "Commando SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_sniper"
+msgid "Commando Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_subsec_2ic"
+msgid "Commando Sub-Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_subsec_com"
+msgid "Commando Sub-Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/coy_2ic"
+msgid "Company 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/coy_com"
+msgid "Company Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/coy_qm_sgt"
+msgid "Company Quarter Master Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/coy_sgt_maj"
+msgid "Company Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/coy_signalman"
+msgid "Company Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/crew"
+msgid "Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/def_at_boys"
+msgid "Defense AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/def_at_boys_asst"
+msgid "Defense AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/def_mg"
+msgid "Defense MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/def_mg_asst"
+msgid "Defense MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/def_rifle"
+msgid "Defense Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/def_rifle_band"
+msgid "Defense Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/def_sec_2ic"
+msgid "Defense Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/def_sec_com"
+msgid "Defense Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/def_sec_com_sgt"
+msgid "Defense Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/detach_com"
+msgid "Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/driver"
+msgid "Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/driver_smg"
+msgid "Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/fo"
+msgid "Forward Artillery Observer Officer [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/fo_radio_88"
+msgid "Forward Artillery Observer Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/fo_radio_114"
+msgid "Forward Artillery Observer Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/fo_radio_140"
+msgid "Forward Artillery Observer Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/fo_radio_183"
+msgid "Forward Artillery Observer Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/medic"
+msgid "Medic [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mg"
+msgid "MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mg_asst"
+msgid "MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mg_crew"
+msgid "MG Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mg_crew_asst"
+msgid "MG Crew Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_boys"
+msgid "Motor AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_boys_asst"
+msgid "Motor AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_mg"
+msgid "Motor MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_mg_asst"
+msgid "Motor MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_rifle"
+msgid "Motor Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_rifle_band"
+msgid "Motor Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_scout_detach_com_cpl"
+msgid "Motor Scout Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_scout_detach_com_lcpl"
+msgid "Motor Scout Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_scout_driver"
+msgid "Motor Scout Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_scout_gunner"
+msgid "Motor Scout Gunner [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_scout_sec_com"
+msgid "Motor Scout Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_sec_2ic"
+msgid "Motor Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_sec_com"
+msgid "Motor Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_sec_com_sten"
+msgid "Motor Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mp_detach_com"
+msgid "Military Police Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mp_pistol"
+msgid "Military Police [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mp_rifle"
+msgid "Military Police [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/pilot"
+msgid "Pilot [RAF]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/pio"
+msgid "Pioneer [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/pio_builder"
+msgid "Pioneer Builder [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/pio_sec_com_cpl"
+msgid "Pioneer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/pio_sec_com_sgt"
+msgid "Pioneer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/plt_batman"
+msgid "Platoon Batman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/plt_com"
+msgid "Platoon Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/plt_sgt"
+msgid "Platoon Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/r_eng_boys"
+msgid "Royal Engineer AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/r_eng_boys_asst"
+msgid "Royal Engineer AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/r_eng_builder"
+msgid "Royal Engineer Builder [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/r_eng_mg"
+msgid "Royal Engineer MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/r_eng_mg_asst"
+msgid "Royal Engineer MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/r_eng_mine_ap"
+msgid "Royal Engineer AP Miner [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/r_eng_mine_at"
+msgid "Royal Engineer AT Miner [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/r_eng_sapper"
+msgid "Royal Engineer Sapper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/r_eng_sec_2ic"
+msgid "Royal Engineer Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/r_eng_sec_com"
+msgid "Royal Engineer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rear_echelon_rifle"
+msgid "Rear Echelon Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rear_echelon_rifle_p14"
+msgid "Rear Echelon Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_carrier_detach_com"
+msgid "Recce Carrier Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_carrier_driver"
+msgid "Recce Carrier Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_carrier_gunner"
+msgid "Recce Carrier Gunner [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_carrier_sec_com"
+msgid "Recce Carrier Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_driver"
+msgid "Recce Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_mg"
+msgid "Recce MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_mg_asst"
+msgid "Recce MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_rifle_band"
+msgid "Recce Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_sec_2ic"
+msgid "Recce Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_sec_com"
+msgid "Recce Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rifle"
+msgid "Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rifle_band"
+msgid "Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rifle_gren"
+msgid "Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rifle_sniper"
+msgid "Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_boys"
+msgid "Royal Marine Commando AT Inf. [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_boys_asst"
+msgid "Royal Marine Commando AT Asst. [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_crew"
+msgid "Royal Marine Commando Crew [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_mg"
+msgid "Royal Marine Commando MG Operator [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_mg_asst"
+msgid "Royal Marine Commando MG Asst. [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_rifle"
+msgid "Royal Marine Commando Rifleman [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_rifle_band"
+msgid "Royal Marine Commando Rifleman [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_rifle_gren"
+msgid "Royal Marine Commando Rifle Grenadier [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_sniper"
+msgid "Royal Marine Commando Sniper [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_subsec_com"
+msgid "Royal Marine Commando Sub-Section Commander [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_subsec_detach_com"
+msgid "Royal Marine Commando Sub-Section Detachment Commander [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_subsec_detach_com_mg"
+msgid "Royal Marine Commando Sub-Section Detachment Commander [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rn_com_able"
+msgid "Royal Navy Commando Able Seaman [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rn_com_bm"
+msgid "Royal Navy Commando Beachmaster [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rn_com_bma"
+msgid "Royal Navy Commando Beachmaster Asst. [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rn_com_leading"
+msgid "Royal Navy Commando Leading Seaman [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rn_com_mg"
+msgid "Royal Navy Commando MG Operator [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rn_com_mg_asst"
+msgid "Royal Navy Commando MG Asst. [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rn_com_rifle"
+msgid "Royal Navy Commando Rifleman [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rn_com_smg"
+msgid "Royal Navy Commando SMG Inf. [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_boys"
+msgid "SAS AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_boys_asst"
+msgid "SAS AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_crew"
+msgid "SAS Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_driver"
+msgid "SAS Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_mg"
+msgid "SAS MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_mg_asst"
+msgid "SAS MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_rifle"
+msgid "SAS Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_rifle_gren"
+msgid "SAS Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_sec_com"
+msgid "SAS Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_smg"
+msgid "SAS SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_sniper"
+msgid "SAS Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_subsec_com"
+msgid "SAS Sub-Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_subsec_com_cpl"
+msgid "SAS Sub-Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_troop_com"
+msgid "SAS Troop Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_tsmg"
+msgid "SAS SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sec_2ic"
+msgid "Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sec_com"
+msgid "Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sec_com_sgt"
+msgid "Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sec_com_sten"
+msgid "Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sec_subcom"
+msgid "Sub-Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/smg"
+msgid "SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/smg_mk2"
+msgid "SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sniper"
+msgid "Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/tank_commander"
+msgid "Tank Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/tank_commander_m1928"
+msgid "Tank Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/tankman"
+msgid "Tank Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vehicle_com_cpl"
+msgid "Vehicle Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vehicle_com_sgt"
+msgid "Vehicle Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vehicle_crew"
+msgid "Vehicle Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_boys"
+msgid "Veteran AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_boys_asst"
+msgid "Veteran AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_mg"
+msgid "Veteran MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_mg_asst"
+msgid "Veteran MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_piat"
+msgid "Veteran AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_piat_asst"
+msgid "Veteran AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_rifle"
+msgid "Veteran Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_rifle_band"
+msgid "Veteran Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_rifle_gren"
+msgid "Veteran Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_rifle_sniper"
+msgid "Veteran Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_sec_2ic"
+msgid "Veteran Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_sec_com"
+msgid "Veteran Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_sec_com_sgt"
+msgid "Veteran Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_sec_com_sten"
+msgid "Veteran Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_sec_subcom"
+msgid "Veteran Sub-Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_smg"
+msgid "Veteran SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_smg_mk2"
+msgid "Veteran SMG Inf. [BA]"
+msgstr ""
+
+
+
+
+
+
+
+
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_crew"
+msgid "1st Airlanding Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_mg"
+msgid "1st Airlanding MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_mg_asst"
+msgid "1st Airlanding MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_piat"
+msgid "1st Airlanding AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_piat_asst"
+msgid "1st Airlanding AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_pio"
+msgid "1st Airlanding Pioneer [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_pio_sec_com"
+msgid "1st Airlanding Pioneer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_pio_sec_com_cpl"
+msgid "1st Airlanding Pioneer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rec_mg"
+msgid "1st Airlanding Recon MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rec_mg_asst"
+msgid "1st Airlanding Recon MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rec_rifle"
+msgid "1st Airlanding Recon [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rec_sec_2ic"
+msgid "1st Airlanding Recon Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rec_sec_com"
+msgid "1st Airlanding Recon Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rec_sec_com_bino"
+msgid "1st Airlanding Recon Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rec_smg"
+msgid "1st Airlanding Recon [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rec_sniper"
+msgid "1st Airlanding Recon Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rifle"
+msgid "1st Airlanding Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rifle_band"
+msgid "1st Airlanding Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_sec_2ic"
+msgid "1st Airlanding Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_sec_com"
+msgid "1st Airlanding Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_sec_com_cpl"
+msgid "1st Airlanding Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_smg"
+msgid "1st Airlanding SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_sniper"
+msgid "1st Airlanding Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_batman"
+msgid "1st Airborne Batman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_coy_2ic"
+msgid "1st Airborne Company 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_coy_com"
+msgid "1st Airborne Company Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_coy_sgt_maj"
+msgid "1st Airborne Company Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_crew"
+msgid "1st Airborne Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng"
+msgid "1st Airborne Engineer [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng_at_mine"
+msgid "1st Airborne Engineer AT Miner [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng_flamer"
+msgid "1st Airborne Engineer Flamer Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng_mg"
+msgid "1st Airborne Engineer MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng_mg_asst"
+msgid "1st Airborne Engineer MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng_piat"
+msgid "1st Airborne Engineer AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng_piat_asst"
+msgid "1st Airborne Engineer AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng_sapper"
+msgid "1st Airborne Engineer Sapper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng_sec_2ic"
+msgid "1st Airborne Engineer Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng_sec_com"
+msgid "1st Airborne Engineer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng_sec_com_sgt"
+msgid "1st Airborne Engineer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_medic"
+msgid "1st Airborne Medic [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_mg"
+msgid "1st Airborne MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_mg_asst"
+msgid "1st Airborne MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_mg_asst_smg"
+msgid "1st Airborne MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_mortar"
+msgid "1st Airborne Mortarman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_mortar_asst"
+msgid "1st Airborne Mortar Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_piat"
+msgid "1st Airborne AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_piat_asst"
+msgid "1st Airborne AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_plt_com"
+msgid "1st Airborne Platoon Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_plt_sgt"
+msgid "1st Airborne Platoon Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_mg"
+msgid "1st Airborne Recce MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_mg_asst"
+msgid "1st Airborne Recce MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_mg_vgo"
+msgid "1st Airborne Recce MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_mg_vgo_asst"
+msgid "1st Airborne Recce MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_rifle"
+msgid "1st Airborne Recce [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_sec_2ic"
+msgid "1st Airborne Recce Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_sec_com"
+msgid "1st Airborne Recce Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_sec_com_bino"
+msgid "1st Airborne Recce Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_sec_mortar"
+msgid "1st Airborne Recce Section Mortarman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_smg_band"
+msgid "1st Airborne Recce [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rifle"
+msgid "1st Airborne Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rifle_band"
+msgid "1st Airborne Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rifle_gren"
+msgid "1st Airborne Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_sec_2ic"
+msgid "1st Airborne Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_sec_com"
+msgid "1st Airborne Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_sec_com_cpl"
+msgid "1st Airborne Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_sec_mortar"
+msgid "1st Airborne Section Mortarman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_smg"
+msgid "1st Airborne SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_smg_band"
+msgid "1st Airborne SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_smg_band_patchett"
+msgid "1st Airborne SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_sniper"
+msgid "1st Airborne Sniper [BA]"
+msgstr ""
+
+
+
+
+
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_crew"
+msgid "6th Airlanding Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_mg"
+msgid "6th Airlanding MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_mg_asst"
+msgid "6th Airlanding MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_piat"
+msgid "6th Airlanding AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_piat_asst"
+msgid "6th Airlanding AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_pio"
+msgid "6th Airlanding Pioneer [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_pio_sec_com"
+msgid "6th Airlanding Pioneer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_pio_sec_com_cpl"
+msgid "6th Airlanding Pioneer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_rec_mg"
+msgid "6th Airlanding Recon MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_rec_mg_asst"
+msgid "6th Airlanding Recon MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_rec_rifle"
+msgid "6th Airlanding Recon [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_rec_sec_2ic"
+msgid "6th Airlanding Recon Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_rec_sec_com"
+msgid "6th Airlanding Recon Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_rec_sec_com_bino"
+msgid "6th Airlanding Recon Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_rec_smg"
+msgid "6th Airlanding Recon [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_rifle"
+msgid "6th Airlanding Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_rifle_band"
+msgid "6th Airlanding Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_sec_2ic"
+msgid "6th Airlanding Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_sec_com"
+msgid "6th Airlanding Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_sec_com_cpl"
+msgid "6th Airlanding Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_smg"
+msgid "6th Airlanding SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_sniper"
+msgid "6th Airlanding Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_batman"
+msgid "6th Airborne Batman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_coy_2ic"
+msgid "6th Airborne Company 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_coy_com"
+msgid "6th Airborne Company Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_coy_sgt_maj"
+msgid "6th Airborne Company Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_crew"
+msgid "6th Airborne Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng"
+msgid "6th Airborne Engineer [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng_at_mine"
+msgid "6th Airborne Engineer AT Miner [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng_flamer"
+msgid "6th Airborne Engineer Flamer Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng_mg"
+msgid "6th Airborne Engineer MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng_mg_asst"
+msgid "6th Airborne Engineer MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng_piat"
+msgid "6th Airborne Engineer AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng_piat_asst"
+msgid "6th Airborne Engineer AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng_sapper"
+msgid "6th Airborne Engineer Sapper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng_sec_2ic"
+msgid "6th Airborne Engineer Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng_sec_com"
+msgid "6th Airborne Engineer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng_sec_com_sgt"
+msgid "6th Airborne Engineer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_medic"
+msgid "6th Airborne Medic [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_mg"
+msgid "6th Airborne MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_mg_asst"
+msgid "6th Airborne MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_mg_asst_smg"
+msgid "6th Airborne MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_mortar"
+msgid "6th Airborne Mortarman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_mortar_asst"
+msgid "6th Airborne Mortar Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_piat"
+msgid "6th Airborne AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_piat_asst"
+msgid "6th Airborne AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_plt_com"
+msgid "6th Airborne Platoon Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_plt_sgt"
+msgid "6th Airborne Platoon Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_rifle"
+msgid "6th Airborne Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_rifle_band"
+msgid "6th Airborne Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_rifle_gren"
+msgid "6th Airborne Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_sec_2ic"
+msgid "6th Airborne Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_sec_com"
+msgid "6th Airborne Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_sec_com_cpl"
+msgid "6th Airborne Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_sec_mortar"
+msgid "6th Airborne Section Mortarman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_smg"
+msgid "6th Airborne SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_smg_band"
+msgid "6th Airborne SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_sniper"
+msgid "6th Airborne Sniper [BA]"
+msgstr ""
+
+
+
+
+
+msgctxt "desc/human/mp/eng/late/7th_ad_coy_2ic"
+msgid "7th AD. Company 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_coy_com"
+msgid "7th AD. Company Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_coy_sgt_maj"
+msgid "7th AD. Company Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_crew"
+msgid "7th AD. Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_detach_com"
+msgid "7th AD. Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_driver"
+msgid "7th AD. Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_driver_smg"
+msgid "7th AD. Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_builder"
+msgid "7th AD. Engineer Builder [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_flamer"
+msgid "7th AD. Engineer Flamer Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_mg"
+msgid "7th AD. Engineer MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_mg_asst"
+msgid "7th AD. Engineer MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_mine_ap"
+msgid "7th AD. Engineer AP Miner [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_mine_at"
+msgid "7th AD. Engineer AT Miner [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_piat"
+msgid "7th AD. Engineer AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_piat_asst"
+msgid "7th AD. Engineer AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_sapper"
+msgid "7th AD. Engineer Sapper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_sec_2ic"
+msgid "7th AD. Engineer Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_sec_com"
+msgid "7th AD. Engineer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_medic"
+msgid "7th AD. Medic [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mg"
+msgid "7th AD. MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mg_asst"
+msgid "7th AD. MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_mg"
+msgid "7th AD. Motor MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_mg_asst"
+msgid "7th AD. Motor MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_piat"
+msgid "7th AD. Motor AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_piat_asst"
+msgid "7th AD. Motor AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_rifle"
+msgid "7th AD. Motor Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_rifle_band"
+msgid "7th AD. Motor Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_rifle_sniper"
+msgid "7th AD. Motor Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_scout_detach_com_cpl"
+msgid "7th AD. Motor Scout Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_scout_detach_com_lcpl"
+msgid "7th AD. Motor Scout Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_scout_driver"
+msgid "7th AD. Motor Scout Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_scout_mg"
+msgid "7th AD. Motor Scout MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_scout_piat"
+msgid "7th AD. Motor Scout AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_scout_rifle"
+msgid "7th AD. Motor Scout [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_scout_sec_com"
+msgid "7th AD. Motor Scout Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_sec_2ic"
+msgid "7th AD. Motor Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_sec_com"
+msgid "7th AD. Motor Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_piat"
+msgid "7th AD. AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_piat_asst"
+msgid "7th AD. AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_pio"
+msgid "7th AD. Pioneer [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_pio_builder"
+msgid "7th AD. Pioneer Builder [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_pio_sec_com_cpl"
+msgid "7th AD. Pioneer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_pio_sec_com_sgt"
+msgid "7th AD. Pioneer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_plt_com"
+msgid "7th AD. Platoon Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_plt_sgt"
+msgid "7th AD. Platoon Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_rifle"
+msgid "7th AD. Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_rifle_band"
+msgid "7th AD. Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_rifle_gren"
+msgid "7th AD. Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_rifle_sniper"
+msgid "7th AD. Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_sec_2ic"
+msgid "7th AD. Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_sec_com"
+msgid "7th AD. Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_sec_com_sgt"
+msgid "7th AD. Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_sec_subcom"
+msgid "7th AD. Sub-Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_smg"
+msgid "7th AD. SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_tank_com"
+msgid "7th AD. Tank Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_tank_com_m1928"
+msgid "7th AD. Tank Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_tankman"
+msgid "7th AD. Tank Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_vehicle_com_cpl"
+msgid "7th AD. Vehicle Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_vehicle_com_sgt"
+msgid "7th AD. Vehicle Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_vehicle_crew"
+msgid "7th AD. Vehicle Crew [BA]"
+msgstr ""
+
+
+
+msgctxt "desc/human/mp/eng/late/antitank_gren"
+msgid "Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/antitank_piat"
+msgid "AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/antitank_piat_asst"
+msgid "AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/artilleryman"
+msgid "Royal Artilleryman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/bat_2ic"
+msgid "Battalion 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/bat_com"
+msgid "Battalion Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/bat_rsm"
+msgid "Battalion Regimental Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/bat_signalman"
+msgid "Battalion Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/batman"
+msgid "Batman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/batman_smg"
+msgid "Batman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_crew"
+msgid "Commando Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_delisle"
+msgid "Commando Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_driver"
+msgid "Commando Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_mg"
+msgid "Commando MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_mg_asst"
+msgid "Commando MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_rifle"
+msgid "Commando Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_rifle_band"
+msgid "Commando Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_rifle_gren"
+msgid "Commando Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_rifle_piat"
+msgid "Commando AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_rifle_piat_asst"
+msgid "Commando AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_sec_com"
+msgid "Commando Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_smg"
+msgid "Commando SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_smg_s"
+msgid "Commando SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_sniper"
+msgid "Commando Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_subsec_2ic"
+msgid "Commando Sub-Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_subsec_2ic_smg_s"
+msgid "Commando Sub-Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_subsec_com"
+msgid "Commando Sub-Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/coy_2ic"
+msgid "Company 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/coy_com"
+msgid "Company Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/coy_qm_sgt"
+msgid "Company Quarter Master Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/coy_sgt_maj"
+msgid "Company Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/coy_signalman"
+msgid "Company Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/crew"
+msgid "Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/def_at_piat"
+msgid "Defense AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/def_at_piat_asst"
+msgid "Defense AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/def_mg"
+msgid "Defense MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/def_mg_asst"
+msgid "Defense MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/def_rifle"
+msgid "Defense Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/def_rifle_band"
+msgid "Defense Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/def_sec_2ic"
+msgid "Defense Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/def_sec_com"
+msgid "Defense Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/def_sec_com_sgt"
+msgid "Defense Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/detach_com"
+msgid "Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/driver"
+msgid "Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/driver_smg"
+msgid "Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/fo"
+msgid "Forward Artillery Observer Officer [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/fo_radio_88"
+msgid "Forward Artillery Observer Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/fo_radio_114"
+msgid "Forward Artillery Observer Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/fo_radio_140"
+msgid "Forward Artillery Observer Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/fo_radio_183"
+msgid "Forward Artillery Observer Signalman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_coy_2ic"
+msgid "Guards AD. Company 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_coy_com"
+msgid "Guards AD. Company Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_coy_sgt_maj"
+msgid "Guards AD. Company Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_crew"
+msgid "Guards AD. Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_detach_com"
+msgid "Guards AD. Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_driver"
+msgid "Guards AD. Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_builder"
+msgid "Guards AD. Engineer Builder [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_flamer"
+msgid "Guards AD. Engineer Flamer Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_mg"
+msgid "Guards AD. Engineer MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_mg_asst"
+msgid "Guards AD. Engineer MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_mine_ap"
+msgid "Guards AD. Engineer AP Miner [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_mine_at"
+msgid "Guards AD. Engineer AT Miner [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_piat"
+msgid "Guards AD. Engineer AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_piat_asst"
+msgid "Guards AD. Engineer AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_sapper"
+msgid "Guards AD. Engineer Sapper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_sec_2ic"
+msgid "Guards AD. Engineer Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_sec_com"
+msgid "Guards AD. Engineer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_medic"
+msgid "Guards AD. Medic [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mg"
+msgid "Guards AD. MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mg_asst"
+msgid "Guards AD. MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_mg"
+msgid "Guards AD. Motor MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_mg_asst"
+msgid "Guards AD. Motor MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_piat"
+msgid "Guards AD. Motor AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_piat_asst"
+msgid "Guards AD. Motor AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_rifle"
+msgid "Guards AD. Motor Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_rifle_band"
+msgid "Guards AD. Motor Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_rifle_sniper"
+msgid "Guards AD. Motor Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_scout_detach_com_cpl"
+msgid "Guards AD. Motor Scout Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_scout_detach_com_lcpl"
+msgid "Guards AD. Motor Scout Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_scout_driver"
+msgid "Guards AD. Motor Scout Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_scout_mg"
+msgid "Guards AD. Motor Scout MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_scout_piat"
+msgid "Guards AD. Motor Scout AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_scout_rifle"
+msgid "Guards AD. Motor Scout [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_scout_sec_com"
+msgid "Guards AD. Motor Scout Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_sec_2ic"
+msgid "Guards AD. Motor Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_sec_com"
+msgid "Guards AD. Motor Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_piat"
+msgid "Guards AD. AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_piat_asst"
+msgid "Guards AD. AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_pio"
+msgid "Guards AD. Pioneer [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_pio_builder"
+msgid "Guards AD. Pioneer Builder [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_pio_sec_com_cpl"
+msgid "Guards AD. Pioneer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_pio_sec_com_sgt"
+msgid "Guards AD. Pioneer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_plt_com"
+msgid "Guards AD. Platoon Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_plt_sgt"
+msgid "Guards AD. Platoon Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_rifle"
+msgid "Guards AD. Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_rifle_band"
+msgid "Guards AD. Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_rifle_gren"
+msgid "Guards AD. Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_rifle_sniper"
+msgid "Guards AD. Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_sec_2ic"
+msgid "Guards AD. Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_sec_com"
+msgid "Guards AD. Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_sec_com_sgt"
+msgid "Guards AD. Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_sec_subcom"
+msgid "Guards AD. Sub-Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_smg"
+msgid "Guards AD. SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_tank_com"
+msgid "Guards AD. Tank Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_tank_com_m1928"
+msgid "Guards AD. Tank Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_tankman"
+msgid "Guards AD. Tank Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_vehicle_com_cpl"
+msgid "Guards AD. Vehicle Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_vehicle_com_sgt"
+msgid "Guards AD. Vehicle Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_vehicle_crew"
+msgid "Guards AD. Vehicle Crew [BA]"
+msgstr ""
+
+
+msgctxt "desc/human/mp/eng/late/glider_pilot_rifle"
+msgid "Glider Pilot [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/glider_pilot_smg"
+msgid "Glider Pilot [BA]"
+msgstr ""
+
+
+msgctxt "desc/human/mp/eng/late/medic"
+msgid "Medic [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mg"
+msgid "MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mg_asst"
+msgid "MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mg_crew"
+msgid "MG Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mg_crew_asst"
+msgid "MG Crew Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_mg"
+msgid "Motor MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_mg_asst"
+msgid "Motor MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_piat"
+msgid "Motor AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_piat_asst"
+msgid "Motor AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_rifle"
+msgid "Motor Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_rifle_band"
+msgid "Motor Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_rifle_sniper"
+msgid "Motor Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_scout_detach_com_cpl"
+msgid "Motor Scout Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_scout_detach_com_lcpl"
+msgid "Motor Scout Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_scout_driver"
+msgid "Motor Scout Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_scout_mg"
+msgid "Motor Scout MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_scout_piat"
+msgid "Motor Scout AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_scout_rifle"
+msgid "Motor Scout [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_scout_sec_com"
+msgid "Motor Scout Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_sec_2ic"
+msgid "Motor Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_sec_com"
+msgid "Motor Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mp_detach_com"
+msgid "Military Police Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mp_pistol"
+msgid "Military Police [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mp_rifle"
+msgid "Military Police [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/pilot"
+msgid "Pilot [RAF]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/pio"
+msgid "Pioneer [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/pio_builder"
+msgid "Pioneer Builder [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/pio_sec_com_cpl"
+msgid "Pioneer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/pio_sec_com_sgt"
+msgid "Pioneer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/plt_batman"
+msgid "Platoon Batman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/plt_com"
+msgid "Platoon Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/plt_sgt"
+msgid "Platoon Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_builder"
+msgid "Royal Engineer Builder [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_flamer"
+msgid "Royal Engineer Flamer Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_mg"
+msgid "Royal Engineer MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_mg_asst"
+msgid "Royal Engineer MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_mine_ap"
+msgid "Royal Engineer AP Miner [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_mine_at"
+msgid "Royal Engineer AT Miner [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_piat"
+msgid "Royal Engineer AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_piat_asst"
+msgid "Royal Engineer AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_sapper"
+msgid "Royal Engineer Sapper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_sec_2ic"
+msgid "Royal Engineer Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_sec_com"
+msgid "Royal Engineer Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rear_echelon_rifle"
+msgid "Rear Echelon Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rear_echelon_smg"
+msgid "Rear Echelon SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_carrier_detach_com"
+msgid "Recce Carrier Detachment Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_carrier_driver"
+msgid "Recce Carrier Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_carrier_mg"
+msgid "Recce Carrier MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_carrier_piat"
+msgid "Recce Carrier AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_carrier_rifle"
+msgid "Recce Carrier Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_carrier_sec_com"
+msgid "Recce Carrier Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_driver"
+msgid "Recce Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_mg"
+msgid "Recce MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_mg_asst"
+msgid "Recce MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_rifle_band"
+msgid "Recce Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_sec_2ic"
+msgid "Recce Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_sec_com"
+msgid "Recce Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rifle"
+msgid "Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rifle_band"
+msgid "Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rifle_gren"
+msgid "Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rifle_piat"
+msgid "AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rifle_piat_asst"
+msgid "AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rifle_sniper"
+msgid "Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_crew"
+msgid "Royal Marine Commando Crew [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_mg"
+msgid "Royal Marine Commando MG Operator [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_mg_asst"
+msgid "Royal Marine Commando MG Asst. [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_mg_vgo"
+msgid "Royal Marine Commando MG Operator [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_mg_vgo_asst"
+msgid "Royal Marine Commando MG Asst. [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_rifle"
+msgid "Royal Marine Commando Rifleman [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_rifle_band"
+msgid "Royal Marine Commando Rifleman [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_rifle_piat"
+msgid "Royal Marine Commando AT Inf. [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_rifle_piat_asst"
+msgid "Royal Marine Commando AT Asst. [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_sniper"
+msgid "Royal Marine Commando Sniper [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_subsec_com"
+msgid "Royal Marine Commando Sub-Section Commander [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_subsec_detach_com"
+msgid "Royal Marine Commando Sub-Section Detachment Commander [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_subsec_detach_com_mg"
+msgid "Royal Marine Commando Sub-Section Detachment Commander [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_subsec_detach_com_mg_vgo"
+msgid "Royal Marine Commando Sub-Section Detachment Commander [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rn_com_able"
+msgid "Royal Navy Commando Able Seaman [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rn_com_bm"
+msgid "Royal Navy Commando Beachmaster [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rn_com_bma"
+msgid "Royal Navy Commando Beachmaster Asst. [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rn_com_leading"
+msgid "Royal Navy Commando Leading Seaman [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rn_com_mg"
+msgid "Royal Navy Commando MG Operator [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rn_com_mg_asst"
+msgid "Royal Navy Commando MG Asst. [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rn_com_rifle"
+msgid "Royal Navy Commando Rifleman [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rn_com_smg"
+msgid "Royal Navy Commando SMG Inf. [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rn_crew"
+msgid "Royal Navy Crewman [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_crew"
+msgid "SAS Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_driver"
+msgid "SAS Driver [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_mg"
+msgid "SAS MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_mg_asst"
+msgid "SAS MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_piat"
+msgid "SAS AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_piat_asst"
+msgid "SAS AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_rifle"
+msgid "SAS Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_rifle_gren"
+msgid "SAS Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_sec_com"
+msgid "SAS Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_smg"
+msgid "SAS SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_smg_mk5"
+msgid "SAS SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_sniper"
+msgid "SAS Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_subsec_com"
+msgid "SAS Sub-Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_subsec_com_cpl"
+msgid "SAS Sub-Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_troop_com"
+msgid "SAS Troop Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_tsmg"
+msgid "SAS SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sec_2ic"
+msgid "Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sec_com"
+msgid "Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sec_com_sgt"
+msgid "Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sec_subcom"
+msgid "Sub-Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/smg"
+msgid "SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/smg_mk3"
+msgid "SMG Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sniper"
+msgid "Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/soe_com"
+msgid "SOE Commander"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/soe_delisle"
+msgid "SOE Operative"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/soe_radio_op"
+msgid "SOE Radioman"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/soe_sten2s"
+msgid "SOE Operative"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/soe_sten6"
+msgid "SOE Operative"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/soe_welrod"
+msgid "SOE Operative"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/soe_xo"
+msgid "SOE Executive Officer"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/tank_commander"
+msgid "Tank Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/tank_commander_m1928"
+msgid "Tank Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/tank_commander_ace"
+msgid "Ace Tank Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/tankman"
+msgid "Tank Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vehicle_com_cpl"
+msgid "Vehicle Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vehicle_com_sgt"
+msgid "Vehicle Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vehicle_crew"
+msgid "Vehicle Crew [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_at_piat"
+msgid "Veteran AT Inf. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_at_piat_asst"
+msgid "Veteran AT Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_mg"
+msgid "Veteran MG Operator [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_mg_asst"
+msgid "Veteran MG Asst. [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_rifle"
+msgid "Veteran Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_rifle_band"
+msgid "Veteran Rifleman [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_rifle_gren"
+msgid "Veteran Rifle Grenadier [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_rifle_sniper"
+msgid "Veteran Sniper [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_sec_2ic"
+msgid "Veteran Section 2IC [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_sec_com"
+msgid "Veteran Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_sec_com_sgt"
+msgid "Veteran Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_sec_subcom"
+msgid "Veteran Sub-Section Commander [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_smg"
+msgid "Veteran SMG Inf. [BA]"
+msgstr ""

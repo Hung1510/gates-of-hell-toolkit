@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gates-of-hell-toolkit.vercel.app/sitemap.xml

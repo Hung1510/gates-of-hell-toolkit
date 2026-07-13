@@ -1,0 +1,1538 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Squads\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/squad/squad_com_early_con(eng)"
+msgid "<c(A5A095)>(3)</c> Commando Sub-Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rear_echelon_early_all(eng)"
+msgid "<c(A5A095)>(1)</c> Rear Echelon Infantry"
+msgstr ""
+
+msgctxt "desc/squad/squad_rear_echelon_early_con(eng)"
+msgid "<c(A5A095)>(1)</c> Rear Echelon Infantry"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_early_all_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_early_all_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_early_all_3(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_early_con(eng)"
+msgid "<c(A5A095)>(2)</c> Rifle Section (Early)"
+msgstr ""
+
+msgctxt "desc/squad/squad_inf_pio_early_all(eng)"
+msgid "<c(A5A095)>(2)</c> Pioneer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rec_mc_early_all(eng)"
+msgid "<c(A5A095)>(2)</c> Recce Motor Section (Dismounted)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rec_mc_early_con(eng)"
+msgid "<c(A5A095)>(2)</c> Recce Motor Section (Dismounted)"
+msgstr ""
+
+msgctxt "desc/squad/squad_pio_early_all_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Pioneer Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_pio_early_all_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Pioneer Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_pio_early_all_3(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Pioneer Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_pio_early_con(eng)"
+msgid "<c(A5A095)>(2)</c> Pioneer Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_carrier_early_all(eng)"
+msgid "<c(A5A095)>(2)</c> Carrier Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_carrier_early_con(eng)"
+msgid "<c(A5A095)>(2)</c> Carrier Section (Early)"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_rifle_early_all_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> Guards Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_rifle_early_all_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> Guards Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_rifle_early_all_3(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>3.</c> Guards Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_inf_pio_early_all(eng)"
+msgid "<c(A5A095)>(3)</c> Guards Pioneer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_carrier_early_all(eng)"
+msgid "<c(A5A095)>(3)</c> Guards Carrier Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_all_1(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> Black Watch Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_all_2(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> Black Watch Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_all_3(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> Black Watch Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_con(eng)"
+msgid "<c(A5A095)>(4)</c> Black Watch Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_mp_early_def(eng)"
+msgid "<c(A5A095)>(1)</c> MP Detachment"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_early_def_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_early_def_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_early_def_3(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_inf_pio_early_def(eng)"
+msgid "<c(A5A095)>(2)</c> Pioneer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rec_mc_early_def(eng)"
+msgid "<c(A5A095)>(2)</c> Recce Motor Section (Dismounted)"
+msgstr ""
+
+msgctxt "desc/squad/squad_r_eng_early_def(eng)"
+msgid "<c(A5A095)>(2)</c> Royal Engineers Field Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_carrier_early_def(eng)"
+msgid "<c(A5A095)>(2)</c> Carrier Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_rifle_early_def_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 51st Highlanders Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_rifle_early_def_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 51st Highlanders Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_rifle_early_def_3(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 51st Highlanders Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_rifle_early_con(eng)"
+msgid "<c(A5A095)>(3)</c> 51st Highlanders Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_inf_pio_early_def(eng)"
+msgid "<c(A5A095)>(3)</c> 51st Highlanders Pioneer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_carrier_early_def(eng)"
+msgid "<c(A5A095)>(3)</c> 51st Highlanders Carrier Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_def_1(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> Black Watch Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_def_2(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> Black Watch Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_def_3(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> Black Watch Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_inf_pio_early_def(eng)"
+msgid "<c(A5A095)>(4)</c> Black Watch Pioneer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_inf_pio_early_con(eng)"
+msgid "<c(A5A095)>(4)</c> Black Watch Pioneer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_mp_early_irr(eng)"
+msgid "<c(A5A095)>(1)</c> MP Detachment"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_early_irr_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_early_irr_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_early_irr_3(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_inf_pio_early_irr(eng)"
+msgid "<c(A5A095)>(2)</c> Pioneer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rec_mc_early_irr(eng)"
+msgid "<c(A5A095)>(2)</c> Recce Motor Section (Dismounted)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rec_scout_early_irr(eng)"
+msgid "<c(A5A095)>(2)</c> Recce Scout Troop"
+msgstr ""
+
+msgctxt "desc/squad/squad_rec_scout_early_con(eng)"
+msgid "<c(A5A095)>(2)</c> Recce Scout Troop"
+msgstr ""
+
+msgctxt "desc/squad/squad_pio_early_irr_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Pioneer Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_pio_early_irr_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Pioneer Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_pio_early_irr_3(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Pioneer Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_rifle_early_irr_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 51st Highlanders Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_rifle_early_irr_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 51st Highlanders Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_rifle_early_irr_3(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 51st Highlanders Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_inf_pio_early_irr(eng)"
+msgid "<c(A5A095)>(3)</c> 51st Highlanders Pioneer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_carrier_early_irr(eng)"
+msgid "<c(A5A095)>(3)</c> 51st Highlanders Carrier Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_irr_1(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> Black Watch Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_irr_2(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> Black Watch Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_irr_3(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> Black Watch Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_carrier_early_irr(eng)"
+msgid "<c(A5A095)>(4)</c> Black Watch Carrier Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rear_echelon_early_off(eng)"
+msgid "<c(A5A095)>(1)</c> Rear Echelon Infantry"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mot_early_off(eng)"
+msgid "<c(A5A095)>(2)</c> Motor Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mot_mounted_early_off(eng)"
+msgid "<c(A5A095)>(2)</c> Motor Rifle Section (Mounted)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rec_mc_early_off(eng)"
+msgid "<c(A5A095)>(2)</c> Recce Motor Section (Dismounted)"
+msgstr ""
+
+msgctxt "desc/squad/squad_r_eng_mot_early_off(eng)"
+msgid "<c(A5A095)>(2)</c> Royal Engineers Field Section (Mounted)"
+msgstr ""
+
+msgctxt "desc/squad/squad_mot_scout_carrier_early_off(eng)"
+msgid "<c(A5A095)>(2)</c> Motor Scout Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_rifle_early_off_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> Guards Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_rifle_early_off_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> Guards Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_rifle_early_off_3(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>3.</c> Guards Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_inf_pio_early_off(eng)"
+msgid "<c(A5A095)>(3)</c> Guards Pioneer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_carrier_early_off(eng)"
+msgid "<c(A5A095)>(3)</c> Guards Carrier Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_off_1(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> Black Watch Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_off_2(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> Black Watch Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_off_3(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> Black Watch Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_inf_pio_early_off(eng)"
+msgid "<c(A5A095)>(4)</c> Black Watch Pioneer Section"
+msgstr ""
+
+
+
+
+
+
+
+
+msgctxt "desc/squad/squad_brig_defense_mid_all(eng)"
+msgid "<c(A5A095)>(1)</c> Brigade Defense Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_brig_defense_mid_con(eng)"
+msgid "<c(A5A095)>(1)</c> Brigade Defense Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mid_all(eng)"
+msgid "<c(A5A095)>(2)</c> Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mid_con(eng)"
+msgid "<c(A5A095)>(2)</c> Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_carrier_mid_all(eng)"
+msgid "<c(A5A095)>(2)</c> Carrier Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_carrier_mid_con(eng)"
+msgid "<c(A5A095)>(2)</c> Carrier Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_assault_mid_all(eng)"
+msgid "<c(A5A095)>(2)</c> Recce Assault Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_assault_mid_con(eng)"
+msgid "<c(A5A095)>(2)</c> Recce Assault Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_mid_all(eng)"
+msgid "<c(A5A095)>(2+)</c> Veteran Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_mid_con(eng)"
+msgid "<c(A5A095)>(2+)</c> Veteran Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_pio_mid_all(eng)"
+msgid "<c(A5A095)>(3)</c> 1st Airlanding Pioneer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_pio_mid_con(eng)"
+msgid "<c(A5A095)>(3)</c> 1st Airlanding Pioneer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_recon_mid_all(eng)"
+msgid "<c(A5A095)>(3)</c> 1st Airlanding Recon Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_rifle_mid_all_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 1st Airlanding Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_rifle_mid_all_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 1st Airlanding Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_support_mid_all_3(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 1st Airlanding Support Section"
+msgstr 
+
+msgctxt "desc/squad/squad_1st_airland_rifle_mid_con(eng)"
+msgid "<c(A5A095)>(3)</c> 1st Airlanding Support Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_mid_all_1(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 1st Airborne Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_mid_all_2(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 1st Airborne Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_mid_all_3(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> 1st Airborne Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_div_defense_mid_def(eng)"
+msgid "<c(A5A095)>(1)</c> Divisional Defense Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_div_defense_mg_mid_def(eng)"
+msgid "<c(A5A095)>(1)</c> Divisional Defense Section (MG)"
+msgstr ""
+
+msgctxt "desc/squad/squad_div_defense_mg_mid_con(eng)"
+msgid "<c(A5A095)>(1)</c> Divisional Defense Section (MG)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mid_def(eng)"
+msgid "<c(A5A095)>(2)</c> Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_carrier_mid_def(eng)"
+msgid "<c(A5A095)>(2)</c> Carrier Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_r_eng_mid_def_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Royal Engineers Field Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_r_eng_mid_def_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Royal Engineers Field Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_r_eng_mid_con(eng)"
+msgid "<c(A5A095)>(2)</c> Royal Engineers Field Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_assault_mid_def(eng)"
+msgid "<c(A5A095)>(2)</c> Recce Assault Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_mid_def(eng)"
+msgid "<c(A5A095)>(2+)</c> Veteran Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_rifle_mid_def(eng)"
+msgid "<c(A5A095)>(3)</c> 7th AD. Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_rifle_mid_con(eng)"
+msgid "<c(A5A095)>(3)</c> 7th AD. Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_carrier_mid_def(eng)"
+msgid "<c(A5A095)>(3)</c> 7th AD. Carrier Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_eng_mid_def_1(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 1st Airborne Engineer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_eng_mid_def_2(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 1st Airborne Engineer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_mp_mid_irr(eng)"
+msgid "<c(A5A095)>(1)</c> MP Detachment"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mid_irr(eng)"
+msgid "<c(A5A095)>(2)</c> Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_carrier_mid_irr(eng)"
+msgid "<c(A5A095)>(2)</c> Recce Carrier Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_carrier_mid_con(eng)"
+msgid "<c(A5A095)>(2)</c> Recce Carrier Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_assault_mid_irr(eng)"
+msgid "<c(A5A095)>(2)</c> Recce Assault Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_mid_irr(eng)"
+msgid "<c(A5A095)>(2+)</c> Veteran Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rn_com_beach_mid_irr_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> Royal Navy Commandos Beachparty"
+msgstr ""
+
+msgctxt "desc/squad/squad_rn_com_beach_mid_irr_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> Royal Navy Commandos Beachparty"
+msgstr ""
+
+msgctxt "desc/squad/squad_rn_com_beach_mid_con(eng)"
+msgid "<c(A5A095)>(3)</c> Royal Navy Commandos Beachparty"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_rifle_mid_irr(eng)"
+msgid "<c(A5A095)>(3+)</c> 51st Highlanders Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_rifle_mid_con(eng)"
+msgid "<c(A5A095)>(3+)</c> 51st Highlanders Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_carrier_mid_irr(eng)"
+msgid "<c(A5A095)>(3+)</c> 51st Highlanders Carrier Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_recce_mid_irr(eng)"
+msgid "<c(A5A095)>(4)</c> 1st Airborne Recce Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_recce_mid_con(eng)"
+msgid "<c(A5A095)>(4)</c> 1st Airborne Recce Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_at_mid_irr(eng)"
+msgid "<c(A5A095)>(4)</c> 1st Airborne AT Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_com_rifle_mid_con(eng)"
+msgid "<c(A5A095)>(4)</c> Commando Rifle Sub-Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_sas_mid_con(eng)"
+msgid "<c(A5A095)>(4)</c> SAS Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rear_echelon_mid_off(eng)"
+msgid "<c(A5A095)>(1)</c> Rear Echelon Infantry"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mot_mid_off(eng)"
+msgid "<c(A5A095)>(2)</c> Motor Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mot_mid_off_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Motor Rifle Section (Mounted)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mot_mid_off_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Motor Rifle Section (Mounted)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mot_mid_off_3(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Motor Rifle Section (Mounted)"
+msgstr ""
+
+msgctxt "desc/squad/squad_mot_scout_carrier_mid_off(eng)"
+msgid "<c(A5A095)>(2)</c> Motor Scout Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_assault_mid_off(eng)"
+msgid "<c(A5A095)>(2)</c> Recce Assault Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_assault_mot_mid_off(eng)"
+msgid "<c(A5A095)>(2)</c> Recce Assault Section (Mounted)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rm_com_assault_mid_off_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> Royal Marines Commando Assault Sub-Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rm_com_assault_mid_off_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> Royal Marines Commando Assault Sub-Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rm_com_assault_mid_con(eng)"
+msgid "<c(A5A095)>(3)</c> Royal Marines Commando Assault Sub-Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_protect_mid_off(eng)"
+msgid "<c(A5A095)>(4)</c> 1st Airborne Protective Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_mid_off_1(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 1st Airborne Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_mid_off_2(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 1st Airborne Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_mid_off_3(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> 1st Airborne Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_mid_con(eng)"
+msgid "<c(A5A095)>(4)</c> 1st Airborne Rifle Section"
+msgstr ""
+
+
+
+
+
+
+
+
+
+msgctxt "desc/squad/squad_brig_defense_late_all(eng)"
+msgid "<c(A5A095)>(1)</c> Brigade Defense Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_brig_defense_late_con(eng)"
+msgid "<c(A5A095)>(1)</c> Brigade Defense Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_mp_late_all(eng)"
+msgid "<c(A5A095)>(1)</c> MP Detachment"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_all_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_all_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_all_3(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mot_late_all_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Rifle Section (Mounted)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mot_late_all_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Rifle Section (Mounted)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mot_late_all_3(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Rifle Section (Mounted)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mot_late_con(eng)"
+msgid "<c(A5A095)>(2)</c> Motor Rifle Section (Mounted) [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_assault_pio_late_con(eng)"
+msgid "<c(A5A095)>(2)</c> Pioneer Assault Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_assault_mot_late_all(eng)"
+msgid "<c(A5A095)>(2)</c> Recce Assault Section (Mounted)"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_assault_mot_late_con(eng)"
+msgid "<c(A5A095)>(2)</c> Recce Assault Section (Mounted) [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_carrier_late_con(eng)"
+msgid "<c(A5A095)>(2)</c> Recce Carrier Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_late_all_1(eng)"
+msgid "<c(A5A095)>(2+)</c> <c(E56042)>1.</c> Veteran Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_late_all_2(eng)"
+msgid "<c(A5A095)>(2+)</c> <c(E56042)>2.</c> Veteran Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_late_all_3(eng)"
+msgid "<c(A5A095)>(2+)</c> <c(E56042)>3.</c> Veteran Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_late_con(eng)"
+msgid "<c(A5A095)>(2+)</c> Veteran Rifle Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_airland_pio_late_all(eng)"
+msgid "<c(A5A095)>(3)</c> 6th Airlanding Pioneer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_airland_recon_late_con(eng)"
+msgid "<c(A5A095)>(3)</c> 6th Airlanding Recon Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_airland_rifle_late_all_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 6th Airlanding Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_airland_rifle_late_all_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 6th Airlanding Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_airland_rifle_late_con(eng)"
+msgid "<c(A5A095)>(3)</c> 6th Airlanding Rifle Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_recon_late_con(eng)"
+msgid "<c(A5A095)>(3+)</c> 1st Airlanding Recon Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_rifle_late_all_1(eng)"
+msgid "<c(A5A095)>(3+)</c> <c(E56042)>1.</c> 1st Airlanding Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_rifle_late_all_2(eng)"
+msgid "<c(A5A095)>(3+)</c> <c(E56042)>2.</c> 1st Airlanding Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_rifle_late_con(eng)"
+msgid "<c(A5A095)>(3+)</c> 1st Airlanding Rifle Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_support_late_con(eng)"
+msgid "<c(A5A095)>(3+)</c> 1st Airlanding Support Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_para_rifle_late_all_1(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 6th Airborne Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_para_rifle_late_all_2(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 6th Airborne Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_para_rifle_late_all_3(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> 6th Airborne Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_para_rifle_late_con(eng)"
+msgid "<c(A5A095)>(4)</c> 6th Airborne Rifle Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_recce_late_all(eng)"
+msgid "<c(A5A095)>(4+)</c> 1st Airborne Recce Section (Mounted)"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_recce_late_con(eng)"
+msgid "<c(A5A095)>(4+)</c> 1st Airborne Recce Section (Mounted)"
+msgstr ""
+
+msgctxt "desc/squad/squad_div_defense_late_def(eng)"
+msgid "<c(A5A095)>(1)</c> Divisional Defense Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_div_defense_mg_late_def(eng)"
+msgid "<c(A5A095)>(1)</c> Divisional Defense Section (MG)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_def_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_def_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_def_3(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_con(eng)"
+msgid "<c(A5A095)>(2)</c> Rifle Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_r_eng_late_def_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Royal Engineers Field Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_r_eng_late_def_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Royal Engineers Field Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_r_eng_late_con(eng)"
+msgid "<c(A5A095)>(2)</c> Royal Engineers Field Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_assault_late_def(eng)"
+msgid "<c(A5A095)>(2)</c> Recce Assault Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_assault_late_con(eng)"
+msgid "<c(A5A095)>(2)</c> Recce Assault Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_late_def_1(eng)"
+msgid "<c(A5A095)>(2+)</c> <c(E56042)>1.</c> Veteran Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_late_def_2(eng)"
+msgid "<c(A5A095)>(2+)</c> <c(E56042)>2.</c> Veteran Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_late_def_3(eng)"
+msgid "<c(A5A095)>(2+)</c> <c(E56042)>3.</c> Veteran Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_ad_rifle_late_def_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> Guards AD. Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_ad_rifle_late_def_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> Guards AD. Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_ad_rifle_late_def_3(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>3.</c> Guards AD. Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_ad_rifle_late_con(eng)"
+msgid "<c(A5A095)>(3)</c> Guards AD. Rifle Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_ad_pio_late_def(eng)"
+msgid "<c(A5A095)>(3)</c> Guards AD. Pioneer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_ad_eng_late_def_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> Guards AD. Engineer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_ad_eng_late_def_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> Guards AD. Engineer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_eng_late_def_1(eng)"
+msgid "<c(A5A095)>(3+)</c> <c(E56042)>1.</c> 7th AD. Engineer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_eng_late_def_2(eng)"
+msgid "<c(A5A095)>(3+)</c> <c(E56042)>2.</c> 7th AD. Engineer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_eng_late_con(eng)"
+msgid "<c(A5A095)>(3+)</c> 7th AD. Engineer Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_para_eng_late_def_1(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 6th Airborne Engineer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_para_eng_late_def_2(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 6th Airborne Engineer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_para_eng_late_con(eng)"
+msgid "<c(A5A095)>(4)</c> 6th Airborne Engineer Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_at_late_def(eng)"
+msgid "<c(A5A095)>(4+)</c> 1st Airborne AT Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_protect_late_def(eng)"
+msgid "<c(A5A095)>(4+)</c> 1st Airborne Protective Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rear_echelon_late_irr(can)"
+msgid "<c(A5A095)>(1)</c> Canadian Rear Echelon Infantry"
+msgstr ""
+
+msgctxt "desc/squad/squad_brig_defense_late_irr(can)"
+msgid "<c(A5A095)>(1)</c> Canadian Brigade Defense Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_irr_1(can)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Canadian Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_irr_2(can)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Canadian Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_irr_3(can)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Canadian Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_con(can)"
+msgid "<c(A5A095)>(2)</c> Canadian Rifle Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mech_late_con(can)"
+msgid "<c(A5A095)>(2)</c> Canadian Rifle Section (Mounted) [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mech_late_con(can)"
+msgid "<c(A5A095)>(2)</c> Canadian Motor Rifle Section (Mounted) [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_mot_scout_carrier_late_irr(can)"
+msgid "<c(A5A095)>(2)</c> Canadian Motor Scout Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_carrier_late_con(can)"
+msgid "<c(A5A095)>(2)</c> Canadian Carrier Section (Wasp) [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_rn_com_beach_late_irr_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> Royal Navy Commandos Beachparty"
+msgstr ""
+
+msgctxt "desc/squad/squad_rn_com_beach_late_irr_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> Royal Navy Commandos Beachparty"
+msgstr ""
+
+msgctxt "desc/squad/squad_sas_late_con(eng)"
+msgid "<c(A5A095)>(4+)</c> SAS Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_pio_late_con(eng)"
+msgid "<c(A5A095)>(3+)</c> 7th AD. Pioneer Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_rifle_late_irr_1(eng)"
+msgid "<c(A5A095)>(3+)</c> <c(E56042)>1.</c> 7th AD. Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_rifle_late_irr_2(eng)"
+msgid "<c(A5A095)>(3+)</c> <c(E56042)>2.</c> 7th AD. Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_rifle_late_irr_3(eng)"
+msgid "<c(A5A095)>(3+)</c> <c(E56042)>3.</c> 7th AD. Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_rifle_late_con(eng)"
+msgid "<c(A5A095)>(3+)</c> 7th AD. Rifle Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_at_late_irr(can)"
+msgid "<c(A5A095)>(4)</c> Canadian 1st Parachute AT Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_at_late_con(can)"
+msgid "<c(A5A095)>(4)</c> Canadian 1st Parachute AT Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_protect_late_irr(can)"
+msgid "<c(A5A095)>(4)</c> Canadian 1st Parachute Protective Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_protect_late_con(can)"
+msgid "<c(A5A095)>(4)</c> Canadian 1st Parachute Protective Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_irr_1(can)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> Canadian 1st Parachute Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_irr_2(can)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> Canadian 1st Parachute Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_irr_3(can)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> Canadian 1st Parachute Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_con(can)"
+msgid "<c(A5A095)>(4)</c> Canadian 1st Parachute Rifle Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_eng_flame_late_irr(eng)"
+msgid "<c(A5A095)>(4+)</c> 1st Airborne Engineer Flamer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rear_echelon_late_off(eng)"
+msgid "<c(A5A095)>(1)</c> Rear Echelon Infantry"
+msgstr ""
+
+msgctxt "desc/squad/squad_mp_late_off(eng)"
+msgid "<c(A5A095)>(1)</c> MP Detachment"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_off_1(pol)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Polish Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_off_2(pol)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Polish Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_off_3(pol)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Polish Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_con(pol)"
+msgid "<c(A5A095)>(2)</c> Polish Rifle Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_assault_pio_late_off(pol)"
+msgid "<c(A5A095)>(2)</c> Polish Pioneer Assault Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_pio_late_off(pol)"
+msgid "<c(A5A095)>(2)</c> Polish Pioneer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mech_late_off_1(pol)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Polish Motor Rifle Section (Mounted)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mech_late_off_2(pol)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Polish Motor Rifle Section (Mounted)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mech_late_off_3(pol)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Polish Motor Rifle Section (Mounted)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mech_late_con(pol)"
+msgid "<c(A5A095)>(2)</c> Polish Motor Rifle Section (Mounted) [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_mot_scout_carrier_late_off(pol)"
+msgid "<c(A5A095)>(2)</c> Polish Motor Scout Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_carrier_late_con(pol)"
+msgid "<c(A5A095)>(2)</c> Polish Carrier Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_rm_com_assault_late_off_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> Royal Marines Commando Assault Sub-Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_rm_com_assault_late_con(eng)"
+msgid "<c(A5A095)>(3)</c> Royal Marines Commando Assault Sub-Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_rm_com_assault_late_off_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> Royal Marines Commando Assault Sub-Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_com_rifle_late_off_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> Commando Rifle Sub-Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_com_rifle_late_off_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> Commando Rifle Sub-Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_com_rifle_late_off_3(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>3.</c> Commando Rifle Sub-Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_com_rifle_late_off_4(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>4.</c> Commando Rifle Sub-Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_com_rifle_late_con(eng)"
+msgid "<c(A5A095)>(3)</c> Commando Rifle Sub-Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_com_smg_s_late_con(eng)"
+msgid "<c(A5A095)>(3)</c> Commando Raid Detachment [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_eng_late_con(pol)"
+msgid "<c(A5A095)>(4)</c> Polish 1st Parachute Engineer Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_eng_flame_late_off(pol)"
+msgid "<c(A5A095)>(4)</c> Polish 1st Parachute Engineer Flamer Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_eng_flame_late_con(pol)"
+msgid "<c(A5A095)>(4)</c> Polish 1st Parachute Engineer Flamer Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_off_1(pol)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> Polish 1st Parachute Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_off_2(pol)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> Polish 1st Parachute Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_off_3(pol)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> Polish 1st Parachute Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_con(pol)"
+msgid "<c(A5A095)>(4)</c> Polish 1st Parachute Rifle Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_eng_late_con(eng)"
+msgid "<c(A5A095)>(4+)</c> 1st Airborne Engineer Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_off_1(eng)"
+msgid "<c(A5A095)>(4+)</c> <c(E56042)>1.</c> 1st Airborne Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_off_2(eng)"
+msgid "<c(A5A095)>(4+)</c> <c(E56042)>2.</c> 1st Airborne Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_off_3(eng)"
+msgid "<c(A5A095)>(4+)</c> <c(E56042)>3.</c> 1st Airborne Rifle Section"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_con(eng)"
+msgid "<c(A5A095)>(4+)</c> 1st Airborne Rifle Section [1944]"
+msgstr ""
+
+msgctxt "desc/squad/20mm_oerlikon_all"
+msgid "Oerlikon No.2 Universal Mount"
+msgstr ""
+
+msgctxt "desc/squad/20mm_oerlikon_irr"
+msgid "Oerlikon No.2 Universal Mount"
+msgstr ""
+
+msgctxt "desc/squad/20mm_polsten_def"
+msgid "Oerlikon No.2 Universal Mount"
+msgstr ""
+
+msgctxt "desc/squad/20mm_polsten_off"
+msgid "Oerlikon No.2 Universal Mount"
+msgstr ""
+
+msgctxt "desc/squad/40mm_qf40_late_def"
+msgid "QF 40mm Mk.III"
+msgstr ""
+
+msgctxt "desc/squad/humber_recon_mk3_late_def"
+msgid "Humber Light Reconnaissance Car Mk.IIIA"
+msgstr ""
+
+msgctxt "desc/squad/humber_recon_mk3_late_irr"
+msgid "Humber Light Reconnaissance Car Mk.IIIA"
+msgstr ""
+
+msgctxt "desc/squad/humber_scout_late_def"
+msgid "Humber Mk.II"
+msgstr ""
+
+msgctxt "desc/squad/humber_scout_late_irr"
+msgid "Humber Mk.II"
+msgstr ""
+
+msgctxt "desc/squad/humber_mk4_late_def"
+msgid "Humber Mk.IV"
+msgstr ""
+
+msgctxt "desc/squad/humber_mk4_late_irr"
+msgid "Humber Mk.IV"
+msgstr ""
+
+msgctxt "desc/squad/aec_mk2_late_def"
+msgid "AEC Mk.II"
+msgstr ""
+
+msgctxt "desc/squad/aec_mk2_late_irr"
+msgid "AEC Mk.II"
+msgstr ""
+
+msgctxt "desc/squad/aec_mk3_late_def"
+msgid "AEC Mk.III"
+msgstr ""
+
+msgctxt "desc/squad/aec_mk3_late_irr"
+msgid "AEC Mk.III"
+msgstr ""
+
+msgctxt "desc/squad/staghound_mk1_late_all"
+msgid "Staghound Mk.I"
+msgstr ""
+
+msgctxt "desc/squad/staghound_mk1_late_off"
+msgid "Staghound Mk.I"
+msgstr ""
+
+msgctxt "desc/squad/staghound_mk3_late_all"
+msgid "Staghound Mk.III"
+msgstr ""
+
+msgctxt "desc/squad/staghound_mk3_late_off"
+msgid "Staghound Mk.III"
+msgstr ""
+
+msgctxt "desc/squad/staghound_mkaa_late_all"
+msgid "Staghound AA"
+msgstr ""
+
+msgctxt "desc/squad/staghound_mkaa_late_off"
+msgid "Staghound AA"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk1_cs_all"
+msgid "Cruiser Mk.I CS"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk1_cs_off"
+msgid "Cruiser Mk.I CS"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk2_all"
+msgid "Cruiser Mk.II"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk2_off"
+msgid "Cruiser Mk.II"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk2a_def"
+msgid "Cruiser Mk.IIA"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk2a_irr"
+msgid "Cruiser Mk.IIA"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk2a_cs_def"
+msgid "Cruiser Mk.IIA CS"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk2a_cs_irr"
+msgid "Cruiser Mk.IIA CS"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk4_all"
+msgid "Cruiser Mk.IV"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk4_off"
+msgid "Cruiser Mk.IV"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk4a_def"
+msgid "Cruiser Mk.IVA"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk4a_irr"
+msgid "Cruiser Mk.IVA"
+msgstr ""
+
+msgctxt "desc/squad/stuart1_irr"
+msgid "Stuart I 'Honey'"
+msgstr ""
+
+msgctxt "desc/squad/stuart1_off"
+msgid "Stuart I 'Honey'"
+msgstr ""
+
+msgctxt "desc/squad/stuart3_all"
+msgid "Stuart III"
+msgstr ""
+
+msgctxt "desc/squad/stuart3_def"
+msgid "Stuart III"
+msgstr ""
+
+msgctxt "desc/squad/valentine_mk2_all"
+msgid "Valentine Mk.II"
+msgstr ""
+
+msgctxt "desc/squad/valentine_mk2_def"
+msgid "Valentine Mk.II"
+msgstr ""
+
+msgctxt "desc/squad/valentine_mk3_irr"
+msgid "Valentine Mk.III"
+msgstr ""
+
+msgctxt "desc/squad/valentine_mk3_off"
+msgid "Valentine Mk.III"
+msgstr ""
+
+msgctxt "desc/squad/valentine_mk10_all"
+msgid "Valentine Mk.X"
+msgstr ""
+
+msgctxt "desc/squad/valentine_mk10_off"
+msgid "Valentine Mk.X"
+msgstr ""
+
+msgctxt "desc/squad/valentine_mk11_def"
+msgid "Valentine Mk.XI"
+msgstr ""
+
+msgctxt "desc/squad/valentine_mk11_irr"
+msgid "Valentine Mk.XI"
+msgstr ""
+
+msgctxt "desc/squad/cromwell4_all"
+msgid "Cromwell Mk.IV"
+msgstr ""
+
+msgctxt "desc/squad/cromwell4_def"
+msgid "Cromwell Mk.IV"
+msgstr ""
+
+msgctxt "desc/squad/cromwell5_irr"
+msgid "Cromwell Mk.V"
+msgstr ""
+
+msgctxt "desc/squad/cromwell5_off"
+msgid "Cromwell Mk.V"
+msgstr ""
+
+msgctxt "desc/squad/sherman5c_all"
+msgid "Sherman Vc"
+msgstr ""
+
+msgctxt "desc/squad/sherman5c_irr"
+msgid "Sherman Vc"
+msgstr ""
+
+msgctxt "desc/squad/sherman5c_off"
+msgid "Sherman Vc"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk3_mid_all"
+msgid "Churchill Mk.III"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk3_mid_def"
+msgid "Churchill Mk.III"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk3_qf75_irr"
+msgid "Churchill Mk.III* (75mm)"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk3_qf75_off"
+msgid "Churchill Mk.III* (75mm)"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk3_l50_late_irr"
+msgid "Churchill Mk.III (Late)"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk3_l50_late_off"
+msgid "Churchill Mk.III (Late)"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk4_mid_irr"
+msgid "Churchill Mk.IV"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk4_mid_off"
+msgid "Churchill Mk.IV"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk4_qf75_all"
+msgid "Churchill Mk.IV (75mm)"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk4_qf75_def"
+msgid "Churchill Mk.IV (75mm)"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk4_l50_late_all"
+msgid "Churchill Mk.IV (Late)"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk4_l50_late_def"
+msgid "Churchill Mk.IV (Late)"
+msgstr ""
+
+msgctxt "desc/squad/achilles_mk2_all"
+msgid "17-pdr SP Achilles Mk.IIc"
+msgstr ""
+
+msgctxt "desc/squad/achilles_mk2_irr"
+msgid "17-pdr SP Achilles Mk.IIc"
+msgstr ""
+
+msgctxt "desc/squad/grant_def"
+msgid "Grant I"
+msgstr ""
+
+msgctxt "desc/squad/grant_irr"
+msgid "Grant I"
+msgstr ""
+
+msgctxt "desc/squad/crusader_mk1_irr"
+msgid "Crusader Mk.I"
+msgstr ""
+
+msgctxt "desc/squad/crusader_mk1_off"
+msgid "Crusader Mk.I"
+msgstr ""
+
+msgctxt "desc/squad/crusader_mk1_cs_irr"
+msgid "Crusader Mk.I CS"
+msgstr ""
+
+msgctxt "desc/squad/crusader_mk1_cs_off"
+msgid "Crusader Mk.I CS"
+msgstr ""
+
+msgctxt "desc/squad/crusader_mk2_all"
+msgid "Crusader Mk.II"
+msgstr ""
+
+msgctxt "desc/squad/crusader_mk2_def"
+msgid "Crusader Mk.II"
+msgstr ""
+
+msgctxt "desc/squad/crusader_mk2_cs_all"
+msgid "Crusader Mk.II CS"
+msgstr ""
+
+msgctxt "desc/squad/crusader_mk2_cs_def"
+msgid "Crusader Mk.II CS"
+msgstr ""
+
+msgctxt "desc/squad/single_rifle(eng)"
+msgid "Rifleman"
+msgstr ""
+
+msgctxt "desc/squad/single_smg(eng)"
+msgid "SMG Inf."
+msgstr ""
+
+msgctxt "desc/squad/single_mg(eng)"
+msgid "MG Detachment"
+msgstr ""
+
+msgctxt "desc/squad/single_at(eng)"
+msgid "AT Rifle Team"
+msgstr ""
+
+msgctxt "desc/squad/single_at_con(eng)"
+msgid "Boys AT Rifle Team"
+msgstr ""
+
+msgctxt "desc/squad/single_at1_con(eng)"
+msgid "PIAT AT Team"
+msgstr ""
+
+msgctxt "desc/squad/single_at2_con(eng)"
+msgid "PIAT AT Team [1944]"
+msgstr ""
+
+msgctxt "desc/squad/single_bazooker(eng)"
+msgid "AT Team"
+msgstr ""
+
+msgctxt "desc/squad/single_riflegrenade(eng)"
+msgid "Gren. Riflemen"
+msgstr ""
+
+msgctxt "desc/squad/single_riflegrenade_con(eng)"
+msgid "Gren. Riflemen"
+msgstr ""
+
+msgctxt "desc/squad/single_ap_miner(eng)"
+msgid "AP Miners"
+msgstr ""
+
+msgctxt "desc/squad/single_at_miner(eng)"
+msgid "AT Miners"
+msgstr ""
+
+msgctxt "desc/squad/single_engineer(eng)"
+msgid "Engineers"
+msgstr ""
+
+msgctxt "desc/squad/single_flamer(eng)"
+msgid "Flamer"
+msgstr ""
+
+msgctxt "desc/squad/single_tankman(eng)"
+msgid "Tank Crew"
+msgstr ""
+
+msgctxt "desc/squad/single_medic(eng)"
+msgid "Medic"
+msgstr ""
+
+msgctxt "desc/squad/single_sniper(eng)"
+msgid "Sniper"
+msgstr ""
+
+msgctxt "desc/squad/single_officer(eng)"
+msgid "Officer"
+msgstr ""
+
+msgctxt "desc/squad/squad_officer_con(eng)"
+msgid "Platoon HQ"
+msgstr ""
+
+msgctxt "desc/squad/squad_officer_carrier_con"
+msgid "Scout Platoon HQ"
+msgstr ""
+
+msgctxt "desc/squad/squad_officer_m5a1_halftrack_con"
+msgid "Motor Company HQ"
+msgstr ""
+
+
+msgctxt "desc/squad/conquest_blenheim_mk1_eng"
+msgid "Blenheim Mk.I 500lb Bomb"
+msgstr ""
+
+msgctxt "desc/squad/conquest_blenheim_mk1_eng_light"
+msgid "Blenheim Mk.I 250lb Bomb"
+msgstr ""
+
+msgctxt "desc/squad/conquest_blenheim_mk1_eng_recon"
+msgid "Bristol Blenheim Mk.I Recon"
+msgstr ""
+
+msgctxt "desc/squad/conquest_hurribomber_mk2c"
+msgid "Hurribomber IIc 500lb Bomb"
+msgstr ""
+
+msgctxt "desc/squad/conquest_hurribomber_mk2c_light"
+msgid "Hurribomber IIc 250lb Bomb"
+msgstr ""
+
+msgctxt "desc/squad/conquest_typhoon_mk1b"
+msgid "Typhoon Ib 500lb Bomb"
+msgstr ""
+
+msgctxt "desc/squad/conquest_conquest_typhoon_mk1b_light"
+msgid "Typhoon Ib 250lb Bomb"
+msgstr ""
+
+msgctxt "desc/squad/conquest_typhoon_mk1b_recon"
+msgid "Typhoon Ib Recon"
+msgstr ""
+
