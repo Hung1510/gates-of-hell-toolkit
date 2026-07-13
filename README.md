@@ -172,7 +172,13 @@ reads its data files normally from disk at runtime.
 top-level rewrites exposing them: `/api/*` routes to the backend
 (matching the existing `/api/...` routes already defined in
 `backend/src/app.ts` - no path rewriting needed), everything else routes
-to the frontend.
+to the frontend. The backend service needs an explicit `entrypoint`
+pointing at the file that calls `server.listen()` (`src/server.ts`) -
+this was NOT optional in practice: the first real deploy attempt failed
+with `Service "backend" detected framework "express" in "backend" and
+must specify an "entrypoint" for runtime "node"`, contradicting my
+earlier assumption that Vercel's auto-detection would fill this in on
+its own. Fixed based on that actual error message.
 
 When importing the repo into Vercel:
 - **Root Directory** must be the repo root (`./`), NOT a subfolder like
@@ -184,11 +190,10 @@ When importing the repo into Vercel:
   `gates-of-hell-toolkit`), not something like
   `gates-of-hell-toolkit-backend` - this one project serves both
   services together on one domain.
-- Vercel's own auto-detection already correctly identified the frontend
-  as Vite and the backend as Express with a `/api` mount point in
-  testing - left `vercel.json` deliberately minimal (no manually-specified
-  `framework`/`entrypoint` overrides) to defer to that auto-detection
-  rather than risk a wrong hand-written value for a feature this new.
+- Vercel's own auto-detection correctly identified the frontend as Vite
+  and the backend as Express - but building the backend as a Node service
+  requires the explicit `entrypoint` field regardless (see above), it is
+  not auto-filled.
 
 NOT verified: an actual live deployment through this exact flow (not
 possible from the sandbox this was built in, and this specific Vercel
