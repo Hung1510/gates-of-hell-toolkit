@@ -1,0 +1,27 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#421c12"/>
+      <stop offset="100%" stop-color="#180907"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background badge -->
+  <circle cx="32" cy="32" r="31" fill="url(#bg)"/>
+
+  <!-- single bold gate silhouette: two thick pillars + solid arch, one shape -->
+  <path d="
+    M 16 50
+    L 16 28
+    A 16 16 0 0 1 48 28
+    L 48 50
+    L 40 50
+    L 40 28
+    A 8 8 0 0 0 24 28
+    L 24 50
+    Z"
+    fill="#ff7a1f"/>
+
+  <!-- dark gate opening -->
+  <path d="M 24 50 L 24 28 A 8 8 0 0 1 40 28 L 40 50 Z" fill="#180907"/>
+</svg>
