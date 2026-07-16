@@ -1,0 +1,30 @@
+;_________________________________________
+; Soviet Light Aerial Rocket Launcher
+;=========================================
+
+
+{from "pattern reactive"		; "IL-2"
+	{tag "-gun"}
+	{filling "ammo 82mm_rs82" 8}
+	{fillingVisible "rocket"}
+	{fireSound "reactive/rocket_burst/"}
+	{inventory {noView}}
+	{calibre 82}
+
+	{spreading
+		{SpreadRadius 4}
+		{SpreadXYRatio 5}
+		{SpreadYadjust 0.1}
+		{radiusFunction
+			1		0.1
+			300		1
+			400		2
+		}
+	}
+
+	{range 1 300}
+	("fire rate" rpm(600))
+	("reload time" seconds(40))
+	("velocity" mps(340))
+	("aerial gravity")
+}

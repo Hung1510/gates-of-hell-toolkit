@@ -1,0 +1,218 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "churchill_mk7_croc_xx.mdl"}
+	{volume "body1"			; Hull
+		{thickness
+			{front 139}	; Lower front
+			{top 57.1}		; Glacis
+			{right 95}
+			{left 95}
+			{rear 20}
+			{bottom 19.1}
+		}
+		{able {holed}}
+	}
+	{volume "body2"			; Superstructure
+		{thickness
+			{front 152}
+			{top 19}
+			{right 95}
+			{left 95}
+			{rear 20}
+		}
+		{able {holed}}
+	}
+	{volume "body3"			; Hull left
+		{thickness
+			{front 63.5}
+			{top 16}
+			{right 95}		; front lower plate
+			{left 63.5}
+			{rear 20}
+			{bottom 19.1}
+		}
+	}
+	{volume "body4"			; Hull right
+		{thickness
+			{front 63.5}
+			{top 16}
+			{right 95}		; front lower plate
+			{left 63.5}
+			{rear 20}
+			{bottom 19.1}
+		}
+	}
+	{volume "body5"
+		{thickness 102}
+	}
+	{volume "armor1"
+		{thickness 139}
+	}
+	{volume "engine1"		; Front Half
+		{thickness
+			{front 20}
+			{top 16}
+			{right 95}
+			{left 95}
+			{rear 50.8}
+			{bottom 16}
+		}
+	}
+	{volume "engine2"		; Rear Half
+		{thickness
+			{front 50.8}
+			{top 16}
+			{right 25.4}
+			{left 25.4}
+			{rear 50.8}
+			{bottom 16}
+		}
+	}
+	{volume "engine3"		; Left
+		{thickness
+			{front 20}
+			{top 16}
+			{right 95}
+			{left 95}
+			{rear 25.4}
+			{bottom 15.9}
+		}
+		{HighHardness}
+	}
+	{volume "engine4"		; Right
+		{thickness
+			{front 20}
+			{top 16}
+			{right 95}
+			{left 95}
+			{rear 25.4}
+			{bottom 15.9}
+		}
+	}
+	{volume "turret1"		; Main Turret
+		{thickness 95.2
+			{front 152}
+			{top 20}
+		}
+	}
+	{volume "turret2"		; lower skirt
+		{thickness 95.2
+			{front 152}
+			{top 20}
+			{bottom 25.4}
+		}
+	}
+	{volume "turret3"		; ring
+		{thickness 127}
+	}
+	{volume "turret4"		; cupola fundamentuma
+		{thickness 152
+			{top 20}
+		}
+	}
+	{volume "cupola"		
+		{thickness 152
+			{top 20}
+		}
+	}
+	{volume "basket"
+		{thickness 7}
+		{able {obstacle 0}}
+	}
+	{volume "armorL1"
+		{thickness 38.1}
+	}
+	{volume "armorL2"
+		{thickness 38.1}
+	}
+	{volume "armorL3"
+		{thickness 38.1}
+	}
+	{volume "armorR1"
+		{thickness 38.1}
+	}
+	{volume "armorR2"
+		{thickness 38.1}
+	}
+	{volume "armorR3"
+		{thickness 38.1}
+	}
+	{volume "shieldL1"
+		{thickness 10}
+		{able {obstacle 0}}
+	}
+	{volume "shieldR1"
+		{thickness 10}
+		{able {obstacle 0}}
+	}
+	{volume "detail11"
+		{thickness 20}
+	}
+	{volume "barrel1"
+		{thickness 10}
+	}
+	{volume "part2"
+		{thickness 10}
+	}
+	{volume "part3"
+		{thickness 10}
+	}
+	{volume "shield1"
+		{thickness 30}
+	}
+	{volume "shield2"
+		{thickness 30}
+	}
+	{volume "shield3"
+		{thickness 30}
+	}
+	{volume "shield4"
+		{thickness 30}
+	}
+	{volume "shield5"
+		{thickness 30}
+	}
+	{volume "shield6"
+		{thickness 30}
+	}
+	{volume "shield7"
+		{thickness 30}
+	}
+	{volume "shield8"
+		{thickness 30}
+	}
+	{volume "shield9"
+		{thickness 30}
+	}
+	{volume "shieldl2"
+		{thickness 30}
+	}
+	{volume "shieldl3"
+		{thickness 30}
+	}
+	{volume "shieldl4"
+		{thickness 30}
+	}
+	{volume "shieldl5"
+		{thickness 30}
+	}
+	{volume "shieldl6"
+		{thickness 30}
+	}
+	{volume "shieldr2"
+		{thickness 30}
+	}
+	{volume "shieldr3"
+		{thickness 30}
+	}
+	{volume "shieldr4"
+		{thickness 30}
+	}
+	{volume "shieldr5"
+		{thickness 30}
+	}
+	{volume "shieldr6"
+		{thickness 30}
+	}
+	("tracks" thickness(30))
+}

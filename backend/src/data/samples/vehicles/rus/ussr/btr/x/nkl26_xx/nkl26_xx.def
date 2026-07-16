@@ -1,0 +1,45 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "nkl26_xx.mdl"}
+
+	{volume "body"			; Hull
+		{thickness 3}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "body1"			; Metal Plate on Front of Hull
+		{thickness 10}
+	}
+	{volume "engine1"		; Front Cone of Engine
+		{thickness 3}
+	}
+	{volume "engine2"		; Main Engine
+		{thickness 3}
+	}
+
+	{volume "part1"
+		{thickness 10}
+		{able {obstacle 0}}
+	}
+	{volume "part2"
+		{thickness 10}
+		{able {obstacle 0}}
+	}
+	{volume "part3"
+		{thickness 3}
+		{material "wood"}
+		{tags "wood"}
+		{able {obstacle 0}}
+	}
+	{volume "shield"
+		{thickness 8}
+	}
+	{volume "wheelleftl1"
+		{thickness 10}
+		{able {obstacle 0}}
+	}
+	{volume "wheelright2"
+		{thickness 10}
+		{able {obstacle 0}}
+	}
+}

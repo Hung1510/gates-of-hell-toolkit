@@ -1,0 +1,17 @@
+{
+	(include "../40mm_qf2/40mm_qf2.inc")
+
+	{extender "inventory"
+		{box
+			{item "bulleteng_40 apcbc" 40}		;// mid-late war (1943) APCBC shots
+			{item "bulleteng_40 he" 20}			;// mid-late war (1943) HE shells
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{weapon "40mm_qf2" filling "bulleteng_40 apcbc" 1}
+		}
+	}
+}
+

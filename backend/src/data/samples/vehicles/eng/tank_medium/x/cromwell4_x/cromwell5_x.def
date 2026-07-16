@@ -1,0 +1,3 @@
+{game_entity
+	{extension "cromwell5_x.mdl"} {RimLight}
+}

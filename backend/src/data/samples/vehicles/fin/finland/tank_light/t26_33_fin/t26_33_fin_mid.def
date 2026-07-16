@@ -1,0 +1,18 @@
+{
+	(include "t26_33_fin.inc")
+
+	{extender "inventory"
+		{box
+			{item "bulletrus_45 apcbc" 61}		;124 rounds
+			{item "bulletrus_45 he" 62}
+			{item "ammo mgun_rus dt" 2835}		;47 drums
+			{item "satchel_charge_rus" 1}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{weapon "45mm_psvk38" filling "bulletrus_45 apcbc" 1}
+		}
+	}
+}

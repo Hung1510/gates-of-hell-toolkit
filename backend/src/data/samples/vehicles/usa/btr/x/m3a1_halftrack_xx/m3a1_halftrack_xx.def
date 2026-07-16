@@ -1,0 +1,74 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "m3a1_halftrack_xx.mdl"}
+
+	{volume "armor1"
+		{thickness 12.7}
+	}
+	{volume "armor3"
+		{thickness 6.4}
+	}
+	{volume "armor4"
+		{thickness 6.4}
+	}
+	{volume "armor5"
+		{thickness 6.4}
+	}
+	{volume "armor6"
+		{thickness 12.7}
+		{able {holed}}
+	}
+	{volume "body1"
+		{thickness 6.4}
+	}
+	{volume "body2"
+		{thickness 6.4}
+	}
+	{volume "body3"
+		{thickness 6.4}
+	}
+	{volume "body4"
+		{thickness 6.4}
+	}
+	{volume "body5"
+		{thickness 6.4}
+		{able {contact 0}{obstacle 0}}
+	}
+	{volume "body6"
+		{thickness 6.4}
+		{able {contact 0}{obstacle 0}}
+	}
+	{volume "body7"
+		{thickness 6.4}
+		{able {holed}}
+	}
+	{volume "body8"
+		{thickness 6.4}
+	}
+	{volume "body9"
+		{thickness 6.4}
+	}
+	{volume "body10" 
+		{thickness 6.4}
+		{able {holed}}
+	}
+	{volume "body11"
+		{thickness 6.4}
+	}
+	{volume "body12"
+		{thickness 6.4}
+	}
+	{volume "engine"
+		{thickness 6.4}
+	}
+	{volume "wheelleft1"
+		{thickness 2}
+	}
+	{volume "wheelright1"
+		{thickness 2}
+	}
+	{volume "part4"
+		{thickness 6.4}
+	}
+	("tracks" thickness(15))
+}

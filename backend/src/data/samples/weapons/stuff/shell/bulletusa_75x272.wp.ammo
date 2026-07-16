@@ -1,0 +1,11 @@
+{from "pattern wp"
+	{tag "shell 75to76 wp_size2"}
+	{entity "75x272mm_usa_wp"}
+	{inventory {size 5 1}}
+	{mass 8.56}
+
+	{view "howitzer_shell_50-75_lv"
+		{tail "shell_tracer_75-88_he_long" "tail"}
+	}
+	("wp" cal(75))
+}

@@ -1,0 +1,45 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "humber_recon_mk2_xx.mdl"}
+	
+	{volume "wheelleft1"
+		{thickness 0.5}
+	}
+	{volume "wheelleft2"
+		{thickness 0.5}
+	}
+	{volume "wheelright1"
+		{thickness 0.5}
+	}
+	{volume "wheelright2"
+		{thickness 0.5}
+	}
+	{volume "body1"
+		{thickness 9
+			{front 10}
+			{top 7}
+			{bottom 5}
+		}
+		{able {holed}}
+	}
+	{volume "body2"
+		{thickness 9
+			{front 10}
+			{top 7}
+			{bottom 5}
+		}
+		{able {holed}}
+	}
+	{volume "turret1" {thickness 6} {able {holed}}}
+	{volume "turret2" {thickness 6}} ;// Ring
+	{volume "engine1"
+		{thickness 9
+			{front 10}
+			{top 7}
+			{bottom 5}
+		}
+		{able {holed}}
+	}
+	{volume "armor1" {thickness 6}}
+	{volume "part1" {thickness 10}} ;// Front Visor
+}

@@ -1,0 +1,3 @@
+{game_entity
+	{extension "drifter_eng_x.mdl"} {RimLight}
+}

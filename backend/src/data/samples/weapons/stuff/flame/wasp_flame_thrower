@@ -1,0 +1,15 @@
+;_________________________________________
+; British Tank Flamethrower
+;=========================================
+
+{from "pattern flame_thrower"	;// Universal Carrier (Wasp) Flamethrower
+	{tag "gun"}
+	{entity "croc_flame_thrower"}
+	("filling_tank" fuel(10))	;// Fuel tank 75 imp gallons (~340L)
+	{mass 150}
+
+	{foresight "foresight1"}
+
+	{range 70 70}	;// irl 80-100yds
+	{speed 40}
+}

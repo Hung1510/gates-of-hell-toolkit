@@ -1,0 +1,68 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 20mm
+	; gun 25mm
+
+	("tank_medium_tier2")
+
+	("gun_shield" args "gun_shield1" 12.7)
+	("gun_shield" args "gun_shield2" 12.7)
+	("gun_shield" args "gun_shield3" 12.7)
+	("shield_track" args "shield1" 20)
+	("shield_group" args "tshield1"  12.7 "shieldt")
+	("shield_group" args "tshield2"  12.7 "shieldt")
+	("shield_group" args "tshield3"  12.7 "shieldt")
+	("shield_group" args "tshield4"  12.7 "shieldt")
+	("shield_group" args "tshield5"  12.7 "shieldt")
+
+	("tracks" repair(30) thickness(20))
+	("gun" repair(30) thickness(25))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3" 12.7)
+	("ammo" args "ammo4" 12.7)
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")
+
+	{volume "body1"	
+		{thickness 50.8}
+	}
+	{volume "body2"
+		{thickness 50.8}
+	}
+	{volume "body3"
+		{thickness 38.1
+			{front 50.8}
+			{rear 10}
+			{bottom 25}
+		}
+	}
+	{volume "body4"
+		{thickness 38.1
+			{front 50.8}
+			{rear 10}
+		}
+	}
+	{volume "engine1"
+		{thickness 38.1
+			{front 10}
+			{rear 12.7}
+		}
+	}
+	{volume "engine2"
+		{thickness 12.7
+			{bottom 25}
+		}
+		{able {holed}}
+	}
+	{volume "tshield3"
+		{able {holed}}
+	}
+	{volume "tshield4"
+		{able {holed}}
+	}

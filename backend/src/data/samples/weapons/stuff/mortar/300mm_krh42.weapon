@@ -1,0 +1,24 @@
+;_________________________________________
+; Finnish Super-Heavy Mortar - 300mm
+;=========================================
+
+
+{from "pattern mortar"
+	{filling "mortarfin_300"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_105to130mm_LV/"}
+	{fireSoundClose "cannon/s4/3p/Shared/Cannon_105to130mm_LV/"}
+	{calibre 300}
+
+	{spreading
+		{radiusTable {0 10} {125 10} {250 21} {314.99 30} {315 100}}
+	}
+
+	{aimRange 315}
+	{minRange 50}
+	{maxRange 315}
+	("reload time" seconds(60))
+
+	{parameters "he"
+		{projectileDamageTable {0 50}}
+	}
+}

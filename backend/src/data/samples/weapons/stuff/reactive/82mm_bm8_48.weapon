@@ -1,0 +1,16 @@
+;_________________________________________
+; Soviet 'Katusha' Light Rocket Artillery
+;=========================================
+
+
+{from "82mm_bm8_24"		; ""
+	{filling "ammo 82mm_bm8" 48}
+
+	{burst
+		{min 24}
+		{noaiming}
+	}
+
+	("reload time" seconds(170))
+	("fire rate" rpm(288)) ;// 10s to fire full salvo
+}

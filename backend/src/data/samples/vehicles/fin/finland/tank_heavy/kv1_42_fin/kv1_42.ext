@@ -1,0 +1,131 @@
+;SDL
+
+	;notes
+	;tracks and wheels 20mm
+	;gun 25mm
+	;armor plates 25-31mm
+
+	("tank_heavy_tier1")
+
+	("tracks" repair(40) thickness(20))
+	("gun" repair(30) thickness(25))
+
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("transmission" args "transmission")
+
+	{volume "body1"
+		{thickness 40
+			{front 75}
+			{top 40}
+			{right 90}
+			{left 90}
+			{rear 10}
+			{bottom 40}
+		}
+	}
+	{volume "body2"
+		{thickness 40
+			{front 75}
+			{top 40}
+			{right 90}
+			{left 90}
+			{rear 10}
+		}
+	}
+	{volume "engine1"
+		{thickness 30
+			{front 10}
+			{right 90}
+			{left 90}
+			{rear 70}
+			{bottom 30}
+		}
+	}
+	{volume "engine2"
+		{thickness 30
+			{front 10}
+			{top 30}
+			{right 90}
+			{left 90}
+			{rear 70}
+		}
+	}
+	{volume "hull_armor1" ; nose armor
+		{thickness 100	;// 25 cast + 75
+			{top 65}	;// 25 cast + 40
+		}
+		{CastSteel 0.76} ;// effective armor reduction compared to solid 100mm plate ~89mm effective thickness
+		{tags "body"}
+		{component "body"}
+	}
+	{volume "hull_armor2" ; lower plate armor
+		{thickness 100}	;// 25 + 75
+		{CastSteel 0.8} ;// effective armor reduction compared to solid 100mm plate ~93mm effective thickness		
+		{tags "body"}
+		{component "body"}
+	}
+	{volume "hull_armor3" ; upper plate armor
+		{thickness 105}	;// 30 + 75
+		{CastSteel 0.78} ;// effective armor reduction compared to solid 100mm plate ~97mm effective thickness		
+		{tags "body"}
+		{component "body"}
+		{able {holed}}
+	}
+	{volume "armor4"
+		{thickness 25}
+		{CastSteel 0.6} ;// effective armor reduction compared to solid plate
+	}
+	{volume "armor5"
+		{thickness 25}
+		{CastSteel 0.6} ;// effective armor reduction compared to solid plate
+	}
+	{volume "armor6"
+		{thickness 25}
+		{CastSteel 0.6} ;// effective armor reduction compared to solid plate
+	}
+	{volume "armor7"
+		{thickness 25}
+		{CastSteel 0.6} ;// effective armor reduction compared to solid plate
+	}
+	{volume "armor8"
+		{thickness 30}
+		{CastSteel 0.6} ;// effective armor reduction compared to solid plate
+	}
+	{volume "turret1"
+		{thickness 105
+			{front 105}
+			{top 40}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret2"
+		{thickness 105
+			{front 105}
+			{bottom 40}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret3"  ;// ring
+		{thickness 75}
+	}
+	{volume "turret4" ;// right cheek
+		{thickness 105}
+		{CastSteel 0.8063}
+	}
+	{volume "turret5" ;// left cheek
+		{thickness 105}
+		{CastSteel 0.8063}
+	}
+	{volume "turret6"
+		{thickness 90}
+	}
+	{volume "barrel1"
+		{thickness 75
+			{front 90}
+		}
+		{CastSteel 0.8063}
+	}

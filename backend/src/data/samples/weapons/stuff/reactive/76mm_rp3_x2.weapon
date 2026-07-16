@@ -1,0 +1,34 @@
+;_________________________________________
+; British Aerial Rocket Launcher
+;=========================================
+
+
+{from "pattern reactive"		; "sherman1c_tulip_hybrid"
+	{filling "ammo 76mm_rp3" 2}
+	{fillingVisible "rocket"}
+	{inventory {noView}}
+	{fireSound "reactive/d1/ENG/Land_Mattress/"}
+	{calibre 87} ;// AP shot caliber
+
+	{spreading
+		{SpreadXYRatio 3}
+		{radiusTable
+			{0 0}
+			{179.999 2.75}
+			{180 50}
+		}
+	}
+	{ZeroingAccuracy 0.75 0.60 0.50}
+
+	{aimRange 180}
+	{maxRange 180}
+
+	("fire rate" rpm(60))
+	("reload time" seconds(60))
+	{speed (* 0.5 230)}
+
+	{unlimitedRangeTPC 0}	;// restrict range in TPC/FPC
+
+	{FalloffMeter 180}
+	{FalloffStrength 0.15}
+}

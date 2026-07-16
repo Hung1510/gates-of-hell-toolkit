@@ -1,0 +1,59 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "light_tank_mk8_xx.mdl"}
+
+	{volume "body1"
+		{thickness 20
+			{front 32}
+			{right 17}
+			{rear 6}	;bottom and rear
+			{top 14}
+			{bottom 38}	;front_lower plate
+		}
+	}
+	{volume "engine1"
+		{thickness 17
+			{right 12}
+			{bottom 6} 
+			{rear 14}
+			{top 6}
+		}
+	}
+	{volume "turret1"		; main base
+		{thickness 17
+			{top 12}
+			{front 38}
+			{rear 14}
+			{bottom 12} 
+		}
+	}
+	{volume "turret2"		;  ring
+		{thickness 38}
+	}
+	{volume "turret3"		; behind_mantlet
+		{thickness 20}
+	}
+	{volume "mantlet1"
+		{thickness 38}
+		{CastSteel 0.8063}
+	}
+	{volume "mantlet2"
+		{thickness 20}
+	}
+	{volume "armor1"
+		{thickness 16}
+	}
+	{volume "armor2"
+		{thickness 16}
+	}
+	{volume "armor3"
+		{thickness 4}
+	}
+	{volume "armor4"
+		{thickness 4}
+	}
+	{volume "barrel1"
+		{thickness 20}
+	}
+	("tracks" thickness(15))
+}

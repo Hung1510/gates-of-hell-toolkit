@@ -1,0 +1,99 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "wespe_xx.mdl"}
+
+	{volume "body1"			; front 
+		{thickness 15
+			{front 30}
+			{top 20}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "body2"			; hull rear half lower
+		{thickness 15
+			{front 10}
+			{top 8}
+			{bottom 8}
+		}
+		{able {holed}}
+	}
+	{volume "body3"			; Hull Rear Half upper
+		{thickness 15
+			{front 6}
+			{top 6}
+			{rear 10}
+			{bottom 8}
+		}
+		{able {holed}}
+	}
+	{volume "body4"			; 
+		{thickness 15
+			{top 8}
+			{front 20}
+		}
+		{able {holed}}
+	}
+	{volume "engine1"		; Lower Half
+		{thickness 15
+			{front 6}
+			{rear 6}
+			{bottom 8}
+		}
+	}
+	{volume "engine2"		; Upper Half
+		{thickness 15
+			{front 6}
+			{top 8}
+			{rear 6}
+			{bottom 8}
+		}
+	}
+	{volume "barrel1"		; turret thing
+		{thickness 25}
+		{able {holed}}
+	}
+	{volume "barrel2"
+		{thickness 25}
+	}
+	{volume "barrel3"
+		{thickness 25}
+	}
+	{volume "barrel4"
+		{thickness 25}
+	}
+
+	{volume "gun_shield1"
+		{thickness 10}
+	}
+	{volume "gun_shield2"
+		{thickness 10}
+	}
+
+	{volume "breech"
+		{thickness 20}
+	}
+
+	{volume "tshield1"
+		{thickness 10}
+	}
+	{volume "tshield2"
+		{thickness 10}
+	}
+	{volume "tshield3"
+		{thickness 10}
+	}
+	{volume "tshield4"
+		{thickness 10}
+	}
+	{volume "tshield5"
+		{thickness 10}
+	}
+	{volume "tshield6"
+		{thickness 10}
+	}
+	{volume "tshield7"
+		{thickness 10}
+	}
+	("tracks" thickness(15))
+}

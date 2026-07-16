@@ -1,0 +1,24 @@
+{game_entity
+	;// Defines
+	(include "/properties/vehicle_xx.ext")
+	{extension "unic304f_xx.mdl"}
+	("tracks" thickness(15))
+
+	;// Components
+	{volume "body1" {thickness 8 {front 10}} {able {holed}}} ;// Hull
+	{volume "body2" {thickness 8 {front 10}} {able {holed}}} ;// Top part
+	{volume "body3" {thickness 8} {able {holed}}} ;// Rear
+	{volume "engine" {thickness 8 {front 10}}}
+
+	;// Non-Components
+	{volume "armor1" {thickness 8}} ;// Engine circular cover
+	{volume "doorl" {thickness 8}} ;// Rear Door (Left)
+	{volume "doorr" {thickness 8}} ;// Rear Door (Right)
+	{volume "gun_shield" {thickness 8} {able {holed}}}
+	{volume "wheelright1" {thickness 0.5}}
+	{volume "wheelleft1" {thickness 0.5}}
+
+	;// Parts
+	{volume "part6" {thickness 7}} ;// Engine Hood
+	{volume "part7" {thickness 7}} ;// Engine Access Hatch
+}

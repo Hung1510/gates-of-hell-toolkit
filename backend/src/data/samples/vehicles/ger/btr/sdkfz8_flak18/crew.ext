@@ -1,0 +1,57 @@
+;SDL
+
+{boarder
+	{anm "driver"
+		{forward {begin "board_SdKfz251-1"} {end "seat_driver_car"}}
+		{reverse {end "emit_body" 1}}
+	}
+	{anm "gunner"
+		{forward {begin "board_SdKfz251-1"} {end "pose_flak41_gunlayer"}}
+		{reverse {end "emit_body" 1}}
+	}
+	{anm "gunner2"
+		{forward {begin "board_SdKfz251-1"} {end "pose_m5_gunlayer"}}
+		{reverse {end "emit_body" 1}}
+	}
+	{anm "charger"
+		{forward {begin "board_SdKfz251-1"} {end "pose_pdr25_charger"}}
+		{reverse {end "emit_body" 1}}
+	}
+	{anm "charger2"
+		{forward {begin "board_SdKfz251-1"} {end "pose_watch_binocular"}}
+		{reverse {end "emit_body" 1}}
+	}
+}
+
+{sensor
+	{visor "main"
+		{vision "tank_range_210"}
+	}
+}
+
+(define "crew_human"
+	{placer
+		{place "%place"
+			{group "crew"}
+			{linkbone "%place"}
+			{visor "%visor"}
+			{turnoff {sensor}}
+		}
+	}
+	{boarder
+		{door "%door"}
+		{door "%door2"}
+		{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+		{link "%door2" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+	}
+)
+
+{placer
+	{place "driver"	{turnoff {targetable}}}
+}
+
+("crew_human" place(driver) door(emit1) door2(emit2) visor(driver))
+("crew_human" place(gunner) door(emit3) door2(emit4) visor(main))
+("crew_human" place(gunner2) door(emit3) door2(emit4) visor(main))
+("crew_human" place(charger) door(emit3) door2(emit4) visor(around))
+;("crew_human" place(charger2) door(emit3) door2(emit4) visor(around))

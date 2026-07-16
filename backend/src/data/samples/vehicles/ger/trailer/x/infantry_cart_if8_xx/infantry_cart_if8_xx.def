@@ -1,0 +1,35 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "infantry_cart_if8_xx.mdl"}
+	{volume "body1"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "part1"
+		{thickness 2}
+	}
+	{volume "part2"
+		{thickness 2}
+	}
+	{volume "part3"
+		{thickness 2}
+	}
+	{volume "part4"
+		{thickness 2}
+	}
+	{volume "part5"
+		{thickness 2}
+	}
+	{volume "part6"
+		{thickness 2}
+	}
+	{volume "part7"
+		{thickness 2}
+	}
+	{volume "wheelleft"
+		{thickness 1}
+	}
+	{volume "wheelright"
+		{thickness 1}
+	}
+}

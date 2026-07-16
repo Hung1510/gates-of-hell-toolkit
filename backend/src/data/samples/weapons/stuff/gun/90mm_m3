@@ -1,0 +1,46 @@
+;_________________________________________
+; US heavy tank Gun
+;=========================================
+
+
+{from "pattern gun"			; L/53 "90mm gmc"
+	{filling "bulletusa_90x600"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_85to100mm/"}
+	{fireSoundclose "cannon/s3/1p/Shared/"}
+	{reloadSound "utility/"}
+	("range_210")
+	{calibre 90}
+
+	("reload time" seconds(8))
+
+	("velocity m/s" ap(823) apcr(1018) he(823) heat(1))
+	("armor health" damage(240))
+	("armor health custom" shell(ap) damage(240) velocity(823) filler(0))
+	("armor health custom" shell(apbc) damage(240) velocity(853) filler(0))
+	("armor health custom" shell(apcbche) damage(240) velocity(853) filler(133))
+	{parameters "apbc"
+		("apbc_90_t33_slope_multiplier")
+	}
+	("90_slope_multipliers")
+
+	; AP M77
+	("penetration_long" shell(ap) range(210) a(188) b(163) c(137) d(115) e(96))
+
+	; AP T33 (APBC), reheated M77 shot with ballistic cap, low penetration at high velocity due to shatter gap, but great angle performance; made and tested specifically to defeat panther glacis
+	("penetration_long" shell(apbc) range(210) a(164) b(158) c(152) d(146) e(140))
+	{parameters "apbc"
+		("velocity" mps(853))
+	}
+
+	; APC M82 (late)
+	("penetration_long" shell(apcbche) range(210) a(169) b(164) c(151) d(138) e(127))
+	{parameters "apcbche"
+		("velocity" mps(853))
+	}
+
+	; HVAP T30E16
+	("penetration_long" shell(hvap) range(210) a(306) b(278) c(246) d(218) e(193))
+
+
+	("accuracy_direct" r1(0.60) range_ap(210) range_he(210) range_heat(210))
+}

@@ -1,0 +1,16 @@
+{bullet
+	{tag "dropboxed distributable bomb size3 pierce he fg 150to152 mortar big all_he"}
+	{inventory
+		{weight 100}
+		{size 6 2}
+	}
+	{entity "300mm_fin_mortar_he"}
+	{view "300mm_fin_mortar_he"
+		{tail "shell_tail" "tail"}
+	}
+	{mass 175}
+
+	("he_heavy")
+
+	("he_level_6" weight(175) filler(49))
+}

@@ -1,0 +1,12 @@
+{item
+	{tag "knife sharp_edge smallitemin1hand distributable"}
+	{inventory
+		{weight 100}
+		{fsm "belt"}
+	}	
+	{mass 0.03}
+	{inventory
+		{size 3 1}
+	}	
+	{entity "knife"}
+}

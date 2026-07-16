@@ -1,0 +1,16 @@
+{from "pattern reactive_ammo"
+	{tag "shell size2 pierce aphe fg itemin2hands"}
+	{inventory
+		{size 6 1}
+		{weight 100}
+	}
+	{entity "hvar_ap_rocket"}
+	{mass 62.808}
+
+	{view "hvar_ap_rocket"
+		{tail "rocket_smoke" "tail"}
+	}
+
+	("rocket_level_3" weight(21.91) filler(0.947))
+
+}

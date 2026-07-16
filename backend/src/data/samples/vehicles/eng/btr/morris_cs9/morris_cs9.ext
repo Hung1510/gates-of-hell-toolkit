@@ -1,0 +1,89 @@
+;SDL
+
+	; armor notes
+
+	("armoredcar_tier2")
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	("turret" repair(45))
+
+	;("fuel" args "fuel1")
+	;("fuel" args "fuel1")
+	("transmission" args "transmission")
+
+	("shield" args "shield1" 5)
+	("shield" args "shield2" 5)	
+	("shield" args "detail5" 0.5)
+
+	;{volume "fuel1" {able {NoWoundDecal 0}}}
+	;{volume "fuel2" {able {NoWoundDecal 0}}}
+	{volume "transmission" {able {NoWoundDecal 0}}}
+
+	{volume "engine1"
+		{thickness 7}
+	}
+	{volume "engine2"
+		{thickness 7}
+	}
+	{volume "engine3"
+		{thickness 7}
+	}
+
+	{volume "body1"
+		{thickness 7}
+	}
+	{volume "body2"
+		{thickness 7}
+		{able {holed}}
+	}
+	{volume "body3"
+		{thickness 7}
+	}
+	{volume "body4"
+		{thickness 7}
+	}
+	{volume "body5"
+		{thickness 7}
+	}
+	{volume "body6"
+		{thickness 7}
+	}
+	{volume "body7"
+		{thickness 7}
+	}
+
+	{volume "turret1"
+		{thickness 7}
+		{able {holed}}
+	}
+	{volume "turret2"
+		{thickness 7}
+		{able {holed}}
+	}
+	{volume "turret3"
+		{thickness 7}
+		{able {holed}}
+	}
+	{volume "turret4"
+		{thickness 7}
+		{able {holed}}
+	}
+
+	{volume "detail5"  ;// Spare Wheel
+		{thickness 0.5}
+	}
+
+	{volume "armor1"
+		{thickness 7}
+		{able {holed}}
+	}
+	{volume "armor2"
+		{thickness 7}
+	}
+	{volume "armor3"
+		{thickness 7}
+	}

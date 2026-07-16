@@ -1,0 +1,13 @@
+{from "pattern ap"
+	{tag "shell 20to25"}
+	{tag "shell auto size1"}
+	{inventory {size 3 1}}
+	{entity "37mm_ger_aphe"}
+	{mass 0.32}
+
+	{view "howitzer_shell_20-37"
+		{tail "shell_tracer_20_ap" "tail"}
+	}
+
+	("ap_blast" args 0.22)
+}

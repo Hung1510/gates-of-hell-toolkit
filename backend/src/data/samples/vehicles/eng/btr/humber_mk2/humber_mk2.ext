@@ -1,0 +1,86 @@
+;SDL
+
+	; armor notes
+	; wheels 10mm 
+	; gun 20mm
+
+	("armoredcar_tier2")
+
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright1")
+	("wheel" args "wheelright2")
+
+	("turret" repair(45))
+;	("mantlet" repair(30))
+	("gun" repair(30) thickness(20))
+
+	("fuel" args "fuel1")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("transmission" args "transmission")
+
+	{volume "body1"
+		{thickness 10
+			{front 10}
+			{left 10}
+			{top 8}
+			{rear 10}
+			{bottom 4}
+		}
+	}
+	{volume "body2"
+		{thickness 10
+			{front 10}
+			{left 10}
+			{top 8}
+			{rear 10}
+			{bottom 4}
+		}
+	}
+	{volume "body3"
+		{thickness 10
+			{top 8}
+		}
+	}
+	{volume "turret1"
+		{thickness 10}
+	}
+	{volume "turret2"
+		{thickness 10
+			{front 14}
+		}
+	}
+	{volume "turret3"
+		{thickness 14
+			{front 14}
+			{left 12}
+			{top 8}
+			{rear 12}
+			{bottom 6}
+		}
+	}
+	{volume "turret4"
+		{thickness 10
+			{front 14}
+		}
+	}
+	{volume "mantlet1"
+		{thickness 14}
+	}
+	{volume "mantlet2"
+		{thickness 14}
+	}
+	{volume "mantlet3"
+		{thickness 14}
+	}
+	{volume "engine1"
+		{thickness 10
+			{front 10}
+			{left 10}
+			{top 8}
+			{rear 10}
+			{bottom 4}
+		}
+	}

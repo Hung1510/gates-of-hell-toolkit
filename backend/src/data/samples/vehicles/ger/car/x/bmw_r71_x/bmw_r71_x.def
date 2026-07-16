@@ -1,0 +1,12 @@
+{game_entity
+	{extension "bmw_r71_x.mdl"}{rimlight}
+	{volume "wheelleft1"
+		{able {obstacle 0}}
+	}
+	{volume "wheelleft2"
+		{able {obstacle 0}}
+	}
+	{volume "wheelright2"
+		{able {obstacle 0}}
+	}
+}

@@ -1,0 +1,10 @@
+{from "air_bomb"
+	{tag "-bomb"}
+	{tag "sm smoke fg no_throw 122to128 wp_size3"}
+	{tag "ammo shell itemin2hands"}
+	{inventory
+		{noView}
+	}
+	("wp" cal(122))
+	{entity "artillery_single_122_sm_rus"}
+}

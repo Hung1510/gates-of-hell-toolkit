@@ -1,0 +1,163 @@
+{game_entity
+	(include "/properties/marine.ext")
+	(include "/properties/selection/vehicle_big.inc" scale(1.3))
+	{props "marine" "engine" "vision_lev05_boat" "muzzle_122mm_128mm" "emit_on_sink" "explosion_throw_crew" "boat" "big"}
+ 	{targetClass "armoredcar"}
+	{targetSelector "cannon_howitzer"}
+	{patherID "water"}
+	{extension "hms_boadicea.mdl"}
+	(include "hms_boadicea.ext")
+	{extension "crew.ext"}
+
+	{extender "inventory"
+		{box
+			{Weight 100000}
+			{item "bulleteng_120 he" 920} 	;// 190 + 40 (during wartime) per 120mm gun = 230 total per gun, full total = 920
+			{item "bullet_40x158mm_auto eng he" 1000} 	;// 500 per AA = 1000 in total
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "120mm_qf4_7_mk9" filling "bulleteng_120 he" 1}
+			{foresight "foresight1"}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_dymamic_gun_boat"
+				zeroing(2.5)
+				dispersion(0.20)
+			)
+			{basic}
+			{ai_in_manual}
+		}
+		{place "gun1"
+			{RestoreIKAfterAim}
+			{weapon "120mm_qf4_7_mk9" filling "bulleteng_120 he" 1}
+			{foresight "foresight1a"}
+			{gunner "gunner3"}
+			{charger "charger3"}
+			("abm_dymamic_gun_boat"
+				zeroing(2.5)
+				dispersion(0.20)
+			)
+			{basic}
+			{ai_in_manual}
+		}
+		{place "gun2"
+			{RestoreIKAfterAim}
+			{weapon "120mm_qf4_7_mk9" filling "bulleteng_120 he" 1}
+			{foresight "foresight1b"}
+			{gunner "gunner5"}
+			{charger "charger5"}
+			("abm_dymamic_gun_boat"
+				zeroing(2.5)
+				dispersion(0.20)
+			)
+			{basic}
+			{ai_in_manual}
+		}
+		{place "gun3"
+			{RestoreIKAfterAim}
+			{weapon "120mm_qf4_7_mk9" filling "bulleteng_120 he" 1}
+			{foresight "foresight1c"}
+			{gunner "gunner7"}
+			{charger "charger7"}
+			("abm_dymamic_gun_boat"
+				zeroing(2.5)
+				dispersion(0.20)
+			)
+			{basic}
+			{ai_in_manual}
+		}
+		{place "gun4"
+			{RestoreIKAfterAim}
+			{weapon "40mm_qf2_vickers" filling "bullet_40x158mm_auto eng he" 25}
+			{foresight "foresight1d"}
+			{gunner "gunner9"}
+			{charger "charger9"}
+			("abm_dymamic_aaa"
+				zeroing(1.95)
+				dispersion(0.24)
+			)
+			{basic}
+			{ai_in_manual}
+		}
+		{place "gun5"
+			{RestoreIKAfterAim}
+			{weapon "40mm_qf2_vickers" filling "bullet_40x158mm_auto eng he" 25}
+			{foresight "foresight1e"}
+			{gunner "gunner11"}
+			{charger "charger10"}
+			("abm_dymamic_aaa"
+				zeroing(1.95)
+				dispersion(0.24)
+			)
+			{basic}
+			{ai_in_manual}
+		}
+	}
+
+	{mass 1380000}
+	{chassis "water"
+		("mobility_medium_boat"
+			speed(65) ;---------------Max speed.
+			speedatmaxturn(20) ;------Max speed at max turn.
+			reverse(20) ;-------------Max speed in Reverse.
+			weight(1380) ;------------Weight in Tonnes.
+			power(34000) ;------------Horse Power.
+			fuel(6630) ;--------------Fuel capacity in Litres. ;// 5.1 t of fuel @ ~0.7 kg per liter
+			type(fuel) ;--------------Fuel type.
+			range(8900) ;-------------Range in Kilometers. ;// ~340 miles @ 26 knots
+		)
+		{waterline 0}
+	}
+
+	{bone "turret"
+		{limits -155 155}
+		{speed2 12}
+	}
+	{bone "gun_rot"
+		{limits -10 40}
+		{speed2 8}
+	}
+	{bone "aux_turret1"
+		{limits -140 140}
+		{speed2 12}
+	}
+	{bone "gun_rot1"
+		{limits -10 40}
+		{speed2 8}
+	}
+	{bone "aux_turret2"
+		{limits -130 130}
+		{speed2 12}
+	}
+	{bone "gun_rot2"
+		{limits -10 40}
+		{speed2 8}
+	}
+	{bone "aux_turret3"
+		{limits -155 155}
+		{speed2 12}
+	}
+	{bone "gun_rot3"
+		{limits -10 40}
+		{speed2 8}
+	}
+
+	{bone "mgun_1_rot1"
+		{speed2 60}
+	}
+	{bone "mgun_1_rot2"
+		{limits -3 80}
+		{speed2 60}
+	}
+	{bone "mgun_2_rot1"
+		{speed2 60}
+	}
+	{bone "mgun_2_rot2"
+		{limits -3 80}
+		{speed2 60}
+	}
+}

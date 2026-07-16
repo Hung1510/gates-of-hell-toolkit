@@ -1,0 +1,25 @@
+;_________________________________________
+; ARTY british light field gun
+;=========================================
+
+
+{from "pattern gun"			; L/29.4 "84mm_qf18_mk2pa"
+	{filling "bullet_84x294"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_85to100mm/"}
+	{fireSoundclose "cannon/s4/d1/Shared/Cannon_85to100mm/"}
+	{reloadSound "utility/"}
+	("range_180_howitzer")
+	{calibre 84}
+
+	("reload time" seconds(6))
+
+	("velocity m/s" ap(495) apcr(1) he(235) heat(1)) ; HE real speed 492
+	("armor health" damage(230))
+	("armor health custom" shell(ap) damage(230) velocity(495) filler(0))
+	("90_slope_multipliers")
+
+	; AP Shot
+	("penetration_medium" shell(ap) range(180) a(81) b(70) c(58) d(47) e(39))
+
+	("accuracy_spg" r1(2.00) range_ap(180) range_he(180) range_heat(180))
+}

@@ -1,0 +1,51 @@
+;SDL
+
+{boarder
+	{anm "driver"
+		{forward	{begin	"board_sd222_driver"} {end "seat_nkl_driver"} {base "open_driver"}}
+		{reverse 	{end	"emit_sd222_driver"} {base "open_driver" -1}}
+	}
+	{anm "gunner"
+		{forward	{begin	"board_sd222_driver"} {end "seat_nkl_gunner"} {base "open_driver"}}
+		{reverse 	{end	"emit_sd222_driver"} {base "open_driver" -1}}
+	}
+	{anm "passenger1"
+		{forward	{begin	"emit_seat_nkl_passenger" -1} {end "seat_nkl_passenger1"}}
+		{reverse 	{end	"emit_seat_nkl_passenger"}}
+	}
+	{anm "passenger2"
+		{forward	{begin	"emit_seat_nkl_passenger" -1} {end "seat_nkl_passenger2"}}
+		{reverse 	{end	"emit_seat_nkl_passenger"}}
+	}
+	{anm "passenger3"
+		{forward	{begin	"emit_seat_nkl_passenger" -1} {end "seat_nkl_passenger3"}}
+		{reverse 	{end	"emit_seat_nkl_passenger"}}
+	}
+	{anm "passenger4"
+		{forward	{begin	"emit_seat_nkl_passenger" -1} {end "seat_nkl_passenger4"}}
+		{reverse 	{end	"emit_seat_nkl_passenger"}}
+	}
+}
+
+(define "crew_human"
+	{placer
+		{place "%place" {group "%group"} {linkbone "%bone"} {turnoff {sensor} {shadow}}}
+	}
+	{boarder
+		{door "%door"}
+		{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+	}
+)
+
+{placer
+	{place "driver" {visor "driver"}}
+	{place "gunner" {visor "human"} {sealable}}
+}
+
+("crew_human" place(driver)		door(emit1) bone(driver) animation(driver)		group(crew)) 
+("crew_human" place(gunner)		door(emit1) bone(gunner) animation(gunner)		group(crew))
+("crew_human" place(seat1)		door(emit2) bone(seat03) animation(passenger3)	group(passenger))
+("crew_human" place(seat2)		door(emit3) bone(seat01) animation(passenger1)	group(passenger))
+("crew_human" place(seat3)		door(emit4) bone(seat04) animation(passenger4)	group(passenger))
+("crew_human" place(seat4)		door(emit5) bone(seat02) animation(passenger2)	group(passenger))
+

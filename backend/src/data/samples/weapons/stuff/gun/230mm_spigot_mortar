@@ -1,0 +1,31 @@
+;_________________________________________
+; British support gun
+;=========================================
+
+
+{from "pattern gun"			; , "churchill_avre"
+	{filling "bulleteng_230"}
+	{fireSound "reactive/d1/ENG/230mm_Petard/"}
+	{fireSoundclose "cannon/s1/1p/Shared/Cannon_37to40mm/"}
+	{fillingVisible "shell"}
+	{calibre 230}
+
+	("direct_settings")
+	("reload time" seconds(15))
+	("velocity" mps(70))
+
+	{range 100 100}
+	{gravity 1}
+	{spreading		;// equal to ("accuracy_spg" r1(2.0)) || {50 (* 1.5 (* 2.0 0.5))} {100 (* 2.75 (* 2.0 0.5))}
+		{radiusTable
+			{0 0}
+			{50 1.5}
+			{99.99 2.75}
+			{100 20}
+		}
+	}
+	{FalloffMeter 100}
+	{FalloffStrength 0.15}
+	{DisableRicochet}
+	{unlimitedRangeTPC 0}	;// restrict range in TPC/FPC
+}

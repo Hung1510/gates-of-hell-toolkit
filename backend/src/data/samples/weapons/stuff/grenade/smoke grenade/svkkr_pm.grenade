@@ -1,0 +1,6 @@
+{from "pattern smoke"
+	{tag "smoke"}
+	{inventory {size 1 1}}
+	{entity "svkkr_pm"}
+	{mass 0.5}
+}

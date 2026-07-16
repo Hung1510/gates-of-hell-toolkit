@@ -1,0 +1,13 @@
+{
+	(include "t28e_fin.inc")
+
+	{extender "inventory"
+		{box
+			{item "bulletrus_76 apcbc" 23}			;64-70
+			{item "bulletrus_76 he" 42}
+			{item "bulletrus_76 heatb" 5}
+			{item "ammo mgun_rus dt" 7380}			;123 drums
+			{item "satchel_charge_rus" 1}
+		}
+	}
+}

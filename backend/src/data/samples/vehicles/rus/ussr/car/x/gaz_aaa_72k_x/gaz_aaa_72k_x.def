@@ -1,0 +1,21 @@
+{game_entity
+	{extension "gaz_aaa_72k_x.mdl"}
+	{volume "wheelleft1"
+		{able {obstacle 0}}
+	}
+	{volume "wheelleft2"
+		{able {obstacle 0}}
+	}
+	{volume "wheelleft3"
+		{able {obstacle 0}}
+	}
+	{volume "wheelright1"
+		{able {obstacle 0}}
+	}
+	{volume "wheelright2"
+		{able {obstacle 0}}
+	}
+	{volume "wheelright3"
+		{able {obstacle 0}}
+	}
+}

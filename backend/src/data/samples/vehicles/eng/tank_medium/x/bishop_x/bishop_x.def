@@ -1,0 +1,3 @@
+{game_entity
+	{extension "bishop_x.mdl"} {RimLight}
+}

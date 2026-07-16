@@ -1,0 +1,18 @@
+{from "pattern anti-tank"
+	{entity "rpg40"}
+	{tag "size3"}		; Explosive filling - 0.760kg of TNT
+	{mass 1.22}
+	
+	{inventory {size 2 1}}
+
+	{damage cumulative
+		{damage 41}						;// = 41mm of penetration
+		{distance 0.25}
+	}
+
+	{damage blastwave
+		{energy 1.0}
+		{area 4.5 6}
+		{ground_interaction_radius 0.05} ;// value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx
+	}
+}

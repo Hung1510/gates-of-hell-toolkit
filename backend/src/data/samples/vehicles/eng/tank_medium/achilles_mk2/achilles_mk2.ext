@@ -1,0 +1,119 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 15mm
+	; gun 15mm
+	; spare tracks 15mm
+	; 
+
+	("tank_medium_tier2")
+	
+
+	("tracks" repair(30) thickness(20))
+	("gun" repair(30) thickness(25))
+	
+	("shield_track" args "armor1" 20)
+	("shield_track" args "armor2" 20)
+	("shield_track" args "detail11" 15)
+	("shield_track" args "detail12" 15)
+	("shield_track" args "detail13" 15)
+	("shield_track" args "detail14" 15)
+	("shield_track" args "detail15" 15)
+	("shield_track" args "detail16" 15)
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("transmission" args "transmission")
+
+	{volume "body1"			;upper
+		{thickness 19
+			{front 38}
+			{rear 5}
+		}
+		{able {holed}}
+	}
+	{volume "body2"			;lower
+		{thickness 25.4
+			{front 50.8}
+			{rear 5}
+			{bottom 12.7}
+		}
+	}
+	{volume "body3"			;transmission
+		{thickness 38.1
+			{front 50.8}
+			{rear 5}
+			{bottom 12.7}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "engine1"		; upper
+		{thickness 19
+			{front 5}
+			{top 10}
+		}
+	}
+	{volume "engine2"		; lower
+		{thickness 25.4
+			{front 5}
+			{top 8}
+			{bottom 12.7}
+		}
+	}
+	{volume "turret1"		; main part
+		{thickness 25.4
+			{top 19}
+		}
+		{able {holed}}
+	}
+	{volume "turret2"		; front part
+		{thickness 100
+			{top 25.4}
+			{front 57.15}
+		}
+	}
+	{volume "turret3"		; ring
+		{thickness 20}
+		{able {holed}}
+	}
+	{volume "turret4"		; mantlet
+		{thickness 57.15}
+		{CastSteel 0.8063}
+	}
+	{volume "turret5"		; mantlet
+		{thickness 57.15}
+		{CastSteel 0.8063}
+	}
+	{volume "armor4"		; sideskirt
+		{thickness 5}
+	}
+	{volume "armor5"		; sideskirt
+		{thickness 5}
+	}
+	{volume "armor6"		; sideskirt
+		{thickness 5}
+	}
+	{volume "basket1"		; turret basket
+		{thickness 50}
+		{tags "armor"}
+		{CastSteel 0.5}
+	}
+	{volume "basket2"		; turret basket
+		{thickness 50}
+		{tags "armor"}
+		{CastSteel 0.5}
+	}
+	{volume "basket3"		; turret basket
+		{thickness 50}
+		{tags "armor"}
+		{CastSteel 0.5}
+	}
+	{volume "basket4"		; turret basket
+		{thickness 50}
+		{tags "armor"}
+		{CastSteel 0.5}
+	}

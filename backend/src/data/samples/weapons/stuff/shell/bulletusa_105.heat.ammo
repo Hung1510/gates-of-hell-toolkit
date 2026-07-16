@@ -1,0 +1,12 @@
+{from "pattern heat"
+	{tag "shell size3 size3_heat_shell heat_medium"}
+	{inventory {size 6 1}}
+	{entity "105mm_usa_heat"}
+	{mass 16.71}
+
+	{view "howitzer_shell_105-150_lv"
+		{tail "shell_tracer_usa_105_heat" "tail"}
+	}
+
+	("he_level_3" weight(13.25) filler(1.768))
+}

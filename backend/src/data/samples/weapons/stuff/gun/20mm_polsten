@@ -1,0 +1,11 @@
+;_________________________________________
+; light AA gun
+;=========================================
+
+
+{from "20mm_oerlikon_mk1"			; "polsten"
+	{filling "bulleteng_20_auto" 30} ;// Uses stick magazine on the model.
+	("velocity m/s" ap(830) apcr(830) he(830) heat(1))
+	
+	("reload time" seconds(2.5))
+}

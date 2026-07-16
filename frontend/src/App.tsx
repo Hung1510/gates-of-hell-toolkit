@@ -1,13 +1,16 @@
 import { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { SquadsPage } from "./pages/SquadsPage";
 import { BuilderPage } from "./pages/BuilderPage";
 import { ComparePage } from "./pages/ComparePage";
 import { TechTreePage } from "./pages/TechTreePage";
 import { SaveEditorPage } from "./pages/SaveEditorPage";
 import { AskPage } from "./pages/AskPage";
+import { AboutPage } from "./pages/AboutPage";
+import { VehiclesPage } from "./pages/VehiclesPage";
 import "./styles.css";
 
-type Page = "browse" | "build" | "compare" | "techtree" | "save" | "ask";
+type Page = "browse" | "build" | "compare" | "techtree" | "save" | "ask" | "vehicles" | "about";
 
 function App() {
   const [page, setPage] = useState<Page>("browse");
@@ -30,11 +33,17 @@ function App() {
           <button className={page === "techtree" ? "active" : ""} onClick={() => setPage("techtree")}>
             Tech Tree
           </button>
+          <button className={page === "vehicles" ? "active" : ""} onClick={() => setPage("vehicles")}>
+            Vehicles
+          </button>
           <button className={page === "save" ? "active" : ""} onClick={() => setPage("save")}>
             Save Editor
           </button>
           <button className={page === "ask" ? "active" : ""} onClick={() => setPage("ask")}>
             Ask the Mod
+          </button>
+          <button className={page === "about" ? "active" : ""} onClick={() => setPage("about")}>
+            About
           </button>
         </nav>
       </header>
@@ -43,9 +52,12 @@ function App() {
         {page === "build" && <BuilderPage />}
         {page === "compare" && <ComparePage />}
         {page === "techtree" && <TechTreePage />}
+        {page === "vehicles" && <VehiclesPage />}
         {page === "save" && <SaveEditorPage />}
         {page === "ask" && <AskPage />}
+        {page === "about" && <AboutPage />}
       </main>
+      <Analytics />
     </div>
   );
 }

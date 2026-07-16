@@ -1,0 +1,8 @@
+;_________________________________________
+; German heavy long-barreled AT Gun
+;=========================================
+
+
+{from "88mm_kwk43"			; L/71 "Jagdpanther"
+	("reload time" seconds(10))
+}

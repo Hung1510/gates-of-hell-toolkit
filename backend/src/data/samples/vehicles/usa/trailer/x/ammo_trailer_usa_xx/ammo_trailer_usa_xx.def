@@ -1,0 +1,23 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "ammo_trailer_usa_xx.mdl"}
+
+	{volume "body1"
+		{thickness 6}
+		{able {holed}}
+	}
+	{volume "body2"
+		{thickness 6}
+		{able {holed}}
+	}
+	{volume "body3"
+		{thickness 6}
+		{able {obstacle 0}{contact 0}}
+	}
+	{volume "wheelleft"
+		{thickness 2}
+	}
+	{volume "wheelright"
+		{thickness 2}
+	}
+}

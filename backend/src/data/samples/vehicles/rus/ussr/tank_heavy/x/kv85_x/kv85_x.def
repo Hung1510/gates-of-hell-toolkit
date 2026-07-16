@@ -1,0 +1,3 @@
+{game_entity
+	{extension "kv85_x.mdl"} {RimLight}
+}

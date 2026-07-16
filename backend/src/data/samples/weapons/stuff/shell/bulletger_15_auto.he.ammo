@@ -1,0 +1,33 @@
+{from "pattern he"
+	{tag "20to25 no_throw"}
+	{tag "auto 15mm size1"}
+	{inventory
+		{weight 10}
+		{size 2 2}
+		{block 10}
+	}
+	{entity "15mm_ger_auto_he"}
+	{mass 0.303}
+
+	{trace
+		{view "/texture/fx/tracer_new/trace_solid_white.mtl"
+			{ScaleY 0.22}
+			{ScaleX 1.75}
+			{Light 1}
+		}
+		{length 3}
+	}
+
+	;("he_auto_blast" args 0.3)
+
+	{damage blastwave
+		{energy (* 0.58 0.9)}
+		{area 0.3 0.6}
+		{ground_interaction_radius 0.2}
+	}
+	{damage add blastwave
+		{energy (* 0.3 0.65)}
+		{area (* 0.3 (* 0.3 5)) (* 1.5 (* 0.3 5))}
+		{ground_interaction_radius 0} 		;// value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
+	}
+}

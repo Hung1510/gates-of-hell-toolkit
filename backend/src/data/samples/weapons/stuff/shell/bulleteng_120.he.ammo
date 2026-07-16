@@ -1,0 +1,12 @@
+{from "pattern he" ;// naval shell
+	{tag "shell size3 122to128 arty no_throw"}
+	{inventory {size 4 1}}
+	{entity "120mm_eng_he"}
+	{mass 22.68}
+
+	{view "howitzer_shell_105-150_lv"
+		{tail "shell_tracer_100-152_he" "tail"}
+	}
+
+	("he_level_3" weight(22.68) filler(1.8))
+}

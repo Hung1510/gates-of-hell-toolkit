@@ -1,0 +1,25 @@
+;_________________________________________
+; finnish light tank cannon
+;=========================================
+
+
+{from "pattern gun"			; L/21 "ft_17"
+	{filling "bullet_37x94"}
+	{fireSound "cannon/s1/d1/Shared/Cannon_37to40mm/"}
+	{fireSoundclose "cannon/s1/1p/Shared/Cannon/"}
+	{reloadSound "tank/1p/small_long/"}
+	("range_160")
+	{calibre 37}
+
+	("reload time" seconds(8))
+
+	("velocity m/s" ap(388) apcr(1) he(365) heat(1))
+	("armor health" damage(100))
+	("37_slope_multipliers")
+
+	("accuracy_direct" r1(0.93) range_ap(160) range_he(160) range_heat(110))
+	("armor health custom" shell(aphe) damage(100) velocity(388) filler(15))
+
+	; 
+	("penetration_medium" shell(aphe) range(160) a(15) b(12) c(10) d(9) e(8))
+}

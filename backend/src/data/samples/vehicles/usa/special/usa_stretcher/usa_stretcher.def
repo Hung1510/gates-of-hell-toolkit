@@ -1,0 +1,15 @@
+{actor
+	(include "/properties/stretcher.ext")
+	{extension "usa_stretcher.mdl"}
+	{props "vision_lev00_can" "no_recrew_logic"}
+	{PatherId "cannon.strecher"}
+	{mass 100}
+
+	{extender "inventory"
+		{Box}
+	}
+
+	{volume "body1"
+		{material "flesh"}
+	}
+}

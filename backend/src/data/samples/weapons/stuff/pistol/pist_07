@@ -1,0 +1,12 @@
+{from "pattern pistol"	;// Finnish husqvarna_m1907
+	{tag "pistol_shell"}
+	{filling "ammo m1907_mag" 7}
+	{entity "pist_07"}
+	{fireSound "smallarms/s1/d1/FIN/Husqvarna_M1907/"}
+	{fireSoundclose "smallarms/s1/3p/FIN/Husqvarna_M1907/"}
+	{reloadSound "tt"}
+	{calibre 9}
+	{mass 0.93}
+
+	("velocity" mps(340))
+}

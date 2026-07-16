@@ -1,0 +1,15 @@
+{game_entity
+	{extension "183mm_bl_7_2_mk6_x.mdl"} {RimLight}
+	{volume "wheelleft1"
+		{able {obstacle 0}}
+	}
+	{volume "wheelleft2"
+		{able {obstacle 0}}
+	}
+	{volume "wheelright1"
+		{able {obstacle 0}}
+	}
+	{volume "wheelright2"
+		{able {obstacle 0}}
+	}
+}

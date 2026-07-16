@@ -1,0 +1,17 @@
+{from "pattern ap"
+	{tag "20to25 zenite no_ricochet"}
+	{tag "aphe auto size1"}
+	{inventory
+		{weight 25}
+		{size 2 2}
+		{block 10}
+	}
+	{entity "20mm_ger_auto_aphe"}
+	{mass 0.32}
+
+	{view "howitzer_shell_auto"
+		{tail "shell_tracer_20_he" "tail"}
+	}
+	("he_auto_blast" args 0.6)
+	{cumulative 1.0}
+}

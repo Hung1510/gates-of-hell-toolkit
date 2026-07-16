@@ -1,0 +1,12 @@
+{from "pattern apcbche"	;APCBC-HE Shell M86
+	{tag "shell size1 50to57"}
+	{inventory {size 5 1}}
+	{entity "57mm_usa_apc"}
+	{mass 6.23}
+
+	{view "howitzer_shell_50-75_small"
+		{tail "shell_tracer_eng_57_ap" "tail"}
+	}
+
+	("ap_blast" args 0.5)
+}

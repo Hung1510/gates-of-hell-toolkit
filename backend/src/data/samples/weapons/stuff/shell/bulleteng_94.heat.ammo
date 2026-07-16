@@ -1,0 +1,12 @@
+{from "pattern heat"
+	{tag "shell size2 size2_heat_shell heat_medium"}
+	{inventory {size 3 1}}
+	{entity "94mm_eng_heat"}
+	{mass 9.61}
+
+	{view "howitzer_shell_88-100_lv"
+		{tail "shell_tracer_75-88_he" "tail"}
+	}
+
+	("heat_medium_blast" args 5.5)
+}

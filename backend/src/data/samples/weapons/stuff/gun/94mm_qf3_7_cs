@@ -1,0 +1,11 @@
+;_________________________________________
+; british tank close support gun
+;=========================================
+
+
+{from "94mm_qf3_7_how"			; L/15 "cruiser_mk1_cs"
+	{fireSoundclose "cannon/s3/1p/Shared/"}
+	{reloadSound "tank/1p/medium_long/"}
+
+	("reload time" seconds(8))
+}

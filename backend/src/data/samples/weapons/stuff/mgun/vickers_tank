@@ -1,0 +1,18 @@
+{from "pattern mgun"
+	{filling "mgun_eng" 250}
+	{entity "vickers"}
+	{inventory {size 7 2}}
+	{fireSound 	"smallarms/s3/d1/ENG/Vickers/"}
+	{fireSoundclose "smallarms/s3/int/Shared/ZB37/"}
+	{reloadSound "dt"}
+	{calibre 7.7}
+	{mass 18.1} ;// with water
+
+	("fire rate" rpm(500))
+	("velocity" mps(770)) ;// Mk.VIIIz
+
+	("reload_belt")
+
+	("burst_long")
+	("spreading_mounted_low")
+}

@@ -1,0 +1,95 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 15mm
+	; gun 15mm
+
+	("tank_light_tier1")
+
+	("gun" repair(30) thickness(15))
+	("tracks" repair(30) thickness(15))
+
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("transmission" args "transmission")
+
+	{volume "body1"			; lower Hull
+		{thickness 16
+			{front 25}
+			{top 16}		; glacis
+			{rear 5}
+			{bottom 8}
+		}
+	}
+	{volume "body2"			; upper hull
+		{thickness 5
+			{front 25}
+			{left 16}
+			{right 16}
+		}
+	}
+	{volume "body3"			; superstructure
+		{thickness 16
+			{front 25}
+			{top 12}
+			{rear 5}
+		}
+	}
+	{volume "engine1"		; main engine
+		{thickness 16
+			{front 5}
+			{top 12}
+			{bottom 8}
+		}
+	}
+	{volume "engine2"		; engine left side
+		{thickness 16
+			{front 5}
+			{top 12}
+			{bottom 8}
+		}
+	}
+	{volume "engine3"		; engine right side
+		{thickness 16
+			{front 5}
+			{top 12}
+		}
+	}
+	{volume "turret1"
+		{thickness 16		; main turret
+			{front 8}
+			{top 8}
+			{bottom 8}
+		}
+	}
+	{volume "turret2"		; turret ring
+		{thickness 16}
+	}
+	{volume "turret3"		; turret front
+		{thickness 16
+			{front 25}
+			{top 8}
+			{rear 8}
+			{bottom 8}
+		}
+	}
+	{volume "turret4"		; left side of mantlet
+		{thickness 25}
+	}
+	{volume "turret5"		; right side of mantlet
+		{thickness 25}
+	}
+	{volume "mantlet"
+		{thickness 25}
+		{CastSteel 0.8063}
+	}
+	{volume "cupola"
+		{thickness 25}
+		{CastSteel 0.8063}
+	}
+	{volume "hatch"
+		{thickness 25}
+		{CastSteel 0.8063}
+	}

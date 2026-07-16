@@ -1,0 +1,24 @@
+;_________________________________________
+; US medium tank howitzer
+;=========================================
+
+
+{from "pattern gun"			; L/22.5 "sherman 105"
+	{filling "bulletusa_105"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_105to130mm_LV/"}
+	{fireSoundclose "cannon/s3/1p/Shared/"}
+	{reloadSound "tank/1p/medium_long/"}
+	("range_190_howitzer")
+	{calibre 105}
+
+	("reload time" seconds(12))
+
+	("velocity m/s" ap(381) apcr(1) he(472) heat(381))
+	("armor health" damage(310))
+	("105_slope_multipliers")
+
+	; HEAT M67
+	("penetration_medium" shell(heat) range(180) a(128) b(128) c(128) d(128) e(128))
+
+	("accuracy_spg" r1(1.00) range_ap(180) range_he(190) range_heat(180))
+}

@@ -1,0 +1,10 @@
+{item
+	{tag "smallitemin1hand"}
+	{entity "steak"}
+	{inventory
+		{weight 3}
+		{fsm "stuff"}
+		{weight 100}
+	}
+	{mass 5}
+}

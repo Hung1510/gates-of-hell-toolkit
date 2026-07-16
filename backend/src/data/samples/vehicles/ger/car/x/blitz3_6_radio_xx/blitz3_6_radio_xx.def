@@ -1,0 +1,79 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "blitz3_6_radio_xx.mdl"}
+
+	{volume "body"
+		{thickness 2}
+	}
+	{volume "cabin"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "engine"
+		{thickness 2}
+	}
+	{volume "bodyback1"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "bodyback2"
+		{thickness 2}
+	}
+	{volume "bodyback3"
+		{thickness 2}
+	}
+	{volume "bodyback4"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "bodyback5"
+		{thickness 2}
+	}
+	{volume "bodyback6"
+		{thickness 2}
+	}
+	{volume "bodyback7"
+		{thickness 2}
+	}
+	{volume "bodyback8"
+		{thickness 2}
+	}
+	{volume "bodyback9"
+		{thickness 2}
+	}
+	{volume "engine1"
+		{thickness 2}
+	}
+	{volume "engine2"
+		{thickness 2}
+	}
+	{volume "part1"		;// Front Left Wheel
+		{thickness 0.5}
+	}
+	{volume "part2"		;// Back Right Wheel
+		{thickness 0.5}
+	}
+	{volume "part4"		;// Upper Storage Rack
+		{thickness 2}
+	}
+	{volume "part5"		;// Door Left
+		{thickness 2}
+		{able {obstacle 0}}
+	}
+	{volume "part6"		;// Back Left Wheel
+		{thickness 0.5}
+	}
+	{volume "part7"		;// Front Right Wheel
+		{thickness 0.5}
+	}
+	{volume "part8"		;// Side Door
+		{thickness 2}
+	}
+	{volume "part9"		;// Back Door
+		{thickness 2}
+	}
+	{volume "part10"	;// Door Right
+		{thickness 2}
+		{able {obstacle 0}}
+	}
+}

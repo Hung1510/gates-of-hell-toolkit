@@ -1,0 +1,28 @@
+{from "pattern anti-tank"
+	{entity "m32_satchel"}
+	{mass 3}
+	{tag "size4"} ; Explosive Filling 		= 2.0 kg
+	{damage blastwave
+		{energy 7.6}
+		{area 0.25 0.35}
+		{ground_interaction_radius 0}
+	}
+
+	{damage add blastwave
+		{energy 1.5}
+		{area 1 2}
+		{ground_interaction_radius 0.25}
+	}
+
+	{damage add blastwave
+		{energy 1.0}
+		{area 4.5 6}
+		{ground_interaction_radius 0} ;// value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx
+	}
+
+	{special
+		{PrepareTime 5.5}
+		{PrepareCursor "grenade"}
+		{mode detonate}
+	}
+}

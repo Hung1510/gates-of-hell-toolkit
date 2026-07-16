@@ -1,0 +1,96 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "panzer2c_xx.mdl"}
+
+	{volume "barrel"
+		{thickness 15}
+	}
+	{volume "body1"			; Hull
+		{thickness 14.5
+			{front 14.5} 	; 14.5mm base
+			{top 14.5}		; Glacis
+			{rear 5}
+			{bottom 5}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 14.5
+			{front 14.5} 	; 14.5mm base
+			{top 10}
+			{bottom 10}
+		}
+	}
+	{volume "engine1"		; Hull
+		{thickness 14.5
+			{front 5}
+			{bottom 5}
+		}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 14.5
+			{front 5}
+			{top 10}
+			{bottom 5}
+		}
+	}
+	{volume "part1"
+		{thickness 15}
+	}
+	{volume "part2"
+		{thickness 15}
+	}
+	{volume "part3"
+		{thickness 15}
+	}
+	{volume "part4"
+		{thickness 15}
+	}
+	{volume "part5"
+		{thickness 1}
+	}
+	{volume "part5a"
+		{thickness 1}
+	}
+	{volume "trackleft1"
+		{thickness 15}
+	}
+	{volume "trackleft2"
+		{thickness 15}
+	}
+	{volume "trackleft5"
+		{thickness 15}
+	}
+	{volume "trackleft6"
+		{thickness 15}
+	}
+	{volume "trackleft7"
+		{thickness 15}
+	}
+	{volume "trackright1"
+		{thickness 15}
+	}
+	{volume "trackright3"
+		{thickness 15}
+	}
+	{volume "trackright4"
+		{thickness 15}
+	}
+	{volume "trackright5"
+		{thickness 15}
+	}
+	{volume "trackright6"
+		{thickness 15}
+	}
+	{volume "trackright7"
+		{thickness 15}
+	}
+	{volume "turret1"		; Main Turret
+		{thickness 14.5
+			{front 14.5}
+			{top 10}
+		}
+	}
+	{volume "turret2"		; Front Lower Cheek
+		{thickness 14.5}
+	}
+}

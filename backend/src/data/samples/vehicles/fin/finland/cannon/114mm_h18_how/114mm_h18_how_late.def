@@ -1,0 +1,12 @@
+{
+	(include "114mm_h18_how.inc")
+
+	{extender "inventory"
+		{box
+			{item "ammo bullet_114x86 fin he" 20}
+			{item "ammo bullet_114x86 fin heat" 5}
+			{item "ammo bullet_114x86 fin wp" 5}
+			{item "sandbag_vehicle" 1}
+		}
+	}
+}

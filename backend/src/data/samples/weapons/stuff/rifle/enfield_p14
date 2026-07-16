@@ -1,0 +1,14 @@
+{from "pattern rifle"
+	{tag "rifle_shell"}
+	{filling "ammo rifle_eng clip" 5}
+	{entity "enfield_p14"}
+	{fireSound "smallarms/s3/d1/ENG/SMLE_No1_MkIII/"}
+	{fireSoundclose "smallarms/s3/3p/ENG/SMLE_No1_MkIII/"}
+	{reloadSound "reload_clip"}
+	{calibre 7.7}
+	{mass 4.25}
+
+	("velocity" mps(725))
+	("bolt_action")
+	("k98_rate")
+}

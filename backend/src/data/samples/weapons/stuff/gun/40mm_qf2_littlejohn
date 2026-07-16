@@ -1,0 +1,30 @@
+;_________________________________________
+; British light AT cannon
+;=========================================
+
+
+{from "pattern gun"			; L/50, "40mm QF 2-pounder" with littlejohn adaptor
+	{filling "bulleteng_40 littlejohn"}
+	{fireSound "cannon/s1/d1/Shared/Cannon_37to40mm/"}
+	{fireSoundclose "cannon/s1/3p/Shared/Cannon_37to40mm/"}
+	{reloadSound "utility/"}
+	("range_170")
+	{calibre 40}
+
+	("reload time" seconds(3))
+
+	("velocity m/s" ap(1) apcr(1280) he(1) heat(1))
+	("armor health" damage(110))
+	("40_eng_slope_multipliers")
+
+	;APSV shot Mk.IT ; Jan 1943
+	("penetration_medium" shell(apcr) range(170) a(133) b(101) c(72) d(51) e(36)) ;RHA
+
+	;APSV shot Mk.IIT ; May 1944
+	("penetration_medium" shell(apcr2) range(170) a(120) b(103) c(86) d(71) e(59)) ;RHA
+	{parameters "apcr2"
+		("velocity" mps(1189))
+	}
+
+	("accuracy_direct" r1(0.90) range_ap(170) range_he(170) range_heat(170))
+}

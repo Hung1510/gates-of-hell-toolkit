@@ -1,0 +1,3 @@
+{game_entity
+	{extension "wolverine_mk1_x.mdl"} {RimLight}
+}

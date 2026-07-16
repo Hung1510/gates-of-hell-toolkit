@@ -1,0 +1,29 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "universal_carrier_rus_xx.mdl"}
+
+	{Volume "body1"			; Front Hull
+		{thickness 10
+			{top 7}			; Glacis
+		}
+	}
+	{Volume "body2"			; Front Superstructure
+		{thickness 10}
+		{able {holed}}
+	}
+	{Volume "body3"			; Rear Superstructure
+		{thickness 10}
+		{able {holed}}
+	}
+	{Volume "body4"			; Rear Hull
+		{thickness 10}
+	}
+	{Volume "body5"			; Gunner Armor
+		{thickness 10}
+	}
+	{volume "part2"
+		{thickness 7}
+	}
+
+	("tracks" thickness(15))
+}

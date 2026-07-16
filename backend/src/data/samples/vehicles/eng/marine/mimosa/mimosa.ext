@@ -1,0 +1,74 @@
+	;// Defines
+	;// NO FUEL AS UNKNOWN LOCATION OF STORAGE TO ME
+	("engine" repair(30))
+	("cabin" repair(30))
+	("body" repair(30))
+	("marine_durability" body(600) engine(450) gun(1))
+
+	("armor" args "armor1" 4)  ;// Wooden Beam
+	("armor" args "armor2" 2)
+	("armor" args "armor3" 4)  ;// Wooden Beam
+	("armor" args "armor4" 4)  ;// Wooden Beam
+	("armor" args "armor5" 4)  ;// Wooden Beam
+	("armor" args "armor6" 2)  ;// Wooden Cover
+	("armor" args "armor7" 2)  ;// Wooden Cover
+
+	("glass" args "window1")
+	("glass" args "window2")
+	("glass" args "window3")
+	("glass" args "window4")
+	("glass" args "window5")
+	("glass" args "window6")
+	("glass" args "window7")
+	("glass" args "window8")
+	("glass" args "window9")
+	("glass" args "window10")
+	("glass" args "window11")
+	("glass" args "window12")
+	("glass" args "window13")
+	("glass" args "window14")
+	("glass" args "window15")
+	("glass" args "window16")
+	("glass" args "window17")
+	("glass" args "window18")
+	("glass" args "window19")
+	("glass" args "window20")
+	("glass" args "window21")
+	("glass" args "window22")
+	("glass" args "window23")
+	("glass" args "window24")
+	("glass" args "window25")
+	("glass" args "window26")
+
+	;// Components
+	{volume "body1" {material "wood"} {tags "wood"} {thickness 4}}
+	{volume "body2" {material "wood"} {tags "wood"} {thickness 4}}
+	{volume "body3" {material "wood"} {tags "wood"} {thickness 4} {able {holed}}}
+
+	{volume "cabin1" {material "wood"} {tags "wood"} {thickness 4} {able {holed}}}
+	{volume "cabin2" {material "wood"} {tags "wood"} {thickness 4} {able {holed}}}
+	{Volume "engine" {thickness 2}} ;// Internal part.
+	
+	;// Non-Components
+	{volume "armor1" {material "wood"} {tags "wood"}}
+	{volume "armor3" {material "wood"} {tags "wood"}}
+	{volume "armor4" {material "wood"} {tags "wood"}}
+	{volume "armor5" {material "wood"} {tags "wood"}}
+	{volume "armor6" {material "wood"} {tags "wood"}}
+	{volume "armor7" {material "wood"} {tags "wood"}}
+
+	{volume "detail5"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 2}
+	}
+	{volume "lifering1"
+		{thickness 0.5}
+		{material "fabric"}
+		{able {NoWoundDecal}}
+	}
+	{volume "lifering2"
+		{thickness 0.5}
+		{material "fabric"}
+		{able {NoWoundDecal}}
+	}

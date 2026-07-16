@@ -1,0 +1,21 @@
+;dummy ammo for dummy weapon (transport helicopters)
+{from "pattern ap"
+	{tag "shell shell_minimum pierce zenite"}
+	{inventory
+		{weight 25}
+		{size 2 2}
+		{block 5}
+	}
+	{mass 0.5}
+	{trace
+		{view "/texture/fx/tracers/trace_zenite"
+			{ScaleY 0.15}
+		}
+		{length 20}
+	}
+	{damage blastwave
+		{energy 0.45}
+		{area 0 1}
+		{ground_interaction_radius 0} ;// value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
+	}
+}

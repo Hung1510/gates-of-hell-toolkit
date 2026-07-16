@@ -1,0 +1,150 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 15mm
+	; gun 20mm
+
+	;// Defines
+	("tank_light_tier2")
+	("tracks" repair(30) thickness(15))
+	("gun" repair(30) thickness(20))
+	("aux_turret" repair(30))
+	("fuel" args "fuel")
+	("ammo" args "ammo")
+	("transmission" args "transmission")
+
+;// Left Auxiliary Turret
+	("make_component" args "aux_turret11" "aux_turret1")
+	("make_component" args "aux_turret12" "aux_turret1")
+	("make_component" args "aux_turret13" "aux_turret1")
+
+;// Right Auxiliary Turret
+	("make_component" args "aux_turret21" "aux_turret2")
+	("make_component" args "aux_turret22" "aux_turret2")
+	("make_component" args "aux_turret23" "aux_turret2")
+
+	;// Components
+	{volume "body1"
+		{thickness 10
+			{front 14}
+			{top 5}
+			{bottom 5}
+		}
+	}
+	{volume "body2"
+		{thickness 10
+			{front 14}
+			{top 5}
+			{bottom 5}
+		}
+	}
+	{volume "body3"
+		{thickness 10
+			{front 14}
+			{top 5}
+			{bottom 5}
+		}
+	}
+	{volume "body4" {able {holed}}
+		{thickness 10
+			{front 14}
+			{top 5}
+			{bottom 5}
+		}
+	}
+	{volume "body5"
+		{thickness 10
+			{front 14}
+			{top 5}
+			{bottom 5}
+		}
+	}
+	{volume "engine1"
+		{thickness 10
+			{top 5}
+			{bottom 5}
+		}
+	}
+	{volume "engine2"
+		{thickness 10
+			{top 5}
+			{bottom 5}
+		}
+	}
+	{volume "engine3"
+		{thickness 10
+			{top 5}
+			{bottom 5}
+		}
+	}
+	{volume "engine4"
+		{thickness 10
+			{top 5}
+			{bottom 5}
+		}
+	}
+	{volume "engine5"
+		{thickness 10
+			{top 5}
+			{bottom 5}
+		}
+	}
+	{volume "aux_turret11"
+		{thickness 14
+			{top 5}
+			{bottom 5}
+		}
+	}
+	{volume "aux_turret12" {thickness 14}}
+	{volume "aux_turret13" {thickness 14}}
+	{volume "aux_turret21"
+		{thickness 14
+			{top 5}
+			{bottom 5}
+		}
+	}
+	{volume "aux_turret22" {thickness 14}}
+	{volume "aux_turret23" {thickness 14}}
+	{volume "turret1"
+		{thickness 14
+			{left 12}
+			{top 4}
+			{bottom 4}
+		}
+	}
+	{volume "turret1"
+		{thickness 14
+			{left 12}
+			{top 4}
+			{bottom 4}
+		}
+	}
+	{volume "turret2"
+		{thickness 14
+			{top 4}
+			{bottom 4}
+		}
+	}
+	{volume "turret3"
+		{thickness 14
+			{top 4}
+			{bottom 4}
+		}
+	}
+	{volume "turret4"
+		{thickness 14
+			{left 12}
+			{top 4}
+			{bottom 4}
+		}
+	}
+	{volume "turret5" {thickness 12}}
+	{volume "turret6" {thickness 14}}
+	
+	;// Non-Components
+	{volume "cupola1" {thickness 5}}
+	{volume "cupola2" {thickness 5}}
+	{volume "armor1" {thickness 5}}
+	{volume "armor2" {thickness 5}}
+	{volume "armor3" {able {holed}} {thickness 5}}
+	{volume "armor4" {able {holed}} {thickness 5}}

@@ -1,0 +1,31 @@
+;_________________________________________
+; Finnish austrian-derivative light AT cannon
+;=========================================
+
+
+{from "pattern gun"			; L/43 "47mm_pstk39"
+
+	{filling "bullet_47x195"}
+	{fireSound "cannon/s2/d1/Shared/Cannon_45to47mm/"}
+	{fireSoundclose "cannon/s2/3p/Shared/Cannon_45to47mm/"}
+	{reloadSound "utility/"}
+	("range_170")
+	{calibre 47}
+
+	("reload time" seconds(3.0))
+
+	("velocity m/s" ap(630) apcr(1) he(250) heat(1))
+	("armor health" damage(125))
+	("armor health custom" shell(aphe) damage(125) velocity(630) filler(21))
+	("57_slope_multipliers")
+
+	; 47 PstK/39 with Italian APHE 1440 g projectile 630 m/sec
+	("penetration_medium" shell(aphe) range(170) a(56) b(50) c(43) d(31) e(23))
+
+
+	{parameters "he"
+		{range 160 160}
+	}
+
+	("accuracy_direct" r1(1.10) range_ap(170) range_he(160) range_heat(160))
+}

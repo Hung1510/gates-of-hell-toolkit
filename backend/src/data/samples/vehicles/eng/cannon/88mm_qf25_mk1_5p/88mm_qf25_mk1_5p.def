@@ -1,0 +1,18 @@
+{game_entity
+	(include "../84mm_qf18_5p/84mm_qf18_5p.inc")
+
+	{extender "inventory"
+		{box
+			{item "ammo bulleteng_88 he" 25}
+			{item "ammo bulleteng_88 ap" 5}
+			{item "ammo bulleteng_88 sm" 5}
+			{item "sandbag_vehicle" 1}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{weapon "88mm_qf25_mk1" filling "bulleteng_88 he" 1}
+		}
+	}
+}

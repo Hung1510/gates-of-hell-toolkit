@@ -1,0 +1,40 @@
+;SDL
+
+	; armor notes
+
+	("armoredcar_tier1")
+
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright1")
+	("wheel" args "wheelright2")
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+	("shield" args "shield" 8)
+
+	{volume "body1"
+		{thickness 8
+			{bottom 5}
+		}
+		{able {holed}}
+	}
+	{volume "body2"
+		{thickness 8
+			{bottom 5}
+		}
+		{able {holed}}
+	}
+	{volume "engine1"
+		{thickness 2}
+	}
+	{volume "engine2"
+		{thickness 15
+			{bottom 5}
+		}
+	}
+	{volume "fuel"
+		{thickness 5}
+	}
+	{volume "hole1"
+		{tags "sticky"}
+	}

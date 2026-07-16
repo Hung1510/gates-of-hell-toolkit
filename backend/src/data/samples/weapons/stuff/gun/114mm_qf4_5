@@ -1,0 +1,29 @@
+;_________________________________________
+; British medium field howitzer
+;=========================================
+
+
+{from "pattern gun"			; L/13.2 "QF 4.5-inch"
+	{filling "bullet_114x86"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_105to130mm_LV/"}
+	{fireSoundclose "cannon/s4/3p/Shared/Cannon_105to130mm_LV/"}
+	{reloadSound "utility/"}
+	("medium_artillery")
+	{calibre 114}
+	{range 300 300} ; // 6.4km (7k yards)
+
+	("reload time" seconds(20))
+
+	("velocity" mps(183)) ;// 308m/s
+	("armor health" damage(310))
+	("105_slope_multipliers")
+
+	("accuracy_indirect"		; // Applies logic for accuracy of indirect weapons over 200m
+		r1(1.0) 				; // Accuracy radius for direct-fire munitions
+		r2(5.21) 				; // Accuracy radius for indirect fire
+		rmax(16.43) 			; // Accuracy radius for indirect fire at maximum range
+		range_ap(170) 			; // Range after which accuracy drops to prevent farshooting
+		range_heat(170) 		; // Range after which accuracy drops to prevent farshooting
+		range_he(300)			; // Range after which accuracy drops to prevent farshooting
+	)
+}

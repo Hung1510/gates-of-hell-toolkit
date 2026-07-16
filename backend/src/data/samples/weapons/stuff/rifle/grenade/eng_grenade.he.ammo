@@ -1,0 +1,24 @@
+;// No.36
+{bullet
+	{tag "ammo fg dropboxed rifle_grenade grenade size1"}
+	{detonationThickness 0.5}
+	{inventory
+		{weight 20}
+		{size 2 1}
+	}
+	{entity "rifle_grenade_no36"}
+	{view "rifle_grenade_no36"}
+	{mass 0.765} 
+	;filling ~70g
+
+	{damage blastwave
+		{energy 1.1}
+		{area 3 6}
+		{ground_interaction_radius 0.1} ;// value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx
+	}
+	{damage add blastwave
+		{energy 0.75}
+		{area 3.5 9.5}
+		{ground_interaction_radius 0} ;// value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx
+	}
+}

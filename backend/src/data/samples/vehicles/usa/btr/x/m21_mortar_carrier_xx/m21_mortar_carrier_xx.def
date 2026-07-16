@@ -1,0 +1,61 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "m21_mortar_carrier_xx.mdl"}
+	
+	{volume "armor2"
+		{thickness 12.7}
+	}
+	{volume "armor3"
+		{thickness 6.4}
+	}
+	{volume "armor4"
+		{thickness 6.4}
+	}
+	{volume "barrel1"
+		{thickness 8}
+	}
+
+	{volume "body1"
+		{thickness 6.4}
+	}
+	{volume "body2"
+		{thickness 6.4}
+	}
+	{volume "body3"
+		{thickness 6.4}
+	}
+	{volume "body4"
+		{thickness 6.4}
+	}
+	{volume "body5"
+		{thickness 6.4}
+		{able {contact 0}{obstacle 0}}
+	}
+	{volume "body6"
+		{thickness 6.4}
+		{able {contact 0}{obstacle 0}}
+	}
+	{volume "body7"
+		{thickness 6.4}
+		{able {holed}}
+	}
+	{volume "body10"
+		{thickness 6.4}
+		{able {holed}}
+	}
+	{volume "body11"
+		{thickness 6.4}
+	}
+	{volume "body12"
+		{thickness 6.4}
+	}
+
+	{volume "wheelleft1"
+		{thickness 2}
+	}
+	{volume "wheelright1"
+		{thickness 2}
+	}
+
+	("tracks" thickness(15))
+}

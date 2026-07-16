@@ -1,0 +1,15 @@
+{from "pattern mortar_ammo"
+	{tag "bomb size2 pierce he fg 150to152 mortar big all_he"}
+	{inventory
+		{size 4 1}
+	}
+	{entity "170mm_fin_mortar_he"}
+	{view "170mm_fin_mortar_he"
+		{tail "shell_tail" "tail"}
+	}
+	{mass 51.4}
+
+	("he_heavy")
+
+	("he_level_5" weight(51.4) filler(10.3))
+}

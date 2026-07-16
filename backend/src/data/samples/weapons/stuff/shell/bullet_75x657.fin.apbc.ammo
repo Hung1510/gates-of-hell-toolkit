@@ -1,0 +1,12 @@
+{from "pattern apbc"
+	{tag "shell size2 75to76"}
+	{inventory {size 6 1}}
+	{entity "75x657mm_fin_apbc"}
+	{mass 12}
+
+	{view "howitzer_shell_50-75"
+		{tail "shell_tracer_75_ap" "tail"}
+	}
+
+	("ap_blast" args 0.78)
+}

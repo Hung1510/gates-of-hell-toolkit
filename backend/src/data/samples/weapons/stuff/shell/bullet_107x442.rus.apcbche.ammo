@@ -1,0 +1,12 @@
+{from "pattern apcbche"	; B-420
+	{tag "shell size3 88to105_he_filler"}
+	{inventory {size 4 1}}
+	{entity "107mm_rus_apcbche"}
+	{mass 18.71}
+
+	{view "howitzer_shell_105-150_lv"
+		{tail "shell_tracer_rus_100_ap" "tail"}
+	}
+
+	("ap_blast" args 1.1)
+}

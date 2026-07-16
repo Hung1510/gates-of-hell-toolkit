@@ -1,0 +1,11 @@
+{game_entity	;// pre 1942
+	(include "../94mm_qf_how/94mm_qf_how.inc")
+
+	{extender "inventory"
+		{box
+			{item "ammo bulleteng_94 he" 25}
+			{item "ammo bulleteng_94 wp" 8}
+			{item "sandbag_vehicle" 1}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{weapon_throwing
+	{inventory {noView}}
+	{states
+		{fire "fire"}
+		{reload "reload"}
+		{unload "unload"}
+		{aim "aim-thrower"}
+		{can_aim "can-aim-thrower"}
+	}
+	{foresight "Foresight2"}
+	{AimingTolerance 3}			; degrees
+	{aimRange 30}				; meters
+	{gravity 1}
+	{filling "throwable"}
+	{thirdpersonparams inherit "human default"
+		{clip
+			;{distanceMin 1}
+			{distanceMax 170}
+		}
+		{level 0
+			{faroffset 0 11 65}
+			;{nearoffset 0 11 10}
+			{delta 30}
+		}
+		;{maxlevel 0}
+	}
+
+	;{crosshair "crosshair6"}
+	;{crosshairReloading "crosshair6_reload"}
+}

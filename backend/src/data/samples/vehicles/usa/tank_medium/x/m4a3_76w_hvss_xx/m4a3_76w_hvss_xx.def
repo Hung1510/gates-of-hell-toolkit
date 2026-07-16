@@ -1,0 +1,122 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "m4a3_76w_hvss_xx.mdl"}
+
+	{volume "body1"			; Hull lower Front
+		{thickness 38.1
+			{front 107.9}	; 
+			{top 51}		; front upper part 
+			{rear 10}
+			{bottom 25.4}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body2"			; 
+		{thickness 38.1
+			{front 63.5}
+			{top 19.5}
+			{bottom 9.5}
+		}
+	}
+	{volume "body3"
+		{thickness 19.5
+			{left 39}
+			{right 39}
+		}
+	}
+	{volume "body4"
+		{thickness 63.5}
+	}
+	{volume "body5"
+		{thickness 63.5}
+	}
+	{volume "body6"
+		{thickness 63.5}
+	}
+	{volume "body7"			; Hull lower middle
+		{thickness 38.1
+			{top 51}
+			{rear 10}
+			{bottom 25.4}
+		}
+	}
+	{volume "body8"			; Hull lower Front right
+		{thickness 38.1
+			{front 107.9}	; 
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body9"			; Hull lower Front left
+		{thickness 38.1
+			{front 107.9}	; 
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "engine1"
+		{thickness 38.1
+			{front 19.5}
+			{bottom 25.4}
+		}
+	}
+	{volume "engine2"
+		{thickness 38.1
+			{front 10}
+			{top 19.5}
+			{bottom 9.5}
+		}
+	}
+	{volume "engine3"
+		{thickness 38.1
+			{front 9.5}
+			{top 9.5}
+			{bottom 9.5}
+		}
+	}
+	{volume "turret1"
+		{thickness 63.5
+			{top 22.2}
+			{rear 44} ;// Front Roof Turret Armor
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret2"
+		{thickness 63.5}
+		{CastSteel 0.8063}
+	}
+	{volume "turret3"
+		{thickness 63.5
+			{front 90}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "mantlet"
+		{thickness 90}
+		{able {holed}}
+		{CastSteel 0.8063}
+	}
+	{volume "barrel1"
+		{thickness 45
+			{top 200}
+			{bottom 200}
+		}
+	}
+	{volume "armor3"	; around turret ring
+		{thickness 19.5
+			{top 5.9}
+		}
+	}
+	{volume "cupola"	;
+		{thickness 63.5
+			{top 25.4}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "barrel2"
+		{thickness 25}
+	}
+	{volume "part1"
+		{thickness 10}
+	}
+
+	("tracks" thickness(20))
+}

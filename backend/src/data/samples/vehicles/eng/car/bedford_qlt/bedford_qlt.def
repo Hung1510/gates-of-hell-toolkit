@@ -1,0 +1,13 @@
+{game_entity
+	(include "bedford_qlt.inc")
+
+	{extender "inventory"
+		{box
+		;	{item "ammo rifle_eng clip" 1000}		; 7.7mm
+		;	{item "ammo bren_mag" 1000}				; 7.7mm
+		;	{item "ammo sten_mag eng_smg" 480}
+		;	{item "no36m grenade" 10}
+		}
+	}
+}
+

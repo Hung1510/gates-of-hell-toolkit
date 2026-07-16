@@ -1,0 +1,62 @@
+;SDL
+
+{boarder
+
+;// Driver
+	{anm "left_driver"
+		{forward {begin "emit_sd222_driver" -1} {end "pose_seat_humber_recon_mk2_driver"} {base "open_left"}}
+		{reverse {end "emit_sd222_driver"} {base "open_left" -1}}
+	}
+	{anm "right_driver"
+		{forward {begin "emit_sd222_driver" -1} {end "pose_seat_humber_recon_mk2_driver"} {base "open_right"}}
+		{reverse {end "emit_sd222_driver"} {base "open_right" -1}}
+	}
+
+;// Gunner
+	{anm "left_gunner"
+		{forward {begin "emit_sd222_driver" -1} {end "pose_seat_humber_recon_mk2_gunner"} {base "open_left"}}
+		{reverse {end "emit_sd222_driver"} {base "open_left" -1}}
+	}
+	{anm "right_gunner"
+		{forward {begin "emit_sd222_driver" -1} {end "pose_seat_humber_recon_mk2_gunner"} {base "open_right"}}
+		{reverse {end "emit_sd222_driver"} {base "open_right" -1}}
+	}
+
+;// Commander
+	{anm "left_commander"
+		{forward {begin "emit_sd222_driver" -1} {end "pose_seat_humber_recon_mk2_commander"} {base "open_left"}}
+		{reverse {end "emit_sd222_driver"} {base "open_left" -1}}
+	}
+	{anm "right_commander"
+		{forward {begin "emit_sd222_driver" -1} {end "pose_seat_humber_recon_mk2_commander"} {base "open_right"}}
+		{reverse {end "emit_sd222_driver"} {base "open_right" -1}}
+	}
+
+}
+
+(define "crew_human_visible_anm2"
+	{placer
+		{place "%place"
+			{group "crew"}
+			{linkbone "%place"}
+			{turnoff}
+			;{openForCrush}
+		}
+	}
+	{boarder
+		{door "%door"}
+		{door "%door2"}
+		{link "%door" "%place" {anm "%anm_left"} {forward putoff} {reverse puton}}
+		{link "%door2" "%place" {anm "%anm_right"} {forward putoff} {reverse puton}}
+	}
+)
+
+("crew_human_visible_anm2" place(driver) door(emit1) door2(emit2) anm_left(left_driver) anm_right(right_driver))
+("crew_human_visible_anm2" place(gunner) door(emit1) door2(emit2) anm_left(left_gunner) anm_right(right_gunner))
+("crew_human_visible_anm2" place(commander) door(emit1) door2(emit2) anm_left(left_commander) anm_right(right_commander))
+
+{sensor
+	{visor "main"
+		{vision "recon_main"}
+	}
+}

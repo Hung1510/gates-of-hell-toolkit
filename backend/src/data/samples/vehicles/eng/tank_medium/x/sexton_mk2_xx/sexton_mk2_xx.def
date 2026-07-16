@@ -1,0 +1,89 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "sexton_mk2_xx.mdl"}
+	{volume "ammo3"
+		{thickness 12.7}
+	}
+	{volume "ammo4"
+		{thickness 12.7}
+	}
+	{volume "barrel1"
+		{thickness 25}
+	}
+	{volume "barrel2"
+		{thickness 25}
+	}
+	{volume "barrel3"
+		{thickness 25}
+	}
+	{volume "barrel4"
+		{thickness 25}
+	}
+	{volume "body1"	
+		{thickness 50.8}
+	}
+	{volume "body2"
+		{thickness 50.8}
+	}
+	{volume "body3"
+		{thickness 38.1
+			{front 50.8}
+			{rear 10}
+			{bottom 25}
+		}
+	}
+	{volume "body4"
+		{thickness 38.1
+			{front 50.8}
+			{rear 10}
+		}
+	}
+	{volume "engine1"
+		{thickness 38.1
+			{front 10}
+			{rear 12.7}
+		}
+	}
+	{volume "engine2"
+		{thickness 12.7
+			{bottom 25}
+		}
+		{able {holed}}
+	}
+	{volume "gun_shield1"
+		{thickness 12.7}
+	}
+	{volume "gun_shield2"
+		{thickness 12.7}
+	}
+	{volume "gun_shield3"
+		{thickness 12.7}
+	}
+	{volume "part3"
+		{thickness 12.7}
+	}
+	{volume "part4"
+		{thickness 12.7}
+	}
+	{volume "shield1"
+		{thickness 12.7}
+	}
+	{volume "tshield1"
+		{thickness 12.7}
+	}
+	{volume "tshield2"
+		{thickness 12.7}
+	}
+	{volume "tshield3"
+		{thickness 12.7}
+		{able {holed}}
+	}
+	{volume "tshield4"
+		{thickness 12.7}
+		{able {holed}}
+	}
+	{volume "tshield5"
+		{thickness 12.7}
+	}
+	("tracks" thickness(20))
+}

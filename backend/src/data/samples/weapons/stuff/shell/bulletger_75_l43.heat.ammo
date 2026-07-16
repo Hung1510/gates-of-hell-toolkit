@@ -1,0 +1,12 @@
+{from "pattern heat"
+	{tag "shell size2 size2_heat_shell heat_low"}
+	{inventory {size 6 1}}
+	{entity "75mm_ger_l43_heat"}
+	{mass 7.38}
+
+	{view "howitzer_shell_50-75"
+		{tail "shell_tracer_75-88_he" "tail"}
+	}
+
+	("he_level_2" weight(4.42) filler(0.735))
+}

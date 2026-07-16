@@ -1,0 +1,59 @@
+;// Defines
+	("marine_durability" body(600) engine(300) gun(150)) ;// had 2 engines
+	("gun1" repair(30) thickness(25))
+	("gun2" repair(30) thickness(25))
+	("gun3" repair(30) thickness(25))
+	("gun4" repair(30) thickness(25))
+	("gun5" repair(30) thickness(15))
+	("gun6" repair(30) thickness(15))
+
+	("component" volume("body_front1") component("body_front") repair(10))
+	("component" volume("body_front2") component("body_front") repair(10))
+	("component" volume("body_front3") component("body_front") repair(10))
+	("component" volume("body_front4") component("body_front") repair(10))
+	("component" volume("body_front5") component("body_front") repair(10))
+	("component" volume("body_center") component("body_center") repair(10))
+	("component" volume("body_rear1") component("body_rear") repair(10))
+	("component" volume("body_rear2") component("body_rear") repair(10))
+	("component" volume("body_rear3") component("body_rear") repair(10))
+	("engine" repair(30))
+	("cabin" repair(30))
+	;("fuel" args "fuel")
+	;("ammo" args "ammo1")
+	;("ammo" args "ammo2")
+	("shield" args "shield1" 4)
+	("shield" args "shield2" 4)
+	("shield" args "shield3" 4)
+	("shield" args "shield4" 4)
+	{component "body"}
+
+;// Components
+	{volume "body_front1" {thickness 16}}
+	{volume "body_front2" {thickness 16}}
+	{volume "body_front3" {thickness 16}}
+	{volume "body_front4" {thickness 16}}
+	{volume "body_front5" {thickness 16}}
+	{volume "body_center" {thickness 16}}
+	{volume "body_rear1" {thickness 16}}
+	{volume "body_rear2" {thickness 16}}
+	{volume "body_rear3" {thickness 4}}
+
+	{volume "cabin1" {thickness 4}}
+	{volume "cabin2" {thickness 4}}
+	{Volume "engine" {thickness 2}}
+
+;// Non-Components
+	{volume "armor1" {thickness 4}}
+	{volume "armor2" {thickness 4}}
+	{volume "armor3" {thickness 4}}
+	{volume "armor4" {thickness 4}}
+	{volume "armor5" {thickness 4} {able {holed}}}
+	{volume "armor6" {thickness 4} {able {holed}}}
+	{volume "armor7" {thickness 4} {able {holed}}}
+	{volume "armor8" {thickness 16}}
+	{volume "armor9" {thickness 16}}
+
+	{volume "shield1" {able {holed}}}
+	{volume "shield2" {able {holed}}}
+	{volume "shield3" {able {holed}}}
+	{volume "shield4" {able {holed}}}

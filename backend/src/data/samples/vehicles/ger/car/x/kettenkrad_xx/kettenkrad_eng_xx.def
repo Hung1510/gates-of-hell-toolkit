@@ -1,0 +1,40 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "kettenkrad_xx.mdl"}
+		{volume "body1"
+		{thickness 3}
+	}
+	{volume "body2"
+		{thickness 3}
+	}
+	{volume "body3"
+		{thickness 3}
+	}
+	{volume "body4"
+		{thickness 3}
+	}
+	{volume "body5"
+		{thickness 3}
+	}
+	{volume "part1"
+		{thickness 0.5}
+	}
+	{volume "part2"
+		{thickness 15}
+	}
+	{volume "part3"
+		{thickness 15}
+	}
+	{volume "part4"
+		{thickness 15}
+	}
+	{volume "part5"
+		{thickness 15}
+	}
+	{volume "trackleft"
+		{thickness 15}
+	}
+	{volume "trackright"
+		{thickness 15}
+	}
+}

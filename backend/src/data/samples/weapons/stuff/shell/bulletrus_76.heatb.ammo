@@ -1,0 +1,12 @@
+{from "pattern heatb"	; 76 hkr 42-18/24-38
+	{tag "shell size2 size2_heat_shell heat_low"}
+	{inventory {size 5 1}}
+	{entity "76mm_fin_heatb"}
+	{mass 6.11}
+
+	{view "howitzer_shell_50-75"
+		{tail "shell_tracer_75_heat" "tail"}
+	}
+
+	("he_level_2" weight(4.67) filler(0.894))
+}

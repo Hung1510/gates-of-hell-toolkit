@@ -1,0 +1,136 @@
+;SDL
+
+	;notes
+	;tracks and wheels 20mm
+	;gun 25mm and 20mm
+
+	("tank_heavy_tier1")
+
+	("make_component" args "aux_turret11" "aux_turret1")
+	("make_component" args "aux_turret12" "aux_turret1")
+	("make_component" args "aux_turret21" "aux_turret2")
+	("make_component" args "aux_turret22" "aux_turret2")
+	("make_component" args "aux_turret31" "aux_turret3")
+	("make_component" args "aux_turret32" "aux_turret3")
+	("make_component" args "aux_turret41" "aux_turret4")
+	("make_component" args "aux_turret42" "aux_turret4")
+
+	("shield" args "shieldr" 11)
+	("shield" args "shieldl" 11)
+
+	("tracks" repair(40) thickness(20))
+	("gun" repair(30) thickness(25))
+	("gun1" repair(30) thickness(20))
+	("gun2" repair(30) thickness(20))
+	("aux_turret" repair(45))
+
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Nose
+		{thickness 50
+			{front 70}
+			{top 20}		; Glacis
+			{bottom 30}
+		}
+	}
+	{volume "body2"			; Hull
+		{thickness 50
+			{front 70}
+			{top 10}
+			{rear 10}
+			{bottom 20}
+		}
+	}
+	{volume "body3"			; Superstructure
+		{thickness 50
+			{top 10}
+			{bottom 20}
+		}
+	}
+	{volume "engine1"
+		{thickness 20
+			{front 10}
+			{top 10}
+		}
+	}
+	{volume "turret1"		; Turret main
+		{thickness 30
+			{top 15}
+			{bottom 15}
+		}
+	}
+	{volume "turret2"		; Turret back
+		{thickness 30
+			{top 15}
+			{bottom 15}
+		}
+	}
+	{volume "turret3"		; Turret front
+		{thickness 30}
+	}
+	{volume "mantlet"		; Turret Mantlet
+		{thickness 20}
+	}
+	{volume "turret4"		; Turret MG port
+		{thickness 30}
+	}
+	{volume "armor1"		; Right Side box of superstructure
+		{thickness 10
+			{front 20}
+			{rear 20}
+		}
+		{tags "armor"}
+	}
+	{volume "armor2"		; Left Side box of superstructure
+		{thickness 10
+			{front 20}
+			{rear 20}
+		}
+		{tags "armor"}
+	}
+
+	{volume "aux_turret11"	; Front Right Turret (Gun)
+		{thickness 50
+			{top 10}
+		}
+	}
+	{volume "aux_turret12"	; Front Right Turret Mantlet (Gun)
+		{thickness 50}
+	}
+
+	{volume "aux_turret21"	; Rear Left Turret (Gun)
+		{thickness 50
+			{top 10}
+		}
+	}
+	{volume "aux_turret22"	; Rear Left Turret Mantlet (Gun)
+		{thickness 50}
+	}
+
+	{volume "aux_turret31"	; Front Left Turret (MG)
+		{thickness 30
+			{top 10}
+		}
+	}
+	{volume "aux_turret32"	; Front Left Turret mantlet (MG)
+		{thickness 30
+			{top 10}
+		}
+	}
+	{volume "aux_turret41"	; Rear Right Turret (MG)
+		{thickness 30
+			{top 10}
+		}
+	}
+	{volume "aux_turret42"	; Rear Right Turret mantlet (MG)
+		{thickness 30
+			{top 10}
+		}
+	}

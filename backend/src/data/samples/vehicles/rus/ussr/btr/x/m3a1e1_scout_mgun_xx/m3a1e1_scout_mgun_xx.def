@@ -1,0 +1,59 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "m3a1e1_scout_mgun_xx.mdl"}
+
+	{volume "body2" {able {holed}}}
+	{volume "body3" {able {holed}}}
+	{volume "body4" {able {holed}}}
+
+	{volume "armor4"
+		{thickness 12.7}
+	}
+	{volume "body1"
+		{thickness 6.35}
+	}
+	{volume "body2"
+		{thickness 6.35}
+	}
+	{volume "body3"
+		{thickness 6.35}
+	}
+	{volume "body4"
+		{thickness 6.35}
+	}
+	{volume "body5"
+		{thickness 6.35}
+		{able {obstacle 0}}
+	}
+	{volume "body6"
+		{thickness 6.35}
+		{able {obstacle 0}}
+	}
+	{volume "body9"
+		{thickness 6.35}
+	}
+	{volume "part4"
+		{thickness 6.35}
+	}
+	{volume "part5"
+		{thickness 6.35}
+	}
+	{volume "engine1"
+		{thickness 6.35}
+	}
+	{volume "engine2"
+		{thickness 6.35}
+	}
+	{volume "wheelleft1"
+		{thickness 6.35}
+	}
+	{volume "wheelleft2"
+		{thickness 6.35}
+	}
+	{volume "wheelright1"
+		{thickness 6.35}
+	}
+	{volume "wheelright2"
+		{thickness 6.35}
+	}
+}

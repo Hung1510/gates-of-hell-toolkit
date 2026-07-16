@@ -1,0 +1,15 @@
+;_________________________________________
+; USSR light AA cannon
+;=========================================
+
+
+{from "45mm_20k"			; MO-4
+	{reloadSound "tank/1p/small_long/"}
+	("range_160")
+	("reload time" seconds(2.6))
+	{SpreadTolerance 0.40}
+
+	("velocity m/s" ap(760) apcr(985) he(343) heat(1))
+
+	("accuracy_direct_arrowhead" r1(1.10) range_ap(160) range_he(160) range_heat(160))
+}

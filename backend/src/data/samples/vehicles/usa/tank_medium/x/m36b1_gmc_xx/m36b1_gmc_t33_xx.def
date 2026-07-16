@@ -1,0 +1,105 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "m36b1_gmc_xx.mdl"}
+
+	{volume "body1"			; Hull lower Front
+		{thickness 38.1
+			{front 107.9}	; 
+			{top 51}		; front upper part 
+			{rear 10}
+			{bottom 25.4}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body2"			; 
+		{thickness 38.1
+			{front 63.5}
+			{top 19.5}
+			{bottom 9.5}
+		}
+	}
+	{volume "body3"
+		{thickness 19.5
+			{left 39}
+			{right 39}
+		}
+	}
+	{volume "armor4"		; turret ring armor
+		{thickness 19.5
+			{top 5.9}
+		}
+	}
+	{volume "body7"			; Hull lower middle
+		{thickness 38.1
+			{top 51}
+			{rear 10}
+			{bottom 25.4}
+		}
+	}
+	{volume "body8"			; Hull lower Front right
+		{thickness 38.1
+			{front 107.9}	; 
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body9"			; Hull lower Front left
+		{thickness 38.1
+			{front 107.9}	; 
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "engine1"
+		{thickness 38.1
+			{front 19.5}
+			{bottom 25.4}
+		}
+	}
+	{volume "engine2"
+		{thickness 38.1
+			{front 10}
+			{top 19.5}
+			{bottom 9.5}
+		}
+	}
+	{volume "engine3"
+		{thickness 38.1
+			{front 9.5}
+			{top 9.5}
+			{bottom 9.5}
+		}
+	}
+	{volume "turret1"		; main part
+		{thickness 31.7}
+		{able {holed}}
+	}
+	{volume "turret2"		; rear part
+		{thickness 25.4}
+	}
+	{volume "turret3"		; 
+		{thickness 31.7
+			{left 50.8}		;side
+		}
+	}
+	{volume "turret4"
+		{thickness 31.7
+			{left 50.8}		;side
+		}
+	}
+	{volume "mantlet"
+		{thickness 76.2}
+	}
+	{volume "part1"
+		{thickness 10}
+	}
+	{volume "part2"
+		{thickness 10}
+	}
+	{volume "barrel1"
+		{thickness 30}
+	}
+	{volume "barrel2"
+		{thickness 30}
+	}
+
+	("tracks" thickness(20))
+}

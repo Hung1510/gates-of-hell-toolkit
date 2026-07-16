@@ -1,0 +1,17 @@
+{
+	(include "45mm_pstk32.inc")
+
+	{extender "inventory"
+		{box
+			{item "bulletrus_45 apcbc" 30}
+			{item "bulletrus_45 he" 30}
+			{item "sandbag_vehicle" 1}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{weapon "45mm_m37" filling "bulletrus_45 apcbc" 1}
+		}
+	}
+}

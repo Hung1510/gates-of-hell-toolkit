@@ -1,0 +1,14 @@
+{from "pattern rifle"	;// Finnish gevar_m96
+	{tag "rifle_shell"}
+	{filling "ammo rifle_swe clip" 5}
+	{entity "kiv_96"}
+	{fireSound "smallarms/s3/d1/FIN/Gevar_M96/"}
+	{fireSoundclose "smallarms/s3/3p/FIN/Gevar_M96/"}
+	{reloadSound "reload_clip"}
+	{calibre 6.5}
+	{mass 4}
+
+	("velocity" mps(725))
+	("bolt_action")
+	("finnish_rate")
+}

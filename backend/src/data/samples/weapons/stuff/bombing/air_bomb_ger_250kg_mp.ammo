@@ -1,0 +1,7 @@
+{from "pattern air_bomb" ;//SD500 stats
+	{entity "sc_250_mp"}
+	{tag "size3"}
+	{mass 250}
+
+	("he_level_7" weight(250) filler(79))
+}

@@ -1,0 +1,7 @@
+{from "pattern air_bomb" ;// M43 version
+	{entity "fab_250"}
+	{tag "size3"}
+	{mass 249.5}
+
+	("he_level_7" weight(249.5) filler(117.4))
+}

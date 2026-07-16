@@ -1,0 +1,75 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "t70m_xx.mdl"}
+
+	{volume "barrel"
+		{thickness 20}
+	}
+	{volume "body1"			; Hull and Superstructure
+		{thickness 15
+			{front 35}
+			{top 10}
+			{rear 5}
+			{bottom 10}
+		}
+		{HighHardness}
+	}
+	
+	{volume "engine1"
+		{thickness 15
+			{front 5}
+			{top 10}
+			{bottom 10}
+		}
+		{HighHardness}
+	}
+	{volume "engine2"		; Engine Cover
+		{thickness 15}
+		{HighHardness}
+	}
+	{volume "engine3"		; Internal
+		{thickness 5}
+		{able {NoWoundDecal 0}}
+	}
+	{volume "turret1"		; Turret Ring
+		{thickness 35
+			{top 10}
+			{bottom 10}
+		}
+		{HighHardness}
+	}
+	{volume "turret2"		; Main Turret
+		{thickness 35
+			{top 15}
+			{bottom 10}
+		}
+		{HighHardness}
+	}
+	{volume "turret3"		; Turret Front
+		{thickness 35
+			{top 15}
+			{bottom 10}
+			{front 50}
+		}
+		{HighHardness}
+	}
+	{volume "mantlet"
+		{thickness 50}
+		{able {holed}}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "part1"
+		{thickness 15}
+	}
+	{volume "part2"
+		{thickness 15}
+	}
+	{volume "part3"
+		{thickness 15}
+	}
+	{volume "part5"
+		{thickness 10}
+	}
+	("tracks" thickness(15))
+}

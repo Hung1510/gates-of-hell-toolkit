@@ -1,0 +1,178 @@
+;SDL
+
+	;notes
+	;tracks and wheels 20mm
+	;gun 25mm
+	;armor plates 25-30mm
+
+	("tank_heavy_tier1")
+
+	("shield_part" args "shield3" 105 "turret")		;// 30 + 75
+	("shield_part" args "shield4" 105 "turret")		;// 30 + 75
+	("shield_part" args "shield5" 105 "turret")		;// 30 + 75
+	("shield_part" args "shield6" 105 "turret")		;// 30 + 75
+	("shield_part" args "shield7" 105 "turret")		;// 30 + 75
+	("shield_part" args "shield8" 105 "turret")		;// 30 + 75
+	("shield_part" args "shieldl1" 100 "engine")	;// 25 + 75
+	("shield_part" args "shieldl2" 100 "body")		;// 25 + 75
+	("shield_part" args "shieldl3" 100 "body")		;// 25 + 75
+	("shield_part" args "shieldl4" 100 "body")		;// 25 + 75
+	("shield_part" args "shieldl5" 100 "body")		;// 25 + 75
+	("shield_part" args "shieldr1" 100 "engine")	;// 25 + 75
+	("shield_part" args "shieldr2" 100 "body")		;// 25 + 75
+	("shield_part" args "shieldr3" 100 "body")		;// 25 + 75
+	("shield_part" args "shieldr4" 100 "body")		;// 25 + 75
+	("shield_part" args "shieldr5" 100 "body")		;// 25 + 75
+	("shield_part" args "shieldr6" 100 "body")		;// 25 + 75
+
+	("tracks" repair(40) thickness(20))
+	("gun" repair(30) thickness(25))
+
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("transmission" args "transmission")
+
+	{volume "body1"
+		{thickness 40
+			{front 75}
+			{top 40}
+			{right 75}
+			{left 75}
+			{rear 10}
+			{bottom 40}
+		}
+	}
+	{volume "body2"
+		{thickness 40
+			{front 75}
+			{top 40}
+			{right 75}
+			{left 75}
+			{rear 10}
+		}
+	}
+	{volume "engine1"
+		{thickness 30
+			{front 10}
+			{right 75}
+			{left 75}
+			{rear 70}
+			{bottom 30}
+		}
+	}
+	{volume "engine2"
+		{thickness 30
+			{front 10}
+			{top 30}
+			{right 75}
+			{left 75}
+			{rear 52}
+		}
+	}
+	{volume "hull_armor1" ; nose armor
+		{thickness 100	;// 25 cast + 75
+			{top 65}	;// 25 cast + 40
+		}
+		{CastSteel 0.76} ;// effective armor reduction compared to solid 100mm plate ~89mm effective thickness
+		{tags "body"}
+		{component "body"}
+	}
+	{volume "hull_armor2" ; lower plate armor
+		{thickness 100}	;// 25 + 75
+		{CastSteel 0.8} ;// effective armor reduction compared to solid 100mm plate ~93mm effective thickness		
+		{tags "body"}
+		{component "body"}
+	}
+	{volume "hull_armor3" ; upper plate armor
+		{thickness 100}	;// 25 + 75
+		{CastSteel 0.8} ;// effective armor reduction compared to solid 100mm plate ~93mm effective thickness		
+		{tags "body"}
+		{component "body"}
+		{able {holed}}
+	}
+	{volume "armor4"
+		{thickness 25}
+	}
+	{volume "armor5"
+		{thickness 25}
+	}
+	{volume "shield3" ; turret armor
+		{CastSteel 0.7} ;// effective armor reduction compared to solid plate; 30 + 75 spaced armor array ~89mm effective
+	}
+	{volume "shield4" ; turret armor
+		{CastSteel 0.7} ;// effective armor reduction compared to solid plate; 30 + 75 spaced armor array ~89mm effective
+	}
+	{volume "shield5" ; turret armor
+		{CastSteel 0.7} ;// effective armor reduction compared to solid plate; 30 + 75 spaced armor array ~89mm effective
+	}
+	{volume "shield6" ; turret armor
+		{CastSteel 0.7} ;// effective armor reduction compared to solid plate; 30 + 75 spaced armor array ~89mm effective
+	}
+	{volume "shield7" ; turret armor
+		{CastSteel 0.7} ;// effective armor reduction compared to solid plate; 30 + 75 spaced armor array ~89mm effective
+	}
+	{volume "shield8" ; turret armor
+		{CastSteel 0.7} ;// effective armor reduction compared to solid plate; 30 + 75 spaced armor array ~89mm effective
+	}
+	{volume "shieldl1" ; hull side armor
+		{CastSteel 0.72} ;// effective armor reduction compared to solid plate; 25 + 75 spaced armor array ~86mm effective
+	}
+	{volume "shieldl2" ; hull side armor
+		{CastSteel 0.72} ;// effective armor reduction compared to solid plate; 25 + 75 spaced armor array ~86mm effective
+	}
+	{volume "shieldl3" ; hull side armor
+		{CastSteel 0.72} ;// effective armor reduction compared to solid plate; 25 + 75 spaced armor array ~86mm effective
+	}
+	{volume "shieldl4" ; hull side armor
+		{CastSteel 0.72} ;// effective armor reduction compared to solid plate; 25 + 75 spaced armor array ~86mm effective
+	}
+	{volume "shieldl5" ; hull side armor
+		{CastSteel 0.72} ;// effective armor reduction compared to solid plate; 25 + 75 spaced armor array ~86mm effective
+	}
+	{volume "shieldr1" ; hull side armor
+		{CastSteel 0.72} ;// effective armor reduction compared to solid plate; 25 + 75 spaced armor array ~86mm effective
+	}
+	{volume "shieldr2" ; hull side armor
+		{CastSteel 0.72} ;// effective armor reduction compared to solid plate; 25 + 75 spaced armor array ~86mm effective
+	}
+	{volume "shieldr3" ; hull side armor
+		{CastSteel 0.72} ;// effective armor reduction compared to solid plate; 25 + 75 spaced armor array ~86mm effective
+	}
+	{volume "shieldr4" ; hull side armor
+		{CastSteel 0.72} ;// effective armor reduction compared to solid plate; 25 + 75 spaced armor array ~86mm effective
+	}
+	{volume "shieldr5" ; hull side armor
+		{CastSteel 0.72} ;// effective armor reduction compared to solid plate; 25 + 75 spaced armor array ~86mm effective
+	}
+	{volume "turret1"
+		{thickness 75
+			{top 40}
+			{bottom 40}
+		}
+	}
+	{volume "turret2"
+		{thickness 75
+			{bottom 40}
+		}
+	}
+	{volume "turret3"
+		{thickness 75}
+	}
+	{volume "turret4"
+		{thickness 75}
+		{CastSteel 0.8063}
+	}
+	{volume "turret5"
+		{thickness 75}
+		{CastSteel 0.8063}
+	}
+	{volume "turret6"
+		{thickness 90}
+	}
+	{volume "barrel1"
+		{thickness 75}
+		{CastSteel 0.8063}
+	}

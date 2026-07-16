@@ -1,0 +1,10 @@
+;_________________________________________
+; US medium tank gun
+;=========================================
+
+
+{from "76mm_m1a1"			; L/52 "M18 hellcat"
+	{fireSoundClose "cannon/s3/3p/Shared/Cannon_75to76mm_HV/"}
+	{reloadSound "utility/"}
+	("reload time" seconds(6))
+}

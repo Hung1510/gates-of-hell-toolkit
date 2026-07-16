@@ -1,0 +1,69 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "t27_xx.mdl"}
+
+	{volume "trackleft"
+		{thickness 10}
+		{able {holed}}
+	}
+	{volume "trackright"
+		{thickness 10}
+		{able {holed}}
+	}
+	{volume "body1"			; Hull
+		{thickness 10
+			{top 4}		; Glacis
+			{bottom 4}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 10
+			{top 4}
+			{bottom 4}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 10
+			{top 6}
+			{bottom 4}
+		}
+	}
+	{volume "body3"			; Center Hatch
+		{thickness 6
+			{bottom 4}
+		}
+	}
+	{volume "body4"			; Left Storage
+		{thickness 10
+			{top 6}
+			{bottom 6}
+		}
+	}
+	{volume "body5"			; Right Storage
+		{thickness 10
+			{top 6}
+			{bottom 6}
+		}
+	}
+	{volume "body6"			; Front Cylinder
+		{thickness 10}
+	}
+	{volume "body7"			; Right Hatche
+		{thickness 6
+			{bottom 4}
+		}
+	}
+	{volume "part1"			; Track Wheel
+		{thickness 10}
+		{able {obstacle 0}}
+	}
+	{volume "part2"			; Track Wheel
+		{thickness 10}
+		{able {obstacle 0}}
+	}
+	{volume "part3"			; Left Hatche
+		{thickness 6
+			{bottom 4}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "zis30_xx.mdl"}
+
+
+	{volume "body1"			;
+		{thickness 7
+			{front 10}
+		}
+	}
+	{volume "body2"			;
+		{thickness 7
+			{front 10}
+			{top 5}
+		}
+	}
+	{volume "body3"			;
+		{thickness 7}
+	}
+	{volume "body4"			;
+		{thickness 7}
+	}
+	{volume "engine1"
+		{thickness 7}
+	}
+	{volume "engine2"		;
+		{thickness 7}
+	}
+	{volume "gun1"
+		{thickness 30}
+	}
+	{volume "gun2"
+		{thickness 30}
+	}
+	{volume "gun3"
+		{thickness 30}
+	}
+	{volume "gun4"
+		{thickness 30}
+	}
+	{volume "gun5"
+		{thickness 30}
+	}
+	{volume "part1"
+		{thickness 5}
+	}
+	{volume "part4"
+		{thickness 5}
+	}
+	{volume "part6"
+		{thickness 5}
+	}
+	{volume "turret1"		; 
+		{thickness 8}
+	}
+	{volume "turret2"		; 
+		{thickness 8}
+	}
+
+	("tracks" thickness(15))
+}

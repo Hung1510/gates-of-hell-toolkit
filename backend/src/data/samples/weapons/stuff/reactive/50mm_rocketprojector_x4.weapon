@@ -1,0 +1,16 @@
+;_________________________________________
+; USA Grappling hook
+;=========================================
+
+
+{from "50mm_rocketprojector"
+	{filling "ammo 50mm_rocket_grapnel" 4}
+
+	("fire rate" rpm(60))
+	("reload time" seconds(20))
+
+	{burst
+		{min 4}
+		{noaiming}
+	}
+}

@@ -1,0 +1,15 @@
+{
+	(include "../40mm_qf2/40mm_qf2.inc")
+
+	{extender "inventory"
+		{box
+			{item "bulleteng_40 ap2" 60}	;// pre war - early AP shots, 792 m/s
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{weapon "40mm_qf2" filling "bulleteng_40 ap2" 1}
+		}
+	}
+}

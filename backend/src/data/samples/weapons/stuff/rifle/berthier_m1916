@@ -1,0 +1,14 @@
+{from "pattern rifle"	;// French Berthier mle 1916
+	{tag "rifle_shell"}
+	{filling "ammo rifle_fra clip" 5}
+	{entity "berthier_m1916"}
+	{fireSound "smallarms/s3/d1/FIN/Gevar_M96/"}
+	{fireSoundclose "smallarms/s3/3p/FIN/Gevar_M96/"}
+	{reloadSound "reload_clip"}
+	{calibre 8}
+	{mass 4.29}
+
+	("velocity" mps(701))
+	("bolt_action")
+	("mosin_rate")
+}

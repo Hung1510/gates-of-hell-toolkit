@@ -1,0 +1,10 @@
+;_________________________________________
+; short barreled USSR tank gun
+;=========================================
+
+ 
+{from "76mm_m1902"			; L/30 "76mm_k00"
+	("reload time" seconds(10))
+
+	("accuracy_direct_arrowhead" r1(1.5) range_ap(180) range_he(180) range_heat(170))
+}

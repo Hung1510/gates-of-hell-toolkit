@@ -1,0 +1,10 @@
+{ ;// 1940 France
+	(include "../40mm_qf40/40mm_qf40.inc")
+
+	{extender "inventory"
+		{box
+			{item "bullet_40x331_auto eng he" 152}		; 76 clips (4 rounds each)
+		}
+	}
+}
+

@@ -1,0 +1,18 @@
+{from "pattern rifle"
+	{tag "rifle_shell"}
+	{filling "ammo rifle_usa clip" 5}
+	{entity "enfield_m1917"}
+	{fireSound "smallarms/s3/d1/ENG/SMLE_No1_MkIII/"}
+	{fireSoundclose "smallarms/s3/3p/ENG/SMLE_No1_MkIII/"}
+	{reloadSound "reload_clip"}
+	{calibre 7.62}
+	{mass 4.17}
+
+	("velocity" mps(853))
+	("bolt_action")
+	("k98_rate")
+	{parameters "ap"
+		("armor health" damage(5))
+		("penetration" args 17.3 8 4 2 0) ;// AP, M2
+	}
+}

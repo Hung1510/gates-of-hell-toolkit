@@ -1,0 +1,17 @@
+{game_entity
+	(include "../140mm_bl_5_5/140mm_bl_5_5.inc")
+
+	{extender "inventory"
+		{box
+			{item "bulleteng_140 he2" 15}
+			{item "bulleteng_140 sm" 5}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{weapon "140mm_bl5_5" filling "bulleteng_140 he2" 1}
+		}
+	}
+
+}

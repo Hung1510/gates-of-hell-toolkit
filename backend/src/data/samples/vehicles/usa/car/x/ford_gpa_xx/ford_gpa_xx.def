@@ -1,0 +1,35 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "ford_gpa_xx.mdl"}
+
+	{volume "body1"
+		{thickness 2.5}
+		{able {holed}}
+	}
+	{volume "body2"
+		{thickness 2.5}
+		{able {holed}}
+	}
+	{volume "body3"
+		{thickness 2.5}
+		{able {holed}}
+	}
+	{volume "engine1"
+		{thickness 2.5}
+	}
+	{volume "part2"
+		{thickness 2.5}
+	}
+	{volume "wheelleft1"
+		{thickness 1}
+	}
+	{volume "wheelleft2"
+		{thickness 1}
+	}
+	{volume "wheelright1"
+		{thickness 1}
+	}
+	{volume "wheelright2"
+		{thickness 1}
+	}
+}

@@ -1,0 +1,149 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 20mm
+	; gun 25mm
+
+	("tank_medium_tier2")
+
+	("tracks" repair(30) thickness(20))
+	("gun" repair(30) thickness(25))
+
+	("shield_track" args "shield1" 20)
+	("shield_track" args "shield2" 20)
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("ammo" args "ammo5")
+	("ammo" args "ammo6")
+	("ammo" args "ammo7")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("transmission" args "transmission")
+
+	{volume "body1" 		;// front beak
+		{thickness 23 	;// Sides
+			{front 57} ;// front plate
+			{top 30} ;// upper angled plate
+			{bottom 25} ;// lower angled plate
+			{rear 10} ;// bottom hull
+		}
+	}
+	{volume "body2" 		;// lower hull
+		{thickness 28 	;// Sides
+			{front 63.5} ;// front plate
+			{top 20}
+			{bottom 10} ;// bottom hull
+			{rear 20}
+		}
+	}
+	{volume "body3" 		;// front upper hull
+		{thickness 29 	;// Sides
+			{front 63.5}
+			{top 20}
+			{bottom 20}
+			{rear 20}
+		}
+	}
+	{volume "body4" 		;// hull turret box
+		{thickness 50.8 ;// Sides
+			{front 63.5}
+			{top 20}
+			{bottom 8}
+			{rear 51}
+		}
+	}
+	{volume "body5" 		;// lower hull side armor volume
+		{thickness 28 	;// Sides
+			{front 63.5}
+			{top 20}
+			{bottom 10}
+			{rear 20}
+		}
+		{CastSteel 0.8} ;// spaced armor array 14+14mm = ~23mm effective
+	}
+	{volume "engine1" 		;// bottom engine
+		{thickness 29 	;// Sides
+			{front 20}
+			{top 14}
+			{bottom 10}
+			{rear 38}
+		}
+	}
+	{volume "engine2" 		;// top engine
+		{thickness 29 ;// Sides
+			{front 20}
+			{top 14}
+			{bottom 20}
+			{rear 20}
+		}
+	}
+	{volume "engine3" 		;// bottom engine side armor volume
+		{thickness 28 	;// Sides
+			{front 20}
+			{top 14}
+			{bottom 10}
+			{rear 38}
+		}
+		{CastSteel 0.8} ;// spaced armor array 14+14mm = ~23mm effective
+	}
+	{volume "turret1" 		;// rear part of the turret
+		{thickness 40
+			{top 20}
+			{bottom 22}
+		}
+	}
+	{volume "turret2" 		;// front sides part of the turret
+		{thickness 63
+			{top 20}
+			{bottom 22}
+		}
+	}
+	{volume "turret3"		;// Mg Port
+		{thickness 102}
+	}
+	{volume "turret4" 		;// Visor Port
+		{thickness 102}
+	}
+	{volume "turret5" 		;// Turret ring
+		{thickness 22}
+	}
+	{volume "turret6" 		;// gun hole
+		{thickness 60}
+	}
+	{volume "turret7" 		;// front part of the turret
+		{thickness 102
+			{top 20}
+			{bottom 22}
+		}
+	}
+	{volume "armor1" 		;\\ Boxes
+		{thickness 6}
+	}
+	{volume "armor2" 		;\\ Boxes
+		{thickness 6}
+	}
+	{volume "armor3"		;\\ Engine Extra Armor
+		{thickness 25
+			{top 14}
+		}
+		{able {holed}}
+	}
+	{volume "armor4" 		;\\ Engine Extra Armor
+		{thickness 25
+			{top 14}
+		}
+		{able {holed}}
+	}
+	{volume "armor5" 		;// blast plate
+		{thickness 25}
+		{able {holed}}
+	}
+	{volume "armor6" 		;// engine exhaust box
+		{thickness 25}
+	}
+	
+	{component "shield1" {tags "cut_part"}}
+	{component "shield2" {tags "cut_part"}}

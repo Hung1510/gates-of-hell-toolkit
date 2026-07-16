@@ -1,0 +1,34 @@
+;_________________________________________
+; US Aerial Rocket Launcher
+;=========================================
+
+
+{from "pattern reactive"		; "P-47"
+	{tag "-gun"}
+	{filling "ammo 127mm_hvar" 4}
+	{fillingVisible "rocket"}
+	{fireSound "reactive/rocket_burst/"}
+	{inventory {noView}}
+	{calibre 127}
+
+	{spreading
+		{SpreadRadius 4}
+		{SpreadXYRatio 5}
+		{SpreadYadjust 0.1}
+		{radiusFunction
+			1		0.1
+			300		1
+			400		2
+		}
+	}
+	{parameters "aphe"
+		{projectileDamageTable {0 76} {300 76}}
+		{minimumDamageModifier 750}
+	}
+
+	{range 1 300}
+	("fire rate" rpm(600))
+	("reload time" seconds(40))
+	("velocity" mps(420))
+	("aerial gravity")
+}

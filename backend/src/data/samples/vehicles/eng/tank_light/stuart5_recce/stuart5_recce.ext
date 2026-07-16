@@ -1,0 +1,65 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 15mm
+
+	("tank_light_tier2")
+
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("transmission" args "transmission")
+	("tracks" repair(30) thickness(15))
+
+	("shield_tear" args "shieldr1" 5)
+	("shield_tear" args "shieldr2" 5)
+	("shield_tear" args "shieldr3" 5)
+	("shield_tear" args "shieldl1" 5)
+	("shield_tear" args "shieldl2" 5)
+	("shield_tear" args "shieldl3" 5)
+	("shield_track" args "shield1" 20)
+	("shield_track" args "shield2" 20)
+
+	{extender "shield" {on}}
+
+	{volume "body1"			; Hull
+		{thickness 25.4
+			{top 25.4}			;front upper
+			{front 44}			;front lower
+			{rear 10}
+			{bottom 12.7}
+		}
+	}
+	{volume "body2"			; hull upper
+		{thickness 25.4
+			{top 12.7}
+			{front 25.4}
+			{rear 10}
+		}
+		{able {holed}}
+	}
+	{volume "engine1"
+		{thickness 25.4
+			{front 10}
+			{bottom 12.7}
+			{rear 25.4}
+		}
+	}
+	{volume "engine2"
+		{thickness 25.4
+			{bottom 12.7}
+			{top 12.7}
+		}
+	}
+	{volume "engine3"
+		{thickness 25.4
+			{bottom 12.7}
+			{top 12.7}
+		}
+	}
+	{volume "armor1" {thickness 4}}
+	{volume "armor2"		; turret ring
+		{thickness 28.5
+			{top 12.7}
+		}
+		{able {holed}}
+	}

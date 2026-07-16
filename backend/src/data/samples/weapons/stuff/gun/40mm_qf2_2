@@ -1,0 +1,11 @@
+;_________________________________________
+; British light AT cannon
+;=========================================
+
+
+{from "40mm_qf2"			; L/50, "40mm QF 2-pounder" tank version
+	{fireSoundclose "cannon/s1/1p/Shared/Cannon/"}
+	{reloadSound "tank/1p/short/"}
+
+	("reload time" seconds(4))
+}

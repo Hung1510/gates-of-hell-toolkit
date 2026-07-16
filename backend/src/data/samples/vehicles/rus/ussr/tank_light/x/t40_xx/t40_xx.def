@@ -1,0 +1,88 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "t40_xx.mdl"}
+
+
+	{volume "barrel"
+		{thickness 20}
+	}
+	{volume "body1"			; Hull
+		{thickness 9
+			{top 6}			; Glacis
+			{bottom 6}
+		}
+		{able {holed}}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 9
+			{top 6}
+			{bottom 5}
+		}
+	}
+	{volume "body3"			; Engine Exhaust Box
+		{thickness 9
+			{top 6}
+			{bottom 5}
+		}
+	}
+	{volume "turret1"		; Turret
+		{thickness 10
+			{top 5}
+			{bottom 5}
+		}
+	}
+	{volume "turret2"		; Turret Front
+		{thickness 15
+			{top 5}
+			{bottom 5}
+		}
+	}
+	{volume "turret3"		; Turret Front Sides
+		{thickness 10
+			{top 5}
+			{bottom 5}
+		}
+	}
+	{volume "mantlet"		; Mantlet
+		{thickness 10}
+	}
+	{volume "cover2"
+		{thickness 5}
+	}
+	{volume "trackleft1"
+		{thickness 10}
+	}
+	{volume "trackleft2"
+		{thickness 10}
+	}
+	{volume "trackleft3"
+		{thickness 10}
+	}
+	{volume "trackleft4"
+		{thickness 10}
+	}
+	{volume "trackleft5"
+		{thickness 10}
+	}
+	{volume "trackleft6"
+		{thickness 10}
+	}
+	{volume "trackright1"
+		{thickness 10}
+	}
+	{volume "trackright2"
+		{thickness 10}
+	}
+	{volume "trackright3"
+		{thickness 10}
+	}
+	{volume "trackright4"
+		{thickness 10}
+	}
+	{volume "trackright5"
+		{thickness 10}
+	}
+	{volume "trackright6"
+		{thickness 10}
+	}
+}

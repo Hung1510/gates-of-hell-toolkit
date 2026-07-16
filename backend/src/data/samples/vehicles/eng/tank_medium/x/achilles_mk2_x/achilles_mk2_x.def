@@ -1,0 +1,3 @@
+{game_entity
+	{extension "achilles_mk2_x.mdl"} {RimLight}
+}

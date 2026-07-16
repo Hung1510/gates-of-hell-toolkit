@@ -1,0 +1,38 @@
+;_________________________________________
+; light AA gun
+;=========================================
+
+
+{from "pattern gun"			; "oerlikon"
+	{filling "bulleteng_20_auto" 60}
+	{fireSound "cannon/s1/d1/Shared/Autocannon_20to30mm/"}
+	{fireSoundclose "cannon/s1/3p/Shared/Autocannon_20to30mm/"}
+	{reloadSound "tank/reload_small"}
+	("range_autocannon_12-20")
+	{cursor "ironsights/aa"}
+	{calibre 20}
+	("light_aa")
+
+	("fire rate" rpm(450))
+	("reload time" seconds(6))
+
+	("velocity m/s" ap(835) apcr(835) he(835) heat(1))
+	("armor health" damage(30))
+	("20_slope_multipliers")
+
+	{burst
+		{short 10 0.75}			;// short burst shots on long distance, rand (+-)shots
+		{long 20 1}				;// long burst shots on short distance, rand (+-)shots
+		{rangeKoef 0.85}		;// rangeKoef * aimRange = max long burst distance
+	}
+
+	; AP Shot Mk.IX.T
+	("penetration_short" shell(ap) range(150) a(36) b(28) c(21) d(15) e(11))
+
+	("accuracy_direct_auto" r1(0.8) range_ap(150) range_he(150) range_heat(150))
+
+	{parameters "he"
+		(mod "mp" {unlimitedRangeTPC 1})	;// unrestricts range in TPC/FPC for shooting at aircraft
+		{FalloffStrength 0}
+	}
+}

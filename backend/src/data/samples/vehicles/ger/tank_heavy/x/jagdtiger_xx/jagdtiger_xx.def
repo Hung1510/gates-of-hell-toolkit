@@ -1,0 +1,116 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "jagdtiger_xx.mdl"}
+
+	{volume "barrel1"
+		{thickness 200		}
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+	}
+	{volume "barrel2"
+		{thickness 200		}
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+	}
+	{volume "barrel3"
+		{thickness 30}
+	}
+
+	{volume "body1"			; Hull
+		{thickness 80
+			{front 100}		; Lower Nose
+			{top 150}		; Glacis
+			{rear 25}
+			{bottom 25}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 80
+			{front 150}
+			{top 40}
+			{rear 25}
+			{bottom 25}		; Overhang (above tracks)
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "body3"			; turretthings
+		{thickness 80
+			{front 250}
+			{top 40}
+			{rear 80}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "body4"
+		{thickness 250}
+		{Quality "large_flaw"}
+	}
+
+	{volume "engine1"		; Hull
+		{thickness 80
+			{front 25}
+			{rear 80}
+			{bottom 25}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 80
+			{front 25}
+			{top 40}
+			{rear 80}
+			{bottom 25}		; Overhang (above tracks)
+		}
+		{Quality "large_flaw"}
+	}
+
+	{volume "mg_port"
+		{thickness 150}
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+		{component "body"}
+	}
+
+	{volume "shieldr1"
+		{thickness 5}
+	}
+	{volume "shieldr2"
+		{thickness 5}
+	}
+	{volume "shieldr3"
+		{thickness 5}
+	}
+	{volume "shieldr4"
+		{thickness 5}
+	}
+	{volume "shieldr5"
+		{thickness 5}
+	}
+	{volume "shieldl1"
+		{thickness 5}
+	}
+	{volume "shieldl2"
+		{thickness 5}
+	}
+	{volume "shieldl3"
+		{thickness 5}
+	}
+	{volume "shieldl4"
+		{thickness 5}
+	}
+	{volume "shieldl5"
+		{thickness 5}
+	}
+
+	{volume "shield1" {thickness 250 {front 110}} {component "body"}}
+	{volume "shield2" {thickness 250 {front 110}} {component "body"}}
+	{volume "shield3" {thickness 250 {front 110}} {component "body"}}
+	{volume "shield4" {thickness 250 {front 110}} {component "body"}}
+	{volume "shield5" {thickness 250 {rear 110}} {component "body"}}
+	{volume "shield6" {thickness 250 {rear 110}} {component "body"}}
+	{volume "shield7" {thickness 250 {rear 110}} {component "body"}}
+	{volume "shield8" {thickness 250 {rear 110}} {component "body"}}
+
+	("tracks" thickness(30))
+}

@@ -1,0 +1,104 @@
+{game_entity
+	(include "/properties/cannon.ext")
+	{extension "150mm_sw34.mdl"}
+	(include "/properties/selection/vehicle.inc" scale(0.9))
+	{props "searchlight" "wheeled" "invisible" "vision_lev04_can" "trailer" "trailer_medium" "detect_atgun" "c_searchlight" "no_exp_blast"}
+	{PatherId "cannon.large"}
+	{targetclass "cannon_bullet"}
+	{targetSelector "searchlight"}
+
+	{sensor
+		{Visor "main"
+			{vision "searchlight"}
+		}
+	}
+
+	("lamp" args "lamp")
+	("wheel" args "wheelright1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelleft2")
+
+	("gun" repair(30) thickness(2))
+
+	{volume "body7" {able {holed}}}
+	{volume "body8" {tags "invisible"}} ;// volume disabled on carriage hidden 
+	{volume "body9" {tags "invisible"}} ;// volume disabled on carriage hidden 
+	{volume "wheelleft1" {tags "invisible"}}
+	{volume "wheelleft2" {tags "invisible"}}
+	{volume "wheelright1" {tags "invisible"}}
+	{volume "wheelright2" {tags "invisible"}}
+
+	("armor_light_cannon")
+	("cannon_durability" body(150) gun(40) wheel(100) shield(200))
+	("crew_wheeled_cannon")
+
+	{boarder
+		{anm "gunner"
+			{forward {end "pose_flak_gunner" 10}}
+		}
+		{anm "commander"
+			{forward {end "pose_flak_charger2" 10}}
+		}
+		{anm "driver1"	;// gunner
+			{forward {end "cannon_pak40_pusher_right" 10}}
+		}
+		{anm "driver2"	;// commander
+			{forward {end "cannon_pak40_pusher_left" 10}}
+		}
+		{anm "seat1"	;// gunner
+			{forward {end "pose_seat_cannon_right" 10}}
+		}
+		{anm "seat2"	;// commander
+			{forward {end "pose_seat_cannon_right" 10}}
+		}
+	}
+
+	{extender "cannon"
+		{animation
+			{switch "close"}
+			;// "gunner" "commander"
+			{move "cannon_pak40_pusher_right" "cannon_pak40_pusher_left"}
+			{aim "flak_gunner_aim" "flak_charger2_aim"}
+		}
+		{move {workers "driver1" "driver2"  minWorkers 2} {obstacle "close"}}		;// move state: cannon being pushed and which positions play animations
+		{attack {workers "gunner" "commander"} {obstacle "open"}}	;// fire/attack state: cannon aim, fire, and reload events
+		{trailing {workers "seat1" "seat2"}}						;// trailing state: cannon is being towed {obstacle} not needed. Uses "close"
+		{rotate_ik_Limit 0}
+	}
+
+	{extender "inventory"
+		{box
+			{size 4 2}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{weapon "searchlight"}
+			{foresight "foresight3"}
+			{gunner "gunner"}
+			{basic}
+			{ai_in_manual}
+			{rotate}
+		}
+	}
+
+	{mass 2000}
+	{Chassis "track"
+		("car_trace" fx("tracewheel02") step(0.1) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+		("car_trace" fx("tracewheel02") step(0.1) wheell("wlf") wheelr("wrf") bonel("FXtraceL2") boner("FXtraceR2"))
+		("mobility_cannon"
+			speed(7.0) ;-----------------------------------Max speed.
+			weight(2000) ;---------------------------------Weight in Kilograms.
+		)
+	}
+
+	{bone "turret"
+		{speed2 30}
+	}
+	{bone "gun"
+		{limits -12 88}
+		{speed2 15}
+	}
+}

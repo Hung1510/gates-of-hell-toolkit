@@ -1,0 +1,11 @@
+;_________________________________________
+; UK tank gun
+;=========================================
+
+
+{from "76mm_qf17"		; L/55 "firefly"
+	{fireSoundclose "cannon/s2/1p/Shared/"}
+	{reloadSound "tank/1p/medium_long/"}
+
+	("reload time" seconds(9.5))
+}

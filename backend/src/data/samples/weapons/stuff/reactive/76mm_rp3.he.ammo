@@ -1,0 +1,15 @@
+{from "pattern reactive_ammo"
+	{tag "big mortar fg itemin2hands"}
+	{inventory
+		{size 8 1}
+		{weight 100}
+	}
+	{entity "3_inch_rocket_he"} ;
+	{mass 44.6}
+
+	{view "3_inch_rocket_he"
+		{tail "rocket_smoke_bm13" "tail"}
+	}
+
+	("rocket_level_4" weight(27.4) filler(6))
+}

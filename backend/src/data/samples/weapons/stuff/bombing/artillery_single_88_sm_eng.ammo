@@ -1,0 +1,10 @@
+{from "air_bomb"
+	{tag "smoke_size2 -bomb"}
+	{tag "sm smoke fg no_throw"}
+	{tag "ammo shell itemin2hands"}
+	{inventory
+		{noView}
+	}
+
+	{entity "artillery_single_88_sm_eng"}
+}

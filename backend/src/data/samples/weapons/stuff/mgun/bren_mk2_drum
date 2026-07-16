@@ -1,0 +1,16 @@
+{from "pattern mgun_light"
+	{filling "ammo bren_drum_mag" 97}
+	{entity "bren_mk2_drum"}
+	{fireSound 	"smallarms/s3/d1/ENG/BREN_Gun/"}
+	{fireSoundclose "smallarms/s3/3p/ENG/BREN_Gun/"}
+	{reloadSound "mg34"}
+	{calibre 7.7}
+	{mass 10.3}
+	{traceFreq 2}
+
+	("fire rate" rpm(500))
+	("velocity" mps(743))
+
+	("burst_long")
+	("spreading_low")
+}

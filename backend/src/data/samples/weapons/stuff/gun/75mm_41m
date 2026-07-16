@@ -1,0 +1,26 @@
+;_________________________________________
+; Hungarian short barreled infantry support gun
+;=========================================
+
+
+{from "pattern gun"			; L/25 "turan2"
+	{filling "bullethun_75_l25"}
+	{fireSound "cannon/s3/d1/Shared/Cannon_75to76mm_LV/"}
+	{fireSoundclose "cannon/s3/d1/Shared/Cannon_75to76mm_LV/"}
+	{reloadSound "tank/1p/medium/"}
+	("range_180")
+	{calibre 75}
+	("reload time" seconds(7))
+
+	("velocity m/s" ap(440) apcr(1) he(570) heat(450))
+	("armor health" damage(200))
+	("armor health custom" shell(apc) damage(200) velocity(440) filler(0))
+	("76_slope_multipliers")
+
+	("penetration_medium" shell(apc) range(170) a(52) b(48) c(44) d(40) e(37))
+
+	("penetration_medium" shell(heat) range(170) a(80) b(80) c(80) d(80) e(80))
+
+
+	("accuracy_direct" r1(1.00) range_ap(170) range_he(180) range_heat(170))
+}

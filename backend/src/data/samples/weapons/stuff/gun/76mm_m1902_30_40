@@ -1,0 +1,47 @@
+;_________________________________________
+; modernised USSR infantry support gun
+;=========================================
+
+
+{from "pattern gun"			; L/40 "M1902 1930"
+	{filling "bulletrus_76"}
+	{fireSound "cannon/s3/d1/Shared/Cannon_75to76mm/"}
+	{fireSoundclose "cannon/s3/3p/Shared/Cannon_75to76mm/"}
+	{reloadSound "utility/"}
+	("range_190")
+	{calibre 76.2}
+	("reload time" seconds(6.5))
+
+	("velocity m/s" ap(662) apcr(965) he(662) heat(400))
+	("armor health" damage(200))
+	("armor health custom" shell(apcbc) damage(200) velocity(640) filler(0))
+	("armor health custom" shell(aphebc) damage(200) velocity(662) filler(150))
+	("armor health custom" shell(aphebc2) damage(200) velocity(662) filler(88))
+	("76_rus_slope_multipliers")
+
+	; BR-350A
+	("penetration_medium" shell(aphebc) range(190) a(76) b(67) c(58) d(53) e(49))
+
+	; BR-350B
+	("penetration_medium" shell(aphebc2) range(190) a(83) b(75) c(66) d(60) e(55))
+
+	; BR-350P
+	("penetration_medium" shell(apcr) range(190) a(132) b(94) c(62) d(41) e(27))
+
+	; BP-350A
+	("penetration_medium" shell(heat) range(170) a(75) b(75) c(75) d(75) e(75))	; issued sometime in '43
+
+	; 76 psa - Vj4 (Finnish)
+	("penetration_medium" shell(apcbc) range(190) a(107) b(97) c(87) d(77) e(68)) ; issued sometime in '42
+	{parameters "apcbc" ("velocity" mps(640))}
+
+	; 76 hkr 42-18/24-38 (Finnish)
+	("penetration_medium" shell(heatb) range(170) a(87) b(87) c(87) d(87) e(87))	; issued sometime in '44
+	{parameters "heatb" ("velocity" mps(400))}
+
+	; 76 hrk Vj 42/C-18/24-38 (Finnish)
+	("penetration_medium" shell(heatc) range(170) a(115) b(115) c(115) d(115) e(115))	; issued sometime in '44
+	{parameters "heatc" ("velocity" mps(400))}
+
+	("accuracy_direct" r1(1.01) range_ap(190) range_he(190) range_heat(170))
+}

@@ -1,0 +1,8 @@
+{from "air_bomb"
+	{tag "shell size6 fg all_he -bomb"}
+	{inventory
+		{noView}
+	}
+	("he_level_5" weight(156.5) filler(24.52))
+	{entity "artillery_single_240"}
+}

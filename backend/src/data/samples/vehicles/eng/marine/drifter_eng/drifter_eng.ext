@@ -1,0 +1,166 @@
+	;// Defines
+	;// NO FUEL AS ITS COAL POWERED
+	("gun" repair(30) thickness(15))
+	("engine" repair(30))
+	("cabin" repair(30))
+	("body" repair(30) thickness(4))
+	("lamp" args "lamp")
+	("marine_durability" body(600) engine(450) gun(150))
+
+	("armor" args "armor1" 4) ;// Wooden Stand
+	("armor" args "armor2" 2)
+	("armor" args "armor3" 2)
+	("armor" args "armor4" 2)
+	("armor" args "armor5" 2)
+	("armor" args "armor6" 2)
+	("armor" args "armor7" 2)
+	("armor" args "armor8" 2)
+	("armor" args "armor9" 2)
+	("armor" args "armor10" 2)
+	("armor" args "armor11" 2)
+	("armor" args "armor12" 2)
+	("armor" args "armor13" 4) ;// Wooden Beam
+	("armor" args "armor14" 4) ;// Wooden Beam
+	("armor" args "armor15" 4) ;// Wooden Beam
+	("armor" args "armor16" 4) ;// Wooden Beam
+	("armor" args "armor17" 4) ;// Wooden Beam
+	("armor" args "armor18" 4) ;// Wooden Beam
+
+	("shield" args "detail5" 2)
+	("shield" args "lifering1" 0.5)
+	("shield" args "lifering2" 0.5)
+	("shield" args "lifering3" 0.5)
+	("shield" args "lifering4" 0.5)
+	("shield" args "lifering5" 0.5)
+	("shield" args "lifering6" 0.5)
+	("shield" args "lifering7" 0.5)
+	("shield" args "lifering8" 0.5)
+
+	("glass" args "window1")
+	("glass" args "window2")
+	("glass" args "window3")
+	("glass" args "window4")
+	("glass" args "window5")
+	("glass" args "window6")
+	("glass" args "window7")
+	("glass" args "window8")
+	("glass" args "window9")
+	("glass" args "window10")
+	("glass" args "window11")
+	("glass" args "window12")
+	("glass" args "window13")
+	("glass" args "window14")
+	("glass" args "window15")
+	("glass" args "window16")
+	("glass" args "window17")
+
+	;// Components
+	{volume "body1"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 4}
+	}
+	{volume "body2"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "body3"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "body4"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "body5"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "body6"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "cabin1" {thickness 4}}
+	{volume "cabin2" {thickness 4}}
+	{volume "cabin3" {thickness 4}}
+	{volume "cabin4" {thickness 4}}
+	{volume "cabin5" {thickness 4}}
+	{Volume "engine1" ;// Internal part.
+		{thickness 2}
+	}
+	{Volume "engine2" ;// Steam Tube.
+		{thickness 6}
+	}
+	{component "detail5" {tags "cut_part"}}
+	{component "lifering1" {tags "cut_part"}}
+	{component "lifering2" {tags "cut_part"}}
+	{component "lifering3" {tags "cut_part"}}
+	{component "lifering4" {tags "cut_part"}}
+	{component "lifering5" {tags "cut_part"}}
+	{component "lifering6" {tags "cut_part"}}
+	{component "lifering7" {tags "cut_part"}}
+	{component "lifering8" {tags "cut_part"}}
+
+	;// Non-Components
+	{volume "armor1" {material "wood"} {tags "wood"}}
+	{volume "armor13" {material "wood"} {tags "wood"}}
+	{volume "armor14" {material "wood"} {tags "wood"}}
+	{volume "armor15" {material "wood"} {tags "wood"}}
+	{volume "armor16" {material "wood"} {tags "wood"}}
+	{volume "armor17" {material "wood"} {tags "wood"}}
+	{volume "armor18" {material "wood"} {tags "wood"}}
+	{volume "detail5"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 2}
+	}
+	{volume "lifering1"
+		{thickness 0.5}
+		{material "fabric"}
+		{able {NoWoundDecal}}
+	}
+	{volume "lifering2"
+		{thickness 0.5}
+		{material "fabric"}
+		{able {NoWoundDecal}}
+	}
+	{volume "lifering3"
+		{thickness 0.5}
+		{material "fabric"}
+		{able {NoWoundDecal}}
+	}
+	{volume "lifering4"
+		{thickness 0.5}
+		{material "fabric"}
+		{able {NoWoundDecal}}
+	}
+	{volume "lifering5"
+		{thickness 0.5}
+		{material "fabric"}
+		{able {NoWoundDecal}}
+	}
+	{volume "lifering6"
+		{thickness 0.5}
+		{material "fabric"}
+		{able {NoWoundDecal}}
+	}
+	{volume "lifering7"
+		{thickness 0.5}
+		{material "fabric"}
+		{able {NoWoundDecal}}
+	}
+	{volume "lifering8"
+		{thickness 0.5}
+		{material "fabric"}
+		{able {NoWoundDecal}}
+	}

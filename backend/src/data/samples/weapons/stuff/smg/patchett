@@ -1,0 +1,18 @@
+{from "pattern smg"
+	{tag "pistol_shell"}
+	{filling "ammo eng_smg" 32}
+	{entity "patchett"}
+	{fireSound "smallarms/s1/d1/ENG/PMC_MkI/"}
+	{fireSoundclose "smallarms/s1/3p/ENG/PMC_MkI/"}
+	{reloadSound "mp40"}
+	{calibre 9}
+	{mass 2.7}
+
+	("fire rate" rpm(550))
+	("velocity" mps(381))
+	("spreading_medium")
+	("burst_short")
+	("recoil_smg_low")
+	("stick_reload")
+	{FiringTimeout 1.8 0.4}
+}

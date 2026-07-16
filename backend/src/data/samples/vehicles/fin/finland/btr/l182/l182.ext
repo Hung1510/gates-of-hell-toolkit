@@ -1,0 +1,51 @@
+;SDL
+
+	; armor notes
+	; tracks 10mm
+	; gun 20mm
+
+	("armoredcar_tier2")
+
+	("solid_wheel" args "wheelright1")
+	("solid_wheel" args "wheelleft1")
+	("solid_wheel" args "wheelright2")
+	("solid_wheel" args "wheelleft2")
+	("solid_wheel" args "wheelright3")
+	("solid_wheel" args "wheelleft3")
+
+	("turret" repair(45))
+	("gun" repair(30) thickness(20))
+
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+
+	{volume "body1"
+		{thickness 10
+			{top 5}
+			{bottom 5}
+		}
+	}
+	{volume "body2"
+		{thickness 10
+			{top 5}
+			{bottom 5}
+		}
+		{able {holed}}
+	}
+	{volume "engine1"
+		{thickness 10
+			{top 5}
+			{rear 5}
+			{bottom 5}
+		}
+	}
+	{volume "turret1"
+		{thickness 15
+			{top 5}
+		}
+	}
+	{volume "turret2"
+		{thickness 15
+			{top 5}
+		}
+	}

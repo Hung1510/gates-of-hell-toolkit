@@ -1,0 +1,37 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "h39_turret_xx.mdl"}
+
+	{volume "body1"		; ring
+		{thickness 40}
+		{CastSteel 0.8063}
+	}
+	{volume "body2"		; main
+		{thickness 40
+			{top 25}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body3"		; 
+		{thickness 40
+			{top 25}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "cupola"
+		{thickness 40}
+		{CastSteel 0.8063}
+	}
+	{volume "barrel1"
+		{thickness 20}
+	}
+	{volume "barrel2"
+		{thickness 20}
+	}
+	{volume "part1"
+		{thickness 20}
+	}
+	{volume "part2"
+		{thickness 20}
+	}
+}

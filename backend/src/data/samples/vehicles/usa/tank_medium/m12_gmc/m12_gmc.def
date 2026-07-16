@@ -1,0 +1,9 @@
+{game_entity
+	(include "m12_gmc.inc")
+
+	{extender "inventory"
+		{box
+			{item "ammo bullet_155 usa wp2" 2}
+		}
+	}
+}

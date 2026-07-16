@@ -1,0 +1,13 @@
+;_________________________________________
+; USSR light AT cannon
+;=========================================
+
+
+{from "45mm_20k"			; L/46 "m37"
+
+	{fireSound "cannon/s2/d1/Shared/Cannon_45to47mm/"}
+	{fireSoundclose "cannon/s2/3p/Shared/Cannon_45to47mm/"}
+	{reloadSound "utility/"}
+
+	("reload time" seconds(3.5))
+}

@@ -1,0 +1,95 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "cromwell4_xx.mdl"}
+	
+	("tracks" thickness(20))
+	{volume "shield1"
+		{thickness 20}
+	}
+
+
+	{volume "body1"
+		{thickness 32
+			{front 57}
+			{top 30}
+			{bottom 25.4}
+			{rear 20}
+		}
+	}
+	{volume "body2"
+		{thickness 44
+			{front 63.5}
+			{top 20}
+			{bottom 20}
+			{rear 20}
+		}
+	}
+	{volume "body3"
+		{thickness 32
+			{front 63.5}
+			{top 20}
+			{bottom 20}
+			{rear 20}
+		}
+	}
+	{volume "engine1"
+		{thickness 38
+			{front 20}
+			{top 14}
+			{bottom 20}
+			{rear 20}
+		}
+	}
+	{volume "engine2"
+		{thickness 25.4
+			{front 20}
+			{top 12.7}
+			{bottom 20}
+			{rear 20}
+		}
+	}
+	{volume "turret1"
+		{thickness 51
+			{front 64}
+			{top 20}
+			{bottom 19}
+			{rear 44}
+		}
+		{able {holed}}
+	}
+	{volume "turret2"
+		{thickness 44}
+	}
+	{volume "turret3" 	;\\ Mantlet
+		{thickness 88.9}
+	}
+	{volume "barrel1"
+		{thickness 20}
+	}
+	{volume "breech"
+		{thickness 10}
+	}
+	{volume "armor1" 	;\\ Engine Extra Armor
+		{thickness 32}
+		{able {holed}}
+	}
+	{volume "armor2"	;\\ Engine Extra Armor
+		{thickness 32}
+		{able {holed}}
+	}
+	{volume "armor3" 	;\\ Boxes
+		{thickness 6}
+	}
+	{volume "armor4" 	;\\ Boxes
+		{thickness 6}
+	}
+	{volume "part1"		;\\ Engine Hatch
+		{thickness 6}
+	}
+	{volume "part2"		;\\ Engine Hatch
+		{thickness 6}
+	}
+	{volume "part3"		;\\ Engine Hatch
+		{thickness 6}
+	}
+}

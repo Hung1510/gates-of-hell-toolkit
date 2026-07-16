@@ -1,0 +1,16 @@
+{game_entity
+	(include "../bedford_oyd/bedford_oyd.inc")
+
+	{props "bedford_oyd"}
+
+	{extender "inventory"
+		{box
+		;	{item "ammo rifle_eng clip" 1000}		; 7.7mm
+		;	{item "ammo bren_mag" 1000}				; 7.7mm
+		;	{item "no36m grenade" 10}
+			{item "boys_mk1" filling "atrifle_eng ap2 ammo" 5}
+			{item "atrifle_eng ap2 ammo" 50}
+		}
+	}
+}
+

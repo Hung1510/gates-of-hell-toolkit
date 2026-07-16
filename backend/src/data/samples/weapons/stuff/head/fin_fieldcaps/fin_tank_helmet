@@ -1,0 +1,5 @@
+{from "pattern light_headgear"
+	{entity "fin_summercap_m39_arm_officer_tank"}
+}
+
+;// added to stop crash on older conquest tank breeds used as pilots in mission scripts. 

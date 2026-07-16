@@ -1,0 +1,71 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "m36_gmc_xx.mdl"}
+
+	{volume "body1"			;upper
+		{thickness 19.5
+			{top 19.5}
+			{front 38}
+			{rear 5}
+		}
+	}
+	{volume "body2"			;lower
+		{thickness 25.4
+			{front 107.8}
+			{rear 5}
+			{top 50.8}		;front
+		}
+	}
+	{volume "body3"			;ring
+		{thickness 19.5}
+	}
+	{volume "engine1"		; upper
+		{thickness 19.5
+			{front 5}
+			{top 10}
+		}
+	}
+	{volume "engine2"		; lower
+		{thickness 25.4
+			{rear 19.5}
+			{front 10}
+		}
+	}
+	{volume "turret1"		; main part
+		{thickness 31.7}
+		{able {holed}}
+	}
+	{volume "turret2"		; rear part
+		{thickness 25.4}
+	}
+	{volume "turret3"		; 
+		{thickness 31.7
+			{left 50.8}		;side
+		}
+	}
+	{volume "turret4"
+		{thickness 31.7
+			{left 50.8}		;side
+		}
+	}
+	{volume "mantlet"
+		{thickness 76.2}
+	}
+	{volume "armor1"		; sideskirt
+		{thickness 5}
+	}
+	{volume "armor2"		; sideskirt
+		{thickness 5}
+	}
+	{volume "armor3"		; sideskirt
+		{thickness 5}
+	}
+	{volume "barrel1"
+		{thickness 30}
+	}
+	{volume "barrel2"
+		{thickness 30}
+	}
+
+	("tracks" thickness(20))
+}

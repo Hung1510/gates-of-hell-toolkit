@@ -1,0 +1,15 @@
+{from "besa"	; "vickers_aa_mk1"
+	{filling "mgun_ger belt" 900}
+
+	{fireSound "smallarms/s3/d1/Shared/ZB37/"}
+	{fireSoundclose "smallarms/s3/int/Shared/ZB37/"}
+	{reloadSound "dt"}
+
+	{mass 48.4}
+
+	("fire rate" rpm(2300))
+	("reload time" seconds(24))
+
+	("burst_aa_quad")
+	("spreading_high")
+}

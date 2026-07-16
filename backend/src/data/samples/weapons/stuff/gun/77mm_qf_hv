@@ -1,0 +1,29 @@
+;_________________________________________
+; UK tank gun
+;=========================================
+
+
+{from "pattern gun"			; L/55 "QF 77mm HV"
+	{filling "bulleteng_77"}
+	{fireSound "cannon/s3/d1/Shared/Cannon_75to76mm_HV/"}
+	{fireSoundclose "cannon/s2/1p/Shared/"}
+	{reloadSound "tank/1p/medium_long/"}
+	("range_200")
+	{calibre 76}
+
+	("reload time" seconds(7))
+
+	("velocity m/s" ap(785) apcr(1036) he(500) heat(1))
+	("armor health" damage(200))
+	("armor health custom" shell(apcbc) damage(200) velocity(785) filler(0))
+	("76_eng_slope_multipliers")
+
+	("penetration_long" shell(apcbc) range(200) a(149) b(139) c(128) d(117) e(108))		; APCBC shot MK.VIII
+	("penetration_long" shell(apds) range(200) a(221) b(202) c(180) d(160) e(143))		; APDS shot MK.I
+
+	{parameters "he"
+		{range 180 180}
+	}
+
+	("accuracy_direct" r1(0.65) range_ap(200) range_he(180) range_heat(180))
+}

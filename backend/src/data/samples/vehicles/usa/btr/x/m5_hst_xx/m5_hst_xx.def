@@ -1,0 +1,72 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "m5_hst_xx.mdl"}
+
+	{volume "armor1"
+		{thickness 2.5}
+	}
+	{volume "armor2"
+		{thickness 2.5}
+	}
+	{volume "armor3"
+		{thickness 2.5}
+	}
+	{volume "armor4"
+		{thickness 2.5}
+	}
+	{volume "armor5"
+		{thickness 2.5}
+		{able {holed}}
+	}
+	{volume "armor6"
+		{thickness 2.5}
+		{able {holed}}
+	}
+	{volume "armor7"
+		{thickness 2.5}
+		{able {holed}}
+	}
+	{volume "armor8"
+		{thickness 2.5}
+	}
+	{volume "armor9"
+		{thickness 2.5}
+	}
+	{volume "armor10"
+		{thickness 2.5}
+	}
+	{volume "armor11"
+		{thickness 2.5}
+	}
+	{volume "body1"
+		{thickness 2.5}
+	}
+	{volume "body2"
+		{thickness 2.5}
+	}
+	{volume "body3"
+		{thickness 2.5}
+		{able {holed}}
+	}
+	{volume "body4"
+		{thickness 2.5}
+		{able {holed}}
+	}
+	{volume "body5"
+		{thickness 2.5}
+	}
+	{volume "engine1"
+		{thickness 2.5}
+	}
+	{volume "engine2"
+		{thickness 2.5}
+	}
+	{volume "engine3"
+		{thickness 2.5}
+	}
+	{volume "engine4"
+		{thickness 2.5}
+	}
+
+	("tracks" thickness(15))
+}

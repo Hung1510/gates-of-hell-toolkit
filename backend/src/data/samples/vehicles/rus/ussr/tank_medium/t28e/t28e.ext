@@ -1,0 +1,121 @@
+;SDL
+
+	; armor notes
+	; gun 25mm
+	; track guards 10mm
+
+	("make_component" args "aux_turret1" "aux_turret1")
+	("make_component" args "aux_turret2" "aux_turret2")
+
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("transmission" args "transmission")
+
+	("tracks" repair(30) thickness(20))
+	("gun" repair(30) thickness(25))
+	("aux_turret" repair(45))
+
+	("armor" args "armor1" 20)
+	("armor" args "armor2" 20)
+	("armor" args "armor3" 20)
+	("armor" args "armor5" 20)
+	("armor" args "armor6" 20)
+	("armor" args "armor7" 30)
+	("armor" args "armor8" 30)
+	("armor" args "armor9" 30)
+	("armor" args "armor10" 30)
+	("armor" args "armor11" 30)
+	("armor" args "armor12" 30)
+
+	("shield" args "shieldl1" 10)
+	("shield" args "shieldr1" 10)
+
+	{volume "body1"			; Hull
+		{thickness 20
+			{front 30}		; Lower Hull
+			{top 20}			; Glacis & Lower Hull
+			{rear 10}
+			{bottom 15}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 20
+			{top 15}
+			{rear 10}
+		}
+	}
+	{volume "body3"			; Driver Compartment
+		{thickness 20
+			{front 50}		; Front 30 + 20 armor
+			{top 15}
+			{left 50}		; Sides 20 + 30 armor
+		}
+	}
+	{volume "engine1"		; Hull
+		{thickness 20
+			{front 10}
+			{bottom 15}
+			{rear 50}
+		}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 20
+			{front 10}
+			{top 15}
+		}
+	}
+	{##volume "engine3"		; Engine Cover
+		{thickness 10}
+	}
+	{volume "turret1"		; Turret Ring
+		{thickness 50		; 20 + 30 armor
+			{front 20}
+			{top 15}
+			{rear 30}
+			{bottom 15}
+		}
+	}
+	{volume "turret2"		; Main Turret
+		{thickness 50		; 20 + 30 armor
+			{front 20}
+			{top 15}
+			{rear 60}		; 30 + 30 armor
+			{bottom 15}
+		}
+	}
+	{volume "turret3"		; Turret front (mantlet)
+		{thickness 20}
+		{CastSteel 0.8063}
+	}
+	{volume "armor14"		; Left Smoke Box
+		{thickness 5
+			{front 30}
+		}
+		{tags "armor"}
+	}
+	{volume "armor13"		; Right Smoke Box
+		{thickness 5
+			{front 30}
+		}
+		{tags "armor"}
+	}
+	{volume "aux_turret1"	; Left MG Turret
+		{thickness 35
+			{front 52}
+			{top 10}
+			{left 40}
+			{bottom 15}
+		}
+	}
+	{volume "aux_turret2"	; Right MG Turret
+		{thickness 35
+			{front 52}
+			{top 10}
+			{left 40}
+			{bottom 15}
+		}
+	}

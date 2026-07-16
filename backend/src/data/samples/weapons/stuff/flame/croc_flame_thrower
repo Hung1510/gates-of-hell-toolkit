@@ -1,0 +1,17 @@
+;_________________________________________
+; British Tank Flamethrower
+;=========================================
+
+{from "pattern flame_thrower"	;// Churchill Crocodile Flamethrower
+	{entity "croc_flame_thrower"}
+	("filling_tank" fuel(20))	;// Fuel tank ~1,800 Liters. Would last ~80s of bursts
+	{mass 150}
+
+	{foresight "foresight4"}
+
+	{range 80 80}		;// irl 120-150yds
+	{speed 45}
+	{recoveryTime 0.05}	;// increase fuel consumption by 2x
+	{rechargeTime 0.05}
+	{burst {min 2}}
+}

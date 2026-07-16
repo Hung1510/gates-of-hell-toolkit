@@ -1,0 +1,16 @@
+{game_entity
+	(include "../bedford_qlt/bedford_qlt.inc")
+	{props "bedford_qlt"}
+
+	{extender "inventory"
+		{box
+			{item "ammo rifle_eng clip" 1000}		; 7.7mm
+			{item "ammo bren_mag" 1000}				; 7.7mm
+			{item "ammo sten_mag eng_smg" 480}
+			{item "no36m grenade" 10}
+			{item "piat" filling "piat_bomb ammo heata" 1}
+			{item "piat_bomb ammo heata" 6}
+		}
+	}
+}
+

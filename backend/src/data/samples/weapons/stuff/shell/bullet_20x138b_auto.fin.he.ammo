@@ -1,0 +1,17 @@
+{from "pattern he"
+	{tag "20to25 no_throw"}
+	{tag "auto size1"}
+	{inventory
+		{weight 10}
+		{size 2 2}
+		{block 10}
+	}
+	{entity "20x138bmm_fin_auto_he"}
+	{mass 0.303}
+
+	{view "howitzer_shell_auto"
+		{tail "shell_tracer_20_he" "tail"}
+	}
+
+	("he_auto_blast" args 0.6)
+}

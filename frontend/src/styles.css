@@ -354,6 +354,77 @@ header h1 {
   padding: 16px;
 }
 
+.about-page section {
+  margin-bottom: 24px;
+}
+
+.about-page h3 {
+  color: #7fb2ff;
+  margin-bottom: 8px;
+}
+
+.about-page p,
+.about-page li {
+  color: #c8ccd1;
+  line-height: 1.6;
+}
+
+.about-page code {
+  background: #22252b;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.about-page ul {
+  padding-left: 20px;
+}
+
+.vehicle-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.vehicle-table th,
+.vehicle-table td {
+  text-align: left;
+  padding: 6px 10px;
+  border-bottom: 1px solid #2a2e35;
+}
+
+.vehicle-table th {
+  color: #9aa0a6;
+}
+
+.vehicle-table tbody tr:hover {
+  background: #1c1f24;
+}
+
+.vehicle-detail {
+  background: #14161a;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.armor-detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.armor-detail-table th,
+.armor-detail-table td {
+  text-align: left;
+  padding: 4px 8px;
+  border-bottom: 1px solid #22252b;
+}
+
+.armor-detail-table th {
+  color: #9aa0a6;
+}
+
 .zoom-controls {
   display: flex;
   align-items: center;

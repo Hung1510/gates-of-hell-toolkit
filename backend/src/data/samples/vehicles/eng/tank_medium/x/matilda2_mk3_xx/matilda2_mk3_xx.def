@@ -1,0 +1,110 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "matilda2_mk3_xx.mdl"}
+	{volume "body1"			; Hull front
+		{thickness 40
+			{front 78}
+			{top 47}		
+			{bottom 22}
+		}
+	}
+	{volume "body2"			; Hull middle lower
+		{thickness 40
+			{front 75}
+			{top 20}
+			{bottom 20}
+			{rear 10}
+		}
+	}
+	{volume "body3"			; Hull mid upper
+		{thickness 70
+			{front 75}
+			{top 20}
+			{rear 10}
+			{bottom 20}
+		}
+	}
+	{volume "body4"			; driver hatch
+		{thickness 40
+			{front 35}
+		}
+	}
+	{volume "engine1"		; lower part
+		{thickness 40
+			{front 10}
+			{bottom 20}
+			{rear 55}
+		}
+	}
+	{volume "engine2"		; top part
+		{thickness 70
+			{top 20}
+			{front 10}
+			{right 55}			;rear side
+			{bottom 20}
+		}
+	}
+	{volume "engine3"		; Rear Top
+		{thickness 55
+			{top 20}
+			{bottom 20}
+		}
+	}
+	{volume "turret1"		; main base
+		{thickness 75
+			{top 18}
+		}
+	}
+	{volume "turret2"		; lower part
+		{thickness 75
+			{bottom 60}
+		}
+	}
+	{volume "turret3"		; Turret front
+		{thickness 75
+			{top 18}
+		}
+	}
+	{volume "turret4"		; mantlet part
+		{thickness 75}
+	}
+	{volume "turret5"		
+		{thickness 75}
+	}
+	{volume "turret6"		
+		{thickness 75}
+	}
+	{volume "cupola"
+		{thickness 75}
+	}
+	{volume "armor1"
+		{thickness 22
+			{left 40}
+		}
+	}
+	{volume "armor2"
+		{thickness 22
+			{left 40}
+		}
+	}
+	{volume "part1"
+		{thickness 4}
+	}
+	{volume "barrel1"
+		{thickness 75}
+	}
+	{volume "barrel2"
+		{thickness 75}
+	}
+	{volume "barrel3"
+		{thickness 20}
+	}
+	{volume "shield1"
+		{thickness 25}
+	}
+	{volume "shield2"
+		{thickness 25}
+	}
+
+	("tracks" thickness(20))
+}

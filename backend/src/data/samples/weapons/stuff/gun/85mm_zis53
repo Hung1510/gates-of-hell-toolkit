@@ -1,0 +1,37 @@
+;_________________________________________
+;  USSR long-barreled Medium AT gun
+;=========================================
+
+
+{from "pattern gun"			; L/52 "t3485"
+	{filling "bulletrus_85"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_85to100mm/"}
+	{fireSoundclose "cannon/s3/1p/Shared/"}
+	{reloadSound "tank/1p/medium_long/"}
+	("range_200")
+	{calibre 85}
+
+	("reload time" seconds(8))
+
+	("velocity m/s" ap(792) apcr(1050) he(785) heat(1))
+	("armor health" damage(230))
+	("armor health custom" shell(aphe) damage(230) velocity(792) filler(65))
+	("armor health custom" shell(aphebc) damage(230) velocity(792) filler(160))
+	("85_rus_slope_multipliers")
+
+	; BR-365K
+	("penetration_long" shell(aphe) range(200) a(142) b(125) c(107) d(92) e(78))  ;RHA
+ ;//("penetration_long" shell(aphe) range(200) a(131) b(116) c(100) d(85) e(73))  ;FHA
+
+	; BR-365
+	("penetration_long" shell(aphebc) range(200) a(122) b(116) c(105) d(96) e(88))  ;RHA
+ ;//("penetration_long" shell(aphebc) range(200) a(124) b(118) c(107) d(98) e(90))  ;FHA
+
+	; BR-365P
+	("penetration_long" shell(apcr) range(200) a(175) b(136) c(100) d(73) e(54))
+	{parameters "apcr"; BR-365P
+		("large_apcr_slope_multiplier")
+	}
+
+	("accuracy_direct_arrowhead" r1(0.72) range_ap(200) range_he(200) range_heat(200))
+}

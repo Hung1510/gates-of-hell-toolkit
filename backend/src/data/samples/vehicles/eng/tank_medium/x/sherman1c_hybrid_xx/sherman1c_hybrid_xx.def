@@ -1,0 +1,144 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "sherman1c_hybrid_xx.mdl"}
+	
+	{volume "body1"			; Hull lower Front
+		{thickness 38.1
+			{front 107.9}	; 
+			{top 63.5}		; front upper part 
+			{bottom 25.4}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body2"			;right side mid body, cast
+		{thickness 38.1
+			{front 63.5}
+			{bottom 25.4}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body3"			;right transmission, cast
+		{thickness 38.1
+			{front 63.5}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body4"			;left transmission, cast
+		{thickness 38.1
+			{front 63.5}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body5"			;right hull hatch, cast
+		{thickness 63.5}
+		{CastSteel 0.8063}
+	}
+	{volume "body6"			;left hull hatch, cast
+		{thickness 63.5}
+		{CastSteel 0.8063}
+	}
+	{volume "body7"			;Hull lower middle
+		{thickness 38.1
+			{rear 10}
+			{bottom 12.5}
+		}
+	}
+	{volume "body8"		;middle upper superstructure
+		{thickness 38.1
+			{top 19.5}
+			{bottom 25.4}
+			{rear 10}
+		}
+	}
+	{volume "body9"			;left side front extra armor plate, RHA
+		{thickness 63.5}
+	}
+	{volume "body10"			;right side front extra armor plate, RHA
+		{thickness 63.5}
+	}
+	{volume "body11"		;right side rear extra armor plate, RHA
+		{thickness 63.5}
+	}
+	{volume "barrel1"
+		{thickness 25}
+	}
+	{volume "breech"
+		{thickness 10}
+	}
+	{volume "engine1"
+		{thickness 38.1
+			{front 10}
+			{rear 38.1}
+			{bottom 12.7}
+		}
+	}
+	{volume "engine2"
+		{thickness 38.1
+			{front 10}
+			{top 19.5}
+			{bottom 25.4}
+		}
+	}
+	{volume "engine3"
+		{thickness 38.1
+			{bottom 25.4}
+		}
+		{able {holed}}
+	}
+	{volume "turret1"
+		{thickness 51
+			{top 25.4}
+			{front 76.2}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret2"
+		{thickness 51}
+		{CastSteel 0.8063}
+	}
+	{volume "turret3"
+		{thickness 89}
+		{CastSteel 0.8063}
+	}
+	{volume "turret4"		;turret rear radio
+		{thickness 51
+		{bottom 25.4}
+		{top 25.4}
+		{rear 63.5}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "mantlet"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 51}
+		{CastSteel 0.8063}
+	}
+	{volume "armor1"	; turret ring armor
+		{thickness 19.5
+			{top 5.9}
+		}
+	}
+	{volume "armor2"	; +front extra tracklinks armor
+		{thickness 25.4}
+	}
+	{volume "armor3"	; +front extra tracklinks armor
+		{thickness 25.4}
+	}
+	{volume "cupola"
+		{thickness 51
+			{top 19.5}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "basket"
+		{thickness 4	}
+	}
+	{volume "part1"
+		{thickness 4	}
+	}
+	{volume "part2"
+		{thickness 4	}
+	}
+	("tracks" thickness(20))
+}

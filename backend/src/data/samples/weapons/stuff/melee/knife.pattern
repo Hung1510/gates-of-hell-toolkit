@@ -1,0 +1,22 @@
+{from "pattern throwable"
+	{tag "knife sharp_edge hand"}
+	{inventory
+		{size 3 1}
+		{weight 100}
+	}
+	{mass 0.3}
+	{throw
+		{startAngle 10}
+		{range 25}
+		{spreading 0.1
+			{radiusFunction
+				0.0		0
+				0.7		0
+				1.0		0
+				1.5		2.0
+				2.0		5.0
+			}
+		}
+	}
+	{thirdpersonparams inherit "human default"}
+}

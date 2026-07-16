@@ -1,0 +1,95 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc" scale(0.9))
+	{props "light" "vision_lev02" "muzzle_hmg_vickers" "smoke" "4in_2x" "detect_tank_mg"}
+	(include "vickers_mk6.ext")
+	{extension "vickers_mk6.mdl"}
+	{patherId "mk6b"}
+	{collider "tank.light"}
+	{targetclass "tank_light"}
+	{targetSelector "tank_zenite"}
+
+	{extender "enumerator"
+		{digit_folder "us2"}
+	}
+
+	("crew_3_human_2_extended")
+
+	{boarder
+		{anm "left"
+			{forward {begin "board_tank_left"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward {begin "board_tank_right"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward {begin "board_LowArmor"} {end "seat_armor"}}
+			{reverse {end "emit_tank_1"}}
+		}
+		{anm "driver"
+			{forward {begin "board_t26_driver"} {end "pose_t26_driver"} {base "open_driver"}}
+			{reverse {end "board_t26_driver" -1} {base "open_driver" -1}}
+		}
+	}
+
+	{extender "smokescreen"
+		{cooldown 5}
+		{itemTags "grenade no8_smoke"}
+	}
+
+	{extender "inventory"
+		{box
+			{item "ammo hmgun_eng" 300}				; 4 belts (100 rounds each)
+			{item "ammo mgun_eng belt" 2250}		; 10 belts (250 rounds each)
+			{item "satchel_charge_eng" 1}
+			{item "no8_smoke grenade" 4}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{type "main"}
+			{weapon "vickers_50" filled}
+			{gunner "gunner"}
+			{charger "commander"}
+			("abm_mgun")
+		}
+		{place "mgun"
+			{type "coaxial"}
+			{weapon "vickers_tank" filled}
+			{foresight "foresight3"}
+			{gunner "gunner"}
+			{charger "commander"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 4898}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.32) len(0.5))
+		("mobility_tank"
+			speed(56) ;-----------Max speed when fully accelerated on road, km/h.
+			reverse(10) ;---------Max speed in reverse on road, km/h.
+			traverse(35) ;--------Track traverse, per second, in degrees.
+			weight(4.89) ;--------Weight in Tonnes.
+			power(88) ;-----------Engine Power, in hp.
+			track(5.0) ;----------Track performance: [0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(280) ;-----------Fuel capacity in Litres.
+			type(fuel) ;----------Fuel type. (diesel OR fuel)
+			range(140) ;----------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -10 37}
+		{speed2 20}
+	}
+	{bone "turret"
+		("turret_light" power_traverse(0)) ;// manual
+	}
+}

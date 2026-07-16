@@ -1,0 +1,24 @@
+;_________________________________________
+; British medium AT gun
+;=========================================
+
+
+{from "pattern gun"			; L/40 "drifter_eng"
+	{filling "bullet_57x307"}
+	{fireSound "cannon/s2/d1/Shared/Cannon_50to57mm/"}
+	{fireSoundClose "cannon/s2/3p/Shared/Cannon_50to57mm/"}
+	{reloadSound "utility/"}
+	("range_160")
+	{calibre 57}
+
+	("reload time" seconds(4.5))
+
+	("velocity m/s" ap(554) apcr(1) he(554) heat(1))
+	("armor health" damage(150))
+	("57_eng_slope_multipliers")
+
+	; AP
+	("penetration_medium" shell(ap) range(160) a(59) b(45) c(35) d(29) e(26))  ; placeholder
+
+	("accuracy_direct_arrowhead" r1(1.10) range_ap(160) range_he(160) range_heat(160))
+}

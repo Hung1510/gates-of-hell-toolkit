@@ -1,0 +1,15 @@
+{game_entity	;// 1st 6pdr May 1942
+	(include "../57mm_qf6/57mm_qf6_mk2.inc")
+
+	{extender "inventory"
+		{box
+			{item "bullet_57x441 eng ap" 49}	;50 rounds
+			{item "sandbag_vehicle" 1}
+		}
+	}
+	{Weaponry
+		{place "gun"
+			{weapon "57mm_qf6" filling "bullet_57x441 eng ap" 1}
+		}
+	}
+}

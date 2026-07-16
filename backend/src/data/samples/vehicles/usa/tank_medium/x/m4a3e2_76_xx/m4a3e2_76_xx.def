@@ -1,0 +1,108 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "m4a3e2_76_xx.mdl"}
+
+	{volume "body1"			; Hull lower Front
+		{thickness 38.1
+			{front 139.7}	; 
+			{top 107.9}		; front upper part 
+			{bottom 25.4}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body2"			; 
+		{thickness 76.2
+			{front 101.6}
+			{top 19.5}
+			{bottom 19.5}
+		}
+	}
+	{volume "body3"
+		{thickness 19.5
+			{left 76.2}
+			{right 76.2}
+		}
+	}
+	{volume "body7"		; Hull lower middle
+		{thickness 38.1
+			{top 51}
+			{rear 10}
+			{bottom 25.4}
+		}
+	}
+	{volume "body8"		; Hull lower Front right
+		{thickness 38.1
+			{front 114.3}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body9"		; Hull lower Front left
+		{thickness 38.1
+			{front 114.3}	; 
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body10"
+		{thickness 63.5}
+	}
+
+	{volume "engine1"
+		{thickness 38.1
+			{front 19.5}
+			{bottom 25.4}
+		}
+	}
+	{volume "engine2"
+		{thickness 76.2
+			{front 10}
+			{rear 38.1}
+			{top 19.5}
+			{bottom 19.5}
+		}
+	}
+	{volume "engine3"
+		{thickness 38.1
+			{front 9.5}
+			{bottom 19.5}
+		}
+	}
+	{volume "turret1"
+		{thickness 152.4
+			{top 25.4}
+			{rear 63.5} ; front top and rear slope part
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret2"
+		{thickness 152.4}
+		{CastSteel 0.8063}
+	}
+	{volume "turret3"
+		{thickness 152.4}
+		{CastSteel 0.8063}
+	}
+	{volume "mantlet"
+		{thickness 178}
+		{CastSteel 0.8063}
+	}
+	{volume "barrel1"
+		{thickness 201}
+		{CastSteel 0.8063}
+	}
+	{volume "barrel2"
+		{thickness 25}
+	}
+	{volume "armor3"	; turret ring armor
+		{thickness 19.5
+			{top 5.9}
+		}
+	}
+	{volume "cupola"
+		{thickness 76.2
+			{top 19.5}
+		}
+		{CastSteel 0.8063}
+	}
+
+	("tracks" thickness(20))
+}

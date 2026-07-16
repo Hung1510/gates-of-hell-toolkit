@@ -1,0 +1,143 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 15mm
+	; gun 20mm
+
+	("tank_light_tier2")
+
+	("shield" args "shieldl1" 5)
+	("shield" args "shieldl2" 5)
+	("shield" args "shieldl3" 5)
+	("shield" args "shieldr1" 5)
+	("shield" args "shieldr2" 5)
+	("shield" args "shieldr3" 5)
+
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("transmission" args "transmission")
+
+	("gun" repair(30) thickness(20))
+	("tracks" repair(30) thickness(15))
+
+	{volume "body1"			; Hull front
+		{thickness 14
+			{front 30}
+			{bottom 6}
+		}
+	}
+	{volume "body2"			; Hull middle
+		{thickness 14
+			{front 30}
+			{bottom 6}
+			{rear 6}
+		}
+	}
+	{volume "body3"			; driver sight
+		{thickness 30
+			{top 14}
+			{bottom 6}
+			{rear 6}
+		}
+	}
+	{volume "engine1"		; Front
+		{thickness 14
+			{front 6}
+			{bottom 6}
+		}
+	}
+	{volume "engine2"		; Rear 
+		{thickness 14
+			{front 6}
+			{bottom 6}
+		}
+	}
+	{volume "engine3"		; Rear Top
+		{thickness 14
+			{front 6}
+			{bottom 6}
+		}
+	}
+	{volume "engine4"
+		{thickness 14
+			{front 6}
+			{bottom 6}
+		}
+	}
+	{volume "turret1"		; Main Turret
+		{thickness 14
+			{bottom 6}
+		}
+		{able {holed}}
+	}
+	{volume "turret2"		; right mantlet part
+		{thickness 14}
+	}
+	{volume "turret3"		; left mantlet part
+		{thickness 14}
+	}
+	{volume "turret4"		; Turret ring
+		{thickness 14}
+	}
+	{volume "mantlet1"
+		{thickness 30}
+		{component "turret"}
+		{tags "turret"}
+	}
+	{volume "mantlet2"
+		{thickness 30}
+		{component "turret"}
+		{tags "turret"}
+	}
+	{volume "cupola"
+		{thickness 14}
+	}
+	{volume "armor1"
+		{thickness 4}
+	}
+	{volume "armor2"
+		{thickness 4}
+	}
+	{volume "armor3"
+		{thickness 4}
+	}
+	{volume "armor4"
+		{thickness 4}
+	}
+	{volume "armor5"
+		{thickness 14}
+	}
+	{volume "armor6"
+		{thickness 14}
+		{able {holed}}
+	}
+	{volume "armor7"
+		{thickness 14}
+	}
+	{volume "armor8"
+		{thickness 14}
+	}
+	{volume "armor9"
+		{thickness 14}
+	}
+	{volume "armor10"
+		{thickness 14}
+		{able {holed}}
+	}
+	{volume "armor11"
+		{thickness 14}
+	}
+	{volume "armor12"
+		{thickness 14}
+	}
+
+	{component "shieldl1" {tags "cut_part"}}
+	{component "shieldl2" {tags "cut_part"}}
+	{component "shieldl3" {tags "cut_part"}}
+	{component "shieldr1" {tags "cut_part"}}
+	{component "shieldr2" {tags "cut_part"}}
+	{component "shieldr3" {tags "cut_part"}}

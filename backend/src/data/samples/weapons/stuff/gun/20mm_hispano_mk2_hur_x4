@@ -1,0 +1,8 @@
+;_________________________________________
+; British Aircraft Autocannon
+;=========================================
+
+
+{from "20mm_hispano_mk2_x4"			; "typhoon_mk1b"
+	{filling "bullet_20_auto aphe" 360}
+}

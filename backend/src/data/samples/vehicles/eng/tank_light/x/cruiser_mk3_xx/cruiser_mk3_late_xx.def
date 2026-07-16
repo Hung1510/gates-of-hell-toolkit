@@ -1,0 +1,119 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "cruiser_mk3_late_xx.mdl"}
+	
+	{volume "body1"			; Hull front
+		{thickness 14
+			{bottom 6}
+		}
+	}
+	{volume "body2"			; Hull middle
+		{thickness 14
+			{bottom 6}
+			{rear 5}
+		}
+	}
+	{volume "body3"			; driver sight
+		{thickness 14}
+	}
+	{volume "engine1"		; Front
+		{thickness 14
+			{front 5}
+			{bottom 6}
+		}
+	}
+	{volume "engine2"		; Rear 
+		{thickness 14
+			{rear 12}
+			{bottom 6}
+		}
+	}
+	{volume "engine3"		; Rear Top
+		{thickness 14
+			{rear 12}
+			{bottom 6}
+		}
+	}
+	{volume "engine4"			
+		{thickness 14}
+	}
+	{volume "turret1"		; Main Turret
+		{thickness 14
+			{bottom 6}
+		}
+		{able {holed}}
+	}
+	{volume "turret2"		; Turret mantlet part
+		{thickness 14}
+	}
+	{volume "turret3"		; Turret ring
+		{thickness 14}
+	}
+	{volume "cupola"
+		{thickness 14}
+	}
+	{volume "armor1"
+		{thickness 4}
+	}
+	{volume "armor2"
+		{thickness 4}
+	}
+	{volume "armor3"
+		{thickness 4}
+	}
+	{volume "armor4"
+		{thickness 4}
+	}
+	{volume "armor5"
+		{thickness 14}
+	}
+	{volume "armor6"
+		{thickness 14}
+	}
+	{volume "armor7"
+		{thickness 14}
+	}
+	{volume "armor8"
+		{thickness 14}
+	}
+	{volume "armor9"
+		{thickness 14}
+	}
+	{volume "armor10"
+		{thickness 14}
+	}
+	{volume "armor11"
+		{thickness 14}
+	}
+	{volume "armor12"
+		{thickness 14}
+	}
+	{volume "part1"
+		{thickness 14}
+	}
+	{volume "part2"
+		{thickness 14}
+	}
+	{volume "part4"
+		{thickness 14}
+	}
+	{volume "shieldl1"
+		{thickness 5}
+	}
+	{volume "shieldl2"
+		{thickness 5}
+	}
+	{volume "shieldl3"
+		{thickness 5}
+	}
+	{volume "shieldr1"
+		{thickness 5}
+	}
+	{volume "shieldr2"
+		{thickness 5}
+	}
+	{volume "shieldr3"
+		{thickness 5}
+	}
+	("tracks" thickness(20))
+}

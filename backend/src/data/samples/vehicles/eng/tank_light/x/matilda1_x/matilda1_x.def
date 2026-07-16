@@ -1,0 +1,3 @@
+{game_entity
+	{extension "matilda1_x.mdl"} {RimLight}
+}

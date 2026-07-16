@@ -1,0 +1,36 @@
+{from "pattern rifle"
+	{tag "bolt_action smg_shell"}
+	{filling "ammo de_lisle_carbine_mag" 7}
+	{inventory {size 5 2}}
+	{entity "de_lisle_carbine"}
+	{fireSound "smallarms/s1/d1/Shared/Surpressed_Pistol/"}
+	{fireSoundclose "smallarms/s1/3p/Shared/Surpressed_Pistol/"}
+	{reloadSound "g43"}
+	{calibre 11.43}
+	{mass 3.74}
+
+	("reload time" seconds(3))
+	("velocity" mps(250))
+	{range 80 80}
+	("human health" damage(70))
+	{states
+		{reload		"reload"}
+		{unload		"unload"}
+		{fire		"fire"	}
+		{aim 		"aim"	}
+		{can_aim	"can-aim-bolt"}
+	}
+	{FiringTimeout 2.5 0.5}
+	{FiringTimeoutDistanceFactor
+		{0.25 0.5}	;20m, 1.25s
+		{1.0 1.0}	;80m, 2.5s
+	}
+	("fire rate" rpm(50))
+	{AccuracyByMotionK 0.9}
+	("marksman")
+
+	{curve "bullet_smg"}
+	("human health" damage(55))
+	("penetration" args 2 1 0.5 0 0)
+	("armor health" damage(2))
+}

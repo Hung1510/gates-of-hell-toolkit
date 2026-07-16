@@ -1,0 +1,109 @@
+;SDL
+
+	; armor notes
+	; wheels 10mm 
+	; gun 20mm
+
+	("armoredcar_tier2")
+
+	("shield" args "detail7" 5)
+	("shield" args "detail8" 5)
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright1")
+	("wheel" args "wheelright2")
+
+	("turret" repair(45))
+;	("mantlet" repair(30))
+	("gun" repair(30) thickness(20))
+
+	("fuel" args "fuel1")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("transmission" args "transmission")
+	{volume "transmission" {able {NoWoundDecal 0}}}
+
+	{volume "body1"
+		{thickness 14
+			{front 22}
+			{left 19}
+			{top 13}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "body2"
+		{thickness 14
+			{front 22}
+			{left 19}
+			{top 13}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "body3"
+		{thickness 14
+			{front 22}
+			{left 19}
+			{top 13}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "body4" ; mgun port
+		{thickness 22}
+	}
+	{volume "body5"
+		{thickness 14
+			{front 22}
+			{left 19}
+			{top 13}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "turret1" 
+		{thickness 45}
+		{CastSteel 0.8063}
+	}
+	{volume "turret2"
+		{thickness 45
+			{front 45}
+			{left 32}
+			{top 13}
+			{rear 32}
+			{bottom 13}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret3" 	; Turret Ring
+		{thickness 32}
+		{CastSteel 0.8063}
+	}
+	{volume "mantlet"	; gun_rot mantlet
+		{tags "gun"}
+		{component "gun"}
+		{thickness 25}
+		{able {holed}}
+	}
+	{volume "engine1"
+		{thickness 19
+			{left 19}
+			{top 13}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "armor1"		; storage box
+		{thickness 5}
+	}
+	{volume "armor2"		; storage box
+		{thickness 5}
+	}
+	{volume "armor3"		; Engine Cover (back)
+		{thickness 8}
+	}
+
+	{component "detail7" {tags "cut_part"}}
+	{component "detail8" {tags "cut_part"}}

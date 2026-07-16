@@ -1,0 +1,4 @@
+{from "pattern heavy_headgear"
+	{tag "armor"}
+	{entity "ger_wf_helm_cover_sum_band"}
+}

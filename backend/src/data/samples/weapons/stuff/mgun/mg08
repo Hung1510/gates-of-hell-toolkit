@@ -1,0 +1,18 @@
+{from "pattern mgun"
+	{filling "mgun_ger" 250}
+	{entity "mg08"}
+	{inventory {size 7 2}}
+	{fireSound "smallarms/s3/d1/GER/MG08/"}
+	{fireSoundclose "smallarms/s3/d1/GER/MG08/"}
+	{reloadSound "dt"}
+	{calibre 7.62}
+	{mass 18.4} ;// with water
+
+	("fire rate" rpm(500))
+	("velocity" mps(878)) ;// Mk.VIIIz
+
+	("reload_belt")
+
+	("burst_stand")
+	("spreading_mounted_low")
+}

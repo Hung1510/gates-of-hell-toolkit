@@ -1,0 +1,79 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "panzer1f_xx.mdl"}
+
+	{volume "body1"
+		{thickness 80
+			{top 60}		; Glacis
+			{rear 10}
+			{bottom 20}
+		}
+	}
+	{volume "body2"
+		{thickness 80
+			{top 30}
+			{rear 10}
+			{bottom 10}
+		}
+	}
+	{volume "engine"
+		{thickness 80
+			{front 10}
+			{top 20}
+			{right 30}		; rear angled bottom face
+			{rear 60}
+			{bottom 20}
+		}
+	}
+	{volume "mantlet"
+		{thickness 80}
+	}
+	{volume "part3"
+		{thickness 20}
+	}
+	{volume "trackleft1"
+		{thickness 25}
+	}
+	{volume "trackleft2"
+		{thickness 25}
+	}
+	{volume "trackleft3"
+		{thickness 25}
+	}
+	{volume "trackleft5"
+		{thickness 25}
+	}
+	{volume "trackleft6"
+		{thickness 25}
+	}
+	{volume "trackleft7"
+		{thickness 25}
+	}
+	{volume "trackright1"
+		{thickness 25}
+	}
+	{volume "trackright2"
+		{thickness 25}
+	}
+	{volume "trackright3"
+		{thickness 25}
+	}
+	{volume "trackright5"
+		{thickness 25}
+	}
+	{volume "trackright6"
+		{thickness 25}
+	}
+	{volume "trackright7"
+		{thickness 25}
+	}
+	{volume "turret1"
+		{thickness 80
+			{top 20}
+			{bottom 20}
+		}
+	}
+	{volume "turret2"
+		{thickness 80}
+	}
+}

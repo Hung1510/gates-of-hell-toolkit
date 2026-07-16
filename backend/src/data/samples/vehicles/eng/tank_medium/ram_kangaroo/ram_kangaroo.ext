@@ -1,0 +1,115 @@
+;SDL
+	; armor notes
+	; tracks and wheels 20mm
+
+	("tank_medium_tier2")
+
+	("tracks" repair(30) thickness(20))
+	("make_component" args "aux_turret1" "aux_turret1")
+	("aux_turret" repair(45))
+
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull lower Front
+		{thickness 38.1
+			{front 50.8}
+			{bottom 25.4}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body2"			; front upper
+		{thickness 50.8
+			{front 89}
+			{top 38.1}
+			{bottom 25.4}
+		}
+		{CastSteel 0.8063}
+		{able {holed}}
+	}
+	{volume "body3"			; front mg part
+		{thickness 50.8
+			{front 89}
+			{right 38.1}	;upper part of side
+			{top 19.5}
+			{rear 10}
+		}
+		{CastSteel 0.8063}
+		{able {holed}}
+	}
+	{volume "body4"			; main upper
+		{thickness 50.8
+			{front 89}
+			{top 19.5}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body5"
+		{thickness 50.8}
+		{CastSteel 0.8063}
+	}
+	{volume "body6"
+		{thickness 50.8}
+		{CastSteel 0.8063}
+	}
+	{volume "body7"
+		{thickness 114}
+	}
+	{volume "body8"
+		{thickness 114}
+	}
+	{volume "body9"
+		{thickness 50.8}
+	}
+	{volume "engine1"
+		{thickness 38.1
+			{front 10}
+			{bottom 25.4}
+		}
+	}
+	{volume "engine2"
+		{thickness 50.8
+			{front 10}
+			{right 38.1}	;upper part of side
+			{top 19.5}
+			{bottom 25.4}
+		}
+		{able {holed}}
+	}
+	{volume "engine3"
+		{thickness 38.1
+			{top 19.5}
+		}
+	}
+	{volume "engine4"
+		{thickness 38.1
+			{top 19.5}
+		}
+	}
+	{volume "aux_turret1"
+		{thickness 50.8}
+	}
+	{volume "detail9"
+		{thickness 20}
+	}
+	{volume "detail10"
+		{thickness 20}
+	}
+	{volume "armor1"	; fender boxes
+		{thickness 4}
+	}
+	{volume "armor2"	; fender boxes
+		{thickness 4}
+	}
+	{volume "armor3"	; fender boxes
+		{thickness 4}
+	}
+	{volume "armor4"	; fender boxes
+		{thickness 4}
+	}
+
+	{component "detail9" {tags "cut_part"}}
+	{component "detail10" {tags "cut_part"}}

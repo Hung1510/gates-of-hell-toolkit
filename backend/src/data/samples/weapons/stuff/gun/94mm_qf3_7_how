@@ -1,0 +1,26 @@
+;_________________________________________
+; british mountain howitzer
+;=========================================
+
+
+{from "pattern gun"			; L/11.8 "94mm_qf_how"
+	{filling "bulleteng_94"}
+	{fireSound "cannon/s3/d1/Shared/Cannon_85to100mm/"}
+	{fireSoundclose "cannon/s3/3p/Shared/Cannon_85to100mm/"}
+	{reloadSound "utility/"}
+	("range_160_howitzer")
+	{calibre 94}
+
+	("reload time" seconds(6))
+
+	("velocity m/s" ap(1) apcr(1) he(210) heat(340)) ;real HE 245m/s
+	("armor health" damage(250))
+	("90_slope_multipliers")
+
+	;H.E/A.T. Shell Mk.I
+	("penetration_medium" shell(heat) range(170) a(120) b(120) c(120) d(120) e(120)) ;// 1942
+
+	("accuracy_spg" r1(2.40) range_ap(160) range_he(160) range_heat(170))
+
+    {unlimitedRangeTPC 0}   ;// restrict range in TPC/FPC
+}

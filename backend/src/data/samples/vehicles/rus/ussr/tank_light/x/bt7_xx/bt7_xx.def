@@ -1,0 +1,58 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "bt7_xx.mdl"}
+
+	{volume "barrel"
+		{thickness 20}
+	}
+	{volume "body1"			; Hull
+		{thickness 19		; 15 + 4
+			{front 20}
+			{top 15}		; Glacis
+			{rear 5}
+			{bottom 6}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 19		; 15 + 4
+			{front 20}
+			{top 10}
+			{rear 5}
+			{bottom 5}
+		}
+	}
+	{volume "engine"
+		{thickness 19		; 15 + 4
+			{front 5}
+			{top 10}
+			{rear 13}
+			{bottom 6}
+		}
+	}
+	{volume "turret1"		; Main Turret 
+		{thickness 15
+			{top 10}
+			{bottom 10}
+		}
+	}
+	{volume "turret2"		; Turret Front
+		{thickness 15}
+	}
+	{volume "turret3"		; Turret Rear
+		{thickness 13
+			{front 10}
+			{top 10}
+			{bottom 10}
+		}
+	}
+	{volume "mantlet"
+		{thickness 15}
+	}
+	{volume "shieldl1"
+		{thickness 5}
+	}
+	{volume "shieldr1"
+		{thickness 5}
+	}
+	("tracks" thickness(15))
+}

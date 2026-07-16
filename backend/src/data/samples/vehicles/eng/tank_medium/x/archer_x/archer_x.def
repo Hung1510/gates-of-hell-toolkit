@@ -1,0 +1,3 @@
+{game_entity
+	{extension "archer_x.mdl"} {RimLight}
+}

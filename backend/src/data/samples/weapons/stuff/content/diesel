@@ -1,0 +1,6 @@
+{item
+	{tag "liquid"}
+	{desc "desc/stuff/diesel"}
+	{inventory {noView}}
+	{mass 0.8}
+}

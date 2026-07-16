@@ -1,0 +1,102 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "aec_mk1_xx.mdl"}
+	
+	{volume "body1"			; main
+		{thickness 25
+			{front 17}
+			{top 12}
+			{rear 10}
+			{bottom 10}
+		}
+	}
+	{volume "body2"			; under front part
+		{thickness 25
+			{front 17}		
+			{bottom 10}
+			{rear 14}
+		}
+	}
+	{volume "turret1"		; Turret front/mantlet
+		{thickness 65}
+		{CastSteel 0.8063}
+	}
+	{volume "turret2"		; Main Turret
+		{thickness 60
+			{front 65}
+			{top 10}
+			{right 20}		; Front Top
+			{bottom 16}
+		}
+	}
+	{volume "turret3"		; Turret rear
+		{thickness 65}
+	}
+	{volume "turret4"		; Turret ring
+		{thickness 16}
+	}
+	{volume "barrel1"		; barrel
+		{thickness 15}
+	}
+	{volume "barrel2"		; barrel
+		{thickness 15}
+	}
+	{volume "engine1"		; Hull
+		{thickness 25
+			{front 10}
+			{top 10}
+			{rear 14}
+			{bottom 10}
+		}
+	}
+	{volume "armor1"
+		{thickness 25}
+	}
+	{volume "armor2"
+		{thickness 25}
+	}
+	{volume "armor3"
+		{thickness 25}
+	}
+	{volume "armor4"
+		{thickness 25
+			{front 14}
+			{rear 14}
+			{bottom 2}
+		}
+	}
+	{volume "armor5"
+		{thickness 4}
+	}
+	{volume "armor6"
+		{thickness 4}
+	}
+	{volume "armor7"
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "armor8"
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "armor9"
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "armor10"
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "wheelleft1"
+		{thickness 4}
+	}
+	{volume "wheelleft2"
+		{thickness 4}
+	}
+	{volume "wheelright1"
+		{thickness 4}
+	}
+	{volume "wheelright2"
+		{thickness 4}
+	}
+}

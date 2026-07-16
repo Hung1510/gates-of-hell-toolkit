@@ -1,0 +1,16 @@
+{	;// mid '43 through early '44
+	(include "../76mm_qf17/76mm_qf17.inc")
+
+	{extender "inventory"
+		{box
+			{item "bulleteng_76 apc" 35}		;50 rounds
+			{item "bulleteng_76 he" 15}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{weapon "76mm_qf17" filling "bulleteng_76 apc" 1}
+		}
+	}
+}

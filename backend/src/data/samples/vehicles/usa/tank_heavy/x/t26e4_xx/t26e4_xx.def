@@ -1,0 +1,128 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "t26e4_xx.mdl"}
+
+	{Volume "body1"
+		{thickness 76
+			{front 102}
+			{top 22}
+			{rear 51}
+			{bottom 25}
+		}
+		{CastSteel 0.8063}
+	}
+	{Volume "body2"
+		{thickness 76
+			{top 22}
+			{front 162}
+		}
+	}
+	{Volume "body3"
+		{thickness 102}
+	}
+	{Volume "body4"
+		{thickness 76}
+	}
+	{Volume "body5"
+		{thickness 76}
+	}
+	{volume "barrel1"
+		{thickness 30}
+	}
+	{volume "barrel2"
+		{thickness 30}
+	}
+	{volume "barrel3"
+		{thickness 30}
+	}
+	{volume "armor1"
+		{thickness 5}
+	}
+	{volume "armor2"
+		{thickness 5}
+	}
+	{volume "armor3"
+		{thickness 50} ;turretback
+	}
+	{volume "armor4"
+		{thickness 80} ;in front of turret
+	}
+	{volume "armor5"
+		{thickness 38}
+	}
+	{volume "armor6"
+		{thickness 38}
+	}
+	{volume "armor7"
+		{thickness 38}
+	}
+	{volume "armor8"
+		{thickness 38}
+	}
+	{volume "armor_front1"
+		{able {holed}}
+		{thickness 38}
+	}
+	{volume "armor_front2"
+		{thickness 38}
+	}
+	{volume "armor_front3"
+		{thickness 38}
+	}
+	{volume "armor_front4"
+		{able {holed}}
+		{thickness 38}
+	}
+	{volume "detail7"
+		{thickness 25}
+	}
+	{volume "cupola"
+		{thickness 76
+			{top 22}
+		}
+	}
+	{Volume "turret1"
+		{thickness 76
+			{front 102}
+			{top 25}
+		}
+		{CastSteel 0.8063}
+	}
+	{Volume "turret2"
+		{thickness 76
+			{front 102}
+			{top 25}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret3"
+		{thickness 76}
+		{CastSteel 0.8063}
+	}
+	{volume "turret4"
+		{thickness 102}
+	}
+	{volume "turret5"
+		{thickness 76
+			{bottom 25}
+		}
+		{CastSteel 0.8063}
+	}
+	{Volume "mantlet"
+		{thickness 114}
+		{CastSteel 0.8063}
+	}
+	{Volume "engine1"
+		{thickness 76
+			{front 40}
+			{top 22}
+			{rear 51}
+			{bottom 25}
+		}
+	}
+	{volume "part1"
+		{thickness 22}
+	}
+
+	("tracks" thickness(30))
+}

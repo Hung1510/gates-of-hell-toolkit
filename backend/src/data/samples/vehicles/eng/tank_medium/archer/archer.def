@@ -1,0 +1,118 @@
+{game_entity	;// Oct '44
+	(include "/properties/tank_assaultgun.ext")
+	(include "/properties/selection/vehicle_elongated.inc" scale(1.0))
+	{props "td" "medium" "-turret" "vision_lev04" "muzzle_85mm_93mm_sides" "shell_eject" "shield" "open_top" "ammo_open_top" "detect_td_medium"  "tractor" "tractor_light"}
+	{extension "archer.mdl"}
+	(include "archer.ext")
+	{PatherID "matilda2"}
+	{targetclass "tank_medium"}
+	{targetSelector "tank_medium"}
+
+	{extender "enumerator"
+		{digit_folder "us2"}
+	}
+
+	{sensor
+		{visor "main"
+			{vision "tank_range_210"}
+		}
+		{visor "around"
+			{vision "vehicle_around"}		;// better vision than a in-closed turret 
+		}
+		{visor "human"
+			{vision "human"}
+			{bone "visor1"}
+		}
+	}
+
+	{boarder
+		{anm "gunner"
+			{forward {begin "board_MiddleArmor"} {end "pose_archer_gunner"}}
+			{reverse {end "emit_tank_1"}}
+		}
+		{anm "charger"
+			{forward {begin "board_MiddleArmor"} {end "pose_archer_charger"}}
+			{reverse {end "emit_tank_1"}}
+		}
+		{anm "driver"
+			{forward {begin "board_MiddleArmor"} {end "pose_archer_driver"}}
+			{reverse {end "emit_tank_1"}}
+		}
+		{anm "commander"
+			{forward {begin "board_MiddleArmor"} {end "pose_archer_commander"}}
+			{reverse {end "emit_tank_1"}}
+		}
+	}
+
+	(define "crew_human"
+		{placer
+			{place "%place" {group "crew"} {visor "%visor"} {linkbone "%place"} {turnoff {sensor}}}
+		}
+		{boarder
+			{door "emit1"}
+			{door "emit2"}
+			{link "emit1" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+			{link "emit2" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+		}
+	)
+
+	{placer {place "driver" {turnoff {targetable}}}}	;// sits out of view from top of turret
+
+	("crew_human" place(driver)		visor(driver))
+	("crew_human" place(gunner)		visor(main))
+	("crew_human" place(charger)	visor(human))
+	("crew_human" place(commander)	visor(around))
+
+	{extender "shield" {on}}
+
+	{extender "inventory"
+		{box
+			{item "bulleteng_76 apcbc" 31}				;52 rounds
+			{item "bulleteng_76 he2" 15}
+			{item "bulleteng_76 apds" 6}
+			{item "bren_mk2" filled}
+			{item "ammo bren_mag" 572}					;720 rounds
+			{item "satchel_charge_eng" 1}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "76mm_qf17_mk2" filling "bulleteng_76 apcbc" 1}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_dymamic_td"
+				zeroing(2.5)
+				dispersion(0.25)
+			)
+			{rotate}
+		}
+	}
+
+	{mass 16300}
+	{Chassis
+		("tank_trace" fx("tracks_sm2") step(0.2) len(0.55))
+		("mobility_tank"
+			speed(32) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(6) ;---------Max speed in reverse on road, km/h.
+			traverse(30) ;-------Track traverse, per second, in degrees.
+			weight(16.3) ;-------Weight in Tonnes.
+			power(192) ;---------Engine Power, in hp.
+			track(6.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(227) ;----------Fuel capacity in Litres.
+			type(diesel) ;-------Fuel type. (diesel OR fuel)
+			range(120) ;---------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -7 15}
+		{speed2 8}
+	}
+	{bone "turret"
+		{limits -22 22}
+		{speed2 11}
+	}
+}

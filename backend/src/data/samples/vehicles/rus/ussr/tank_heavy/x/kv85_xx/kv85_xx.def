@@ -1,0 +1,71 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "kv85_xx.mdl"}
+
+	{volume "barrel1"
+		{thickness 30}
+	}
+	{volume "body1"			; Hull
+		{thickness 60
+			{front 60}		; Lower Hull
+			{top 50}		; Glacis
+			{rear 20}
+			{bottom 30}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 60
+			{front 75}
+			{top 40}
+			{rear 20}
+			{bottom 20}
+		}
+	}
+	{volume "body3"			; cheek
+		{thickness 40}
+	}
+	{volume "body4"			; cheek
+		{thickness 40}
+	}
+	{volume "cupola"
+		{thickness 90
+			{top 35}
+		}
+	}
+	{volume "engine1"		; Hull
+		{thickness 60
+			{front 20}
+			{bottom 20}
+		}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 60
+			{front 20}
+			{top 30}
+			{rear 60}
+		}
+	}
+	{volume "hatch"
+		{thickness 35}
+	}
+	{volume "part4"
+		{thickness 5}
+	}
+	{volume "part5"
+		{thickness 5}
+	}
+	{volume "turret1"
+		{thickness 100
+			{top 30}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret2"
+		{thickness 100}
+		{CastSteel 0.8063}
+	}
+	{volume "turret3"
+		{thickness 100}
+	}
+	("tracks" thickness(30))
+}

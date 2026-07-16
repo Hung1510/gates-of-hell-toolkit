@@ -1,0 +1,63 @@
+{game_entity
+	{extension "pz38t_f_x.mdl"} {RimLight}
+	{volume "body1"
+	}
+	{volume "ram"
+	}
+	{volume "barrel"
+	}
+	{volume "body2"
+	}
+	{volume "breach"
+	}
+	{volume "cupola"
+	}
+	{volume "engine"
+	}
+	{volume "hole1"
+	}
+	{volume "hole2"
+	}
+	{volume "mantlet"
+	}
+	{volume "shieldl1"
+	}
+	{volume "shieldl2"
+	}
+	{volume "shieldr1"
+	}
+	{volume "trackleft1"
+	}
+	{volume "trackleft2"
+	}
+	{volume "trackleft3"
+	}
+	{volume "trackleft4"
+	}
+	{volume "trackleft5"
+	}
+	{volume "trackleft6"
+	}
+	{volume "trackleft"
+	}
+	{volume "trackright1"
+	}
+	{volume "trackright2"
+	}
+	{volume "trackright3"
+	}
+	{volume "trackright4"
+	}
+	{volume "trackright5"
+	}
+	{volume "trackright6"
+	}
+	{volume "trackright"
+	}
+	{volume "turret1"
+	}
+	{volume "turret2"
+	}
+	{volume "turret"
+	}
+}

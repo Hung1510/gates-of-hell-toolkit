@@ -1,0 +1,60 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "25mm_pstk37_xx.mdl"}
+	{volume "shield3"
+		{able {holed}}
+		{thickness 4.5}
+	}
+	{volume "armor1"
+		{thickness 4.5}
+	}
+	{volume "barrel1"
+		{thickness 20}
+	}
+	{volume "barrel2"
+		{thickness 20}
+	}
+	{volume "barrel3"
+		{thickness 20}
+	}
+	{volume "barrel4"
+		{thickness 20}
+	}
+	{volume "barrel5"
+		{thickness 20}
+	}
+	{volume "body2"
+		{thickness 6}
+	}
+	{volume "body3"
+		{thickness 6}
+	}
+	{volume "body4"
+		{thickness 6}
+	}
+	{volume "body5"
+		{thickness 6}
+	}
+	{volume "body6"
+		{thickness 6}
+	}
+
+	{volume "shield1"
+		{able {holed}}
+		{thickness 4.5}
+	}
+	{volume "shield2"
+		{able {holed}}
+		{thickness 4.5}
+	}
+	{volume "shield4"
+		{able {holed}}
+		{thickness 4.5}
+	}
+	{volume "wheelleft"
+		{thickness 0.5}
+	}
+	{volume "wheelright"
+		{thickness 0.5}
+	}
+}

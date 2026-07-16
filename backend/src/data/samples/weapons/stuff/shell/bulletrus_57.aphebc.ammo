@@ -1,0 +1,12 @@
+{from "pattern aphebc"	;BR-271
+	{tag "shell size1 50to57_he_filler"}
+	{inventory {size 5 1}}
+	{entity "57mm_rus_aphebc"}
+	{mass 6.5}
+
+	{view "howitzer_shell_50-75_small"
+		{tail "shell_tracer_rus_57_ap" "tail"}
+	}
+
+	("ap_blast" args 0.5)
+}

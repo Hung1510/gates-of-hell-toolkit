@@ -1,0 +1,14 @@
+;_________________________________________
+; German Tank Flamethrower
+;=========================================
+
+{from "pattern flame_thrower"		; flammpanzer_b2
+	{entity "flammenwerfer_b2"}
+	("filling_tank" fuel(10))
+	{mass 150}
+
+	{foresight "foresight4"}
+
+	{range 45 45}	;// irl range 40-45m
+	{speed 40}
+}

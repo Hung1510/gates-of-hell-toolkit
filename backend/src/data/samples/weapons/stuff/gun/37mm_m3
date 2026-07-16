@@ -1,0 +1,32 @@
+;_________________________________________
+; US light AT gun
+;=========================================
+
+
+{from "pattern gun"			; L/53.5 "m3"
+	{filling "bulletusa_37"}
+	{fireSound "cannon/s1/d1/Shared/Cannon_37to40mm/"}
+	{fireSoundclose "cannon/s1/3p/Shared/Cannon_37to40mm/"}
+	{reloadSound "utility/"}
+	("range_170")
+	{calibre 37}
+
+	("reload time" seconds(3)) ;manual breech
+
+	("velocity m/s" ap(884) apcr(950) he(792) heat(1))
+	("armor health" damage(100))
+	("armor health custom" shell(ap) damage(100) velocity(884) filler(0))
+	("armor health custom" shell(apcbc) damage(100) velocity(884) filler(0))
+	("37_slope_multipliers_800ms")
+
+	("penetration_medium" shell(ap) range(170) a(89) b(69) c(50) d(37) e(27))	; AP M74
+	("penetration_medium" shell(apcbc) range(170) a(78) b(69) c(59) d(51) e(43))	; APC M51
+
+	("penetration_medium" shell(apcr) range(170) a(87) b(74) c(62) d(51) e(42))	; APSV Mk.I.T ;// if Littlejohn projectile is used
+
+	{parameters "he"
+		{range 160 160}
+	}
+
+	("accuracy_direct" r1(0.8) range_ap(170) range_he(160) range_heat(160))
+}

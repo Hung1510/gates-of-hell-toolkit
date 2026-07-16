@@ -1,0 +1,12 @@
+;_________________________________________
+; german medium AT gun
+;=========================================
+
+
+{from "75mm_kwk40_l48"			; L/48 "stug3g_early" "stug4g"
+	{fireSound "cannon/s3/d1/Shared/Cannon_75to76mm/"}
+	{fireSoundclose "cannon/s2/1p/Shared/"}
+	{reloadSound "tank/1p/medium/"}
+
+	("reload time" seconds(7))
+}

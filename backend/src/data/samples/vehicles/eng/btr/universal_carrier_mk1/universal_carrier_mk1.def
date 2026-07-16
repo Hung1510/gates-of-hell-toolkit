@@ -1,0 +1,33 @@
+{game_entity
+	(include "universal_carrier_mk1.inc")
+
+	("crew_human_visible_anm2" place(driver) door(emit2) door2(emit1) anm_left(right) anm_right(right))
+	("crew_human_visible_anm2" place(gunner) door(emit1) door2(emit2) anm_left(left) anm_right(left))
+
+	("seat_human" place(seat1) bone(seat01) door(emit3) animation(armor1))
+	("seat_human" place(seat3) bone(seat03) door(emit5) animation(armor3))
+	("seat_human" place(seat4) bone(seat04) door(emit6) animation(armor4))
+	("seat_human" place(seat5) bone(seat05) door(emit4) animation(armor5))
+
+	{extender "inventory"
+		{weapon "mgun" {mask "mountable"}}
+		{box
+			{item "bren_mk1" filled {user "mgun"}}
+			{item "bren_mag ammo" 840}
+			{item "no8_smoke grenade" 8}
+		}
+	}
+
+	{Weaponry
+		{place "mgun"
+			{type "hull"}
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{gunner "gunner"}
+			{charger "gunner"}
+			("abm_mgun")
+			{rotate}
+			{basic}
+		}
+	}
+}

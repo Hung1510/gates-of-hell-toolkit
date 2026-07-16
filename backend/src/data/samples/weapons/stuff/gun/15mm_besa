@@ -1,0 +1,38 @@
+;_________________________________________
+; British HMG
+;=========================================
+
+
+{from "pattern gun"			; "humber"
+	{filling "bulleteng_15_auto" 25}
+	{fireSound "cannon/s1/d1/Shared/Autocannon_20to30mm/"}
+	{fireSoundclose "cannon/s1/3p/Shared/Autocannon_20to30mm/"}
+	{reloadSound "interior/large/auto_reload_interior"}
+	("range_autocannon_12-20")
+	{cursor "ironsights/aa"}
+	{calibre 15}
+	("light_aa")
+
+	{spreading
+		{BurstAccuracy 100 98 95 90 85 80 75 70 65}
+	}
+
+	("fire rate" rpm(450))
+	("reload time" seconds(5))
+
+	("velocity m/s" ap(818) apcr(1) he(818) heat(1))
+	("armor health" damage(25))
+	("20_slope_multipliers")
+
+	{burst
+		{short 3 1}				;// short burst shots on long distance, rand (+-)shots
+		{long 6 2}				;// long burst shots on short distance, rand (+-)shots
+		{rangeKoef 0.85}		;// rangeKoef * aimRange = max long burst distance
+	}
+
+	("penetration" a(29) b(21) c(14) d(10) e(7))
+
+	("accuracy_direct_auto" r1(0.7) range_ap(150) range_he(150) range_heat(150))
+
+	{traceFreq 3}
+}

@@ -1,0 +1,17 @@
+{game_entity
+	(include "/properties/bicycle.ext")
+	(include "/properties/selection/vehicle_small.inc" scale(0.8))
+	{extension "m42_truppenfahrrad.mdl"}
+
+	{able "emit_on_attack" "emit_crew_on_injure"}
+
+	{volume "detail1"
+		{thickness 1}
+		{able {visible 0}}
+	}
+	{volume "detail3"
+		{thickness 0.5}
+		{material "fabric"}
+		{able {visible 0}{NoWoundDecal}}
+	}
+}

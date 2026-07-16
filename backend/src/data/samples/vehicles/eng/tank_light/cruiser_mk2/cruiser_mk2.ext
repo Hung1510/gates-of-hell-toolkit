@@ -1,0 +1,114 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 15mm
+	; gun 20mm
+
+	;// Defines
+	("tank_light_tier2")
+	("tracks" repair(30) thickness(15))
+	("gun" repair(30) thickness(20))
+	("fuel" args "fuel")
+	("ammo" args "ammo")
+	("transmission" args "transmission")
+
+	;// Components
+	{volume "body1"
+		{thickness 22
+			{front 30}
+			{top 7}
+			{bottom 7}
+			{rear 12}
+		}
+	}
+	{volume "body2"
+		{thickness 22
+			{top 7}
+			{bottom 7}
+			{rear 12}
+		}
+	}
+	{volume "body3"
+		{thickness 22
+			{front 30}
+			{top 7}
+			{bottom 7}
+			{rear 12}
+		}
+	}
+	{volume "body4"
+		{thickness 22
+			{front 30}
+			{top 7}
+			{bottom 7}
+			{rear 12}
+		}
+	}
+	{volume "body5"
+		{thickness 22
+			{top 7}
+			{bottom 7}
+			{rear 12}
+		}
+	}
+	{volume "engine1"
+		{thickness 12
+			{left 22}
+			{top 7}
+			{bottom 7}
+		}
+	}
+	{volume "engine2"
+		{thickness 12
+			{left 22}
+			{top 7}
+			{bottom 7}
+		}
+	}
+	{volume "engine3"
+		{thickness 12
+			{left 22}
+			{bottom 7}
+		}
+	}
+	{volume "engine4"
+		{thickness 12
+			{left 22}
+			{top 7}
+			{bottom 7}
+		}
+	}
+	{volume "turret1"
+		{thickness 26
+			{front 30}
+			{top 7}
+			{bottom 7}
+			{rear 30}
+		}
+	}
+	{volume "turret2"
+		{thickness 26
+			{top 7}
+			{bottom 7}
+			{rear 30}
+		}
+	}
+	{volume "turret3" {thickness 26}}
+	{volume "turret4" {thickness 22}}
+	{volume "turret5" {thickness 22}}
+
+	;// Non-Components
+	{volume "basket" {thickness 5}}
+	{volume "cupola1" {thickness 7}}
+	{volume "cupola2" {thickness 7}}
+	{volume "armor1" {thickness 5}}
+	{volume "armor2" {thickness 5}}
+	{volume "armor3" {thickness 5}}
+	{volume "armor4" {able {holed}} {thickness 5}} ;// Engine Cover (Right)
+	{volume "armor5" {able {holed}} {thickness 5}} ;// Engine Cover (Left)
+	{volume "armor_mantlet" {able {holed}} ;// Armor over the Mantlet, spaced.
+		{thickness 14
+			{top 7}
+			{bottom 7}
+		}
+	}

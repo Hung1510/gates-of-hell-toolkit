@@ -1,0 +1,21 @@
+;// Defines
+	("armoredcar_tier1")
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+	("tracks" repair(30) thickness(15))
+
+;// Components
+	{volume "body1" {thickness 8 {front 10} {top 5.5} {bottom 5.5}} {able {holed}}} 	;// Upper body
+	{volume "body2" {thickness 8 {front 14.5} {top 5.5} {bottom 5.5}}} 	;// Lower body 1_1
+	{volume "body3" {thickness 8 {front 12} {top 5.5} {bottom 5.5}}} 	;// Lower body 1_1
+	{volume "engine" {thickness 8 {front 14.5} {top 5.5}}} 	;// Entire engine deck
+	
+;//Non-Components
+	{volume "gun_shield" {thickness 8} {able {holed}}} 	;// Gun shield (front)
+	{volume "doorl" {thickness 8}}
+	{volume "doorr" {thickness 8}}
+	{volume "hole3" {tags "sticky"}}
+	{volume "trackleft1" {tags "mover" "track"} {able {NoWoundDecal} {holed} {contact_ground 0}}}
+	{volume "trackright1" {tags "mover" "track"} {able {NoWoundDecal} {holed} {contact_ground 0}}}

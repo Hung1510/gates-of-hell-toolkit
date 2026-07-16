@@ -1,0 +1,76 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "su100_xx.mdl"}
+
+
+	{volume "body1"			; Hull
+		{thickness 45
+			{top 75}		; Glacis
+			{rear 10}
+			{bottom 20}
+		}
+		{HighHardness}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 45
+			{front 75}		; Glacis
+			{top 20}
+			{bottom 20}
+		}
+		{HighHardness}
+	}
+	{volume "body4"			; Drivers Hatch
+		{thickness 70}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "engine1"		; Hull
+		{thickness 45
+			{front 10}
+			{bottom 20}
+		}
+		{HighHardness}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 45
+			{front 10}
+			{top 20}
+			{bottom 20}
+		}
+		{HighHardness}
+	}
+	{volume "mantlet2"		; Front mantlet
+		{thickness 75}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "mantlet1"		; Rear mantlet
+		{thickness 75}
+		{HighHardness}
+	}
+	{volume "cupola"
+		{thickness 45
+			{top 20}
+		}
+		{HighHardness}
+	}
+	{volume "barrel1"
+		{thickness 20}
+	}
+	{volume "part3"
+		{thickness 5}
+	}
+	{volume "part4"
+		{thickness 5}
+	}
+	{volume "part5"
+		{thickness 20}
+	}
+	{volume "part7"
+		{thickness 5}
+	}
+	{volume "part8"
+		{thickness 20}
+	}
+	("tracks" thickness(20))
+}

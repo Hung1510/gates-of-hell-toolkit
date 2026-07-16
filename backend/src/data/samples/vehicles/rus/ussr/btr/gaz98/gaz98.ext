@@ -1,0 +1,71 @@
+;SDL
+
+	; armor notes
+
+	("armoredcar_tier1")
+
+	("fuel" args "fuel")
+
+	("solid_wheel" args "wheelright1")
+	("solid_wheel" args "wheelleft1")
+	("solid_wheel" args "wheelright2")
+	("solid_wheel" args "wheelleft2")
+	("glass" args "window")
+
+	{volume "body1"			; Hull
+		{thickness 3}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "body2"			; Windshield Frame
+		{thickness 2}
+	}
+	{volume "engine1"
+		{thickness 2}
+	}
+	{volume "engine2"
+		{thickness 2}
+	}
+
+	{volume "propeller"
+		{tags "propeller" "still"}
+		{thickness 3.0}
+		{able clear {bullet} {blast} {touch} {contact} {NoWoundDecal}}
+	}
+
+	{volume "propeller_spin"
+		{tags "propeller" "spin"}
+		{thickness 3.0}
+		{able clear {NoWoundDecal}}
+	}
+
+	{volume "armor1"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+		{able {holed}}
+	}
+
+	{volume "armor2"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+		{able {holed}}
+	}
+
+	{volume "wheelleft1"
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "wheelleft2"
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "wheelright1"
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "wheelright2"
+		{material "wood"}
+		{tags "wood"}
+	}

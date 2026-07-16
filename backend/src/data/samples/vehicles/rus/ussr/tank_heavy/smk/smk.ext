@@ -1,0 +1,89 @@
+;SDL
+
+	;notes
+	;tracks and wheels 20mm
+	;gun 25mm and 20mm
+
+	("tank_heavy_tier1")
+
+	("make_component" args "aux_turret11" "aux_turret1")
+	("make_component" args "aux_turret12" "aux_turret1")
+
+	("tracks" repair(40) thickness(20))
+	("gun" repair(30) thickness(25))
+	("gun1" repair(30) thickness(20))
+	("aux_turret" repair(45))
+
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("ammo" args "ammo5")
+	("transmission" args "transmission")
+
+	{volume "body1"			; hull
+		{thickness 60
+			{front 60}
+			{top 30}
+			{bottom 30}
+			{rear 10}
+		}
+	}
+	{volume "body2"			; Nose
+		{thickness 60
+			{top 40}
+			{bottom 30}
+		}
+	}
+	{volume "body3"			; 
+		{thickness 60
+			{top 30}
+			{rear 10}
+		}
+	}
+	{volume "body4"			; ring
+		{thickness 60
+			{top 30}
+		}
+	}
+	{volume "engine1"
+		{thickness 60
+			{front 10}
+			{top 30}
+			{bottom 30}
+		}
+	}
+	{volume "engine2"
+		{thickness 60
+			{front 10}
+			{top 30}
+		}
+	}
+	{volume "turret1"		; Turret Ring
+		{thickness 60}
+	}
+	{volume "turret2"		; Turret main
+		{thickness 60
+			{top 30}
+			{bottom 15}
+		}
+	}
+	{volume "turret3"		; turret front small part
+		{thickness 60
+			{bottom 30}
+		}
+	}
+	{volume "turret4"		; "mantlet"
+		{thickness 60}
+	}
+
+	{volume "aux_turret11"	; Front  Turret 
+		{thickness 60
+			{top 30}
+		}
+	}
+	{volume "aux_turret12"	; front turret mantlet 
+		{thickness 60}
+	}

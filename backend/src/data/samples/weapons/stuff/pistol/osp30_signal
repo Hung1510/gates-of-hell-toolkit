@@ -1,0 +1,5 @@
+{from "osp30"
+	{filling "flare signal" 1}
+	{reloadAnimBonus 57}
+	("reload time" seconds(60))
+}

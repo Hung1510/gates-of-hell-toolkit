@@ -1,0 +1,90 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "su122_xx.mdl"}
+
+	{volume "armor"
+		{thickness 65}	;// 20 + 45
+		{tags "body"}
+		{component "body"}
+	}
+	{volume "body1"			; Hull
+		{thickness 45
+			{rear 10}
+			{bottom 20}
+		}
+		{HighHardness}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 45
+			{top 20}
+			{bottom 20}
+		}
+		{HighHardness}
+	}
+	{volume "body3"			; Nose
+		{thickness 45
+			{front 100}
+		}
+		{HighHardness}
+	}
+	{volume "body4"			; Gun
+		{thickness 45}
+		{HighHardness}
+		{able {holed}}
+	}
+	{volume "engine1"		; Hull
+		{thickness 45
+			{front 10}
+			{bottom 20}
+		}
+		{HighHardness}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 45
+			{front 10}
+			{top 20}
+			{bottom 20}
+		}
+		{HighHardness}
+	}
+	{volume "mantlet"		; Mantlet
+		{thickness 52}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "barrel1"
+		{thickness 20}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "barrel2"		;
+		{thickness 52}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "cupola"
+		{thickness 45
+			{top 20}
+		}
+		{HighHardness}
+	}
+	{volume "part1"
+		{thickness 45}
+	}
+	{volume "part3"
+		{thickness 10}
+	}
+	{volume "part4"
+		{thickness 5}
+	}
+	{volume "part6"
+		{thickness 5}
+	}
+	{volume "shieldr2"
+		{thickness 5}
+	}
+	("tracks" thickness(20))
+	{volume "hole3"
+		{thickness 21}
+	}
+}

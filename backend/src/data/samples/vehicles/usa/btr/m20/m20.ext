@@ -1,0 +1,110 @@
+
+	; armor notes
+	; wheels 0.5mm
+	; shields 2-8mm
+
+	("armoredcar_tier2")
+
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelleft3")
+	("wheel" args "wheelright1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelright3")
+
+	("shield" args "shieldl1" 6.4)
+	("shield" args "shieldl2" 6.4)
+	("shield" args "shieldl3" 6.4)
+	("shield" args "shieldr1" 6.4)
+	("shield" args "shieldr2" 6.4)
+	("shield" args "shieldr3" 6.4)
+
+	("transmission" args "transmission")
+
+	{volume "body1"
+		{thickness 9.5
+			{front 16}
+			{top 12.7}
+			{bottom 6.4}
+		}
+	}
+	{volume "body2"
+		{thickness 9.5
+			{front 16}
+			{top 12.7}
+			{bottom 6.4}
+		}
+	}
+	{volume "body3"
+		{thickness 9.5
+			{top 6.4}
+			{bottom 6.4}
+		}
+		{able {holed}}
+	}
+	{volume "body4"
+		{thickness 9.5
+			{top 6.4}
+			{bottom 6.4}
+		}
+		{able {holed}}
+	}
+	{volume "body5"
+		{thickness 9.5
+			{top 6.4}
+			{front 19.1}
+		}
+	}
+	{volume "body6"
+		{thickness 9.5}
+		{able {holed}}
+	}
+	{volume "engine"
+		{thickness 9.5
+			{top 6.4}
+			{bottom 6.4}
+		}
+	}
+	{volume "armor1"
+		{thickness 16}
+	}
+	{volume "armor2"
+		{thickness 16}
+	}
+	{volume "armor3"
+		{thickness 6.4}
+	}
+	{volume "armor4"
+		{thickness 6.4}
+	}
+	{volume "armor5"
+		{thickness 6.4}
+	}
+	{volume "armor6"
+		{thickness 6.4}
+	}
+	{volume "armor7"
+		{thickness 6.4}
+	}
+	{volume "armor8"
+		{thickness 6.4}
+	}
+	{volume "armor9"
+		{thickness 6.4}
+	}
+	{volume "armor10"
+		{thickness 6.4}
+	}
+	{volume "armor_ring1"
+		{thickness 6.4}
+		{able {holed}}
+	}
+	{volume "armor_ring2"
+		{thickness 6.4}
+	}
+	{volume "armor_ring3"
+		{thickness 6.4}
+	}
+	{volume "armor_ring4"
+		{thickness 6.4}
+	}

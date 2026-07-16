@@ -1,0 +1,125 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "t28e_xx.mdl"}
+
+	{volume "body1"			; Hull
+		{thickness 20
+			{front 30}		; Lower Hull
+			{top 20}			; Glacis & Lower Hull
+			{rear 10}
+			{bottom 15}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 15
+			{top 15}
+			{rear 10}
+		}
+	}
+	{volume "body3"			; Driver Compartment 
+		{thickness 20
+			{front 60}		; Glacis
+			{top 10}
+		}
+	}
+	{volume "body4"			; Driver sides +armor 
+		{thickness 50}
+	}
+	{volume "body5"			; lower hull sides +armor 
+		{thickness 30}
+	}
+	{volume "body6"			; Lower Hull front +armor 
+		{thickness 50}
+	}
+	{volume "body7"			; upper sides +armor 
+		{thickness 50}
+	}
+	{volume "engine1"		; Hull
+		{thickness 20
+			{front 5}
+			{bottom 15}
+		}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 20
+			{front 10}
+			{top 15}
+		}
+	}
+	{volume "engine4"		; engine lower sides +armor 
+		{thickness 30}
+	}
+	{volume "engine5"		; engine upper sides +armor 
+		{thickness 50}
+		{able {holed}}
+	}
+	{volume "engine6"		; engine rear up +armor 
+		{thickness 50}
+	}
+	{volume "engine7"		; engine rear lower right +armor 
+		{thickness 50}
+	}
+	{volume "engine8"		; engine rear lower left +armor 
+		{thickness 50}
+	}
+	{volume "turret1"		; Turret Ring
+		{thickness 20
+			{rear 30}
+		}
+	}
+	{volume "turret2"		; Main Turret
+		{thickness 20
+			{front 10}
+			{top 15}
+			{rear 30}
+			{bottom 15}
+		}
+	}
+	{volume "turret3"		; Turret front
+		{thickness 20}
+		{CastSteel 0.8063}
+	}
+	{volume "turret_armor"		; turret around +armor
+		{thickness 30
+			{top 1}
+			{bottom 1}
+		}
+		{able {holed}}
+	}
+	{volume "aux_turret1"	; Left MG Turret
+		{thickness 35
+			{front 52}
+			{top 10}
+			{bottom 15}
+		}
+	}
+	{volume "aux_turret2"	; Right MG Turret
+		{thickness 35
+			{front 52}
+			{top 10}
+			{bottom 15}
+		}
+	}
+	{volume "barrel1"
+		{thickness 20}
+	}
+	{volume "barrel2"
+		{thickness 20}
+	}
+	{volume "part1"			; Track Right Wheel
+		{thickness 20}
+	}
+	{volume "part2"			; Track Left Wheel
+		{thickness 20}
+	}
+	{volume "part3"			; Track Left Wheel
+		{thickness 20}
+	}
+	{volume "shieldr1"
+		{thickness 10}
+	}
+	{volume "shieldl1"
+		{thickness 10}
+	}
+	("tracks" thickness(20))
+}

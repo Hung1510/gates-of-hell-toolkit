@@ -1,0 +1,74 @@
+{game_entity
+
+	(include "/properties/vehicle_xx.ext")
+	{extension "horsa_mk1_xx.mdl"}
+	{volume "aileron1"
+		{thickness 2}
+	}
+	{volume "aileron2"
+		{thickness 2}
+	}
+	{volume "body1"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "bodyback1"
+		{thickness 2}
+	}
+	{volume "door"
+		{thickness 2}
+	}
+	{volume "elevator1"
+		{thickness 2}
+	}
+	{volume "elevator2"
+		{thickness 2}
+	}
+	{volume "engine1"
+	}
+	{volume "ramp1"
+		{thickness 2}
+	}
+	{volume "ramp2"
+		{thickness 2}
+	}
+	{volume "retract_wheell"
+		{thickness 2}
+	}
+	{volume "retract_wheelr"
+		{thickness 2}
+	}
+	{volume "rudder"
+		{thickness 2}
+	}
+	{volume "stabilizer1"
+		{thickness 2}
+	}
+	{volume "stabilizer2"
+		{thickness 2}
+	}
+	{volume "wheel1"
+		{thickness 2}
+	}
+	{volume "wheell"
+		{thickness 2}
+	}
+	{volume "wheelr"
+		{thickness 2}
+	}
+	{volume "wingl2"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "wingl1"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "wingr1"
+		{thickness 2}
+	}
+	{volume "wingr2"
+		{thickness 2}
+		{able {holed}}
+	}
+}

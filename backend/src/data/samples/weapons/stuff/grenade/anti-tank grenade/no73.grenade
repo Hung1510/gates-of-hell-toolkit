@@ -1,0 +1,18 @@
+{from "pattern anti-tank"
+	{entity "no73"}
+	{tag  "size3"}	; Explosive Filling 		= 1.6 kg
+	{mass 2.00}
+
+	{inventory {size 3 1}}
+
+	{damage cumulative
+		{damage 31}
+		{distance 0.25}
+	}
+
+	{damage blastwave
+		{energy 1.0}
+		{area 3 6}
+		{ground_interaction_radius 0.05} ;// value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx
+	}
+}

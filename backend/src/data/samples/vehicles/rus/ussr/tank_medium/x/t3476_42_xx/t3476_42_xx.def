@@ -1,0 +1,67 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{Extension "t3476_42_xx.mdl"}
+
+	
+	{Volume "body2"
+		{thickness 21}
+	}
+	{Volume "body"
+		{thickness 21}
+	}
+	{Volume "engine2"
+		{thickness 21}
+	}
+	{Volume "engine3"
+		{thickness 21}
+	}
+	{Volume "engine"
+		{thickness 21}
+	}
+	{Volume "gun2"
+		{thickness 21}
+	}
+	{Volume "gun"
+		{thickness 21}
+		{able {obstacle 0} {visible 0}}
+	}
+	{Volume "mantlet"
+		{thickness 21}
+	}
+	{Volume "part1"
+		{thickness 21}
+	}
+	{Volume "part2"
+		{thickness 21}
+	}
+	{Volume "part3"
+		{thickness 21}
+	}
+	{Volume "part4"
+		{thickness 21}
+	}
+	{Volume "part5"
+		{thickness 21}
+	}
+	{Volume "part6"
+		{thickness 21}
+	}
+	{Volume "part7"
+		{thickness 21}
+	}
+	{Volume "trackleft"
+		{thickness 21}
+	}
+	{Volume "trackright"
+		{thickness 21}
+	}
+	{Volume "turret2"
+		{thickness 21}
+	}
+	{Volume "turret3"
+		{thickness 21}
+	}
+	{Volume "turret"
+		{thickness 21}
+	}
+}

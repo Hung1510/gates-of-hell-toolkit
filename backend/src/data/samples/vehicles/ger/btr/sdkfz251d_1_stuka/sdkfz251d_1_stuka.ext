@@ -1,0 +1,123 @@
+;SDL
+
+	; armor notes
+	; tracks 15mm
+
+	("armoredcar_tier1")
+
+	("shield_track" args "shield1" 15)
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+
+	("tracks" repair(30) thickness(15))
+
+	("rocket" args "rocket00")
+	("rocket" args "rocket01")
+	("rocket" args "rocket02")
+	("rocket" args "rocket03")
+	("rocket" args "rocket04")
+	("rocket" args "rocket05")
+
+	{volume "body1"		; Lower Hull
+		{thickness 8
+			{front 14.5}
+		}
+	}
+	{volume "body2"		; Upper Hull
+		{thickness 8
+			{front 10}
+		}
+		{able {holed}}
+	}
+	{volume "engine1"	; Lower
+		{thickness 8
+			{front 14.5}
+		}
+	}
+	{volume "engine2"	; Upper
+		{thickness 8
+			{front 14.5}
+			{top 10}
+		}
+	}
+	{volume "gun_shield" ; MG Shield
+		{thickness 8}
+	}
+	{volume "doorl"
+		{thickness 8}
+	}
+	{volume "doorr"
+		{thickness 8}
+	}
+
+	{volume "hole3"
+		{tags "sticky"}
+	}
+
+	{volume "armor1"
+		{thickness 5}
+	}
+	{volume "armor2"
+		{thickness 5}
+	}
+	{volume "armor3"
+		{thickness 5}
+	}
+	{volume "armor4"
+		{thickness 5}
+	}
+	{volume "armor5"
+		{thickness 5}
+	}
+	{volume "armor6"
+		{thickness 5}
+	}
+	{volume "armor7"		; side tool boxes
+		{thickness 8}
+	}
+	{volume "armor8"		; side tool boxes
+		{thickness 8}
+	}
+
+	{volume "barrel11"
+		{thickness 4}
+		{able {holed} {visible 0} {obstacle 0}}
+		{material "wood"}
+	}
+	{volume "barrel12"
+		{thickness 4}
+		{able {holed} {visible 0} {obstacle 0}}
+		{material "wood"}
+	}
+	{volume "barrel13"
+		{thickness 4}
+		{able {holed} {visible 0} {obstacle 0}}
+		{material "wood"}
+	}
+	{volume "barrel14"
+		{thickness 4}
+		{able {holed} {visible 0} {obstacle 0}}
+		{material "wood"}
+	}
+	{volume "barrel15"
+		{thickness 4}
+		{able {holed} {visible 0} {obstacle 0}}
+		{material "wood"}
+	}
+	{volume "barrel16"
+		{thickness 4}
+		{able {holed} {visible 0} {obstacle 0}}
+		{material "wood"}
+	}
+
+	{volume "trackleft1"
+		{tags "mover" "track"}
+		{able {NoWoundDecal} {holed} {contact_ground 0}}
+	}
+	{volume "trackright1"
+		{tags "mover" "track"}
+		{able {NoWoundDecal} {holed} {contact_ground 0}}
+	}

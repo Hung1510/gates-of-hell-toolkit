@@ -1,0 +1,96 @@
+;SDL
+
+	; armor notes
+	; wheels 10mm 
+	; gun 20mm
+
+	("armoredcar_tier2")
+
+	("shield" args "detail8" 5)
+	("shield" args "detail9" 5)
+	("fuel" args "fuel1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright1")
+	("wheel" args "wheelright2")
+
+	("turret" repair(45))
+;	("gun" repair(30) thickness(20))
+
+	("transmission" args "transmission")
+	{volume "transmission" {able {NoWoundDecal 0}}}
+
+	{volume "body1"
+		{thickness 14
+			{front 22}
+			{left 19}
+			{top 13}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "body2"
+		{thickness 14
+			{front 22}
+			{left 19}
+			{top 13}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "body3"
+		{thickness 14
+			{front 22}
+			{left 19}
+			{top 13}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "body4"
+		{thickness 14
+			{front 22}
+			{left 19}
+			{top 13}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "turret1"
+		{thickness 12.7}
+	}
+	{volume "turret2"
+		{thickness 12.7}
+	}
+	{volume "turret3"
+		{thickness 31.7
+			{top 12.7}
+		}
+		{able {holed}}
+	}
+	{volume "engine1"
+		{thickness 19
+			{left 19}
+			{top 13}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "armor1"		; storage box
+		{thickness 5}
+	}
+	{volume "armor2"		; storage box
+		{thickness 5}
+	}
+	{volume "armor3"		; Engine Cover (back)
+		{thickness 8}
+	}
+	{volume "armor4"		; Turret Extra Armor (Shields)
+		{thickness 31.7}
+	}
+	{volume "armor5"		; Turret Extra Armor (Shields)
+		{thickness 31.7}
+	}
+	
+	{component "detail8" {tags "cut_part"}}
+	{component "detail9" {tags "cut_part"}}

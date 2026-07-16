@@ -1,0 +1,10 @@
+;_________________________________________
+; US heavy tank Gun
+;=========================================
+
+
+{from "90mm_m3"				; L/53 "90mm gmc M26 Pershing"
+
+	{fireSoundclose "cannon/s3/1p/Shared/"}
+	{reloadSound "tank/1p/large/"}
+}

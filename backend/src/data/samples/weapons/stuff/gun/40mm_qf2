@@ -1,0 +1,51 @@
+;_________________________________________
+; British light AT cannon
+;=========================================
+
+
+{from "pattern gun"			; L/50, "40mm QF 2-pounder"
+	{filling "bulleteng_40"}
+	{fireSound "cannon/s1/d1/Shared/Cannon_37to40mm/"}
+	{fireSoundclose "cannon/s1/1p/Shared/Cannon_37to40mm/"}
+	{reloadSound "utility/"}
+	("range_160")
+	{calibre 40}
+
+	("reload time" seconds(3))
+
+	("velocity m/s" ap(792) apcr(1035) he(792) heat(1))
+	("armor health" damage(110))
+	("armor health custom" shell(aphe) damage(110) velocity(792) filler(18))
+	("armor health custom" shell(ap) damage(110) velocity(853) filler(0))
+	("armor health custom" shell(ap2) damage(110) velocity(792) filler(0))
+	("armor health custom" shell(apcbc) damage(110) velocity(792) filler(0))
+	("40_eng_slope_multipliers")
+
+	;APHE shell Mk.I
+	("penetration_medium" shell(aphe) range(160) a(63) b(52) c(40) d(31) e(23))  ;RHA
+
+	;AP shot Mk.IT
+	("penetration_medium" shell(ap2) range(160) a(70) b(59) c(45) d(34) e(26))  ;RHA
+
+	;APHV shot Mk.IT ; later round with bigger charge, Sep 1942
+	("penetration_medium" shell(ap) range(160) a(74) b(64) c(50) d(38) e(29))  ;RHA
+ ;//("penetration_medium" shell(ap) range(160) a(62) b(50) c(38) d(28) e(21))  ;FHA
+	{parameters "ap"
+		("velocity" mps(853))
+	}
+
+	;APCBC shot Mk.IT ; Dec 1942
+	("penetration_medium" shell(apcbc) range(160) a(78) b(69) c(59) d(51) e(44)) ;RHA
+ ;//("penetration_medium" shell(apcbc) range(160) a(76) b(67) c(57) d(49) e(42)) ;FHA
+
+	;APSV shot Mk.IT ; Jan 1943, was sometimes used without little john adapter
+	("penetration_medium" shell(apcr) range(170) a(99) b(75) c(54) d(38) e(27)) ;RHA
+
+	;APSV shot Mk.IIT ; May 1944, was sometimes used without little john adapter
+	("penetration_medium" shell(apcr2) range(170) a(88) b(75) c(63) d(52) e(43)) ;RHA
+	{parameters "apcr2"
+		("velocity" mps(961))
+	}
+
+	("accuracy_direct" r1(0.90) range_ap(170) range_he(160) range_heat(160))
+}

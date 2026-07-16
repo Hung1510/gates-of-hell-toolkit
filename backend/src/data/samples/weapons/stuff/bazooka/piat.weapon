@@ -1,0 +1,28 @@
+{from "pattern rpg_weapon"
+	{filling "ammo piat_bomb" 1}
+	{entity "piat"}
+	{fireSound "reactive/d1/ENG/PIAT/"}
+	{reloadsound "PIAT_reload"}
+	{calibre 83}
+	{mass 15}
+	{inventory {size 7 2}}
+
+	;("velocity" mps(76))
+	{speed 42}
+	{gravity 1.1}
+
+	("human health" damage(500))
+
+	{parameters "heat"			; Bomb Mk.IA
+		{cursorReloading "gun_heat"}
+		("penetration" args 80)
+		("armor health" damage(300))
+		("pointed_slope")
+	}
+	{parameters "heata"			; Bomb Mk.IV
+		{cursorReloading "gun_heat"}
+		("penetration" args 100)
+		("armor health" damage(300))
+		("standard_slope")
+	}
+}

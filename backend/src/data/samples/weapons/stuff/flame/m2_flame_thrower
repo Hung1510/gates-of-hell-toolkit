@@ -1,0 +1,12 @@
+{from "pattern flame_thrower"
+	{entity "m2_flame_thrower"}
+	{tag "range_40"}
+	("filling" fuel(70))	;// 7 seconds of fuel
+	{mass 30.8}
+
+	{inventory
+		{size 4 6}
+	}
+
+	{range 40 41}
+}

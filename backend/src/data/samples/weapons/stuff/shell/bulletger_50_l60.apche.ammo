@@ -1,0 +1,12 @@
+{from "pattern apche"
+	{tag "shell size1 50to57_he_filler"}
+	{inventory {size 5 1}}
+	{entity "50mm_ger_l60_apche"}
+	{mass 3.49}
+
+	{view "howitzer_shell_50-75_small"
+		{tail "shell_tracer_50l_ap" "tail"}
+	}
+
+	("ap_blast" args 0.4)
+}

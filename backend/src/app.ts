@@ -10,6 +10,8 @@ import { computeSquadStats } from "./logic/squadStats.js";
 import { validateTechNode, computeGridBounds } from "./logic/techTreeValidation.js";
 import { askTheMod } from "./logic/askTheMod.js";
 import { inspectSave, editSave } from "./logic/saveEditor.js";
+import { loadAllVehicles, getVehiclesForFaction } from "./data/vehicleLoader.js";
+import { loadAllSoldierWeapons } from "./data/soldierWeaponLoader.js";
 import type { Squad } from "./logic/parser/squads.js";
 import type { TechNode } from "./logic/parser/techtree.js";
 
@@ -283,6 +285,48 @@ export function createApp() {
       return;
     }
     res.json(askTheMod(q));
+  });
+
+  // GET /api/vehicles?faction=rus -> real vehicle armor + weapon-slot + mobility
+  // data, parsed from the game's own .def/.ext files. Coverage varies by
+  // faction depending on what's been uploaded so far - see
+  // /api/vehicles/factions for exact counts, don't assume all 5 are equally
+  // complete.
+  app.get("/api/vehicles", (req, res) => {
+    const faction = req.query.faction as string | undefined;
+    if (!faction) {
+      res.status(400).json({ error: "faction query param is required" });
+      return;
+    }
+    res.json(getVehiclesForFaction(faction));
+  });
+
+  // GET /api/vehicles/factions -> which factions have vehicle data loaded
+  // and how much, so the frontend can show honest coverage rather than
+  // silently showing an empty list for a faction with no data yet.
+  app.get("/api/vehicles/factions", (_req, res) => {
+    const all = loadAllVehicles();
+    const summary = [...all.entries()].map(([faction, vehicles]) => ({
+      faction,
+      count: vehicles.length,
+      withArmor: vehicles.filter((v) => v.armor.length > 0).length,
+      withWeapon: vehicles.filter((v) => v.weapons.length > 0).length,
+    }));
+    res.json(summary);
+  });
+
+  // GET /api/units/weapons?faction=ger -> resolved primary weapon + real
+  // damage/rpm/penetration stats per soldier, where resolvable (verified
+  // against real values - see README for the K98k/Mosin/MG34 cross-checks
+  // done before trusting this resolver). Currently ~62% of all soldiers
+  // resolve to a full damage stat; the rest are mostly support roles
+  // without a combat weapon file, or the one known malformed item id
+  // ("panzershreck_54 weapon") - not hidden, just not resolvable yet.
+  app.get("/api/units/weapons", (req, res) => {
+    const faction = req.query.faction as string | undefined;
+    const all = loadAllSoldierWeapons();
+    const filtered = faction ? all.filter((s) => s.faction === faction) : all;
+    res.json(filtered);
   });
 
   return app;

@@ -1,0 +1,3 @@
+{game_entity
+	{Extension "panzer1f_x.mdl"} {RimLight}
+}

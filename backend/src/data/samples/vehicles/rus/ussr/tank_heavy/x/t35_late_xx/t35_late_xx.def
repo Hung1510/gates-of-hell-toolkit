@@ -1,0 +1,133 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "t35_late_xx.mdl"}
+	{volume "body1"			; Nose
+		{thickness 50
+			{front 70}
+			{top 20}		; Glacis
+			{bottom 30}
+		}
+	}
+	{volume "body2"			; Hull
+		{thickness 50
+			{front 70}
+			{top 10}
+			{rear 10}
+			{bottom 20}
+		}
+	}
+	{volume "body3"			; Superstructure
+		{thickness 50
+			{top 10}
+			{bottom 20}
+		}
+	}
+	{volume "engine1"
+		{thickness 20
+			{front 10}
+			{top 10}
+		}
+	}
+	{volume "turret1"		; Turret main
+		{thickness 30
+			{top 15}
+			{bottom 15}
+		}
+	}
+	{volume "turret2"		; Turret back
+		{thickness 30
+			{top 15}
+			{bottom 15}
+		}
+	}
+	{volume "turret3"		; Turret front
+		{thickness 30}
+	}
+	{volume "mantlet"		; Turret Mantlet
+		{thickness 20}
+	}
+	{volume "turret4"		; Turret MG port
+		{thickness 30}
+	}
+	{volume "armor1"		; Right Side box of superstructure
+		{thickness 10
+			{front 20}
+			{rear 20}
+		}
+		{tags "armor"}
+	}
+	{volume "armor2"		; Left Side box of superstructure
+		{thickness 10
+			{front 20}
+			{rear 20}
+		}
+		{tags "armor"}
+	}
+
+	{volume "aux_turret11"	; Front Right Turret (Gun)
+		{thickness 50
+			{top 10}
+		}
+	}
+	{volume "aux_turret12"	; Front Right Turret Mantlet (Gun)
+		{thickness 50}
+	}
+
+	{volume "aux_turret21"	; Rear Left Turret (Gun)
+		{thickness 50
+			{top 10}
+		}
+	}
+	{volume "aux_turret22"	; Rear Left Turret Mantlet (Gun)
+		{thickness 50}
+	}
+
+	{volume "aux_turret31"	; Front Left Turret (MG)
+		{thickness 30
+			{top 10}
+		}
+	}
+	{volume "aux_turret32"	; Front Left Turret mantlet (MG)
+		{thickness 30
+			{top 10}
+		}
+	}
+	{volume "aux_turret41"	; Rear Right Turret (MG)
+		{thickness 30
+			{top 10}
+		}
+	}
+	{volume "aux_turret42"	; Rear Right Turret mantlet (MG)
+		{thickness 30
+			{top 10}
+		}
+	}
+	{volume "part1"
+		{thickness 10}
+	}
+	{volume "part2"
+		{thickness 10}
+	}
+	{volume "part3"
+		{thickness 2}
+	}
+	{volume "shieldl"
+		{thickness 11}
+	}
+	{volume "shieldr"
+		{thickness 11}
+	}
+	{volume "barrel11"
+		{thickness 20}
+	}
+	{volume "barrel1"
+		{thickness 20}
+	}
+	{volume "barrel21"
+		{thickness 20}
+	}
+	{volume "barrel2"
+		{thickness 20}
+	}
+	("tracks" thickness(20))
+}

@@ -1,0 +1,87 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "t26c_xx.mdl"}
+	
+	{volume "body1"			; Hull
+		{thickness 15
+			{top 7}			; Glacis
+			{rear 5}
+			{bottom 6}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 15
+			{top 10}
+		}
+	}
+	{volume "body3"			; Driver Door Bottom
+		{thickness 15
+			{front 27}
+			{rear 5}
+			{bottom 5}
+		}
+	}
+	{volume "body4"			; Superstructure with extra armor 15+30
+		{thickness 45
+			{top 10}
+		}
+	}
+	{volume "engine"
+		{thickness 15
+			{front 5}
+			{top 6}
+			{bottom 6}
+		}
+	}
+	{volume "turret1"		; Turret Ring
+		{thickness 15}
+	}
+	{volume "turret2"		; Turret Front
+		{thickness 45
+			{top 40}
+			{bottom 15}
+		}
+		{able {holed}}
+	}
+	{volume "turret3"		; Main Turret
+		{thickness 45
+			{top 10}
+			{bottom 15}
+		}
+	}
+	{volume "turret4"		; no extra armor front
+		{thickness 15}
+	}
+	{volume "mantlet1"
+		{thickness 30}
+	}
+	{volume "mantlet2"
+		{thickness 30}
+	}
+	{volume "hatch"
+		{thickness 10}
+	}
+	{volume "armor1"
+		{thickness 30}
+		{able {holed}}
+	}
+	{volume "armor2"
+		{thickness 30}
+	}
+	{volume "armor3"
+		{thickness 30}
+	}
+	{volume "detail2"
+		{thickness 3}
+	}
+	{volume "detail3"
+		{thickness 3}
+	}
+	{volume "detail4"
+		{thickness 3}
+	}
+	{volume "barrel1"
+		{thickness 3}
+	}
+	("tracks" thickness(20))
+}

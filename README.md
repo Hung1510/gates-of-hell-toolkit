@@ -1,6 +1,6 @@
 # Gates of Hell Toolkit
 
-Data/code-only tooling for Call to Arms: Gates of Hell modding - no 3D/animation assets.
+Data/code-only tooling for Call to Arms: Gates of Hell modding — no 3D/animation assets.
 
 ## Structure
 - `backend/` - Express + TypeScript API that parses the game's `.set` config
@@ -213,3 +213,139 @@ check.
 - Recommended project name: `gates-of-hell-toolkit` - the literal phrase
   match matters more for the domain than "GOH" alone, and the page
   content (title/meta) already covers the abbreviation.
+
+## Tests
+`cd backend && npm test` runs a real `vitest` suite (66 tests) - converted
+from the earlier ad-hoc `verify*.ts` scripts into actual pass/fail
+assertions, plus new unit tests for the tokenizer/AST parser:
+- Round-trip: all 1061 squads + 1041 tech nodes across all 5 factions,
+  parse -> serialize -> re-parse, checked for exact semantic equality.
+- Tech tree validation: zero false-positive errors against every real
+  node, plus targeted tests for cycle detection, self-reference,
+  out-of-bounds position, and negative cost.
+- Data loader sanity: per-faction squad/pricing/display-name coverage
+  thresholds - set from the actual measured numbers (e.g. eng soldier
+  names are 84.9%, so the threshold is 80%, not tuned to make a
+  higher number pass).
+- Tokenizer/AST: focused unit tests for the core grammar (comments,
+  bracket types, scientific notation, empty strings).
+
+Also runs via `npx tsc --noEmit` for a plain typecheck if you don't want
+to run the full data-dependent suite.
+
+## Code organization note
+`Squad`/`SquadSlot`/`TechNode` types are defined once, in the parser
+modules that produce them (`logic/parser/squads.ts`,
+`logic/parser/techtree.ts`). `types.ts` re-exports them rather than
+duplicating the shape - earlier revisions of this project had the same
+shape defined twice, which is exactly the kind of thing that causes a
+silent type mismatch later if one copy gets updated and the other
+doesn't.
+
+## Analytics & About
+- `@vercel/analytics` is wired into the frontend (`<Analytics />` in
+  `App.tsx`) - activates automatically once deployed on Vercel, no
+  extra config needed.
+- New "About" tab in the app itself explains what the tool is, where the
+  data comes from, and - importantly - what's NOT here yet (DPS/armor-pen,
+  full squad-name coverage) directly to visitors, not just in this
+  README.
+
+## Vehicles (new)
+Real vehicle armor thickness and weapon-slot/mobility data, parsed from
+`-vehicle.pak`'s `.def`/`.ext` files (same `.set`-family grammar as
+everything else, just deeply nested). New "Vehicles" tab in the app.
+
+- **Armor thickness is literal, not macro-resolved** - the cleanest data
+  source in this whole toolkit. Verified by hand against a real SU-85
+  before trusting the parser: nose 45mm (100mm effective at slope),
+  mantlet 52mm, cupola 20mm - matches known real-world SU-85 specs. Also
+  spot-checked the US M10 GMC: 19mm base hull, 38mm effective front -
+  matches known real specs there too.
+- Weapon references (e.g. `85mm_d5s`) are extracted but NOT resolved to
+  damage/penetration numbers yet - that requires the same macro-expansion
+  engine discussed for infantry weapons (see "Known gaps" below). The
+  `weapons` list can include non-combat engine slots (`commander_vision`,
+  `searchlight`) alongside the real gun; `primaryWeapon` is a best-effort
+  filter, not a verified classification.
+- Wreck/destroyed decoration variants (`_x`/`_xx` suffix, confirmed by
+  content inspection) are filtered out - these aren't real playable units.
+- **All 5 factions now have complete vehicle data**: eng (217), rus (155),
+  ger (149), usa (130), fin (110) - 761 total vehicles. Coverage isn't
+  100% within each faction for armor/weapon/mobility data specifically
+  (some vehicles are simple trailers or decorative props without combat
+  stats), and `/api/vehicles/factions` reports the exact per-faction
+  breakdown rather than a single misleading total.
+- **Data collection gotcha worth remembering**: two upload batches used
+  identical zip filenames (`airborne.zip`, `cannon.zip`, etc.) across
+  different factions, and the later upload silently overwrote the
+  earlier one on disk before any content was inspected. Content
+  (unit/vehicle names inside each zip) had to be checked file-by-file to
+  figure out which faction survived under which filename - this is why
+  USA/England are partial. If extending this further, prefix filenames
+  with the faction (`usa_airborne.zip`) to avoid the same collision.
+
+### Weapon damage & DPS resolution (built and verified)
+The macro-expansion engine discussed above as a "known gap" is now built:
+`logic/parser/{invocation,substitute,exprEval,defines,weaponRegistry,weaponResolver}.ts`.
+
+- **Real calling conventions, verified by reading actual call sites before
+  assuming syntax**: positional args use an explicit `args` marker
+  (`("penetration" args 17.3 8 4 2 0)`), keyword args use `key(value)`
+  pairs (`("velocity" mps(760))`) - both exist in real files for weapons,
+  sometimes for the very same template name in different weapon
+  categories.
+- **Templates are scoped per-directory, not global**: `rifle/.presets` and
+  `rifle/sniper/.presets` both define a template called `"penetration"`
+  with genuinely different parameter conventions and formulas. The
+  registry is built by walking from the weapons root down to each
+  weapon's own directory, with closer/deeper definitions overriding
+  farther ones.
+- **Real arithmetic expressions** (`(+ %a (+ 1.3 (/ (- %a %b) 4.4)))`) are
+  evaluated, not just substituted - needed for the more complex
+  `gun`-category penetration curves.
+- **Override semantics verified against a real conflict**: `k98`
+  references both `bolt_action` (sets `rpm(40)`) and `k98_rate` (sets
+  `rpm(50)`, appearing later in the file) - last-occurrence-wins is the
+  resolver's rule, and it produces `rpm=50` for k98 while `mosin`
+  (referencing its own rate template) correctly resolves to a different
+  `rpm=40`.
+- **Cross-checked against real-world specs before trusting any of this**:
+  resolved Mosin-Nagant velocity = 865 m/s (matches historical spec
+  exactly), resolved MG34 fire rate = 850 rpm (matches the real ~800-900
+  rpm range). These aren't coincidences - they're the actual reason this
+  was trusted enough to ship.
+- Soldier -> weapon linkage comes from `set/breed/mp/<faction>/<period>/<unit>.set`
+  files (also newly added to samples), which weren't checked earlier in
+  this project. `logic/parser/soldierInventory.ts` extracts the primary
+  weapon from each soldier's inventory block (filtering out grenades,
+  bandages, headgear, etc. - a best-effort heuristic, not a verified
+  classification).
+- Coverage: 4332/4355 soldiers (99.5%) get a primary weapon identified;
+  2682/4355 (61.6%) get a fully resolved damage stat. The gap is mostly
+  support roles without a combat weapon file (drivers, radiomen) plus one
+  known malformed item id (`"panzershreck_54 weapon"`, 16 soldiers) - not
+  hidden, visible via `unresolvedTemplates` in the API response.
+- New endpoint: `GET /api/units/weapons?faction=X`.
+- Applied in the Compare tab as an "Estimated DPS" row - explicitly
+  labeled as an estimate (continuous fire, no accuracy/cover/suppression
+  modeled), and shown as "unknown" rather than a partial number if any
+  unit in the squad doesn't resolve.
+
+### Still not done
+- **Vehicle gun penetration**: tank/aircraft guns turned out to need more
+  than the infantry-weapon resolver. Real complexity found while
+  investigating: weapons can inherit from OTHER WEAPON FILES (not just
+  `define` templates) via the same `{from "..."}` syntax - e.g. the SU-85's
+  gun file `85mm_d5s` is just `{from "85mm_zis53" ...}` with a couple of
+  overrides, and the actual damage/penetration values live in
+  `85mm_zis53`. On top of that, tank guns use a `"penetration_long"`
+  template (not `"penetration"`) with per-ammo-type variants (AP/APCR/HE
+  each get their own call with a `shell(...)` keyword arg) rather than a
+  single curve. This is a real, tractable next step, not a dead end - just
+  bigger than the infantry case, and deliberately not rushed to ship
+  alongside it.
+- Full "can Tank A penetrate Tank B's front armor" comparison needs the
+  above, matched against the already-working Vehicles tab armor data.
+
+

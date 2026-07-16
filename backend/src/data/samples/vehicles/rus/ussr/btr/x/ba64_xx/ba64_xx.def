@@ -1,0 +1,44 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "ba64_xx.mdl"}
+
+	{volume "body"
+		{thickness 9
+			{top 6}
+			{front 15}
+			{rear 6}
+			{bottom 4}
+		}
+	}
+	{volume "engine"
+		{thickness 9
+			{top 6}
+			{front 9}		; Nose
+			{rear 4}
+			{bottom 4}
+		}
+	}
+
+	{volume "part1"
+		{thickness 0.5}
+	}
+	{volume "part2"
+		{thickness 0.5}
+	}
+	{volume "part3"
+		{thickness 0.5}
+	}
+	{volume "part4"
+		{thickness 0.5}
+	}
+	{volume "shield"
+		{thickness 0.5}
+	}
+	{volume "transmission"
+		{thickness 2}
+	}
+	{volume "turret"
+		{thickness 10}
+		{able {holed}}
+	}
+}

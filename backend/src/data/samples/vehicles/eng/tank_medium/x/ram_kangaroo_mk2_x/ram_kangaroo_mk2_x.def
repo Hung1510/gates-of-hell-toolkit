@@ -1,0 +1,3 @@
+{game_entity
+	{extension "ram_kangaroo_mk2_x.mdl"} {RimLight}
+}

@@ -1,0 +1,12 @@
+{from "pattern aphe"
+	{tag "shell size2 88to105"}
+	{inventory {size 8 1}}
+	{entity "94mm_eng_l65_sap"}
+	{mass 22.68}
+
+	{view "howitzer_shell_88-100"
+		{tail "shell_tracer_eng_94_sap" "tail"}
+	}
+
+	("ap_blast" args 0.9)
+}

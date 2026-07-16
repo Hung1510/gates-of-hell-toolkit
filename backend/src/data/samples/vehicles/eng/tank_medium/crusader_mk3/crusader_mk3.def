@@ -1,0 +1,118 @@
+{game_entity	;// oct '42
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle_big.inc" scale(0.72))
+	{props "medium" "vision_lev04" "muzzle_50mm_57mm" "smoke" "2in_wp" "tractor" "tractor_light"}
+	{extension "crusader_mk3.mdl"}
+	(include  "crusader_mk3.ext")
+	{PatherId "crusader"}
+	{targetclass "tank_medium"}
+	{targetSelector "tank_medium"}
+
+	{extender "enumerator"
+		{digit_folder "us2"}
+	}
+
+	("crew_3_human_extended")
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_lowarmor"} {end "seat_m4_gunner"} {base "open_driver"}}
+			{reverse {end "emit_tank_1_hold"} {base "open_driver" -1}}
+		}
+		{anm "left"
+			{forward {begin "board_cromwell"} {end "seat_m4_gunner"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward {begin "board_cromwell"} {end "seat_m4_gunner"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "armor1"
+			{forward {begin "board_lowarmor"} {end "pose_seat_passenger_unic304f_02"}}
+			{reverse {end "emit_tank_2"}}
+		}
+		{anm "armor2"
+			{forward {begin "board_lowarmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_2"}}
+		}
+		{anm "armor3"
+			{forward {begin "board_lowarmor"} {end "pose_seat_mimosa10"}}
+			{reverse {end "emit_tank_2"}}
+		}
+		{anm "armor4"
+			{forward {begin "board_lowarmor"} {end "pose_seat_cannon_left"}}
+			{reverse {end "emit_tank_2"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat1) door(emit3) animation(armor1))
+	("seat_human" place(seat2) bone(seat2) door(emit4) animation(armor2))
+	("seat_human" place(seat3) bone(seat3) door(emit5) animation(armor3))
+	("seat_human" place(seat4) bone(seat4) door(emit6) animation(armor4))
+
+	{extender "shield" {on}}
+
+	{extender "smokescreen"
+		{cooldown 5}
+		{itemTags "mortareng_50 wp"}
+	}
+
+	{extender "inventory"
+		{box
+			{item "bullet_57x441 eng apcbc" 48}			; 65 rounds, 25% HE
+			{item "bullet_57x441 eng he" 16}
+			{item "ammo mgun_ger belt mk2" 3150}		; 15 belts (225 rounds each)
+			{item "bren_mk2_drum" filled}
+			{item "ammo bren_drum_mag" 503}				; 600 rounds
+			{item "satchel_charge_eng" 1}
+			{item "mortareng_50 wp" 30}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "57mm_qf6_mk5" filling "bullet_57x441 eng apcbc" 1}
+			{gunner "gunner"}
+			{charger "commander"}
+			("abm_dymamic"
+				zeroing(3)
+				dispersion(0.2)
+			)
+		}
+		{place "mgun2"
+			{type "coaxial"}
+			{weapon "besa" filling "ammo mgun_ger belt mk2" 225}
+			{foresight "foresight5"}
+			{gunner "gunner"}
+			{charger "commander"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 19800}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.2) len(-0.53))
+		("mobility_tank"
+			speed(45) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(6) ;---------Max speed in reverse on road, km/h.
+			traverse(35) ;-------Track traverse, per second, in degrees.
+			weight(19.8) ;-------Weight in Tonnes.
+			power(340) ;---------Engine Power, in hp.
+			track(4.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(500) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(235) ;---------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -15 20}
+		{speed2 8}
+	}
+	{bone "turret"
+		("turret_medium" power_traverse(25)) ;// hydraulic drive
+	}
+}

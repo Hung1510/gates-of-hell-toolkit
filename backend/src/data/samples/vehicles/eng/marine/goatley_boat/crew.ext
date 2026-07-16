@@ -1,0 +1,36 @@
+;SDL
+{boarder
+	{anm "left"
+		{forward	{begin	"goatley_crew_l_board"} {end "goatley_crew_l_idle_pose"}}
+		{reverse 	{end	"goatley_crew_l_emit"}}
+	}
+	{anm "right"
+		{forward	{begin	"goatley_crew_r_board"} {end "goatley_crew_r_idle_pose"}}
+		{reverse 	{end	"goatley_crew_r_emit"}}
+	}
+}
+
+(define "crew_human"
+	{placer
+		{place "%place"
+			{group "crew"}
+			{linkbone "%bone"}
+			{turnoff {shadow}}
+		}
+	}
+	{boarder
+		{door "%door"}
+		{link "%door" "%place" {anm "%animation"} {forward putoff}{reverse puton}}
+	}
+)
+
+("crew_human" place(driver)	bone(driver) door(emit1)	animation(left)) ; left
+("crew_human" place(seat1)	bone(place1) door(emit2)	animation(right)) ; right
+("crew_human" place(seat2)	bone(place2) door(emit3)	animation(left)) ; left
+("crew_human" place(seat3)	bone(place3) door(emit4)	animation(right)) ; right
+("crew_human" place(seat4)	bone(place4) door(emit5)	animation(left)) ; left
+("crew_human" place(seat5)	bone(place5) door(emit6)	animation(right)) ; right
+("crew_human" place(seat6)	bone(place6) door(emit7)	animation(left)) ; left
+("crew_human" place(seat7)	bone(place7) door(emit8)	animation(right)) ; right
+("crew_human" place(seat8)	bone(place8) door(emit9)	animation(left)) ; left
+("crew_human" place(seat9)	bone(place9) door(emit10)	animation(right)) ; right

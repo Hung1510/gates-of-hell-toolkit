@@ -1,0 +1,4 @@
+{from "pattern heavy_headgear"
+	{tag "armor"}
+	{entity "us_m1_3rd_nco_t"}
+}

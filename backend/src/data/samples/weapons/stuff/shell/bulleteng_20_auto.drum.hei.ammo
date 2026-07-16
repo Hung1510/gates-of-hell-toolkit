@@ -1,0 +1,24 @@
+{from "pattern he"
+	{tag "20to25 no_throw"}
+	{tag "auto size1"}
+	{inventory
+		{weight 10}
+		{size 2 2}
+		{block 10}
+	}
+	{entity "20mm_oerlikon_drum_hei"}
+	{mass 0.238}
+
+	{view "howitzer_shell_auto"
+		{tail "shell_tracer_eng_20" "tail"}
+	}
+
+	("he_auto_blast" args 0.65)
+
+	{damage fire
+		{radius 0.5}
+		{heating 0.5}
+		{time 0.5}
+		;{ground_interaction_radius 0.3} ;// crashes game if used with fire damage
+	}
+}

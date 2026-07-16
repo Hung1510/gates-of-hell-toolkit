@@ -1,0 +1,74 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "su152_xx.mdl"}
+
+
+	{volume "armor1"		; Nose Joint
+		{thickness 85}	;// 25 + 60
+		{tags "body"}
+		{component "body"}
+	}
+	{volume "armor2"		; Neck Armor
+		{thickness 60}
+		{tags "armor"}
+	}
+	{volume "barrel"
+		{thickness 30}
+	}
+	{volume "body1"			; Hull Nose
+		{thickness 60}
+	}
+	{volume "body2"			; Hull
+		{thickness 60
+			{front 75}
+			{rear 20}
+			{bottom 40}
+		}
+	}
+	{volume "body3"			; Superstructure
+		{thickness 60
+			{front 75}
+			{top 20}
+			{bottom 25}
+		}
+	}
+	{volume "body4"			; Superstructure nose
+		{thickness 75}
+	}
+	{volume "engine1"
+		{thickness 60
+			{front 20}
+			{top 20}
+			{bottom 30}
+		}
+	}
+	{volume "engine2"
+		{thickness 60
+			{front 20}
+			{top 30}
+			{bottom 20}
+		}
+	}
+	{volume "mantlet1"
+		{thickness 65}
+		{CastSteel 0.8063}
+	}
+	{volume "mantlet2"
+		{thickness 65}
+		{CastSteel 0.8063}
+	}
+	{volume "part2"
+		{thickness 20}
+	}
+	{volume "part3"
+		{thickness 5}
+	}
+	{volume "part4"
+		{thickness 5}
+	}
+	{volume "part7"
+		{thickness 20}
+	}
+
+	("tracks" thickness(30))
+}

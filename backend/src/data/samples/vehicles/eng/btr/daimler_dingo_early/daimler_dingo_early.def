@@ -1,0 +1,10 @@
+{game_entity
+	(include "../daimler_dingo/daimler_dingo.inc")
+	{extender "inventory"
+		{weapon "mgun" {mask "mountable"}}
+		{box
+			{item "bren_mk1" filled {user "mgun"}}
+			{item "bren_mag ammo" 600}		;// 12 spare mags + extra
+		}
+	}
+}

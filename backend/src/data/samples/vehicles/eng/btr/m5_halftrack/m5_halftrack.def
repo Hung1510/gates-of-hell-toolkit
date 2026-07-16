@@ -1,0 +1,15 @@
+{game_entity
+	(include "m5_halftrack.inc")
+
+	{extender "inventory"
+		{weapon "mgun" {mask "mountable"}}
+		{Box
+			{item "browning_m19a4" filling "ammo mgun_usa belt" 250 {user "mgun"}}
+			{item "ammo mgun_usa belt" 1750}		; 2000 .30cal
+			{item "ammo rifle_eng clip" 1000}		; 7.7mm
+			{item "ammo bren_mag" 1000}				; 7.7mm
+			{item "ammo sten_mag eng_smg" 480}
+			{item "no36m grenade" 10}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{	;// ~Aug/Sept '44 +
+	(include "../76mm_qf17/76mm_qf17.inc")
+
+	{extender "inventory"
+		{box
+			{item "bulleteng_76 apcbc" 30}		;50 rounds
+			{item "bulleteng_76 he2" 15}
+			{item "bulleteng_76 apds" 5}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{weapon "76mm_qf17" filling "bulleteng_76 apcbc" 1}
+		}
+	}
+}

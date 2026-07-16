@@ -1,0 +1,12 @@
+{from "pattern apds"
+	{tag "shell size1 50to57"}
+	{inventory {size 5 1}}
+	{entity "57mm_eng_apds"}
+	{mass 4.42}
+
+	{view "howitzer_shell_50-75_small"
+		{tail "shell_tracer_eng_57_apds" "tail"}
+	}
+
+	("apcr_blast" args 0.4)
+}

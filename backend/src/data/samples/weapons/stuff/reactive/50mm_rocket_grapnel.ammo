@@ -1,0 +1,14 @@
+{bullet
+	{tag "dropboxed distributable"}
+	{tag "size1 shell grapple_fx pierce he fg 50to57 all_he"}
+	{inventory
+		{size 8 4}
+		{weight 100}
+	}
+	{entity "50mm_rocket_grapnel"}
+	{mass 15}
+
+	{view "50mm_rocket_grapnel"
+		{tail "hook_tail" "tail"}
+	}
+}

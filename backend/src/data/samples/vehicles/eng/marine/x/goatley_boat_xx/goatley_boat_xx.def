@@ -1,0 +1,14 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "goatley_boat_xx.mdl"}
+	{volume "body"
+		{thickness 1}
+		{able {holed}}
+		{density 0.01}
+	}
+	{volume "part1"
+		{thickness 1}
+		{able {holed}}
+		{density 0.01}
+	}
+}

@@ -1,0 +1,128 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.1))
+	{props  "medium" "vision_lev04" "muzzle_75mm_76mm" "smoke" "2in_wp"}
+	{extension "sherman5_late.mdl"}
+	(include  "sherman5_late.ext")
+	{PatherId "sherman"}
+	{targetclass "tank_medium"}
+	{targetSelector "tank_medium"}
+
+	{extender "smokescreen"
+		{cooldown 5}
+		{itemTags "mortareng_50 wp"}
+	}
+	{extender "enumerator"
+		{digit_folder "us2"}
+	}
+
+	("crew_5_human_extended2")
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_m4_crew"} {end "seat_m4_gunner"} {base "open_driver"}}
+			{reverse {end "emit_tank_1_hold"} {base "open_driver"}}
+		}
+		{anm "co_driver"
+			{forward {begin "board_m4_crew"} {end "seat_m4_gunner"} {base "open_co_driver"}}
+			{reverse {end "emit_tank_1_hold"} {base "open_co_driver"}}
+		}
+		{anm "left"
+			{forward {begin "board_m4_crew"} {end "seat_m4_gunner"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward {begin "board_m4_crew"} {end "seat_m4_gunner"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "armor1"
+			{forward {begin "board_lowarmor"} {end "pose_seat_sherman5_mid_00"}}
+			{reverse {end "emit_body"}}
+		}
+		{anm "armor2"
+			{forward {begin "board_lowarmor"} {end "pose_seat_sherman5_mid_01"}}
+			{reverse {end "emit_body"}}
+		}
+		{anm "armor3"
+			{forward {begin "board_lowarmor"} {end "pose_seat_sherman5_mid_02"}}
+			{reverse {end "emit_body"}}
+		}
+		{anm "armor4"
+			{forward {begin "board_lowarmor"} {end "pose_seat_sherman5_mid_03"}}
+			{reverse {end "emit_body"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit4) animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit5) animation(armor2))
+	("seat_human" place(seat3) bone(seat03) door(emit6) animation(armor3))
+	("seat_human" place(seat4) bone(seat04) door(emit7) animation(armor4))
+
+	{extender "inventory"
+		{box
+			{item "bulletusa_75x350 apcbc" 28}			; 97 rounds ;30/70% AP/HE-WP
+			{item "bulletusa_75x350 he" 63}
+			{item "bulletusa_75x350 wp" 5}
+			{item "ammo mgun_usa belt" 4250}			; 19 belts (250 rounds each)
+			{item "satchel_charge_usa" 1}
+			{item "mortareng_50 wp" 30}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "75mm_m3" filling "ammo bulletusa_75x350 apcbc" 1}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_dymamic_stabilised"
+				zeroing(3)
+				dispersion(0.3)
+			)
+		}
+		{place "mgun2"
+			{type "coaxial"}
+			{weapon "browning_m19a4_tank" filled}
+			{foresight "foresight5"}
+			{gunner "gunner"}
+			{charger "commander"}
+			("abm_mgun")
+			{basic}
+		}
+		{place "mgun1"
+			{type "hull"}
+			{weapon "browning_m19a4_tank" filled}
+			{foresight "foresight4"}
+			{gunner "gunner3"}
+			{charger "gunner3"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+	}
+
+	{mass 32600}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.3) len(0.7))
+		("mobility_tank"
+			speed(40) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(6) ;---------Max speed in reverse on road, km/h.
+			traverse(30) ;-------Track traverse, per second, in degrees.
+			weight(32.6) ;-------Weight in Tonnes.
+			power(425) ;---------Engine Power, in hp.
+			track(4) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(606) ;----------Fuel capacity in Litres.
+			type(fuel) ;-------Fuel type. (diesel OR fuel)
+			range(160) ;---------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -12 25}
+		{speed2 6}
+	}
+	{bone "turret"
+		("turret_medium" power_traverse(24))
+	}
+}

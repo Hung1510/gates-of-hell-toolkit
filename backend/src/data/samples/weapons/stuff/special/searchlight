@@ -1,0 +1,10 @@
+;SDL
+{from "binocular"
+	{entity "spotlight"}
+	{inventory
+		{size 3 3}
+	}
+	{range 200 200}
+	{speed 1000}			; m/s
+}
+

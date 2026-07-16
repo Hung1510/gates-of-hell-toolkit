@@ -1,0 +1,180 @@
+;SDL
+
+{boarder
+	{anm "driver"
+		{forward {begin "board_torpedo_boat"} {end "pose_mo4_driver"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "commander"
+		{forward {begin "board_torpedo_boat"} {end "pose_watch_binocular"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "gunner"
+		{forward {begin "board_torpedo_boat"} {end "pose_mo4_gunner"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "charger"
+		{forward {begin "board_torpedo_boat"} {end "pose_mo4_charger"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "gunner2"
+		{forward {begin "board_torpedo_boat"} {end "pose_mo4_driver"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "seat1"
+		{forward {begin "board_torpedo_boat"} {end "pose_seat_drifter01"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "seat2"
+		{forward {begin "board_torpedo_boat"} {end "pose_seat_drifter02"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "seat3"
+		{forward {begin "board_torpedo_boat"} {end "pose_seat_drifter03"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "seat4"
+		{forward {begin "board_torpedo_boat"} {end "pose_seat_drifter04"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "seat5"
+		{forward {begin "board_torpedo_boat"} {end "pose_seat_drifter05"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "seat6"
+		{forward {begin "board_torpedo_boat"} {end "pose_seat_drifter06"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "seat7"
+		{forward {begin "board_torpedo_boat"} {end "pose_seat_drifter07"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "seat8"
+		{forward {begin "board_torpedo_boat"} {end "pose_seat_drifter08"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "seat9"
+		{forward {begin "board_torpedo_boat"} {end "pose_seat_drifter09"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "seat10"
+		{forward {begin "board_torpedo_boat"} {end "pose_seat_drifter10"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "seat11"
+		{forward {begin "board_torpedo_boat"} {end "pose_seat_drifter11"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "seat12"
+		{forward {begin "board_torpedo_boat"} {end "pose_seat_drifter12"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "seat13"
+		{forward {begin "board_torpedo_boat"} {end "pose_seat_drifter13"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "seat14"
+		{forward {begin "board_torpedo_boat"} {end "pose_seat_drifter14"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "seat15"
+		{forward {begin "board_torpedo_boat"} {end "pose_seat_drifter15"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+}
+
+(define "crew"
+	{placer
+		{place "%place"
+			{group "crew"}
+			{linkbone "%place"}
+			{turnoff {shadow}}
+			{visor "%visor"}
+			;{openForCrush}
+		}
+	}
+	{boarder
+		{door "emit1"}
+		{door "emit2"}
+		{door "emit3"}
+		{door "emit4"}
+		{door "emit5"}
+		{door "emit6"}
+		{door "emit7"}
+		{door "emit8"}
+		{link "emit1" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit2" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit3" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit4" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit5" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit6" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit7" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit8" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+	}
+)
+
+("crew" place(driver) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) visor(main) anm(driver))
+("crew" place(commander) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) visor(around) anm(commander))
+("crew" place(gunner) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) visor(gunner) anm(gunner))
+("crew" place(charger) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) visor(none) anm(charger))
+
+("crew" place(gunner2) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) visor(searchlight) anm(gunner2))
+
+{sensor
+	{visor "around"
+		{vision "marine_around"}
+		{bone "visor1"}
+	}
+	{Visor "searchlight"
+		{vision "searchlight"}
+		{bone "visor2"}
+	}
+	{visor "gunner" {vision "marine_cannon"} {bone "foresight1"}}
+}
+
+
+(define "passenger"
+	{placer
+		{place "%place"
+			{group "passenger"}
+			{linkbone "%place"}
+			{turnoff {shadow}}
+			;{openForCrush}
+		}
+	}
+	{boarder
+		{door "emit1"}
+		{door "emit2"}
+		{door "emit3"}
+		{door "emit4"}
+		{door "emit5"}
+		{door "emit6"}
+		{door "emit7"}
+		{door "emit8"}
+		{link "emit1" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit2" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit3" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit4" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit5" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit6" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit7" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit8" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+	}
+)
+
+("passenger" place(seat1) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) anm(seat1))
+("passenger" place(seat2) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) anm(seat2))
+("passenger" place(seat3) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) anm(seat3))
+("passenger" place(seat4) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) anm(seat4))
+("passenger" place(seat5) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) anm(seat5))
+("passenger" place(seat6) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) anm(seat6))
+("passenger" place(seat7) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) anm(seat7))
+("passenger" place(seat8) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) anm(seat8))
+("passenger" place(seat9) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) anm(seat9))
+("passenger" place(seat10) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) anm(seat10))
+("passenger" place(seat11) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) anm(seat11))
+("passenger" place(seat12) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) anm(seat12))
+("passenger" place(seat13) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) anm(seat13))
+("passenger" place(seat14) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) anm(seat14))
+("passenger" place(seat15) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) anm(seat15))
+

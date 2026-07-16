@@ -1,0 +1,96 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "daimler_dingo_xx.mdl"}
+	
+	{volume "wheelleft1"
+		{thickness 0.5}
+	}
+	{volume "wheelleft2"
+		{thickness 0.5}
+	}
+	{volume "wheelright1"
+		{thickness 0.5}
+	}
+	{volume "wheelright2"
+		{thickness 0.5}
+	}
+	{volume "body1"
+		{thickness 12
+			{front 30}
+			{left 12}
+			{top 8}
+			{rear 12}
+			{bottom 8}
+		}
+		{able {holed}}
+	}
+	{volume "body2"
+		{thickness 12
+			{front 30}
+			{left 12}
+			{top 8}
+			{rear 12}
+			{bottom 8}
+		}
+	}
+	{volume "body3"
+		{thickness 12
+			{front 30}
+			{left 12}
+			{top 8}
+			{rear 12}
+			{bottom 8}
+		}
+	}
+	{volume "engine1"
+		{thickness 12
+			{front 12}
+			{left 12}
+			{top 8}
+			{rear 12}
+			{bottom 8}
+		}
+	}
+	{volume "engine2"
+		{thickness 12
+			{front 12}
+			{left 12}
+			{top 8}
+			{rear 12}
+			{bottom 8}
+		}
+	}	
+	{volume "engine3"
+		{thickness 12
+			{front 12}
+			{left 12}
+			{top 8}
+			{rear 12}
+			{bottom 8}
+		}
+	}
+	{volume "armor1"
+		{thickness 8}
+	}
+	{volume "armor2"
+		{thickness 8}
+	}
+	{volume "armor3"
+		{thickness 8}
+	}
+	{volume "armor4"		; storage box
+		{thickness 4}
+	}
+	{volume "part1"
+		{thickness 4}
+	}
+	{volume "part2"
+		{thickness 8}
+	}
+	{volume "part3"
+		{thickness 12} ; Visor Cover
+	}
+	{volume "part4"
+		{thickness 12} ; Visor Cover
+	}
+}

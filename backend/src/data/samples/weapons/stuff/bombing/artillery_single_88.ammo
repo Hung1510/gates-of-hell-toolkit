@@ -1,0 +1,8 @@
+{from "air_bomb"
+	{tag "shell size2 88to105 he arty fg all_he -bomb"}
+	{inventory
+		{noView}
+	}
+	("he_level_2_offmap" weight(11.33) filler(0.825))
+	{entity "artillery_single_88"}
+}

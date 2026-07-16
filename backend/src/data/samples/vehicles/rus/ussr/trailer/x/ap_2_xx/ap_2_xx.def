@@ -1,0 +1,36 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "ap_2_xx.mdl"}
+	{volume "body1"
+		{thickness 2}
+		{material "wood"}
+	}
+	{volume "part1"
+		{thickness 2}
+		{material "wood"}
+	}
+	{volume "part2"
+		{thickness 2}
+		{able {obstacle 0}}
+	}
+	{volume "part3"
+		{thickness 2}
+		{material "wood"}
+	}
+	{volume "part4"
+		{thickness 2}
+		{material "wood"}
+	}
+	{volume "wheelleft1"
+		{thickness 0.5}
+	}
+	{volume "wheelleft2"
+		{thickness 0.5}
+	}
+	{volume "wheelright1"
+		{thickness 0.5}
+	}
+	{volume "wheelright2"
+		{thickness 0.5}
+	}
+}

@@ -1,0 +1,76 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "m6_gmc_xx.mdl"}
+
+	{volume "barrel1"
+		{thickness 20}
+	}
+	{volume "barrel2"
+		{thickness 20}
+	}
+	{volume "barrel3"
+		{thickness 20}
+	}
+	{volume "body1"
+		{thickness 2}
+	}
+	{volume "body2"
+		{thickness 2}
+	}
+	{volume "body3"
+		{thickness 2}
+	}
+	{volume "body4"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "body6"
+		{thickness 2}
+	}
+	{volume "body6"
+		{thickness 2}
+	}
+	{volume "body7"
+		{thickness 2}
+	}
+	{volume "body8"
+		{thickness 2}
+	}
+	{volume "body9"
+		{thickness 2}
+	}
+	{volume "engine"
+		{thickness 2}
+	}
+	{volume "part1"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "part3"
+		{thickness 2}
+	}
+	{volume "part4"
+		{thickness 2}
+	}
+	{volume "part5"
+		{thickness 6}
+	}
+	{volume "part6"
+		{thickness 6}
+	}
+	{volume "transmission"
+		{thickness 2}
+	}
+	{volume "wheelleft1"
+		{thickness 2}
+	}
+	{volume "wheelleft2"
+		{thickness 2}
+	}
+	{volume "wheelright1"
+		{thickness 2}
+	}
+	{volume "wheelright2"
+		{thickness 2}
+	}
+}

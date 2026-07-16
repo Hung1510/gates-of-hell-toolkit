@@ -1,0 +1,10 @@
+{item
+	{tag "itemin2hands"}
+	{entity "bagpipes"}
+	{inventory
+		{size 3 5}
+		{weight 100}
+		{fsm "hand-only"}
+	}
+	{mass 1}
+}

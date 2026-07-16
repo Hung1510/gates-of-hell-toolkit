@@ -1,0 +1,15 @@
+{from "pattern apcr"
+	{tag "37to40 zenite"}
+	{tag "auto size2"}
+	{inventory
+		{weight 10}
+		{size 3 2}
+		{block 10}
+	}
+	{entity "30mm_ger_auto_apcr"}
+	{mass 0.69}
+
+	{view "howitzer_shell_auto"
+		{tail "shell_tracer_37_ap" "tail"}
+	}
+}

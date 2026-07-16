@@ -1,0 +1,43 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "m22_locust_xx.mdl"}
+	("tracks" repair(30) thickness(15))
+
+;// Components
+	{volume "body1" ;// Supersructure
+		{thickness 12.7 
+			{top 9.5} 
+			{right 25.4}
+		}
+	}
+	{volume "body2" {thickness 9.5}}
+	{volume "body3" {thickness 9.5}}
+	{volume "body4" {thickness 9.5}}
+	{volume "body5" {thickness 9.5}}
+	{volume "body6" {thickness 9.5}}
+	{volume "body7" {thickness 9.5}}
+	{volume "body8" {thickness 25.4}}
+	{volume "body9" {thickness 25.4}}
+	{volume "body10" {thickness 25.4}}
+	{volume "turret1" {thickness 25.4}} ;//
+	{volume "turret2" {thickness 25.4 {top 9.5}}} ;//
+	{volume "turret3" {thickness 25.4}}	;// Part behind mantlet
+	{volume "turret4" {thickness 9.5}}	;// Ring
+	{volume "engine1" {thickness 12.7 {top 9.5}}} 	;// Main Part of Engine
+	{volume "engine2" {thickness 9.5}}
+	{volume "engine3" {thickness 9.5}}
+	{volume "barrel1" {thickness 20}}
+	{volume "barrel2" {thickness 20}}
+
+;// Non-Components
+	{volume "mantlet1" {thickness 25.4}}
+	{volume "mantlet2" {thickness 25.4}}
+	{volume "mantlet3" {thickness 25.4}}
+	{volume "armor1" {thickness 9.5 {right 12.7}}} ;// Engine Cover, Rear
+
+;// Parts
+	{volume "part3" {thickness 9.5}}
+	{volume "part4" {thickness 9.5}}
+	{volume "part5" {thickness 9.5}}
+	{volume "part6" {thickness 9.5}}
+}

@@ -1,0 +1,50 @@
+;_________________________________________
+; USSR early Medium AT gun
+;=========================================
+
+
+{from "pattern gun"			; L/31.5 "kv1_40"
+	{filling "bulletrus_76"}
+	{fireSound "cannon/s3/d1/Shared/Cannon_75to76mm/"}
+	{fireSoundclose "cannon/s2/1p/Shared/"}
+	{reloadSound "tank/1p/large/"}
+	("range_190")
+	{calibre 76.2}
+
+	("reload time" seconds(10))
+
+	("velocity m/s" ap(612) apcr(892) he(612) heat(1))
+	("armor health" damage(200))
+	("armor health custom" shell(apcbc) damage(200) velocity(597) filler(0))
+	("armor health custom" shell(aphebc) damage(200) velocity(612) filler(150))
+	("armor health custom" shell(aphebc2) damage(200) velocity(612) filler(88))
+	("76_rus_slope_multipliers")
+
+	; BR-350A
+	("penetration_medium" shell(aphebc) range(190) a(66) b(59) c(53) d(49) e(45))  ;RHA
+ ;//("penetration_medium" shell(aphebc) range(190) a(71) b(65) c(57) d(51) e(45))  ;FHA
+
+	; BR-350B
+	("penetration_medium" shell(aphebc2) range(190) a(75) b(69) c(62) d(57) e(52))  ;RHA
+
+	; BR-350P  ; only issued to ZiS-5 & F-34 guns
+	("penetration_medium" shell(apcr) range(190) a(118) b(82) c(52) d(33) e(21))
+
+	; BP-350A  ; only issued to ZiS-3,5 & F-34 guns
+	("penetration_medium" shell(heat) range(170) a(75) b(75) c(75) d(75) e(75)) ; issued sometime in '43
+
+	; 76 psa - Vj4 (Finnish)
+	("penetration_medium" shell(apcbc) range(190) a(97) b(88) c(78) d(70) e(62)) ; issued sometime in '42
+	{parameters "apcbc" ("velocity" mps(597))}
+
+	; 76 hkr 42-18/24-38 (Finnish)
+	("penetration_medium" shell(heatb) range(170) a(87) b(87) c(87) d(87) e(87))	; issued sometime in '44
+	{parameters "heatb" ("velocity" mps(400))}
+
+	; 76 hrk Vj 42/C-18/24-38 (Finnish)
+	("penetration_medium" shell(heatc) range(170) a(115) b(115) c(115) d(115) e(115))	; issued sometime in '44
+	{parameters "heatc" ("velocity" mps(400))}
+
+
+	("accuracy_direct_arrowhead" r1(0.93) range_ap(190) range_he(190) range_heat(170))
+}

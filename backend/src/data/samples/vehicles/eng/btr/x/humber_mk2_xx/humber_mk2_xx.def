@@ -1,0 +1,90 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "humber_mk2_xx.mdl"}
+
+	{volume "wheelleft1"
+		{thickness 0.5}
+	}
+	{volume "wheelleft2"
+		{thickness 0.5}
+	}
+	{volume "wheelright1"
+		{thickness 0.5}
+	}
+	{volume "wheelright2"
+		{thickness 0.5}
+	}
+	{volume "body1"
+		{thickness 10
+			{front 10}
+			{left 10}
+			{top 8}
+			{rear 10}
+			{bottom 4}
+		}
+	}
+	{volume "body2"
+		{thickness 10
+			{front 10}
+			{left 10}
+			{top 8}
+			{rear 10}
+			{bottom 4}
+		}
+	}
+	{volume "body3"
+		{thickness 10
+			{top 8}
+		}
+	}
+	{volume "turret1"
+		{thickness 10}
+	}
+	{volume "turret2"
+		{thickness 10
+			{front 14}
+		}
+	}
+	{volume "turret3"
+		{thickness 14
+			{front 14}
+			{left 12}
+			{top 8}
+			{rear 12}
+			{bottom 6}
+		}
+	}
+	{volume "turret4"
+		{thickness 10
+			{front 14}
+		}
+	}
+	{volume "mantlet1"
+		{thickness 14}
+	}
+	{volume "mantlet2"
+		{thickness 14}
+	}
+	{volume "mantlet3"
+		{thickness 14}
+	}
+	{volume "breech"		; breech
+		{thickness 10}
+	}
+	{volume "barrel1"		; barrel
+		{thickness 10}
+	}
+	{volume "engine1"
+		{thickness 10
+			{front 10}
+			{left 10}
+			{top 8}
+			{rear 10}
+			{bottom 4}
+		}
+	}
+
+
+
+
+}

@@ -1,0 +1,22 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "45mm_21k_naval_xx.mdl"}
+	{volume "barrel1"
+		{thickness 25}
+	}
+	{volume "barrel2"
+		{thickness 25}
+	}
+	{volume "barrel3"
+		{thickness 25}
+	}
+	{volume "barrel4"
+		{thickness 25}
+	}
+	{volume "body1"
+		{thickness 6}
+	}
+	{volume "body2"
+		{thickness 6}
+	}
+}

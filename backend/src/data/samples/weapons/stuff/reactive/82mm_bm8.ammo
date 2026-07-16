@@ -1,0 +1,17 @@
+{from "pattern reactive_ammo"
+	{tag "shell size2 all_he fg itemin2hands"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+	}
+	{entity "bm8_rocket"}
+	{mass 6.8}
+
+	{view "bm8_rocket"
+		{tail "rocket_smoke_bm13" "tail"}
+	}
+
+	("rocket_level_2" weight(6.8) filler(0.64))
+
+	{possibleDamageRadius 30}
+}

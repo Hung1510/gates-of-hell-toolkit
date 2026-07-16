@@ -1,0 +1,82 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "gaz_aaa_maximx4_xx.mdl"}
+	{volume "body1"
+		{thickness 2}
+	}
+	{volume "body2"
+		{thickness 2}
+	}
+	{volume "body3"
+		{thickness 2}
+	}
+	{volume "body4"
+		{thickness 2}
+	}
+	{volume "body5"
+		{thickness 2}
+	}
+	{volume "body6"
+		{thickness 2}
+	}
+	{volume "body7"
+		{thickness 2}
+	}
+	{volume "bodyback1"
+		{thickness 2}
+		{material "wood"}
+	}
+	{volume "bodyback2"
+		{thickness 2}
+		{material "wood"}
+	}
+	{volume "engine"
+		{thickness 2}
+	}
+	{volume "part1"
+		{thickness 2}
+		{material "wood"}
+	}
+	{volume "part2"
+		{thickness 6}
+	}
+	{volume "part3"
+		{thickness 6}
+	}
+	{volume "part4"
+		{thickness 6}
+	}
+	{volume "part5"
+		{thickness 6}
+	}
+	{volume "part6"
+		{thickness 6}
+	}
+	{volume "part7"
+		{thickness 6}
+	}
+	{volume "turret1"
+		{thickness 6}
+	}
+	{volume "turret2"
+		{thickness 6}
+	}
+	{volume "wheelleft1"
+		{thickness 0.5}
+	}
+	{volume "wheelleft2"
+		{thickness 0.5}
+	}
+	{volume "wheelleft3"
+		{thickness 0.5}
+	}
+	{volume "wheelright1"
+		{thickness 0.5}
+	}
+	{volume "wheelright2"
+		{thickness 0.5}
+	}
+	{volume "wheelright3"
+		{thickness 0.5}
+	}
+}

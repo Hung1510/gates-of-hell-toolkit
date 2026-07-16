@@ -1,0 +1,67 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "m3a1_stuart_xx.mdl"}
+	
+	{volume "body1"			; Hull
+		{thickness 25.4
+			{top 15.8}
+			{front 44.4}
+			{rear 10}
+			{bottom 10}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 25.4
+			{top 12.7}
+			{front 38.1}
+			{rear 10}
+		}
+	}
+	{volume "body3"			; Superstructure left
+		{thickness 25.4
+			{top 12.7}
+			{bottom 10}
+		}
+	}
+	{volume "body4"			; Superstructure right
+		{thickness 25.4
+			{top 12.7}
+			{bottom 10}
+		}
+	}
+	{volume "engine1"
+		{thickness 25.4
+			{front 10}
+			{top 12.7}
+			{bottom 10}
+		}
+	}
+	{volume "engine2"
+		{thickness 25.4
+			{top 12.7}
+		}
+	}
+	{volume "turret1"		; Turret
+		{thickness 31.8
+			{top 12.7}
+			{front 38.1}
+		}
+	}
+	{volume "turret2"		; Turret ring
+		{thickness 31.8}
+	}
+	{volume "turret3"		; Turret front ring
+		{thickness 38.1}
+	}
+	{volume "turret4"		; mantlet
+		{thickness 51}
+	}
+	{volume "barrel1"
+		{thickness 20}
+	}
+	{volume "barrel2"
+		{thickness 20}
+	}
+
+	("tracks" thickness(15))
+}

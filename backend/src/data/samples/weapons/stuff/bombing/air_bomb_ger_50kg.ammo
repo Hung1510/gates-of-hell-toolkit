@@ -1,0 +1,7 @@
+{from "pattern air_bomb"
+	{entity "sc_50"}
+	{tag "size1"}
+	{mass 50}
+
+	("he_level_6" weight(50) filler(24.4))
+}

@@ -1,0 +1,66 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "zis5_dshk_xx.mdl"}
+	{volume "barrel1"
+		{thickness 6}
+	}
+	{volume "barrel2"
+		{thickness 6}
+	}
+	{volume "barrel3"
+		{thickness 6}
+	}
+	{volume "barrel4"
+		{thickness 6}
+	}
+	{volume "base1"
+		{thickness 6}
+	}
+	{volume "base2"
+		{thickness 6}
+	}
+	{volume "base3"
+		{thickness 6}
+	}
+	{volume "body1"
+		{thickness 2}
+	}
+	{volume "body2"
+		{thickness 2}
+	}
+	{volume "body3"
+		{thickness 2}
+	}
+	{volume "body4"
+		{thickness 2}
+	}
+	{volume "body5"
+		{thickness 2}
+	}
+	{volume "body6"
+		{thickness 2}
+	}
+	{volume "body7"
+		{thickness 2}
+	}
+	{volume "body8"
+		{able {holed}}
+		{thickness 2}
+	}
+	{volume "part1"
+		{thickness 2}
+		{material "wood"}
+	}
+	{volume "wheelleft1"
+		{thickness 2}
+	}
+	{volume "wheelleft2"
+		{thickness 2}
+	}
+	{volume "wheelright1"
+		{thickness 2}
+	}
+	{volume "wheelright2"
+		{thickness 2}
+	}
+}

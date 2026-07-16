@@ -1,0 +1,17 @@
+{from "pattern smg"
+	{tag "pistol_shell"}
+	{filling "ammo eng_smg" 32}
+	{entity "lanchester_mk1"}
+	{fireSound "smallarms/s1/d1/ENG/Lanchester_MkI/"}
+	{fireSoundclose "smallarms/s1/3p/ENG/Lanchester_MkI/"}
+	{reloadSound "mp40"}
+	{calibre 9}
+	{mass 4.3}
+
+	("fire rate" rpm(600))
+	("velocity" mps(379))
+	("spreading_low")
+	("burst_short")
+	("recoil_smg_low")
+	("stick_reload")
+}

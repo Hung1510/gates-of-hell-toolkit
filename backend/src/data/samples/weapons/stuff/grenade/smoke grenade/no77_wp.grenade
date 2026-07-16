@@ -1,0 +1,6 @@
+{from "pattern smoke"
+	{tag "smoke"}
+	{inventory {size 1 1}}
+	{entity "no77_wp"}
+	{mass 0.383}
+}

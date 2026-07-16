@@ -1,0 +1,46 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "wasp_mk2c_xx.mdl"}
+	{volume "body1"			; Front Hull
+		{thickness 10
+			{top 7}			; Glacis
+		}
+	}
+	{volume "body2"			; Front Superstructure
+		{thickness 10}
+		{able {holed}}
+	}
+	{volume "body3"			; Rear Superstructure
+		{thickness 10}
+		{able {holed}}
+	}
+	{volume "body4"			; Rear Hull
+		{thickness 10}
+	}
+	{volume "body5"			; Gunner Armor
+		{thickness 10}
+	}
+	{volume "engine"		; Inside Rear Hull and Superstructure
+		{thickness 10}
+	}
+	{volume "transmission"
+		{thickness 5}
+	}
+	{volume "fuel2"
+		{thickness 5}
+		{able {contact 1} {NoWoundDecal 0}}
+	}
+	{volume "part3"
+		{thickness 5}
+	}
+	{volume "part4"
+		{thickness 5}
+	}
+	{volume "shield1"
+		{thickness 5}
+	}
+	{volume "shield2"
+		{thickness 5}
+	}
+	("tracks" thickness(20))
+}

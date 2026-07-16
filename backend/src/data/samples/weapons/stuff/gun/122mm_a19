@@ -1,0 +1,37 @@
+;_________________________________________
+; ARTY - USSR Heavy AT gun / Howitzer hybrid
+;=========================================
+
+
+{from "pattern gun"			; L/48 "A 19"
+	{filling "bulletrus_122_l48"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_105to130mm/"}
+	{fireSoundclose "cannon/s4/3p/Shared/Cannon_105to130mm/"}
+	{reloadSound "utility/"}
+	("heavy_artillery")
+	{calibre 122}
+	{range 465 465} ; // 20.4km
+
+	("reload time" seconds(25))
+
+	("velocity m/s" ap(795) apcr(1) he(224) heat(1))
+	("armor health" damage(320))
+	("armor health custom" shell(aphe) damage(320) velocity(795) filler(211))
+	("armor health custom" shell(aphebc) damage(320) velocity(795) filler(211))
+	("122_rus_slope_multipliers")
+
+	; BR-471
+	("penetration_long" shell(aphe) range(220) a(201) b(182) c(161) d(142) e(126))  ; // RHA
+
+	; BR-471B ;issued sometime between Sept. 1944 and Jan. 1945
+	("penetration_long" shell(aphebc) range(220) a(199) b(182) c(162) d(144) e(128))  ; // RHA
+
+	("accuracy_indirect"   ; // Applies logic for accuracy of indirect weapons over 200m
+		r1(0.60) 				; // Accuracy radius for direct-fire munitions
+		r2(6.97) 				; // Accuracy radius for indirect fire
+		rmax(33.60) 			; // Accuracy radius for indirect fire at maximum range
+		range_ap(220) 			; // Range after which accuracy drops to prevent farshooting.
+		range_heat(220) 		; // Range after which accuracy drops to prevent farshooting.
+		range_he(465)			; // Range after which accuracy drops to prevent farshooting.
+	)
+}

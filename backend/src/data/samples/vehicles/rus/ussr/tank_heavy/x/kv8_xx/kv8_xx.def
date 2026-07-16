@@ -1,0 +1,99 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "kv8_xx.mdl"}
+
+	{volume "body1"
+		{thickness 40
+			{front 75}
+			{top 40}
+			{right 75}
+			{left 75}
+			{rear 10}
+			{bottom 40}
+		}
+	}
+	{volume "body2"
+		{thickness 40
+			{front 75}		;// 75 + 31 extra armor
+			{top 40}
+			{right 75}
+			{left 75}
+			{rear 10}
+		}
+	}
+	{volume "engine1"
+		{thickness 30
+			{front 10}
+			{right 52}
+			{left 75}
+			{rear 70}
+			{bottom 30}
+		}
+	}
+	{volume "engine2"
+		{thickness 30
+			{front 10}
+			{top 30}
+			{right 75}
+			{left 75}
+			{rear 52}
+		}
+	}
+	{volume "armor1"
+		{thickness 25}
+	}
+	{volume "armor2"
+		{thickness 25}
+	}
+	{volume "armor3"
+		{thickness 31}
+		{able {holed}}
+	}
+	{volume "armor4"
+		{thickness 25}
+	}
+	{volume "armor5"
+		{thickness 25}
+	}
+	{volume "armor6"
+		{thickness 25}
+	}
+	{volume "armor7"
+		{thickness 25}
+	}
+	{volume "turret1"
+		{thickness 90
+			{top 40}
+			{bottom 40}
+		}
+	}
+	{volume "turret2"
+		{thickness 90
+			{bottom 40}
+		}
+	}
+	{volume "turret3"
+		{thickness 75}
+	}
+	{volume "turret4"
+		{thickness 90}
+		{CastSteel 0.8063}
+	}
+	{volume "turret5"
+		{thickness 90}
+		{CastSteel 0.8063}
+	}
+	{volume "turret6"
+		{thickness 90}
+	}
+	{volume "barrel1"
+		{thickness 75
+			{front 90}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "barrel2"
+		{thickness 20}
+	}
+	("tracks" thickness(20))
+}

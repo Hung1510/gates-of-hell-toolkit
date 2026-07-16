@@ -1,0 +1,33 @@
+;_________________________________________
+; ARTY british medium field gun
+;=========================================
+
+
+{from "pattern gun"			; L/29.4 "qf 18pdr"
+	{filling "bullet_84x294"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_85to100mm/"}
+	{fireSoundclose "cannon/s4/d1/Shared/Cannon_85to100mm/"}
+	{reloadSound "utility/"}
+	("medium_artillery")
+	{calibre 84}
+	{range 345 345} ; // 10.100km
+
+	("reload time" seconds(10))
+
+	("velocity m/s" ap(495) apcr(1) he(214) heat(1)) ;real HE 492m/s. +20 to formula to account for elevation
+	("armor health" damage(230))
+	("armor health custom" shell(ap) damage(230) velocity(495) filler(0))
+	("90_slope_multipliers")
+
+	; AP Shot
+	("penetration_medium" shell(ap) range(180) a(81) b(70) c(58) d(47) e(39))
+
+	("accuracy_indirect"		; // Applies logic for accuracy of indirect weapons over 200m
+		r1(0.95) 				; // Accuracy radius for direct-fire munitions
+		r2(4.67) 				; // Accuracy radius for indirect fire
+		rmax(18.45) 			; // Accuracy radius for indirect fire at maximum range
+		range_ap(180) 			; // Range after which accuracy drops to prevent farshooting
+		range_heat(180) 		; // Range after which accuracy drops to prevent farshooting
+		range_he(345)			; // Range after which accuracy drops to prevent farshooting
+	)
+}

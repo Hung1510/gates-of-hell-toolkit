@@ -1,0 +1,110 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "su100y_xx.mdl"}
+
+
+	{volume "armor"
+		{thickness 25}
+	}
+	{volume "barrel"
+		{thickness 30}
+	}
+	{volume "body1"			; Nose
+		{thickness 60
+			{rear 20}
+			{bottom 20}
+		}
+	}
+	{volume "body2"			; Hull
+		{thickness 60
+			{top 20}
+			{rear 20}
+			{bottom 20}
+		}
+	}
+	{volume "body3"			; Superstructure
+		{thickness 60
+			{top 20}
+			{bottom 20}
+		}
+	}
+	{volume "engine1"		; Hull
+		{thickness 60
+			{front 20}
+			{top 20}
+			{bottom 20}
+		}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 60
+			{top 20}
+			{bottom 20}
+		}
+	}
+	{volume "mantlet1"
+		{thickness 50}
+	}
+	{volume "mantlet2"
+		{thickness 60}
+	}
+	{volume "part1"
+		{thickness 60}
+	}
+	{volume "part2"
+		{thickness 20}
+	}
+	{volume "part3"
+		{thickness 20}
+	}
+	{volume "part4"
+		{thickness 60}
+	}
+	{volume "part5"
+		{thickness 20}
+	}
+	{volume "trackleft1"
+		{thickness 20}
+	}
+	{volume "trackleft2"
+		{thickness 20}
+	}
+	{volume "trackleft3"
+		{thickness 20}
+	}
+	{volume "trackleft4"
+		{thickness 20}
+	}
+	{volume "trackleft7"
+		{thickness 20}
+	}
+	{volume "trackleft8"
+		{thickness 20}
+	}
+	{volume "trackleft9"
+		{thickness 20}
+	}
+	{volume "trackright10"
+		{thickness 20}
+	}
+	{volume "trackright2"
+		{thickness 20}
+	}
+	{volume "trackright3"
+		{thickness 20}
+	}
+	{volume "trackright4"
+		{thickness 20}
+	}
+	{volume "trackright5"
+		{thickness 20}
+	}
+	{volume "trackright6"
+		{thickness 20}
+	}
+	{volume "trackright8"
+		{thickness 20}
+	}
+	{volume "trackright9"
+		{thickness 20}
+	}
+}

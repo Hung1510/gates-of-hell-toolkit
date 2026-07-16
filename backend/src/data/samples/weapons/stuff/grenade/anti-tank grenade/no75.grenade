@@ -1,0 +1,24 @@
+{from "pattern anti-tank"
+	{entity "no75"}
+	{tag "grenade dropboxed antitank mine"}
+	{tag  "size2"}	; Explosive Filling 		= 0.45 kg
+	{mass 1.02}
+
+	{inventory {size 2 1}}
+
+	{damage blastwave
+		{energy 3.1}
+		{area 0.4 0.55}
+		{ground_interaction_radius 0}
+	}
+	{damage add blastwave
+		{energy 1.0}
+		{area 0.6 2}
+		{ground_interaction_radius 0.5}
+	}
+	{damage add blastwave
+		{energy 0.51}
+		{area 3 5}
+		{ground_interaction_radius 0} ;// value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx
+	}
+}

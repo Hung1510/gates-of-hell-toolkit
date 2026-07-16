@@ -1,0 +1,6 @@
+{weapon_bombing
+	("plane_bomb_weapon")
+	{filling "ammo air_bomb_eng_250lb" 2}
+	{fillingVisible "bomb_"}
+	{burst {min 2}}
+}

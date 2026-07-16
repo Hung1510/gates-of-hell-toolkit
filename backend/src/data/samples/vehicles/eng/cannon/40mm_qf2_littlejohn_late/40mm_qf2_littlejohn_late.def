@@ -1,0 +1,16 @@
+{
+	(include "../40mm_qf2/40mm_qf2_littlejohn.inc")
+
+	{extender "inventory"
+		{box
+			{item "bulleteng_40 littlejohn apcr2" 60}	;// May 44, APSV Mk.II shots
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{weapon "40mm_qf2_littlejohn" filling "bulleteng_40 littlejohn apcr2" 1}
+		}
+	}
+}
+

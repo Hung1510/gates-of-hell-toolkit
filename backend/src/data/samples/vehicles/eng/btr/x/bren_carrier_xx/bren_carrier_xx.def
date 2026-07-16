@@ -1,0 +1,54 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "bren_carrier_xx.mdl"}
+	{volume "body1"			; Front Hull
+		{thickness 10
+			{top 7}			; Glacis
+		}
+	}
+	{volume "body2"			; Front Superstructure
+		{thickness 10}
+		{able {holed}}
+	}
+	{volume "body3"			; Rear Superstructure
+		{thickness 10}
+		{able {holed}}
+	}
+	{volume "body4"			; Rear Hull
+		{thickness 10}
+	}
+	{volume "body5"			; Gunner Armor
+		{thickness 10}
+	}
+	{volume "engine1"		; Inside Rear Hull and Superstructure
+		{thickness 10}
+	}
+	{volume "engine2"		; Inside Rear Hull and Superstructure
+		{thickness 10}
+	}{volume "engine3"		; Inside Rear Hull and Superstructure
+		{thickness 10}
+	}
+	{volume "transmission"
+		{thickness 5}
+	}
+	{volume "armor1"
+		{thickness 5}
+	}
+	{volume "armor2"
+		{thickness 10}
+	}
+	{volume "detail5"
+		{thickness 5}
+	}
+	{volume "part1"
+		{thickness 5}
+	}
+	{volume "shield1"
+		{thickness 4}
+	}
+	{volume "shield2"
+		{thickness 4}
+	}
+	
+	("tracks" thickness(20))
+}

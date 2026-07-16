@@ -1,0 +1,87 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc" scale(0.9))
+	{props "light" "open_top" "vision_lev02" "mg_x4" "detect_tank_mg" "open_death_fx"}
+	{extension "vickers_aa_mk1.mdl"}
+	(include "vickers_aa_mk1.ext")
+	{patherId "mk6b"}
+	{collider "tank.light"}
+	{targetclass "tank_light"}
+	{targetSelector "tank_bullet"}
+
+	{extender "enumerator"
+		{digit_folder "us2"}
+	}
+
+	{extender "inventory"
+		{box
+			{item "mgun_ger belt mk2" 3600}		; 16 belts (225 rounds each)
+			{item "satchel_charge_eng" 1}
+		}
+	}
+
+	("crew_driver" door(emit0) anm_left(driver) anm_right(driver) visor(driver))
+	("crew_human_visible_anm" place(gunner) door(emit1) door2(emit2) anm_left(left) anm_right(right) visor(main))
+
+	{sensor
+		{visor "main"
+			{bone "foresight14"}
+			{vision "human"}
+		}
+		{visor "around"
+			{vision "vehicle_around"}		;// better vision than a in-closed turret 
+		}
+	}
+
+	{boarder
+		{anm "left"
+			{forward {begin "board_tank_left"} {end "seat_251_21_gunner"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward {begin "board_tank_right"} {end "seat_251_21_gunner"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "driver"
+			{forward {begin "board_t26_driver"} {end "pose_t26_driver"} {base "open_driver"}}
+			{reverse {end "board_t26_driver" -1} {base "open_driver" -1}}
+		}
+	}
+
+	{Weaponry
+		{place "mgun1"
+			{Barrels 4}
+			{type "main"}
+			{weapon "besa_x4" filling "ammo mgun_ger belt mk2" 900}
+			{gunner "gunner"}
+			{charger "gunner"}
+			("abm_mgun")
+			{Rotate}
+			{basic}
+		}
+	}
+
+	{mass 4800}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.32) len(0.5))
+		("mobility_tank"
+			speed(56) ;-----------Max speed when fully accelerated on road, km/h.
+			reverse(10) ;---------Max speed in reverse on road, km/h.
+			traverse(35) ;--------Track traverse, per second, in degrees.
+			weight(4.8) ;---------Weight in Tonnes.
+			power(88) ;-----------Engine Power, in hp.
+			track(5.0) ;----------Track performance: [0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(250) ;-----------Fuel capacity in Litres.
+			type(fuel) ;----------Fuel type. (diesel OR fuel)
+			range(140) ;----------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -10 65}
+		{speed2 80}
+	}
+	{bone "turret"
+		{speed2 80}
+	}
+}

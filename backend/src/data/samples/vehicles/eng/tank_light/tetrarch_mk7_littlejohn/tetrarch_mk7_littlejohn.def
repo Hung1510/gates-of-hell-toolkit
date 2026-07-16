@@ -1,0 +1,102 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc" scale(0.9))
+	{props "tetrarch_mk7" "light" "vision_lev03" "muzzle_37mm_47mm" "smoke" "4in_2x" "detect_tank_light"}
+	{extension "tetrarch_mk7_littlejohn.mdl"}
+	(include "tetrarch_mk7_littlejohn.ext")
+	{patherId "mk6b"}
+	{collider "tank.light"}
+	{targetclass "tank_light"}
+	{targetSelector "tank_light"}
+
+	("crew_3_human_2_extended")
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_t26_driver"} {end "pose_t26_driver"} {base "open_driver"}}
+			{reverse {end "board_t26_driver" -1} {base "open_driver" -1}}
+		}
+		{anm "left"
+			{forward {begin "board_kv"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward {begin "board_tank_right"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward {begin "board_MiddleArmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_1"}}
+		}
+		{anm "armor1"
+			{forward {begin "board_MiddleArmor"} {end "pose_seat_armor_2"}}
+			{reverse {end "emit_body"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3) animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4) animation(armor1))
+	("seat_human" place(seat3) bone(seat03) door(emit5) animation(armor1))
+	("seat_human" place(seat4) bone(seat04) door(emit6) animation(armor1))
+
+	{extender "smokescreen"
+		{cooldown 5}
+		{itemTags "grenade no8_smoke"}
+	}
+
+	{extender "inventory"
+		{box
+			{item "bulleteng_40 littlejohn apcr2" 50}	;// May 44, APSV Mk.II shots
+			{item "satchel_charge_eng" 1}
+			{item "ammo mgun_ger belt mk2" 1800}		; 9 belts (225 rounds each)
+			{item "no8_smoke grenade" 4}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "40mm_qf2_littlejohn" filling "bulleteng_40 littlejohn apcr2" 1}
+			{gunner "gunner"}
+			{charger "commander"}
+			("abm_dymamic"
+				zeroing(3.0)
+				dispersion(0.20)
+			)
+		}
+		{place "mgun"
+			{type "coaxial"}
+			{weapon "besa" filling "ammo mgun_ger belt mk2" 225}
+			{foresight "foresight3"}
+			{gunner "gunner"}
+			{charger "commander"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 7600}
+	{Chassis
+		("tank_trace" fx("tracks_sm2") step(0.17) len(0.56))
+		("mobility_tank"
+			speed(64) ;-----------Max speed when fully accelerated on road, km/h.
+			reverse(10) ;---------Max speed in reverse on road, km/h.
+			traverse(35) ;--------Track traverse, per second, in degrees.
+			weight(7.6) ;---------Weight in Tonnes.
+			power(165) ;----------Engine Power, in hp.
+			track(4.5) ;----------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(205) ;-----------Fuel capacity in Litres.
+			type(fuel) ;----------Fuel type. (diesel OR fuel)
+			range(225) ;----------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -12 25}
+		{speed2 10}
+	}
+	{bone "turret"
+		("turret_light" power_traverse(0)) ;// manual
+	}
+}

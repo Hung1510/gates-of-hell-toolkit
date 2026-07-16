@@ -1,0 +1,97 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{Extension "sdkfz234_2_xx.mdl"}
+
+	{volume "body1"			; Under Hull
+		{thickness 8
+			{front 10}
+		}
+		{tags "no_target"}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 8
+			{front 30}		; Nose
+			{top 15}		; Glacis
+		}
+	}
+	{volume "body3"			; Top Superstructure
+		{thickness 8
+			{front 30}
+			{top 5}
+		}
+		{tags "no_target"}
+	}
+	{volume "engine1"		; Hull
+		{thickness 8
+			{rear 10}
+		}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 8
+			{top 5}
+			{rear 10}
+		}
+	}
+	{Volume "gun"
+		{thickness 20}
+	}
+	{volume "mantlet1"		; Nose
+		{thickness 50
+			{front 100}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "mantlet2"
+		{thickness 50}
+		{CastSteel 0.8063}
+	}
+	{Volume "part1"
+		{thickness 10}
+	}
+	{Volume "part2"
+		{thickness 2}
+	}
+	{Volume "part3"
+		{thickness 8}
+	}
+	{Volume "part4"
+		{thickness 0.5}
+	}
+	{Volume "part5"
+		{thickness 10}
+	}
+	{Volume "part6"
+		{thickness 2}
+	}
+	{Volume "part7"
+		{thickness 10}
+	}
+	{Volume "part8"
+		{thickness 10}
+	}
+	{Volume "part9"
+		{thickness 2}
+	}
+	{volume "turret1"		; Main turret
+		{thickness 14.5
+			{front 30}
+			{top 8}
+		}
+	}
+	{volume "turret2"		; Inside Mantlet
+		{thickness 30}
+		{CastSteel 0.8063}
+	}
+	{Volume "wheell1"
+		{thickness 10}
+	}
+	{Volume "wheell3"
+		{thickness 10}
+	}
+	{Volume "wheelr1"
+		{thickness 10}
+	}
+	{Volume "wheelr2"
+		{thickness 10}
+	}
+}

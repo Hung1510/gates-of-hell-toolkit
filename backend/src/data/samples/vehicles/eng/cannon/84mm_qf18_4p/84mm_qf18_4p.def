@@ -1,0 +1,17 @@
+{game_entity
+	(include "../88mm_qf25_mk1_4p/88mm_qf25_mk1_4p.inc")
+
+	{extender "inventory"
+		{box
+			{item "ammo bullet_84x294 eng he" 25}
+			{item "ammo bullet_84x294 eng ap" 5}
+			{item "sandbag_vehicle" 1}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{weapon "84mm_qf18_mk4" filling "ammo bullet_84x294 eng he" 1}
+		}
+	}
+}

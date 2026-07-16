@@ -1,0 +1,86 @@
+;SDL
+	; armor notes
+	; bulkhead and sides 19mm
+	; top deck 6.4mm
+
+	("gun" repair(30) thickness(8))
+	("engine" repair(30))
+
+	("component" volume("body1") component("body1") repair(10))
+	("component" volume("body2") component("body2") repair(10))
+	("component" volume("body3") component("body3") repair(10))
+	("component" volume("body4") component("body4") repair(10))
+	("component" volume("body5") component("body5") repair(10))
+	("component" volume("body6") component("body6") repair(10))
+	("component" volume("body7") component("body7") repair(10))
+	("component" volume("body8") component("body8") repair(10))
+
+	("shield_group" args "shield1" 19 "body")
+	("shield_group" args "shield2" 19 "body")
+	("shield_group" args "shield3" 19 "body")
+	("shield_group" args "shield4" 19 "body")
+	("shield_group" args "shield5" 19 "body")
+	("shield_group" args "shield6" 19 "body")
+	("shield_group" args "shield7" 19 "body")
+	("shield_group" args "shield8" 19 "body")
+	("shield_group" args "shield9" 19 "body")
+	("shield_group" args "shield10" 19 "body")
+	("shield_group" args "shield11" 19 "body")
+
+	{volume "body1"
+		{thickness 19
+			{top 6.4}
+			{bottom 6.4}
+		}
+		{able {holed}}
+	}
+	{Volume "body2"
+		{thickness 19
+			{top 6.4}
+			{bottom 6.4}
+		}
+		{able {holed}}
+	}
+	{Volume "body3"
+		{thickness 19
+			{top 6.4}
+			{bottom 6.4}
+		}
+		{able {holed}}
+	}
+	{Volume "body4"
+		{thickness 19
+			{top 6.4}
+			{bottom 6.4}
+		}
+		{able {holed}}
+	}
+	{Volume "body5"
+		{thickness 19
+			{top 6.4}
+			{bottom 6.4}
+		}
+		{able {holed}}
+	}
+	{Volume "body6"
+		{thickness 19
+			{top 6.4}
+			{bottom 6.4}
+		}
+		{able {holed}}
+	}
+	{Volume "body7"
+		{thickness 19
+			{top 6.4}
+			{bottom 6.4}
+		}
+	}
+	{Volume "body8"
+		{thickness 19
+			{top 6.4}
+			{bottom 6.4}
+		}
+	}
+	{Volume "engine"
+		{thickness 2}
+	}

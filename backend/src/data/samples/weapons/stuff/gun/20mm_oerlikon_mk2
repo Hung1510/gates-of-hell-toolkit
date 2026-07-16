@@ -1,0 +1,11 @@
+;_________________________________________
+; tanks dual AA gun
+;=========================================
+
+
+{from "20mm_oerlikon_mk1"			; "crusader_aa_mk2"
+	{filling "bulleteng_20_auto" 120}
+	{reloadSound "tank/reload_small"}
+
+	("fire rate" rpm(900))
+}

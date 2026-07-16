@@ -1,0 +1,20 @@
+;// No.68
+{bullet
+	{tag "ammo rifle_grenade_at heat dropboxed pierce 50to57"}
+	{tag  "heat_shell size1"}	; Explosive Filling 		= 0.156 kg of TNT
+	{inventory
+		{weight 20}
+		{size 2 1}
+	}
+	{entity "rifle_grenade_no68at"}
+	{view "rifle_grenade_no68at"}
+	{mass 0.894}
+
+	{damage blastwave
+		{energy 1.0}
+		{area 0.5 4}
+		{ground_interaction_radius 0.1} ;// value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
+	}
+
+	{cumulative 1}
+}

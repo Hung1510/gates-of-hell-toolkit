@@ -1,0 +1,17 @@
+{from "pattern smg"
+	{tag "pistol_shell"}
+	{filling "ammo eng_smg" 32}
+	{entity "sten_mk2"}
+	{fireSound "smallarms/s1/d1/ENG/STEN_Gun/"}
+	{fireSoundclose "smallarms/s1/3p/ENG/STEN_Gun/"}
+	{reloadSound "mp40"}
+	{calibre 9}
+	{mass 3.2}
+
+	("fire rate" rpm(550))
+	("velocity" mps(365))
+	("spreading_low")
+	("burst_short_slow")
+	("recoil_smg_low")
+	("stick_reload")
+}

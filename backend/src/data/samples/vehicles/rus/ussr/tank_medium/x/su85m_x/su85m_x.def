@@ -1,0 +1,4 @@
+{game_entity
+	{extension "su85m_x.mdl"} 
+	{RimLight}
+}

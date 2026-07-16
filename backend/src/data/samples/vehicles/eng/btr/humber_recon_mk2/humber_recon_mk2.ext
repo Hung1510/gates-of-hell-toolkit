@@ -1,0 +1,45 @@
+;SDL
+
+	; armor notes
+	; wheels 10mm 
+	; gun 20mm
+
+	("armoredcar_tier2")
+
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright1")
+	("wheel" args "wheelright2")
+
+	("turret" repair(45))
+
+	("fuel" args "fuel1")
+	("transmission" args "transmission")
+
+	{volume "body1"
+		{thickness 8
+			{front 10}
+			{top 7}
+			{bottom 5}
+		}
+		{able {holed}}
+	}
+	{volume "body2"
+		{thickness 8
+			{front 10}
+			{top 7}
+			{bottom 5}
+		}
+		{able {holed}}
+	}
+	{volume "turret1" {thickness 6} {able {holed}}}
+	{volume "turret2" {thickness 6}} ;// Ring
+	{volume "engine1"
+		{thickness 8
+			{front 10}
+			{top 7}
+			{bottom 5}
+		}
+		{able {holed}}
+	}
+	{volume "armor1" {thickness 6}}

@@ -1,0 +1,59 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "l182_xx.mdl"}
+
+	{volume "body1"
+		{thickness 10
+			{top 5}
+			{bottom 5}
+		}
+	}
+	{volume "body2"
+		{thickness 10
+			{top 5}
+			{bottom 5}
+		}
+		{able {holed}}
+	}
+	{volume "engine1"
+		{thickness 10
+			{top 5}
+			{rear 5}
+			{bottom 5}
+		}
+	}
+	{volume "turret1"
+		{thickness 15
+			{top 5}
+		}
+	}
+	{volume "turret2"
+		{thickness 15
+			{top 5}
+		}
+	}
+	{volume "barrel"
+		{thickness 20}
+	}
+	{volume "wheelleft1"
+		{thickness 10}
+	}
+	{volume "wheelleft2"
+		{thickness 10}
+	}
+	{volume "wheelleft3"
+		{thickness 10}
+	}
+	{volume "wheelright1"
+		{thickness 10}
+	}
+	{volume "wheelright2"
+		{thickness 10}
+	}
+	{volume "wheelright3"
+		{thickness 10}
+	}
+	{volume "part1"
+		{thickness 5}
+	}
+}

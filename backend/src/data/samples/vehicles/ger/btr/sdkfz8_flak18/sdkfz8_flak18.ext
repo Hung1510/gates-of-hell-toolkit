@@ -1,0 +1,74 @@
+;SDL
+
+	("armoredcar_tier2")
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+
+	("turret" repair(45))
+	("tracks" repair(30) thickness(20))
+	("gun" repair(30) thickness(30))
+
+	("shield_group" args "shield1" 10 "shield")
+	("shield_group" args "shield2" 6 "shield")
+	("shield_group" args "shield3" 6 "shield")
+	("shield_group" args "shield4" 6 "shield")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+
+	{volume "ammo1"
+		{thickness 5}
+	}
+	{volume "body1"
+		{thickness 14.5}
+	}
+	{volume "body2"
+		{thickness 14.5
+			{top 8}
+		}
+		{able {holed}}
+	}
+	{volume "body3"
+		{thickness 14.5
+			{top 8}
+		}
+		{able {holed}}
+	}
+	{volume "body4"
+		{thickness 14.5
+			{top 8}
+		}
+		{tags "no_target"}
+	}
+	{volume "body5"
+		{thickness 14.5}
+		{tags "no_target"}
+	}
+	{volume "body6"
+		{thickness 14.5}
+		{tags "no_target"}
+	}
+	{volume "body7"
+		{thickness 14.5}
+	}
+	{volume "engine1"
+		{thickness 5}
+	}
+	{Volume "turret1"
+		{thickness 14.5}
+	}
+	{Volume "turret2"
+		{thickness 14.5}
+		{able {holed}}
+	}
+	{volume "trackleft1"
+		{tags "mover" "track"}
+		{able {NoWoundDecal} {holed} {contact_ground 0}}
+	}
+	{volume "trackright1"
+		{tags "mover" "track"}
+		{able {NoWoundDecal} {holed} {contact_ground 0}}
+	}

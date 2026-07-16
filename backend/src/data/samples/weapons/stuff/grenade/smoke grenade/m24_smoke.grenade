@@ -1,0 +1,9 @@
+{from "pattern smoke"
+	{tag "smoke"}
+	{inventory {size 3 1}}
+	{entity "m24_smoke"}
+
+	{throw
+		{range 28.7}  ;in-game 30m
+	}
+}

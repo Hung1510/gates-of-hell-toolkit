@@ -1,0 +1,37 @@
+;_________________________________________
+; German Heavy Rocket Artillery
+;=========================================
+
+
+{from "pattern reactive"		; ""
+	{tag "gun"}
+	{filling "ammo 300mm_nebelwerfer" 6}
+	{fireSound "reactive/nebel_burst/"}
+	{calibre 300}
+
+	("rocket_artillery")
+
+	{spreading
+		{radiusTable
+			{0 0}
+			{100 10}
+			{200 20}
+			{279.99 30} ;// max range
+			{280 100}
+			{310 200}
+		}
+	}
+
+	{burst 
+		{min 6}
+		{noaiming}
+	}
+	{gravity 2}
+
+	{minRange 50}
+	{aimRange 280}
+	{maxRange 280} ;//4,55km
+	("velocity" mps(230))
+	("reload time" seconds(300))
+	("fire rate" rpm(36)) ;// 10s to fire full salvo
+}

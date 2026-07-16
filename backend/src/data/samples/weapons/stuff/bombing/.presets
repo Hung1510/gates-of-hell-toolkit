@@ -1,0 +1,14 @@
+(include "\set\blast.inc")
+
+(define "plane_bomb_weapon"
+	{tag "weapon" "bomb"}
+	{fillingVisible "bomb"}
+	{foresight "pivot_front"}
+	{recoveryTime 0.4}
+	{rechargeTime 40}
+	{automatic}
+	{aimRange 200}
+	;{aimType nocurve}
+	{cursorReloading "gun_he"}
+	{preloaded}
+)

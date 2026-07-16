@@ -1,0 +1,77 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "drifter_eng_xx.mdl"}
+	
+	{volume "body1"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 4}
+	}
+	{volume "body2"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "body3"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "body4"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "body5"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "body6"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "cabin1" {thickness 4}}
+	{volume "cabin2" {thickness 4}}
+	{volume "cabin3" {thickness 4}}
+	{volume "cabin4" {thickness 4}}
+	{volume "cabin5" {thickness 4}}
+	{Volume "engine1" ;// Internal part.
+		{thickness 2}
+	}
+	{Volume "engine2" ;// Steam Tube.
+		{thickness 6}
+	}
+
+	;// Non-Components
+	{volume "armor1" {thickness 4} {material "wood"} {tags "wood"}}
+	{volume "armor2" {thickness 2}}
+	{volume "armor3" {thickness 2}}
+	{volume "armor4" {thickness 2}}
+	{volume "armor5" {thickness 2}}
+	{volume "armor6" {thickness 2}}
+	{volume "armor7" {thickness 2}}
+	{volume "armor8" {thickness 2}}
+	{volume "armor9" {thickness 2}}
+	{volume "armor10" {thickness 2}}
+	{volume "armor11" {thickness 2}}
+	{volume "armor12" {thickness 2}}
+	{volume "armor13" {thickness 4} {material "wood"} {tags "wood"}}
+	{volume "armor14" {thickness 4} {material "wood"} {tags "wood"}}
+	{volume "armor15" {thickness 4} {material "wood"} {tags "wood"}}
+	{volume "armor16" {thickness 4} {material "wood"} {tags "wood"}}
+	{volume "armor17" {thickness 4} {material "wood"} {tags "wood"}}
+	{volume "armor18" {thickness 4} {material "wood"} {tags "wood"}}
+
+	;// Parts
+	{volume "part5" {thickness 2}} ;// Skylight
+	{volume "part6" {thickness 2}} ;// Skylight
+	{volume "part7" {thickness 2}} ;// Skylight
+	{volume "part8" {thickness 2}} ;// Skylight
+}

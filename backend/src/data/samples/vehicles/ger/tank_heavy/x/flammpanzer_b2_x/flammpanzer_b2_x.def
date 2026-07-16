@@ -1,0 +1,3 @@
+{game_entity
+	{extension "flammpanzer_b2_x.mdl"} {RimLight}
+}

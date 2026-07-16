@@ -1,0 +1,93 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "yag10_29k_xx.mdl"}
+	
+	{volume "barrel1"
+		{thickness 25}
+		{able {holed}}
+	}
+	{volume "barrel2"
+		{thickness 25}
+	}
+	{volume "barrel3"
+		{thickness 25}
+	}
+	{volume "barrel4"
+		{thickness 25}
+	}
+	{volume "barrel5"
+		{thickness 25}
+	}
+	{volume "barrel6"
+		{thickness 25}
+	}
+	{volume "barrel7"
+		{thickness 25}
+	}
+	{volume "barrel8"
+		{thickness 25}
+	}
+	{volume "barrel9"
+		{thickness 25}
+	}
+	{volume "body1"
+		{thickness 2.5}
+	}
+	{volume "body2"
+		{thickness 2.5}
+	}
+	{volume "body3"
+		{thickness 2.5}
+		{able {holed}}
+	}
+	{volume "body4"
+		{thickness 2.5}
+	}
+	{volume "body5"
+		{thickness 2.5}
+	}
+	{volume "body6"
+		{thickness 2.5}
+	}
+	{volume "body7"
+		{thickness 2.5}
+	}
+	{volume "bodyback1"
+		{thickness 12}
+		{able {holed}}
+	}
+	{volume "bodyback2"
+		{thickness 12}
+		{able {holed}}
+	}
+	{volume "bodyback3"
+		{thickness 2.5}
+	}
+	{volume "bodyback4"
+		{thickness 2.5}
+	}
+	{volume "bodyback5"
+		{thickness 12}
+	}
+	{volume "bodyback6"
+		{thickness 12}
+	}
+	{volume "wheelleft1"
+		{thickness 2}
+	}
+	{volume "wheelleft2"
+		{thickness 2}
+	}
+	{volume "wheelleft3"
+		{thickness 2}
+	}
+	{volume "wheelright1"
+		{thickness 2}
+	}
+	{volume "wheelright2"
+		{thickness 2}
+	}
+	{volume "wheelright3"
+		{thickness 2}
+	}
+}

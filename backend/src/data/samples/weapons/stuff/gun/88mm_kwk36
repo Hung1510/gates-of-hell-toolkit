@@ -1,0 +1,35 @@
+;_________________________________________
+; German heavy AT Gun
+;=========================================
+
+
+{from "pattern gun"			; L/56 "tiger1e", "tiger1h", "tiger1hunt"
+	{filling "bulletger_88_l56"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_85to100mm/"}
+	{fireSoundclose "cannon/s3/1p/Shared/"}
+	{reloadSound "tank/1p/medium_long/"}
+	("range_210")
+	{calibre 88}
+
+	("reload time" seconds(8))
+
+	("velocity m/s" ap(780) apcr(930) he(820) heat(600))
+	("armor health" damage(240))
+	("armor health custom" shell(apcbche) damage(240) velocity(780) filler(102))
+	("88_ger_slope_multipliers")
+
+	; Pzgr.39
+	("penetration_long" shell(apcbche) range(210) a(162) b(151) c(138) d(126) e(116))
+
+	; Pzgr.40
+	("penetration_long" shell(apcr) range(210) a(219) b(200) c(179) d(160) e(143))
+	{parameters "apcr" ; Pzgr.40
+		("large_apcr_slope_multiplier")
+	}
+
+	; Gr.39 Hl
+	("penetration_long" shell(heat) range(210) a(110) b(110) c(110) d(110) e(110))
+
+
+	("accuracy_direct" r1(0.60) range_ap(210) range_he(210) range_heat(210))
+}

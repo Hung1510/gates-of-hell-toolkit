@@ -1,0 +1,140 @@
+	;notes
+	;tracks and wheels 30mm
+	;gun 30mm
+
+	("tank_heavy_tier1")
+
+	("shield_track" args "detail1" 30)
+	("shield_track" args "detail2" 30)
+	("shield_track" args "detail3" 30)
+	("shield_track" args "detail4" 30)
+	("shield_track" args "detail5" 30)
+
+	("tracks" repair(40) thickness(30))
+	("gun" repair(30) thickness(30))
+
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("transmission" args "transmission")
+
+	{Volume "body1"
+		{thickness 76
+			{front 102}
+			{top 22}
+			{rear 51}
+			{bottom 25}
+		}
+		{CastSteel 0.8063}
+	}
+	{Volume "body2"
+		{thickness 76
+			{top 22}
+			{front 162}
+		}
+		{CastSteel 0.8063}
+	}
+	{Volume "body3"
+		{thickness 102}
+		{CastSteel 0.8063}
+	}
+	{Volume "body4"
+		{thickness 76}
+		{CastSteel 0.8063}
+	}
+	{Volume "body5"
+		{thickness 76}
+		{CastSteel 0.8063}
+	}
+	{volume "armor1"
+		{thickness 5}
+	}
+	{volume "armor2"
+		{thickness 5}
+	}
+	{volume "armor3"
+		{thickness 50} ;turretback ??
+	}
+	{volume "armor4"
+		{thickness 80} ;in front of turret
+	}
+	{volume "armor5"
+		{thickness 38}
+	}
+	{volume "armor6"
+		{thickness 38}
+	}
+	{volume "armor7"
+		{thickness 38}
+	}
+	{volume "armor8"
+		{thickness 38}
+	}
+	{volume "armor_front1"
+		{able {holed}}
+		{thickness 38}
+		{CastSteel 0.3} ;// not armor steel
+	}
+	{volume "armor_front2"
+		{thickness 38}
+		{CastSteel 0.3} ;// not armor steel
+	}
+	{volume "armor_front3"
+		{thickness 38}
+		{CastSteel 0.3} ;// not armor steel
+	}
+	{volume "armor_front4"
+		{able {holed}}
+		{thickness 38}
+		{CastSteel 0.3} ;// not armor steel
+	}
+	{volume "detail7"
+		{thickness 25}
+	}
+	{volume "cupola"
+		{thickness 76
+			{top 22}
+		}
+	}
+	{Volume "turret1"
+		{thickness 76
+			{front 102}
+			{top 25}
+		}
+		{CastSteel 0.8063}
+	}
+	{Volume "turret2"
+		{thickness 76
+			{front 102}
+			{top 25}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret3"
+		{thickness 76}
+		{CastSteel 0.8063}
+	}
+	{volume "turret4"
+		{thickness 102}
+	}
+	{volume "turret5"
+		{thickness 76
+			{bottom 25}
+		}
+		{CastSteel 0.8063}
+	}
+	{Volume "mantlet"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 114}
+		{CastSteel 0.8063}
+	}
+	{Volume "engine1"
+		{thickness 76
+			{front 40}
+			{top 22}
+			{rear 51}
+			{bottom 25}
+		}
+	}

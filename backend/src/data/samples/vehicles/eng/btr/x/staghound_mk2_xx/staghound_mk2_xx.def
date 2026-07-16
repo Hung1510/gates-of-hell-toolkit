@@ -1,0 +1,107 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "staghound_mk2_xx.mdl"}
+	
+	{volume "wheelleft1"
+		{thickness 0.5}
+	}
+	{volume "wheelleft2"
+		{thickness 0.5}
+	}
+	{volume "wheelright1"
+		{thickness 0.5}
+	}
+	{volume "wheelright2"
+		{thickness 0.5}
+	}
+	{volume "body1"
+		{thickness 14
+			{front 22}
+			{left 19}
+			{top 13}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "body2"
+		{thickness 14
+			{front 22}
+			{left 19}
+			{top 13}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "body3"
+		{thickness 14
+			{front 22}
+			{left 19}
+			{top 13}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "body4" ; mgun port
+		{thickness 20}
+	}
+	{volume "body5"
+		{thickness 14
+			{front 22}
+			{left 19}
+			{top 13}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "turret1" 
+		{thickness 45}
+	}
+	{volume "turret2"
+		{thickness 45
+			{front 45}
+			{left 32}
+			{top 13}
+			{rear 32}
+			{bottom 13}
+		}
+	}
+	{volume "turret3" 	; Turret Ring
+		{thickness 32}
+	}
+	{volume "mantlet1"	; gun_rot mantlet
+		{thickness 25}
+		{able {holed}}
+	}
+	{volume "mantlet2"		; mantlet
+		{thickness 25}
+	}
+	{volume "mantlet3"		; mantlet
+		{thickness 25}
+	}
+	{volume "barrel1"		; barrel
+		{thickness 15}
+	}
+	{volume "engine1"
+		{thickness 19
+			{left 19}
+			{top 13}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "armor1"		; storage box
+		{thickness 5}
+	}
+	{volume "armor2"		; storage box
+		{thickness 5}
+	}
+	{volume "armor3"		; Engine Cover (back)
+		{thickness 8}
+	}
+	{volume "part1"		; Engine Hatch Left
+		{thickness 5}
+	}
+	{volume "part2"		; Engine Hatch Right
+		{thickness 5}
+	}
+}

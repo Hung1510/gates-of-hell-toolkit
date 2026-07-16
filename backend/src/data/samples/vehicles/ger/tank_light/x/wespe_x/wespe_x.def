@@ -1,0 +1,3 @@
+{game_entity
+	{extension "wespe_x.mdl"} {RimLight}
+}

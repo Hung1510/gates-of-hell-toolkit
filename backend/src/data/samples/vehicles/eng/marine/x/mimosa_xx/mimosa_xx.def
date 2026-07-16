@@ -1,0 +1,27 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "mimosa_xx.mdl"}
+	
+	;// Components
+	{volume "body1" {material "wood"} {tags "wood"} {thickness 4}}
+	{volume "body2" {material "wood"} {tags "wood"} {thickness 4}}
+	{volume "body3" {material "wood"} {tags "wood"} {thickness 4} {able {holed}}}
+
+	{volume "cabin1" {material "wood"} {tags "wood"} {thickness 4} {able {holed}}}
+	{volume "cabin2" {material "wood"} {tags "wood"} {thickness 4} {able {holed}}}
+	{Volume "engine" {thickness 2}} ;// Internal part.
+
+	;// Non-Components
+	{volume "armor1" {material "wood"} {tags "wood"} {thickness 4}}
+	{volume "armor2" {thickness 2}}
+	{volume "armor3" {material "wood"} {tags "wood"} {thickness 4}}
+	{volume "armor4" {material "wood"} {tags "wood"} {thickness 4}}
+	{volume "armor5" {material "wood"} {tags "wood"} {thickness 4}}
+	{volume "armor6" {material "wood"} {tags "wood"} {thickness 4}}
+	{volume "armor7" {material "wood"} {tags "wood"} {thickness 4}}
+
+	;// Parts
+	{volume "part3" {material "wood"} {tags "wood"} {thickness 4}} ;// Steering Wheel (Front)
+	{volume "part4" {material "wood"} {tags "wood"} {thickness 4}} ;// Left Door
+	{volume "part5" {material "wood"} {tags "wood"} {thickness 4}} ;// Steering Wheel (Rear)
+}

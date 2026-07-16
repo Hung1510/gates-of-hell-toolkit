@@ -1,0 +1,58 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "40mm_qf2_xx.mdl"}
+
+	{volume "barrel1"
+		{thickness 20}
+	}
+	{volume "barrel2"
+		{thickness 20}
+	}
+	{volume "barrel3"
+		{thickness 20}
+	}
+	{volume "barrel4"
+		{thickness 20}
+	}
+	{volume "body1"
+		{thickness 6}
+	}
+	{volume "body2"
+		{thickness 6}
+	}
+	{volume "body3"
+		{thickness 6}
+	}
+	{volume "body4"
+		{thickness 6}
+	}
+	{volume "body5"
+		{thickness 6}
+		{able {holed}}
+	}
+	{volume "body6"
+		{thickness 6}
+	}
+	{volume "body7"
+		{thickness 6}
+	}
+	{volume "shield1"
+		{thickness 5}
+		{able {holed}}
+	}
+	{volume "shield2"
+		{thickness 5}
+	}
+	{volume "standl"
+		{thickness 6}
+	}
+	{volume "standr"
+		{thickness 6}
+	}
+	{volume "wheelleft"
+		{thickness 2}
+	}
+	{volume "wheelright"
+		{thickness 2}
+	}
+}

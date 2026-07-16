@@ -1,0 +1,78 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "wolverine_mk1_xx.mdl"}
+	{volume "body1"			;upper
+		{thickness 19
+			{top 10}
+			{rear 5}
+		}
+	}
+	{volume "body2"			;lower
+		{thickness 25.4
+			{front 50.8}
+			{rear 5}
+		}
+	}
+	{volume "barrel1"
+		{thickness 25}
+	}
+	{volume "barrel2"
+		{thickness 25}
+	}
+	{volume "engine1"		; upper
+		{thickness 19
+			{front 5}
+			{top 10}
+		}
+	}
+	{volume "engine2"		; lower
+		{thickness 12.7
+			{front 5}
+			{top 8}
+		}
+	}
+	{volume "turret1"		; main part
+		{thickness 25.4}
+		{able {holed}}
+	}
+	{volume "turret2"		; front part
+		{thickness 100
+			{top 25.4}
+			{front 57.15}
+		}
+	}
+	{volume "turret3"		; ring
+		{thickness 20}
+	}
+	{volume "turret4"		; mantlet
+		{thickness 57.15}
+	}
+	{volume "turret5"		; mantlet
+		{thickness 57.15}
+	}
+	{volume "armor4"		; sideskirt
+		{thickness 5}
+	}
+	{volume "armor5"		; sideskirt
+		{thickness 5}
+	}
+	{volume "armor6"		; sideskirt
+		{thickness 5}
+	}
+	{volume "basket1"		; turret basket
+		{thickness 50}
+		{tags "armor"}
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+	}
+	{volume "basket2"		; turret basket
+		{thickness 50}
+		{tags "armor"}
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+	}
+	{volume "part1"		
+		{thickness 5}
+	}
+	("tracks" thickness(20))
+}

@@ -1,0 +1,125 @@
+{game_entity
+	(include "/properties/cannon.ext")
+	{extension "76mm_itk31.mdl"}
+	(include "/properties/selection/vehicle.inc" scale(1.0))
+	{props "wheeled" "invisible" "vision_lev04_can" "muzzle_75mm_76mm" "cannon_sandbag_standard" "trailer" "trailer_heavy" "detect_atgun" "c_aa_hvy"}
+	{PatherID "cannon.large"}
+	{targetclass "cannon_big"}
+	{targetSelector "cannon_aa"}
+
+	("solid_wheel" args "wheelright")
+	("solid_wheel" args "wheelleft")
+
+	("gun" repair(30) thickness(25))
+
+	("armor_heavy_cannon")
+	("crew_wheeled_cannon_5")
+
+	{volume "body14" {able {holed}}}
+	{volume "armor1" {thickness 4}}
+	{volume "armor2" {thickness 4}}
+	{volume "wheelleft" {tags "invisible"}}
+	{volume "wheelright" {tags "invisible"}}
+
+	{boarder
+		{anm "gunner"
+			{forward {end "seat_gpf_platform_gunner" 10}}
+		}
+		{anm "gunner2"
+			{forward {end "pose_thor_gunner_animation" 10}}
+		}
+		{anm "charger"
+			{forward {end "pose_flak_charger" 10}}
+		}
+		{anm "charger2"
+			{forward {end "pose_flak_commander" 10}}
+		}
+		{anm "commander"
+			{forward {end "pose_watch_binocular" 10}}
+		}
+		{anm "driver1"	;// gunner
+			{forward {end "cannon_pak40_pusher_right" 10}}
+		}
+		{anm "driver2"	;// gunner2
+			{forward {end "cannon_pak40_pusher_left" 10}}
+		}
+		{anm "driver3"	;// charger
+			{forward {end "cannon_pak40_pusher_right" 10}}
+		}
+		{anm "driver4"	;// charger2
+			{forward {end "cannon_pak40_pusher_right" 10}}
+		}
+		{anm "driver5"	;// commander
+			{forward {end "mortar_driver_l" 10}}
+		}
+		{anm "seat1"	;// gunner
+			{forward {end "pose_seat_cannon_right" 10}}
+		}
+		{anm "seat2"	;// gunner2
+			{forward {end "pose_seat_cannon_right" 10}}
+		}
+		{anm "seat3"	;// charger
+			{forward {end "pose_seat_cannon_right" 10}}
+		}
+		{anm "seat4"	;// charger2
+			{forward {end "pose_seat_cannon_left" 10}}
+		}
+		{anm "seat5"	;// commander
+			{forward {end "pose_seat_cannon_left" 10}}
+		}
+	}
+
+	{extender "cannon"
+		{animation
+			{switch "close"}
+			;// "gunner" "gunner2" "charger" "charger2" "commander"
+			{move "cannon_pak40_pusher_right" "cannon_pak40_pusher_left" "cannon_pak40_pusher_right" "cannon_pak40_pusher_right" "mortar_driver_l"}
+			{aim "" "" "flak_charger_aim" "flak_commander_aim" ""}
+			{fire "" "" "flak_charger_fire" "flak_commander_fire" ""}
+			{reload "" "" "flak_charger_reload" "flak_commander_reload" ""}
+		}
+		{move {workers "driver1" "driver2" "driver3" "driver4" "driver5" minWorkers 2} {obstacle "close"}}		;// move state: cannon being pushed and which positions play animations
+		{attack {workers "gunner" "gunner2" "charger" "charger2" "commander"} {obstacle "open"}}	;// fire/attack state: cannon aim, fire, and reload events
+		{trailing {workers "seat1" "seat2" "seat3" "seat4" "seat5"}}								;// trailing state: cannon is being towed {obstacle} not needed. Uses "close"
+		{rotate_ik_Limit 0}
+	}
+
+	{extender "inventory"
+		{box
+			{item "bulletrus_76_l55 apcbc" 24}		; 45 rounds
+			{item "bulletrus_76_l55 he" 20}
+			{item "sandbag_vehicle" 1}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "76mm_itk31" filling "bulletrus_76_l55 apcbc" 1}
+			{gunner "gunner gunner2" minWorkers 1}
+			{charger "charger charger2" minWorkers 1}
+			("abm_dymamic_aa"
+				zeroing(2.25)
+				dispersion(0.50)
+			)
+		}
+	}
+
+	{mass 4970}
+	{Chassis "track"
+		("car_trace" fx("tracewheel06") step(0.08) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+		("mobility_cannon"
+			speed(4.4) ;-----------------------------------Max speed.
+			weight(4970) ;---------------------------------Weight in Kilograms.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -3 82}
+		{speed2 15}
+	}
+	{bone "turret"
+		{speed2 20}
+	}
+}

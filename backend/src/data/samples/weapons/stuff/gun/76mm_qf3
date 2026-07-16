@@ -1,0 +1,20 @@
+;_________________________________________
+; British tank howitzer
+;=========================================
+
+
+{from "pattern gun"			; L/25 "QF 3-inch"
+	{filling "bulleteng_76_l25"}
+	{fireSound "cannon/s3/d1/Shared/Cannon_75to76mm_LV/"}
+	{fireSoundclose "cannon/s2/1p/Shared/"}
+	{reloadSound "utility/"}
+	("range_160_howitzer")
+	{calibre 76}
+	("reload time" seconds(6))
+
+	("velocity m/s" ap(1) apcr(1) he(210) heat(210))
+	("armor health" damage(200))
+	("75_slope_multipliers")
+
+	("accuracy_spg" r1(2.30) range_ap(160) range_he(160) range_heat(160))
+}

@@ -1,0 +1,90 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "crusader_mk2_cs_xx.mdl"}
+	("tracks" thickness(20))
+	
+;// Components
+	{volume "body1" {thickness 20 {left 14}}} ;// Front Lower Plate
+	{volume "body2"	;// Middle Hull, behind FLP
+		{thickness 14 
+			{top 9}
+			{bottom 10.35}
+		}
+	}
+	{volume "body3"	;// Driver Entrance
+		{thickness 14 
+			{front 22.22}
+			{top 12}
+		}
+	}
+	{volume "body4"	;// Turret Stand
+		{thickness 14 
+			{front 20}
+			{top 7}
+		}
+	}
+	{volume "turret1" ;// Bulk1_1, front
+		{thickness 14 
+			{top 12.7}
+			{bottom 9}
+		}
+		{able {holed}}
+	}
+	{volume "turret2" ;// Bulk1_2, front
+		{thickness 14 
+			{top 12.7}
+			{bottom 9}
+		}
+		{able {holed}}
+	}
+	{volume "turret3" ;// Bulk1_3, front
+		{thickness 14 
+			{top 12.7}
+			{bottom 9}
+			{rear 17}
+		}
+		{able {holed}}
+	}
+	{volume "turret4" {thickness 12.7}} ;// Top
+	{volume "turret5" {thickness 12.7}} ;// Top
+	{volume "turret6" {thickness 12.7}} ;// Ring
+	{volume "turret7" {thickness 12.7}} ;// Ring
+	{volume "turret8" {thickness 31.75} {able {holed}}} ;// Front Part
+	{volume "engine1" {thickness 14  {top 7} {bottom 6.35}}}	;// Main Part of Engine
+	{volume "engine2" {thickness 14 }}	;// Rear Part
+	{volume "engine3" {thickness 14  {top 12} {bottom 6.35}}}
+	{volume "engine4" {thickness 14  {top 12} {bottom 6.35}}}
+	{volume "barrel" {thickness 25}}
+
+;// Non-Components
+	{volume "mantlet" {thickness 30}}
+	{volume "armor1" {thickness 14.25} {able {holed}}} ;// Left Armor, Hull
+	{volume "armor2" {thickness 14.25} {able {holed}}} ;// Right Armor, Hull
+	{volume "armor3" {thickness 4}} ;// Boxes
+	{volume "armor4" {thickness 4}} ;// Boxes
+	{volume "armor5" {thickness 32}} ;// Driver Port Extra Armor
+	{volume "armor6" {thickness 32}} ;// Driver Port Extra Armor
+	{volume "armor7" {thickness 4}} ;// Boxes
+	{volume "armor8" {thickness 4}} ;// Boxes
+	{volume "armor9" {thickness 9}} ;// Turret Extra Armor
+	{volume "armor10" {thickness 9}} ;// Turret Extra Armor
+	{volume "armor11" {thickness 30} {able {holed}}} ;// Plate, Mantlet Cover (follows turret)
+	{volume "armor12" {thickness 30} {able {holed}}} ;// Biggest Part, Mantlet Cover (follows turret)
+	{volume "shieldl1" {thickness 4}}
+	{volume "shieldl2" {thickness 4}}
+	{volume "shieldl3" {thickness 4}}
+	{volume "shieldl4" {thickness 4}}
+	{volume "shieldl5" {thickness 4}}
+	{volume "shieldr1" {thickness 4}}
+	{volume "shieldr2" {thickness 4}}
+	{volume "shieldr3" {thickness 4}}
+	{volume "shieldr4" {thickness 4}}
+	{volume "shieldr5" {thickness 4}}
+
+;// Parts
+	{volume "part6" {thickness 9}} 		;// Driver Hatch
+	{volume "part7" {thickness 9}} 		;// Driver Hatch
+	{volume "part8" {thickness 9}} 		;// Munition Hatch
+	{volume "part9" {thickness 7}} 		;// Engine Hatch
+	{volume "part10" {thickness 12.7}} 	;// Turret hatch
+}

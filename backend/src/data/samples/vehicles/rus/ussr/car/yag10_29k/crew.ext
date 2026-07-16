@@ -1,0 +1,63 @@
+;SDL
+{boarder
+	{anm "driver_l"
+		{forward	{begin "board_big-midcar_driver"} {end "seat_driver_car"} {base "doorleft"}}
+		{reverse	{end "emit_body" 1} {base "doorleft" 1}}
+	}
+	{anm "driver_r"
+		{forward	{begin "board_big-midcar"} {end "seat_driver_car"} {base "doorright"}}
+		{reverse	{end "emit_body" 1} {base "doorright" 1}}
+	}
+	{anm "gunner"
+		{forward	{begin "board_body"} {end "pose_flak41_gunlayer"}}
+		{reverse	{end "emit_body" 1}}
+	}
+	{anm "charger"
+		{forward	{begin "board_body"} {end "pose_flak_gunner2"}}
+		{reverse	{end "emit_body" 1}}
+	}
+	{anm "charger2"
+		{forward	{begin "board_body"} {end "pose_k18_gunlayer_r2"}}
+		{reverse	{end "emit_body" 1}}
+	}
+	{anm "commander_l"
+		{forward	{begin "board_big-midcar_driver"} {end "seat_passenger"} {base "doorleft"}}
+		{reverse	{end "emit_body" 1} {base "doorleft" 1}}
+	}
+	{anm "commander_r"
+		{forward	{begin "board_big-midcar"} {end "seat_passenger"} {base "doorright"}}
+		{reverse	{end "emit_body" 1} {base "doorright" 1}}
+	}
+}
+
+{sensor
+	{visor "gun"
+		{vision "cannon_main"}
+		{bone "foresight1"}
+	}
+}
+
+(define "crew_human"
+	{placer
+		{place "%place" {group "%group"} {linkbone "%bone"} {turnoff %off {shadow}}}
+	}
+	{boarder
+		{door "%door"}
+		{door "%door2"}
+		{link "%door" "%place" {anm "%anm_left"} {forward putoff} {reverse puton}}
+		{link "%door2" "%place" {anm "%anm_right"} {forward putoff} {reverse puton}}
+	}
+)
+
+{placer
+	{place "driver"		{visor "main"}}
+	{place "gunner"		{visor "gun"}}
+	{place "charger"	{visor "none"}}
+	;{place "commander"	{visor "around"}}
+}
+
+("crew_human" place(driver)		door(emit1) door2(emit2)	bone(driver)	anm_left(driver_l)		anm_right(driver_r)		group(crew) off({sensor}))
+("crew_human" place(gunner)		door(emit3) door2(emit4)	bone(gunner)	anm_left(gunner)		anm_right(gunner)	 	group(crew) off({sensor}))
+("crew_human" place(charger)	door(emit3) door2(emit4)	bone(charger)	anm_left(charger)		anm_right(charger) 		group(crew) off())
+("crew_human" place(charger2)	door(emit3) door2(emit4)	bone(charger2)	anm_left(charger2)		anm_right(charger2) 	group(crew) off())
+("crew_human" place(seat1)		door(emit1) door2(emit2)	bone(commander)	anm_left(commander_l)	anm_right(commander_r) 	group(passenger) off())

@@ -1,0 +1,36 @@
+;_________________________________________
+; German Heavy Rocket
+;=========================================
+
+
+{from "pattern reactive"		; "sturmtiger"
+	{filling "ammo 380mm_rw61" 1}
+	{fillingVisible "rocket"}
+	{fireSound "gun/38cm"}
+	{fireSoundclose "gun/gun_interior/size4"}
+	{calibre 380}
+
+	{spreading 12
+		{SpreadXYRatio 1.8}
+		{radiusFunction
+			0		0.02
+			0.2		0.1
+			0.5		0.4
+			0.75	0.7
+			0.9995	1
+			1.00	50
+		}
+	}
+
+	{gravity 3}
+
+	{range 180 180}
+	("reload time" seconds(90))
+
+	{ZeroingAccuracy 0.85 0.75 0.65}
+	{RelaxationTime 2.5}
+	("velocity" mps(250))
+
+	{FalloffMeter 180}
+	{FalloffStrength 0.15}
+}

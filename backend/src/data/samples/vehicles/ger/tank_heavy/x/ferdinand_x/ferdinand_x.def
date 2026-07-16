@@ -1,0 +1,3 @@
+{game_entity
+	{extension "ferdinand_x.mdl"} {RimLight}
+}

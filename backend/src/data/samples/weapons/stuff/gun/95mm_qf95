@@ -1,0 +1,24 @@
+;_________________________________________
+; british tank howitzer
+;=========================================
+
+
+{from "pattern gun"			; L/21.5 "cromwell CS" "churchill_mk5"
+	{filling "bulleteng_95"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_85to100mm/"}
+	{fireSoundclose "cannon/s3/1p/Shared/"}
+	{reloadSound "tank/1p/medium_long/"}
+	("range_180_howitzer")
+	{calibre 95}
+
+	("reload time" seconds(8.5))
+
+	("velocity m/s" ap(1) apcr(1) he(320) heat(503))
+	("armor health" damage(250))
+	("90_slope_multipliers")
+	
+	;H.E/A.T. Shell
+	("penetration_medium" shell(heat) range(190) a(127) b(127) c(127) d(127) e(127))
+
+	("accuracy_spg" r1(1.00) range_ap(180) range_he(180) range_heat(190))
+}

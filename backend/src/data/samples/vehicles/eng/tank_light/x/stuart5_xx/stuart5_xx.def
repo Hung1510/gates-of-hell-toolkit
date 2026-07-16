@@ -1,0 +1,111 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "stuart5_xx.mdl"}
+	
+	{volume "body1"			; Hull
+		{thickness 25.4
+			{top 50}			;front upper
+			{front 44}			;front lower
+			{rear 10}
+			{bottom 12.7}
+		}
+	}
+	{volume "body2"			; hull upper
+		{thickness 25.4
+			{top 12.7}
+			{front 25.4}
+			{rear 10}
+		}
+	}
+	{volume "body3"			; turret ring
+		{thickness 28.5
+			{top 12.7}
+		}
+	}
+	{volume "barrel1"
+		{thickness 20}
+	}
+	{volume "barrel2"
+		{thickness 20}
+	}
+	{volume "engine1"
+		{thickness 25.4
+			{front 10}
+			{bottom 12.7}
+			{rear 25.4}
+		}
+	}
+	{volume "engine2"
+		{thickness 25.4
+			{bottom 12.7}
+			{top 12.7}
+		}
+	}
+	{volume "engine3"
+		{thickness 25.4
+			{bottom 12.7}
+			{top 12.7}
+		}
+	}
+	{volume "turret1"		; Turret main
+		{thickness 31.8
+			{top 12.7}
+			{front 44.4}
+		}
+	}
+	{volume "turret2"		; Turret ring
+		{thickness 31.8}
+	}
+	{volume "turret3"		; Turret front ring
+		{thickness 44.4}
+	}
+	{volume "mantlet"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 50.8}
+	}
+	{volume "armor1"			; rear box
+		{thickness 4}
+	}
+	{volume "detail9"			; turret side extra armor
+		{thickness 20}
+	}
+	{volume "detail10"		; turret side extra armor
+		{thickness 20}
+	}
+	{volume "detail11"		; turret side extra armor
+		{thickness 20}
+	}
+	{volume "detail12"		; turret side extra armor
+		{thickness 20}
+	}
+	{volume "detail13"		; turret side extra armor
+		{thickness 20}
+	}
+	{volume "detail14"		; turret side extra armor
+		{thickness 20}
+	}
+	{volume "part1"
+		{thickness 10}
+	}
+	{volume "shieldr1"
+		{thickness 5}
+	}
+	{volume "shieldr2"
+		{thickness 5}
+	}
+	{volume "shieldr3"
+		{thickness 5}
+	}
+	{volume "shieldl1"
+		{thickness 5}
+	}
+	{volume "shieldl2"
+		{thickness 5}
+	}
+	{volume "shieldl3"
+		{thickness 5}
+	}
+	
+	("tracks" thickness(15))
+}

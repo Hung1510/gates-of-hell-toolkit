@@ -1,0 +1,3 @@
+{game_entity
+	{extension "m24_chaffee_x.mdl"} {RimLight}
+}

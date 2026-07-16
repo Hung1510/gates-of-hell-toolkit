@@ -1,0 +1,70 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "zis6_bm8_48_xx.mdl"}
+	{volume "barrel1"
+		{thickness 2}
+	}
+	{volume "barrel2"
+		{thickness 2}
+	}
+	{volume "barrel3"
+		{thickness 2}
+	}
+	{volume "barrel4"
+		{thickness 2}
+	}
+	{volume "barrel5"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "barrel6"
+		{thickness 2}
+	}
+	{volume "barrel7"
+		{thickness 2}
+	}
+	{volume "body1"
+		{thickness 2}
+	}
+	{volume "body2"
+		{thickness 2}
+	}
+	{volume "body3"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "body4"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "engine1"
+		{thickness 2}
+	}
+	{volume "fuel1"
+		{thickness 2}
+	}
+	{volume "shield1"
+		{thickness 6}
+	}
+	{volume "shield2"
+		{thickness 6}
+	}
+	{volume "wheelleft1"
+		{thickness 2}
+	}
+	{volume "wheelleft2"
+		{thickness 2}
+	}
+	{volume "wheelleft3"
+		{thickness 2}
+	}
+	{volume "wheelright1"
+		{thickness 2}
+	}
+	{volume "wheelright2"
+		{thickness 2}
+	}
+	{volume "wheelright3"
+		{thickness 2}
+	}
+}

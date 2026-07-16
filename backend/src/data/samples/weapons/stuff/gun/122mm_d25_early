@@ -1,0 +1,8 @@
+;_________________________________________
+; USSR Heavy AT gun
+;=========================================
+
+
+{from "122mm_d25"			; L/48 "is2_43"  early breech design
+	("reload time" seconds(20))
+}

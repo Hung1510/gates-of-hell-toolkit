@@ -1,0 +1,12 @@
+{from "pattern aphe"
+	{tag "shell size2 75to76_he_filler"}
+	{inventory {size 4 1}}
+	{entity "75x241mm_ger_aphe"}
+	{mass 6.4}
+
+	{view "howitzer_shell_50-75_lv"
+		{tail "shell_tracer_75s_ap" "tail"}
+	}
+
+	("ap_blast" args 0.78)
+}

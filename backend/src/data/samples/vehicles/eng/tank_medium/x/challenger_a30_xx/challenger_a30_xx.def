@@ -1,0 +1,98 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "challenger_a30_xx.mdl"}
+
+	("tracks" thickness(20))
+
+	{volume "body1" 		;\\ Beak
+		{thickness 32 	;\\ Sides
+			{front 57.15}
+			{top 20}
+			{bottom 25}
+			{rear 20}
+		}
+	}
+	{volume "body2" 		;\\ Basically Superstructure
+		{thickness 14 	;\\ Sides
+			{front 63.5}
+			{top 12.7}
+			{bottom 20}
+			{rear 20}
+		}
+	}
+	{volume "body3" 		;\\ Front Hull above the beak
+		{thickness 29 	;\\ Sides
+			{front 63.5}
+			{top 20}
+			{bottom 20}
+			{rear 20}
+		}
+	}
+	{volume "body4" 		;\\ Back Hull below the turret
+		{thickness 50.8 ;\\ Sides
+			{front 63.5}
+			{top 20}
+			{bottom 8}
+			{rear 51}
+		}
+	}
+	{volume "engine1" 		;\\ Top part of the engine
+		{thickness 29 	;\\ Sides
+			{front 20}
+			{top 14}
+			{bottom 20}
+			{rear 38}
+		}
+	}
+	{volume "engine2" 		;\\ Bottom (under top) part of the engine
+		{thickness 14 ;\\ Sides
+			{front 20}
+			{top 12.7}
+			{bottom 20}
+			{rear 38}
+		}
+	}
+	{volume "barrel1"
+		{thickness 25}
+	}
+	{volume "turret1" 		;\\ Back part of the turret
+		{thickness 40
+			{top 20}
+			{bottom 22}
+		}
+	}
+	{volume "turret2" 		;\\ Back part of the turret
+		{thickness 63
+			{front 102}
+			{top 20}
+			{bottom 22}
+		}
+	}
+	{volume "turret3"		;\\ Mg Port
+		{thickness 102}
+	}
+	{volume "turret4" 		;\\ Visor Port
+		{thickness 102}
+	}
+	{volume "turret5" 		;\\ Turret ring
+		{thickness 22}
+	}
+	{volume "armor1" 		;\\ Boxes
+		{thickness 6}
+	}
+	{volume "armor2" 		;\\ Boxes
+		{thickness 6}
+	}
+	{volume "armor3"		;\\ Engine Extra Armor
+		{thickness 25}
+		{able {holed}}
+	}
+	{volume "armor4" 		;\\ Engine Extra Armor
+		{thickness 25}
+		{able {holed}}
+	}
+
+	{volume "part1" {thickness 10}} ;\\ Engine Hatch
+	{volume "part2" {thickness 10}} ;\\ Engine Hatch
+	{volume "part3" {thickness 10}} ;\\ Front Hatch
+}

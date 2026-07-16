@@ -1,0 +1,68 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "stuart5_recce_xx.mdl"}
+	("tracks" thickness(15))
+	{volume "body1"			; Hull
+		{thickness 25.4
+			{top 50}			;front upper
+			{front 44}			;front lower
+			{rear 10}
+			{bottom 12.7}
+		}
+	}
+	{volume "body2"			; hull upper
+		{thickness 25.4
+			{top 12.7}
+			{front 25.4}
+			{rear 10}
+		}
+		{able {holed}}
+	}
+	{volume "engine1"
+		{thickness 25.4
+			{front 10}
+			{bottom 12.7}
+			{rear 25.4}
+		}
+	}
+	{volume "engine2"
+		{thickness 25.4
+			{bottom 12.7}
+			{top 12.7}
+		}
+	}
+	{volume "engine3"
+		{thickness 25.4
+			{bottom 12.7}
+			{top 12.7}
+		}
+	}
+	{volume "armor1" {thickness 4}}
+	{volume "armor2"		; turret ring
+		{thickness 28.5
+			{top 12.7}
+		}
+		{able {holed}}
+	}
+	{volume "shieldr1"
+		{thickness 5}
+	}
+	{volume "shieldr2"
+		{thickness 5}
+	}
+	{volume "shieldr3"
+		{thickness 5}
+	}
+	{volume "shieldl1"
+		{thickness 5}
+	}
+	{volume "shieldl2"
+		{thickness 5}
+	}
+	{volume "shieldl3"
+		{thickness 5}
+	}
+	{volume "part1"	{thickness 12.7}}		;// engine cover
+	{volume "part2"	{thickness 12.7}}		;// engine cover2
+	{volume "part3"	{thickness 15}}			;// track wheel
+}

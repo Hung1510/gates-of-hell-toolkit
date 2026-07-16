@@ -1,0 +1,13 @@
+{from "pattern pistol"
+	{filling "ammo eng_revolver_clip_45" 6}
+	{entity "webley_mk4"}
+	{fireSound "smallarms/s1/d1/ENG/Webley_MkIV/"}
+	{fireSoundclose "smallarms/s1/3p/ENG/Webley_MkIV/"}
+	{reloadSound "nagant"}
+	{calibre 11.5}
+	{mass 0.998}
+
+	("reload time" seconds(5.5))
+
+	("velocity" mps(176))
+}

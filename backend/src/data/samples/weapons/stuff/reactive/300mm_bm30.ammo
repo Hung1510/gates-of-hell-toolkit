@@ -1,0 +1,17 @@
+{from "pattern reactive_ammo"
+	{tag "big bomb size2 fg itemin2hands"}
+	{inventory
+		{size 8 2}
+		{weight 100}
+	}
+	{entity "m30_rocket"}
+	{mass 94.8}
+
+	{view "m30_rocket"
+		{tail "rocket_smoke_nebel" "tail"}
+	}
+
+	("rocket_level_6" weight(94.8) filler(28.9))
+
+	{possibleDamageRadius 30}
+}

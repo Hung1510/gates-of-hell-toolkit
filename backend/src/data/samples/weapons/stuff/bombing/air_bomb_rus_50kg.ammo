@@ -1,0 +1,7 @@
+{from "pattern air_bomb" ;// TsK heavy version
+	{entity "fab_50"}
+	{tag "size1"}
+	{mass 60}
+
+	("he_level_6" weight(60) filler(25))
+}

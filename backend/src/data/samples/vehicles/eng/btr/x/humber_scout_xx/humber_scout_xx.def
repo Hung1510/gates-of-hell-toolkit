@@ -1,0 +1,59 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "humber_scout_xx.mdl"}
+	
+	{volume "wheelleft1"
+		{thickness 0.5}
+	}
+	{volume "wheelleft2"
+		{thickness 0.5}
+	}
+	{volume "wheelright1"
+		{thickness 0.5}
+	}
+	{volume "wheelright2"
+		{thickness 0.5}
+	}
+	
+	{volume "body1"
+		{thickness 14
+			{front 14}
+			{left 12}
+			{top 4}
+			{rear 12}
+			{bottom 4}
+		}
+	}
+	{volume "body2"
+		{thickness 8}
+	}
+	{volume "body3"
+		{thickness 12
+			{front 12}
+			{left 19}
+			{top 8}
+			{rear 4}
+			{bottom 4}
+		}
+	}
+	{volume "engine1"
+		{thickness 6
+			{top 4}
+		}
+	}
+	{volume "armor1"
+		{thickness 6}
+	}
+	{volume "armor2"
+		{thickness 6}
+	}
+	{volume "part1"
+		{thickness 14}
+	}
+	{volume "part2"
+		{thickness 4}
+	}
+	{volume "part3"
+		{thickness 4}
+	}
+}

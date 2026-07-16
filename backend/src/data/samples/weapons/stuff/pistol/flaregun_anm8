@@ -1,0 +1,6 @@
+{from "pattern pistol"
+	{filling "flare_usa" 1}
+	{entity "flaregun_anm8"}
+
+	("flare_pistol")
+}

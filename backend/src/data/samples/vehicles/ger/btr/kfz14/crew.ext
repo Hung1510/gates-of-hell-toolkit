@@ -1,0 +1,61 @@
+;SDL
+
+{boarder
+	{anm "left"
+		{forward {begin "board_sd222_driver"} {end "seat_driver_car"}{base "doorleft"}}
+		{reverse {end "emit_sd222_driver"}{base "doorleft" -1}}
+	}
+	{anm "right"
+		{forward {begin "board_sd222_driver"} {end "seat_driver_car"}{base "doorright"}}
+		{reverse {end "emit_sd222_driver"}{base "doorright" -1}}
+	}
+	{anm "commander_l"
+		{forward {begin "board_sd222_driver"} {end "pose_watch_binocular"} {base "doorleft"}}
+		{reverse {end "emit_sd222_driver"} {base "doorleft" -1}}
+	}
+	{anm "commander_r"
+		{forward {begin "board_sd222_driver"} {end "pose_watch_binocular"} {base "doorright"}}
+		{reverse {end "emit_sd222_driver"} {base "doorright" -1}}
+	}
+}
+
+(define "crew_human"
+	{placer
+		{place "%place" {LinkBone "%bone"} {group "crew"} {visor "%visor"} {turnoff %off}}
+	}
+	{boarder
+		{door "emit1"}
+		{door "emit2"}
+		{link "emit1" "%place" {anm "left"} {forward putoff} {reverse puton}}
+		{link "emit2" "%place" {anm "right"} {forward putoff} {reverse puton}}
+	}
+)
+(define "crew_commander"
+	{placer
+		{place "%place" {LinkBone "%bone"} {group "crew"} {visor "%visor"} {turnoff %off}}
+	}
+	{boarder
+		{door "emit1"}
+		{door "emit2"}
+		{link "emit1" "%place" {anm "commander_l"} {forward putoff} {reverse puton}}
+		{link "emit2" "%place" {anm "commander_r"} {forward putoff} {reverse puton}}
+	}
+)
+
+	{sensor
+		{visor "human"
+			{vision "none"}
+		}
+		{visor "around"
+			{vision "none"}
+		}
+		{visor "commander"
+			{vision "recon_open"}
+			{bone "vision_rot"}
+		}
+	}
+
+("crew_human" place(driver) bone(driver) visor(driver) off({sensor}))
+("crew_commander" place(commander) bone(commander) visor(commander) off({sensor}))
+("crew_human" place(charger) bone(charger) visor(human) off({sensor}))
+

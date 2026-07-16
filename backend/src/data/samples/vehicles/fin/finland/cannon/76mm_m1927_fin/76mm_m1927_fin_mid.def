@@ -1,0 +1,11 @@
+{
+	(include "76mm_m1927_fin.inc")
+
+	{extender "inventory"
+		{box
+			{item "bulletrus_76 apcbc" 10}
+			{item "bulletrus_76 he" 40}
+			{item "sandbag_vehicle" 1}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "panzer4j_fin_xx.mdl"}
+
+	{volume "barrel"
+		{thickness 25}
+	}
+	{volume "body1"			; Hull
+		{thickness 30
+			{front 80}
+			{top 20}		; Glacis
+			{rear 10}
+			{bottom 10}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 30
+			{front 80}
+			{top 12}
+			{rear 10}
+		}
+	}
+	{volume "engine1"		; Hull
+		{thickness 30
+			{front 10}
+			{rear 20}
+			{bottom 10}
+		}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 20
+			{front 10}
+			{top 10}
+			{rear 20}
+		}
+	}
+	{volume "turret1"
+		{thickness 30
+			{front 50}
+			{top 16}		; 83° Front 
+			{rear 25}		; 90° Top
+		}
+	}
+	{volume "turret2"
+		{thickness 50}
+	}
+	{volume "mantlet1"
+		{thickness 20
+			{front 50}
+		}
+	}
+	{volume "cupola"
+		{thickness 50
+			{top 8}
+		}
+	}
+	{volume "basket"
+		{thickness 5}
+	}
+	("tracks" thickness(20))
+}

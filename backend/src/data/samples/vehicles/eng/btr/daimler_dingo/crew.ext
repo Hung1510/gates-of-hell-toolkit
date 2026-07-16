@@ -1,0 +1,32 @@
+;SDL
+
+	(define "crew_human_visible_anm2"
+		{placer
+			{place "%place"
+				{group "crew"}
+				{linkbone "%place"}
+				{turnoff}
+				;{openForCrush}
+			}
+		}
+		{boarder
+			{door "%door"}
+			{door "%door2"}
+			{link "%door" "%place" {anm "%anm_left"} {forward putoff} {reverse puton}}
+			{link "%door2" "%place" {anm "%anm_right"} {forward putoff} {reverse puton}}
+		}
+	)
+
+	{boarder
+		{anm "left"
+			{forward {begin "emit_sd222_driver" -1} {end "pose_daimler_dingo_driver"} {base "open_left"}}
+			{reverse {end "emit_sd222_driver"} {base "open_left" -1}}
+		}
+		{anm "right"
+			{forward {begin "emit_sd222_driver" -1} {end "pose_daimler_dingo_commander"} {base "open_left"}}
+			{reverse {end "emit_sd222_driver"} {base "open_left" -1}}
+		}
+	}
+
+	("crew_human_visible_anm2" place(driver) door(emit1) door2(emit1) anm_left(left) anm_right(left))
+	("crew_human_visible_anm2" place(commander) door(emit1) door2(emit1) anm_left(right) anm_right(right))

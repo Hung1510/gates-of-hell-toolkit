@@ -1,0 +1,36 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "volvo_127d_itk40_xx.mdl"}
+
+	{volume "wheelleft2" {thickness 0.5}}
+	{volume "wheelleft1" {thickness 0.5}}
+	{volume "wheelright2" {thickness 0.5}}
+	{volume "wheelright1" {thickness 0.5}}
+
+	{Volume "body1" {thickness 2} {able {holed}}}
+	{Volume "body2" {thickness 2}}
+	{Volume "body3" {thickness 2}}
+	{volume "engine1" {thickness 1.5}}
+	{volume "engine2" {thickness 1.5}}	
+	{volume "bodyback1" {material "wood"} {tags "wood"} {thickness 2}}	
+	{volume "bodyback2" {material "wood"} {tags "wood"} {thickness 2}}	
+	{volume "bodyback3" {material "wood"} {tags "wood"} {thickness 2}}	
+	{volume "bodyback4" {material "wood"} {tags "wood"} {thickness 2}}	
+	{volume "bodyback5" {material "wood"} {tags "wood"} {thickness 2}}	
+
+	;// 20mm AA
+	{volume "turret1" {thickness 6}}
+	{volume "turret2" {thickness 6}}
+	{volume "turret3" {thickness 6}}
+	{volume "turret4" {thickness 6} {able {holed}}}
+	{volume "turret5" {thickness 6}}
+	{volume "barrel1" {thickness 15}}
+	{volume "barrel2" {thickness 15}}
+	{volume "barrel3" {thickness 15}}
+
+	;// Parts
+	{volume "part1" {thickness 2} {able {holed}}} ;// Door
+	{volume "part2" {thickness 2} {able {holed}}} ;// Door 
+	{volume "part3" {thickness 1.5}} ;// Engine Hood
+	{volume "part4"	{material "wood"} {tags "wood"} {thickness 2}} ;// Bodyback4 extra
+}

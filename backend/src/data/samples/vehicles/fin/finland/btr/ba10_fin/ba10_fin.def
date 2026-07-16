@@ -1,0 +1,17 @@
+{
+	(include "ba10_fin.inc")
+
+	{extender "inventory"
+		{box
+			{item "bulletrus_45 aphebc" 24}		;49 rounds
+			{item "bulletrus_45 he" 24}
+			{item "ammo mgun_rus dt" 1953}		;33 drums
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{weapon "45mm_psvk38" filling "bulletrus_45 aphebc" 1}
+		}
+	}
+}

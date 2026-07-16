@@ -1,0 +1,26 @@
+{from "pattern rifle_grenade"
+	{tag "at_rifle" "ap"}
+	{entity "lee_enfield_no4_mk1_grenade"}
+	{filling "ammo eng_grenade" 1}
+	{fillingVisible "grenade"}
+	{fireSound	"smallarms/s3/d1/eng/SMLE_No1_MkIII/Cup_Discharger/"}
+	{fireSoundclose "smallarms/s3/3p/eng/SMLE_No1_MkIII/Cup_Discharger/"}
+	{reloadSound "kar98"}
+	{calibre 64}
+	{mass 6.3}
+	{parameters "he" ; No.36
+		{cursor "ironsights/grenade"}
+		{cursorReloading "gun_he"}
+		{spreading 4.5
+			{SpreadXYRatio 0.75}
+		}
+		{range 80 80}	;//180m
+	}
+
+	{parameters "heat" ; No.68/AT
+		{cursorReloading "gun_heat"}
+		{range 60 60}
+		("penetration" args 52)
+		("armor health" damage(150))
+	}
+}

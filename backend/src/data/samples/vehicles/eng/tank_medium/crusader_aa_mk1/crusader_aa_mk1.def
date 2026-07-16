@@ -1,0 +1,118 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle_big.inc" scale(0.72))
+	{props "medium" "vision_lev04" "muzzle_37mm_40mm_auto" "shell_eject" "open_top" "shield" "ammo_open_top_turret" "tractor" "tractor_light"}
+	{extension "crusader_aa_mk1.mdl"}
+	(include  "crusader_aa_mk1.ext")
+	{PatherId "crusader"}
+	{targetclass "tank_medium"}
+	{targetSelector "tank_zenite"}
+
+	{extender "enumerator"
+		{digit_folder "us2"}
+	}
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_lowarmor"} {end "seat_m4_gunner"} {base "open_driver"}}
+			{reverse {end "emit_tank_1_hold"} {base "open_driver" -1}}
+		}
+		{anm "gunner"
+			{forward {begin "board_tank_right"} {end "AAgun_61k_gunner"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "charger"
+			{forward {begin "board_tank_left"} {end "AAgun_61k_charger"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "commander"
+			{forward {begin "board_tank_right"} {end "pose_bof40_commander"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "armor1"
+			{forward {begin "board_lowarmor"} {end "pose_seat_passenger_unic304f_02"}}
+			{reverse {end "emit_tank_2"}}
+		}
+		{anm "armor2"
+			{forward {begin "board_lowarmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_2"}}
+		}
+		{anm "armor3"
+			{forward {begin "board_lowarmor"} {end "pose_seat_mimosa10"}}
+			{reverse {end "emit_tank_2"}}
+		}
+		{anm "armor4"
+			{forward {begin "board_lowarmor"} {end "pose_seat_cannon_left"}}
+			{reverse {end "emit_tank_2"}}
+		}
+	}
+
+	("crew_inside")
+	("crew_driver"					door(emit0) 		door2(emit1) 	door3(emit2))
+	("crew_human_visible_anm"		place(gunner)		door(emit2) 	door2(emit1)	visor(main)		anm_left(gunner)	anm_right(gunner))
+	("crew_human_visible_anm"		place(charger)		door(emit1) 	door2(emit2)	visor(human)	anm_left(charger)	anm_right(charger))
+	("crew_human_visible_anm"		place(commander)	door(emit1) 	door2(emit2)	visor(around)	anm_left(commander)	anm_right(commander))
+
+	{sensor
+		{visor "around"
+			{vision "vehicle_around"}		;// better vision than a in-closed turret 
+		}
+		{visor "human"
+			{vision "human"}
+			{bone "visor1"}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat1) door(emit3) animation(armor1))
+	("seat_human" place(seat2) bone(seat2) door(emit4) animation(armor2))
+	("seat_human" place(seat3) bone(seat3) door(emit5) animation(armor3))
+	("seat_human" place(seat4) bone(seat4) door(emit6) animation(armor4))
+
+	{extender "shield" {on}}
+
+	{extender "inventory"
+		{box
+			{item "bullet_40x331_auto apbc" 60}		;// 160 Rounds, 8 clips, 
+			{item "bullet_40x331_auto he" 100}
+			{item "satchel_charge_eng" 1}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "40mm_m1" filling "bullet_40x331_auto he" 16}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_dymamic_aaa"
+				zeroing(1.95)
+				dispersion(0.24)
+			)
+		}
+	}
+
+	{mass 18000}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.2) len(-0.53))
+		("mobility_tank"
+			speed(45) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(6) ;---------Max speed in reverse on road, km/h.
+			traverse(35) ;-------Track traverse, per second, in degrees.
+			weight(18.0) ;-------Weight in Tonnes.
+			power(340) ;---------Engine Power, in hp.
+			track(4.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(500) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(235) ;---------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -10 70}
+		{speed2 50}
+	}
+	{bone "turret"
+		{speed2 40}
+	}
+}

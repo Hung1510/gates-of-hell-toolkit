@@ -1,0 +1,6 @@
+{game_entity
+	{extension "kettenkrad_x.mdl"} {RimLight}
+	{volume "wheelfront"
+		{able {obstacle 0}}
+	}
+}

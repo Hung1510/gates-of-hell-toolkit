@@ -1,0 +1,99 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "tetrarch_mk7_xx.mdl"}
+	
+	{volume "body1"			
+		{thickness 14
+			{front 16}
+			{rear 6}		
+			{bottom 6}
+		}
+	}
+	{volume "body2"			
+		{thickness 14
+			{front 16}
+			{top 7}
+			{bottom 6}
+			{right 10}      ;sloped front top plate
+			{rear 6}
+		}
+	}
+	{volume "body3"			
+		{thickness 14
+			{front 16}
+			{top 7}
+		}
+	}
+	{volume "body4"			; driver cab
+		{thickness 14
+			{front 16}
+			{top 7}
+		}
+	}
+	{volume "engine1"		; lower part
+		{thickness 14
+			{front 6}
+			{bottom 6}
+			{rear 10}
+		}
+	}
+	{volume "engine2"		; top part
+		{thickness 14
+			{top 7}
+			{front 10}
+			{bottom 6}
+			{rear 10}
+		}
+	}
+	{volume "turret1"		; main base
+		{thickness 14
+			{top 7}
+			{front 16}
+			{rear 10}
+		}
+	}
+	{volume "turret2"		; lower ring
+		{thickness 14}
+	}
+	{volume "turret3"		; ring front
+		{thickness 16}
+	}
+	{volume "turret4"		; back part 
+		{thickness 14
+			{rear 10}
+			{top 7}
+		}
+	}
+	{volume "mantlet"
+		{thickness 16}
+	}
+	{volume "turret5"		
+		{thickness 14}
+	}
+	{volume "turret6"		
+		{thickness 75}
+	}
+	{volume "armor1"
+		{thickness 16}
+	}
+	{volume "armor2"
+		{thickness 16}
+	}
+	{volume "armor3"
+		{thickness 4}
+	}
+	{volume "armor4"
+		{thickness 4}
+	}
+	{volume "armor5"
+		{thickness 4}
+	}
+	{volume "barrel1"
+		{thickness 20}
+	}
+	{volume "barrel2"
+		{thickness 20}
+	}
+	
+	("tracks" thickness(20))
+}

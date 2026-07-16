@@ -1,0 +1,38 @@
+;_________________________________________
+; USA Grappling hook
+;=========================================
+
+
+{from "pattern reactive"
+	{tag "build_in" "gun"}
+	{filling "ammo 50mm_rocket_grapnel"}
+	{fillingVisible "rocket"}
+	{fireSound "reactive/d1/Shared/Rocket_Projector/"}
+
+	{AimingTolerance 1.5}
+
+	{curve "gun_std"}
+	{aimtype curved}
+	{DisableRicochet}
+	{gravity 6}
+	{speed 174}
+
+	{cursor "ironsights/mortar"}
+
+	{calibre 50}
+	("reload time" seconds(5))
+	{ZeroingAccuracy 1}
+	{spreading 
+		{SpreadXYRatio 3}
+		{radiusTable
+			{0 5}
+			{139.99 15}
+			{140 100}
+		}
+	}
+
+	{aimRange 140}
+	{minRange 30}
+	{maxRange 140}
+
+}

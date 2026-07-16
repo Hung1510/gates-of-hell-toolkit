@@ -1,0 +1,12 @@
+{
+	(include "kv1_42_fin.inc")
+
+	{extender "inventory"
+		{box
+			{item "bulletrus_76 apcbc" 50} 	;111 rounds
+			{item "bulletrus_76 he" 60}
+			{item "ammo mgun_rus dt" 2331}		;40 drums
+			{item "satchel_charge_rus" 1}
+		}
+	}
+}

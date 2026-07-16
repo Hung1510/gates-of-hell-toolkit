@@ -1,0 +1,94 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{Extension "t3476_41_xx.mdl"}
+
+
+	{Volume "gun"
+		{thickness 20}
+		{able {obstacle 0} {visible 0}}
+	}
+	{volume "gun2"
+		{thickness 20
+			{front 45}
+		}
+		{HighHardness}
+	}
+	{volume "body1"			; Hull
+		{thickness 45
+			{front 45}		; Glacis & Lower Hull
+			{rear 10}
+			{bottom 20}
+		}
+		{HighHardness}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 40
+			{front 45}		; Glacis
+			{top 16}
+			{rear 10}
+			{bottom 16}
+		}
+		{HighHardness}
+	}
+	{volume "body3"			; Nose
+		{thickness 45
+			{front 100}
+		}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "body4"			; Hull MG Port
+		{thickness 45
+			{front 70}
+		}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "body5"			; Drivers Hatch
+		{thickness 45}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "engine1"		; Hull
+		{thickness 45
+			{front 10}
+			{rear 40}
+			{bottom 13}
+		}
+		{HighHardness}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 40
+			{front 10}
+			{top 16}
+			{bottom 13}
+		}
+		{HighHardness}
+	}
+	{volume "turret2"		; Turret
+		{thickness 45}
+		{HighHardness}
+	}
+	{volume "turret"		; Turret Ring
+		{thickness 45
+			{top 15}
+		}
+		{HighHardness}
+	}
+	{volume "mantlet"
+		{thickness 45}
+		{HighHardness}
+	}
+
+	{Volume "part4"
+		{thickness 5}
+	}
+	{Volume "part5"
+		{thickness 15}
+	}
+	{Volume "part6"
+		{thickness 5}
+	}
+
+	("tracks" thickness(20))
+}

@@ -1,0 +1,58 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "ba6_fin_xx.mdl"}
+	{volume "barrel"
+		{thickness 10}
+	}
+	{volume "body1"
+		{thickness 15}
+	}
+	{volume "body2"
+		{thickness 15}
+	}
+	{volume "body3"
+		{thickness 15}
+	}
+	{volume "body4"
+		{thickness 15}
+	}
+	{volume "engine"
+		{thickness 15}
+	}
+	{volume "mantlet"
+		{thickness 15}
+	}
+	{volume "shield1"
+		{thickness 15}
+	}
+	{volume "shield2"
+		{thickness 15}
+	}
+	{volume "shield3"
+		{thickness 15}
+	}
+	{volume "turret1"
+		{thickness 15}
+	}
+	{volume "turret2"
+		{thickness 15}
+	}
+	{volume "wheelleft1"
+		{thickness 2}
+	}
+	{volume "wheelleft2"
+		{thickness 2}
+	}
+	{volume "wheelleft3"
+		{thickness 2}
+	}
+	{volume "wheelright1"
+		{thickness 2}
+	}
+	{volume "wheelright2"
+		{thickness 2}
+	}
+	{volume "wheelright3"
+		{thickness 2}
+	}
+}

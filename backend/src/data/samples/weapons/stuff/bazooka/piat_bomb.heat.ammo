@@ -1,0 +1,6 @@
+{from "pattern rpg_heat_ammo"
+	{tag "heat_shell size1"}
+	{entity "piat_heat_ammo"}
+	{view "piat_heat_ammo"}
+	{mass 1.1}
+}

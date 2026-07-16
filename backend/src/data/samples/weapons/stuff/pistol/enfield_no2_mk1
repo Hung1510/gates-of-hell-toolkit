@@ -1,0 +1,13 @@
+{from "pattern pistol"
+	{filling "ammo eng_revolver_clip_38" 6}
+	{entity "enfield_no2_mk1"}
+	{fireSound "smallarms/s1/d1/ENG/Enfield_No2_MkI/"}
+	{fireSoundclose "smallarms/s1/3p/ENG/Enfield_No2_MkI/"}
+	{reloadSound "nagant"}
+	{calibre 9}
+	{mass 0.765}
+
+	("reload time" seconds(5.5))
+
+	("velocity" mps(190))
+}

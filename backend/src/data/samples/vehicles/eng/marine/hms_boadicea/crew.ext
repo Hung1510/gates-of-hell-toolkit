@@ -1,0 +1,144 @@
+;SDL
+
+{boarder
+	{anm "driver"
+		{forward {begin "board_torpedo_boat"} {end "pose_mo4_driver"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "commander"
+		{forward {begin "board_torpedo_boat"} {end "pose_mo4_commander"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "gunner"
+		{forward {begin "board_torpedo_boat"} {end "pose_mo4_gunner"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "gunner1" ;// 4.7in actual gunner
+		{forward {begin "board_torpedo_boat"} {end "seat_251_17_gunner"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "gunner2" ;// 4.7in co-gunner
+		{forward {begin "board_torpedo_boat"} {end "seat_251_21_gunner"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "gunner3" ;// AA actual gunner
+		{forward {begin "board_torpedo_boat"} {end "seat_flakvierling_gunner"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "gunner4" ;// AA co-gunner
+		{forward {begin "board_torpedo_boat"} {end "seat_tm1_charger"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "charger1"
+		{forward {begin "board_torpedo_boat"} {end "pose_mo4_charger"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "charger2"
+		{forward {begin "board_torpedo_boat"} {end "pose_mo4_charger2"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+	{anm "charger3"
+		{forward {begin "board_torpedo_boat"} {end "pose_mo4_charger2"}}
+		{reverse {end "emit_torpedo_boat"}}
+	}
+}
+
+(define "crew"
+	{placer
+		{place "%place"
+			{group "crew"}
+			{linkbone "%place"}
+			{turnoff {shadow}}
+			{visor "%visor"}
+			;{openForCrush}
+		}
+	}
+	{boarder
+		{door "emit1"}
+		{door "emit2"}
+		{door "emit3"}
+		{door "emit4"}
+		{door "emit5"}
+		{door "emit6"}
+		{door "emit7"}
+		{door "emit8"}
+		{link "emit1" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit2" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit3" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit4" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit5" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit6" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit7" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit8" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+	}
+)
+
+("crew" place(driver) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) visor(main) anm(driver))
+("crew" place(commander) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) visor(none) anm(commander))
+
+("crew" place(gunner)  door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6)  visor(gunner) anm(gunner1))	;// Actual required gunner for the first cannon
+("crew" place(gunner2) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6)  visor(none) anm(gunner2))
+("crew" place(gunner3) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6)  visor(gunner3) anm(gunner1))	;// Actual required gunner for the second cannon
+("crew" place(gunner4) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6)  visor(none) anm(gunner2))
+("crew" place(gunner5) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6)  visor(gunner5) anm(gunner1))	;// Actual required gunner for the third cannon
+("crew" place(gunner6) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6)  visor(none) anm(gunner2))
+("crew" place(gunner7) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6)  visor(gunner7) anm(gunner1))	;// Actual required gunner for the fourth cannon
+("crew" place(gunner8) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6)  visor(none) anm(gunner2))
+("crew" place(gunner9) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6)  visor(gunner9) anm(gunner3)) 	;// Actual required gunner for the first AA
+("crew" place(gunner10) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) visor(none) anm(gunner4))
+("crew" place(gunner11) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) visor(gunner11) anm(gunner3)) 	;// Actual required gunner for the second AA
+("crew" place(gunner12) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) visor(none) anm(gunner4))
+
+("crew" place(charger) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6)  visor(none) anm(charger1))
+("crew" place(charger2) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) visor(none) anm(charger2))
+("crew" place(charger3) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) visor(none) anm(charger1))
+("crew" place(charger4) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) visor(none) anm(charger2))
+("crew" place(charger5) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) visor(none) anm(charger1))
+("crew" place(charger6) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) visor(none) anm(charger2))
+("crew" place(charger7) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) visor(none) anm(charger1))
+("crew" place(charger8) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) visor(none) anm(charger2))
+("crew" place(charger9) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) visor(none) anm(charger2))
+("crew" place(charger10) door(emit1) door2(emit2) door3(emit3) door4(emit4) door5(emit5) door6(emit6) visor(none) anm(charger2))
+
+{sensor
+	{visor "around"
+		{vision "marine_around"}
+		{bone "visor1"}
+	}
+	{visor "gunner" {vision "marine_cannon"} {bone "foresight1"}}
+	{visor "gunner3" {vision "marine_cannon"} {bone "foresight1a"}}
+	{visor "gunner5" {vision "marine_cannon"} {bone "foresight1b"}}
+	{visor "gunner7" {vision "marine_cannon"} {bone "foresight1c"}}
+	{visor "gunner9" {vision "marine_cannon"} {bone "foresight4"}}
+	{visor "gunner11" {vision "marine_cannon"} {bone "foresight5"}}
+}
+
+
+(define "passenger"
+	{placer
+		{place "%place"
+			{group "passenger"}
+			{linkbone "%place"}
+			{turnoff {shadow}}
+			;{openForCrush}
+		}
+	}
+	{boarder
+		{door "emit1"}
+		{door "emit2"}
+		{door "emit3"}
+		{door "emit4"}
+		{door "emit5"}
+		{door "emit6"}
+		{door "emit7"}
+		{door "emit8"}
+		{link "emit1" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit2" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit3" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit4" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit5" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit6" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit7" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+		{link "emit8" "%place" {anm "%anm"} {forward putoff} {reverse puton}}
+	}
+)

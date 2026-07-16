@@ -1,0 +1,94 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "gaz_aaa_72k_xx.mdl"}
+	
+	{volume "body1"
+		{thickness 2}
+	}
+	{volume "body2"
+		{thickness 2}
+	}
+	{volume "body3"
+		{thickness 2}
+	}
+	{volume "body4"
+		{thickness 2}
+	}
+	{volume "body5"
+		{thickness 2}
+	}
+	{volume "body6"
+		{thickness 2}
+	}
+	{volume "body7"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "bodyback1"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "bodyback2"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "bodyback6"
+		{thickness 10}
+	}
+	{volume "bodyback7"
+		{thickness 10}
+	}
+	{volume "engine"
+		{thickness 2}
+	}
+	{volume "part1"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "part2"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "part21"
+		{thickness 4.5}
+	}
+	{volume "part22"
+		{thickness 15}
+	}
+	{volume "part23"
+		{thickness 15}
+	}
+	{volume "part23"
+		{able {obstacle 0} {visible 0}}
+	}
+	{volume "part31"
+		{thickness 4.5}
+		{able {obstacle 0} {visible 0}}
+	}
+	{volume "part32"
+		{thickness 4.5}
+		{able {obstacle 0} {visible 0}}
+	}
+	{volume "wheelleft1"
+		{thickness 0.5}
+	}
+	{volume "wheelleft2"
+		{thickness 0.5}
+	}
+	{volume "wheelleft3"
+		{thickness 0.5}
+	}
+	{volume "wheelright1"
+		{thickness 0.5}
+	}
+	{volume "wheelright2"
+		{thickness 0.5}
+	}
+	{volume "wheelright3"
+		{thickness 0.5}
+	}
+}

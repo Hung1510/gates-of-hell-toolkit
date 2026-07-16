@@ -1,0 +1,158 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "churchill3_xx.mdl"}
+
+	{volume "body1"			; Hull
+		{thickness
+			{front 76.2}	; Lower front
+			{top 38}		; Glacis
+			{right 38.1}
+			{left 38.1}
+			{rear 20}
+			{bottom 19.1}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness
+			{front 89}
+			{top 19}
+			{right 50.8}
+			{left 50.8}
+			{rear 20}
+			{bottom 19.1}
+		}
+	}
+	{volume "body3"			; Hull left
+		{thickness
+			{front 38.1}
+			{top 16}
+			{right 63.5}
+			{left 63.5}
+			{rear 20}
+			{bottom 15.9}
+		}
+	}
+	{volume "body4"			; Hull right
+		{thickness
+			{front 38.1}
+			{top 16}
+			{right 63.5}
+			{left 63.5}
+			{rear 20}
+			{bottom 15.9}
+		}
+	}
+	{volume "engine1"		; Front Half
+		{thickness
+			{front 20}
+			{top 16}
+			{right 50.8}
+			{left 50.8}
+			{rear 50.8}
+			{bottom 16}
+		}
+	}
+	{volume "engine2"		; Rear Half
+		{thickness
+			{front 50.8}
+			{top 16}
+			{right 25.4}
+			{left 25.4}
+			{rear 50.8}
+			{bottom 16}
+		}
+	}
+	{volume "engine3"		; Left
+		{thickness
+			{front 20}
+			{top 16}
+			{right 63.5}
+			{left 63.5}
+			{rear 25.4}
+			{bottom 15.9}
+		}
+		{HighHardness}
+	}
+	{volume "engine4"		; Right
+		{thickness
+			{front 20}
+			{top 16}
+			{right 63.5}
+			{left 63.5}
+			{rear 25.4}
+			{bottom 15.9}
+		}
+	}
+	{volume "turret1"		; Main Turret
+		{thickness
+			{front 89.9}
+			{top 19}
+			{right 76.2}
+			{left 76.2}
+			{rear 76.2}
+			{bottom 25.4}
+		}
+	}
+	{volume "turret2"		; Turret Ring
+		{thickness 76.2}
+	}
+	{volume "basket"
+		{thickness 10}
+		{able {obstacle 0}}
+	}
+	{volume "armor_hull"
+		{thickness 89}
+		{able {holed}}
+	}
+	{volume "armorL1"
+		{thickness 38.1}
+	}
+	{volume "armorL2"
+		{thickness 38.1}
+	}
+	{volume "armorL3"
+		{thickness 38.1}
+	}
+	{volume "armorR1"
+		{thickness 38.1}
+	}
+	{volume "armorR2"
+		{thickness 38.1}
+	}
+	{volume "armorR3"
+		{thickness 38.1}
+	}
+	{volume "barrel"
+		{thickness 30}
+	}
+	{volume "part1"
+		{thickness 7}
+		{able {obstacle 0}}
+	}
+	{volume "shieldl3"
+		{thickness 7}
+	}
+	{volume "shieldl4"
+		{thickness 7}
+	}
+	{volume "shieldl5"
+		{thickness 7}
+	}
+	{volume "shieldr2"
+		{thickness 7}
+	}
+	{volume "shieldr3"
+		{thickness 7}
+	}
+	{volume "shieldr4"
+		{thickness 7}
+	}
+	{volume "shieldr5"
+		{thickness 7}
+	}
+	{volume "shieldr6"
+		{thickness 7}
+	}
+
+	("tracks" thickness(30))
+}

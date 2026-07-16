@@ -1,0 +1,45 @@
+{game_entity
+	(include "../universal_carrier_mk2/universal_carrier_mk2.inc")
+	{props "universal_carrier_mk2"}
+
+	("crew_human_visible_anm2" place(driver) door(emit2) door2(emit1) anm_left(right) anm_right(right))
+	("crew_human_visible_anm2" place(gunner) door(emit1) door2(emit2) anm_left(left) anm_right(left))
+	("crew_human_visible_anm2" place(gunner2) door(emit4) door2(emit3) anm_left(gunner2) anm_right(gunner2))
+
+	("seat_human" place(seat1) bone(seat01) door(emit3) animation(armor1))
+	("seat_human" place(seat3) bone(seat03) door(emit5) animation(armor3))
+	("seat_human" place(seat4) bone(seat04) door(emit6) animation(armor4))
+
+	{extender "inventory"
+		{weapon "mgun2" {mask "mountable"}}
+		{box
+			{item "bren_mk2" filled {user "mgun2"}}
+			{item "bren_mag ammo" 1120}
+			{item "no8_smoke grenade" 8}
+		}
+	}
+
+	{Weaponry
+		{place "mgun"
+			{type "hull"}
+			{weapon "bren_mk2" filled}
+			{LinkBone "mgun"}
+			{gunner "gunner"}
+			{charger "gunner"}
+			("abm_mgun")
+			{rotate}
+			{basic}
+		}
+		{place "mgun2"
+			{type "aa"}
+			{LinkBone "mgun2"}
+			{LinkAnimation "off"}
+			{gunner "gunner2"}
+			{charger "gunner2"}
+			("abm_mgun")
+			{rotate}
+			{basic}
+			{ai_in_manual}
+		}
+	}
+}

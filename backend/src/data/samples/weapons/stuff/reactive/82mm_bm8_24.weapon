@@ -1,0 +1,39 @@
+;_________________________________________
+; Soviet 'Katusha' Light Rocket Artillery
+;=========================================
+
+
+{from "pattern reactive"		; ""
+	{tag "gun"}
+	{filling "ammo 82mm_bm8" 24}
+	{fireSound "reactive/katy_burst/"}
+	{calibre 82}
+
+	("rocket_artillery")
+
+	{spreading
+		{radiusTable
+			{0 0}
+			{100 10}
+			{200 20}
+			{289.99 30} ;// max range
+			{290 100}
+			{310 200}
+		}
+	}
+
+	{Automatic}
+	{burst
+		{min 12}
+		{noaiming}
+	}
+
+	{gravity 3.25}
+
+	{minRange 50}
+	{aimRange 290}
+	{maxRange 290} ;// 5,5km
+	("velocity" mps(320))
+	("reload time" seconds(120))
+	("fire rate" rpm(288)) ;// 5s to fire full salvo
+}

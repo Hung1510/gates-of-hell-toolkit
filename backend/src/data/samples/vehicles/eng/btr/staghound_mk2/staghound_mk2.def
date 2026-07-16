@@ -1,0 +1,78 @@
+{game_entity
+	(include "/properties/armoredcar.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.0))
+	{props "tank" "turret" "wheeled" "with_gun" "vision_lev02" "muzzle_50mm_57mm" "smoke" "2in_wp"}
+	{extension "staghound_mk2.mdl"}
+	{extension "crew.ext"}
+	(include "staghound_mk2.ext")
+	{targetclass "armoredcar"}
+	{targetSelector "tank_light"}
+	{patherId "sdkfz232"}
+
+	{extender "smokescreen"
+		{cooldown 5}
+		{itemTags "mortareng_50 wp"}
+	}
+
+	{extender "enumerator"
+		{digit_folder "us2"}
+	}
+
+	{extender "inventory"
+		{box
+			{item "bulleteng_76_l25 he" 21}		;// 44 rounds
+			{item "bulleteng_76_l25 sm" 22}
+			{item "ammo mgun_usa belt" 5000}		;// 5250 rounds
+			{item "satchel_charge_eng" 1}
+			{item "mortareng_50 wp" 14}				;// 14 smoke bombs
+			;{item "no36m grenade" 6}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "76mm_qf3" filling "bulleteng_76_l25 he" 1}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_dymamic"
+				zeroing(3.0)
+				dispersion(0.20)
+			)
+		}
+		{place "mgun2"
+			{type "coaxial"}
+			{weapon "browning_m19a4_tank" filled}
+			{foresight "foresight5"}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 13166}
+	{Chassis "wheel"
+		("car_trace" fx("tracewheel01a") step(0.1) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+		("car_trace" fx("tracewheel01a") step(0.1) wheell("wlr") wheelr("wrr") bonel("FXtraceL2") boner("FXtraceR2"))
+		("mobility_btr"
+			speed(88) ;----------------------------------Max speed.
+			speedatmaxturn(25) ;-------------------------Max speed at max turn. 
+			reverse(21) ;--------------------------------Max speed in Reverse.
+			weight(13.166) ;-------------------------------Weight in Tonnes.
+			power(194) ;---------------------------------Horse Power. Each engine generates (two of them are inside) 97 horsepower so 2 times 97 = 194
+			fuel(370) ;----------------------------------Fuel capacity in Litres. Base fuel is 230L + Externa Fuel is 140L, so carries 370L of fuel
+			type(fuel) ;-------------------------------Fuel type.
+			range(720) ;---------------------------------Range in Kilometers.  Base range is 450km without external fuel, with external fuel its 720km.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -7 40}
+		{speed2 8}
+	}
+	{bone "turret"
+		("turret_light" power_traverse(18)) ;// hydraulic
+	}
+}

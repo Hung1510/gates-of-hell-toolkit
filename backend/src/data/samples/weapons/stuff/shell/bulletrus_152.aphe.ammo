@@ -1,0 +1,12 @@
+{from "pattern aphe"	; BR-540
+	{tag "shell size4 150to152"}
+	{inventory {size 5 1}}
+	{entity "152mm_rus_aphe"}
+	{mass 64.08}
+
+	{view "howitzer_shell_105-150"
+		{tail "shell_tracer_rus_152_ap" "tail"}
+	}
+
+	("ap_blast" args 1.52)
+}

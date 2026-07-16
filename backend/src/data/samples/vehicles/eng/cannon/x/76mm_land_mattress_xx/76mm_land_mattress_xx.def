@@ -1,0 +1,56 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "76mm_land_mattress_xx.mdl"}
+	{volume "barrel1"
+		{thickness 6}
+	}
+	{volume "barrel2"
+		{thickness 6}
+	}
+	{volume "body1"
+		{thickness 6}
+	}
+	{volume "body2"
+		{thickness 6}
+	}
+	{volume "body3"
+		{thickness 6}
+	}
+	{volume "body4"
+		{thickness 6}
+	}
+	{volume "body5"
+		{thickness 6}
+	}
+	{volume "body6"
+		{thickness 6}
+	}
+	{volume "body7"
+		{thickness 6}
+	}
+	{volume "body8"
+		{thickness 6}
+	}
+	{volume "body9"
+		{thickness 6}
+	}
+	{volume "body10"
+		{thickness 6}
+	}
+	{volume "body11"
+		{thickness 6}
+	}
+	{volume "wheelleft"
+		{thickness 2}
+	}
+	{volume "wheelright"
+		{thickness 2}
+	}
+
+	{volume "part1"
+		{thickness 5}
+	}
+	{volume "part2"
+		{thickness 5}
+	}
+}

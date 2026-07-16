@@ -1,0 +1,120 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 20mm
+	; gun 25mm
+
+	("tank_medium_tier1")
+
+	("tracks" repair(30) thickness(20))
+	("gun" repair(30) thickness(30))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("transmission" args "transmission")
+
+	{volume "body1"
+		{thickness 38.1
+			{front 50.8}
+			{top 12.7}
+			{rear 10}
+			{bottom 25}
+		}
+	}
+	{volume "body2"
+		{thickness 50.8}
+	}
+	{volume "body3"
+		{thickness 50.8}
+	}
+	{volume "body4"
+		{thickness 38.1
+			{front 50.8}
+			{rear 25}
+			{bottom 25}
+		}
+	}
+	{volume "body5"
+		{thickness 38.1
+			{front 10}
+			{bottom 25}
+			{top 12.7}
+		}
+		{able {holed}}
+	}
+	{volume "body6"
+		{thickness 38.1
+			{front 10}
+			{rear 25}
+			{top 12.7}
+			{bottom 25}
+		}
+	}
+	{volume "body7"
+		{thickness 38.1
+			{front 10}
+			{rear 25}
+			{top 12.7}
+			{bottom 25}
+		}
+	}
+	{volume "body7"
+		{thickness 38.1
+			{front 10}
+			{rear 25}
+			{top 12.7}
+			{bottom 25}
+		}
+	}
+	{volume "body8"
+		{thickness 38.1
+			{front 50.8}
+			{rear 10}
+			{bottom 25}
+			{top 12.7}
+		}
+	}
+	{volume "engine1"
+		{thickness 38.1
+			{front 10}
+			{rear 10}
+			{top 12.7}
+		}
+	}
+	{volume "engine2"
+		{thickness 38.1
+			{front 10}
+			{rear 10}
+			{top 12.7}
+		}
+	}
+	{volume "engine3"
+		{thickness 38.1
+			{bottom 25}
+			{top 12.7}
+		}
+	}
+	{volume "engine4"
+		{thickness 38.1
+			{bottom 25}
+			{top 12.7}
+		}
+	}
+	{volume "barrel1"
+		{thickness 25}
+		{able {holed}}
+	}
+	{volume "armor1"
+		{thickness 20}
+	}
+	{volume "armor2"
+		{thickness 20}
+	}
+	{volume "armor3"
+		{thickness 20}
+	}
+	{volume "armor4"
+		{thickness 8}
+	}

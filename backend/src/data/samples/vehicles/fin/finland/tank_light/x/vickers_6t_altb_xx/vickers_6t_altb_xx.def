@@ -1,0 +1,76 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "vickers_6t_altb_xx.mdl"}
+
+	{volume "barrel1"
+		{thickness 20}
+	}
+	{volume "barrel2"
+		{thickness 20}
+	}
+	{volume "body1"			; Hull
+		{thickness 17.5
+			{top 7}			; Glacis
+			{rear 5}
+			{bottom 5}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 17.5
+			{top 5}
+		}
+	}
+	{volume "body3"			; Driver Door Top
+		{thickness 15
+			{front 17.5}
+		}
+	}
+	{volume "body4"			; Driver Door Bottom
+		{thickness 15
+			{front 7}
+		}
+	}
+	{volume "engine"
+		{thickness 15
+			{front 5}
+			{top 5}
+			{rear 10}
+			{bottom 5}
+		}
+	}
+	{volume "turret1"		; Turret
+		{thickness 13.6
+			{top 5}
+		}
+	}
+	{volume "turret2"		; Turret Front
+		{thickness 13.6}
+	}
+	{volume "turret3"		; Turret Rear
+		{thickness 13.6
+			{top 5}
+		}
+	}
+	{volume "mantlet1"
+		{thickness 13.6}
+	}
+	{volume "mantlet2"
+		{thickness 13.6}
+	}
+	{volume "part2"			; Driver Door Top
+		{thickness 17.5}
+	}
+	{volume "part3"
+		{thickness 5}
+	}
+	{volume "part4"
+		{thickness 5}
+	}
+	{volume "part5"
+		{thickness 5}
+	}
+	{volume "part6"
+		{thickness 5}
+	}
+	("tracks" thickness(15))
+}

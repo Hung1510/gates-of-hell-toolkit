@@ -1,0 +1,12 @@
+{from "pattern heat"	; BP-460A
+	{tag "shell size3 size3_heat_shell heat_medium"}
+	{inventory {size 4 1}}
+	{entity "122mm_rus_l22_heat"}
+	{mass 17.04}
+
+	{view "howitzer_shell_105-150_lv"
+		{tail "shell_tracer_100-152_he" "tail"}
+	}
+
+	("he_level_3" weight(13.2) filler(1.682))
+}

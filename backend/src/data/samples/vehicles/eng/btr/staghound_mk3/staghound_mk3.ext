@@ -1,0 +1,112 @@
+;SDL
+
+	; armor notes
+	; wheels 10mm 
+	; gun 20mm
+
+	("armoredcar_tier2")
+
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright1")
+	("wheel" args "wheelright2")
+
+	("turret" repair(45))
+;	("mantlet" repair(30))
+	("gun" repair(30) thickness(20))
+
+	("fuel" args "fuel1")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("transmission" args "transmission")
+	{volume "transmission" {able {NoWoundDecal 0}}}
+
+	{volume "body1"
+		{thickness 14
+			{front 22}
+			{left 19}
+			{top 13}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "body2"
+		{thickness 14
+			{front 22}
+			{left 19}
+			{top 13}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "body3"
+		{thickness 14
+			{front 22}
+			{left 19}
+			{top 13}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "body4" ; mgun port
+		{thickness 20}
+	}
+	{volume "body5"
+		{thickness 14
+			{front 22}
+			{left 19}
+			{top 13}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "turret1"
+		{thickness 19
+			{front 19}
+			{left 23.5} ;14+9.5
+			{top 12.7}
+			{rear 29.7} ;17+12.7
+			{bottom 9}
+		}
+		{able {holed}}
+		{CastSteel 0.88} ;// layered armor array ~21,5mm and ~27mm effective
+	}
+	{volume "turret2" 	; Turret Ring
+		{thickness 20}
+	}
+	{volume "turret3" 	; Hatch
+		{thickness 12.7}
+	}
+	{volume "turret4"		; Turret Front Armor
+		{thickness 50.8} ;31.75+19.05
+		{able {holed}}
+		{CastSteel 0.85} ;// layered armor array ~46,5mm effective
+	}
+	{volume "mantlet"
+		{tags "gun"}
+		{component "gun"}
+		{thickness 25}
+	}
+	{volume "engine1"
+		{thickness 19
+			{left 19}
+			{top 13}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "armor1"		; storage box
+		{thickness 5}
+	}
+	{volume "armor2"		; storage box
+		{thickness 5}
+	}
+	{volume "armor3"		; Engine Cover (back)
+		{thickness 8}
+	}
+	{volume "armor4"		; Turret Extra Armor 
+		{thickness 9}
+	}
+	{volume "armor5"		; Turret Extra Armor 
+		{thickness 9}
+	}

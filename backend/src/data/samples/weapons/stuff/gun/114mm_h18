@@ -1,0 +1,10 @@
+;_________________________________________
+; Finnish medium field howitzer
+;=========================================
+
+
+{from "114mm_qf4_5"			; L/15.6 "114mm H/18"
+
+	; Gr.39 Hl/C
+	("penetration_medium" shell(heat) range(170) a(115) b(115) c(115) d(115) e(115))
+}

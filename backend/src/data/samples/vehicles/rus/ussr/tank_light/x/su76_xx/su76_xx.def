@@ -1,0 +1,51 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "su76_xx.mdl"}
+
+	{volume "body1"			; Hull 
+		{thickness 15
+			{front 30}		; Lower Hull
+			{top 25}		; Glacis
+			{rear 15}
+			{bottom 7}		; Bottom and Top
+		}
+		{able {holed}}
+		{HighHardness}
+	}
+	{volume "engine"		; Internal
+		{thickness 5}
+		{able {NoWoundDecal 0}}
+	}
+	{volume "mantlet1"
+		{thickness 10}
+	}
+	{volume "mantlet2"
+		{thickness 10}
+	}
+	{volume "body2"
+		{thickness 25}
+	}
+	{volume "cabin1"
+		{thickness 25}
+	}
+	{volume "cabin2"
+		{thickness 15}
+	}
+	{volume "cabin3"
+		{thickness 10}
+	}
+	{volume "cabin4"
+		{thickness 15}
+	}
+
+	{volume "gun"
+		{thickness 20}
+	}
+	{volume "part1"
+		{thickness 30}
+	}
+	{volume "part2"
+		{thickness 15}
+	}
+	("tracks" thickness(15))
+}

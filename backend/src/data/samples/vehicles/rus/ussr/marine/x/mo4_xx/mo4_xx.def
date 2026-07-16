@@ -1,0 +1,128 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "mo4_xx.mdl"}
+	
+	{volume "body_front"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 4}
+	}
+	{volume "body_rear"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 4}
+	}
+	{volume "body"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 4}
+	}
+	{volume "box1"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 2}
+	}
+	{volume "box2"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 2}
+	}
+	{volume "box3"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 2}
+	}
+	{volume "box4"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 2}
+	}
+	{volume "box5"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 2}
+	}
+	{volume "box6"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 2}
+	}
+	{volume "cabin"
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "detail1"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 2}
+	}
+	{Volume "engine"
+		{thickness 2}
+	}
+	{volume "armor1"
+		{thickness 10}
+	}
+	{volume "armor5"
+		{thickness 10}
+	}
+	{volume "armor6"
+		{thickness 10}
+	}
+	{volume "armor7"
+		{thickness 10}
+	}
+	{volume "armor8"
+		{thickness 10}
+	}
+	{volume "barrel11"
+		{thickness 10}
+	}
+	{volume "barrel12"
+		{thickness 10}
+	}
+	{volume "barrel13"
+		{thickness 10}
+	}
+	{volume "barrel14"
+		{thickness 10}
+	}
+	{volume "barrel15"
+		{thickness 10}
+	}
+	{volume "barrel21"
+		{thickness 10}
+	}
+	{volume "barrel22"
+		{thickness 10}
+	}
+	{volume "barrel23"
+		{thickness 10}
+	}
+	{volume "barrel24"
+		{thickness 10}
+	}
+	{volume "barrel25"
+		{thickness 10}
+	}
+	{volume "barrel31"
+		{thickness 10}
+	}
+	{volume "barrel32"
+		{thickness 10}
+	}
+	{volume "barrel33"
+		{thickness 10}
+	}
+	{volume "barrel3"
+		{thickness 10}
+	}
+	{volume "barrel41"
+		{thickness 10}
+	}
+	{volume "barrel42"
+		{thickness 10}
+	}
+	{volume "barrel43"
+		{thickness 10}
+	}
+}

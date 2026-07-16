@@ -1,0 +1,79 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "ford_3ton_breda_xx.mdl"}
+	{volume "barrel1"
+		{thickness 15}
+	}
+	{volume "barrel2"
+		{thickness 15}
+	}
+	{volume "barrel3"
+		{thickness 15}
+	}
+	{volume "body1"
+		{thickness 2}
+	}
+	{volume "body2"
+		{able {holed}}
+		{thickness 2}
+	}
+	{volume "body3"
+		{thickness 2}
+	}
+	{volume "bodyback1"
+		{thickness 2}
+		{material "wood"}
+	}
+	{volume "bodyback2"
+		{thickness 2}
+		{material "wood"}
+	}
+	{volume "bodyback3"
+		{thickness 2}
+		{material "wood"}
+	}
+	{volume "bodyback4"
+		{thickness 2}
+		{material "wood"}
+	}
+	{volume "bodyback5"
+		{thickness 2}
+		{material "wood"}
+	}
+	{volume "bodyback6"
+		{thickness 2}
+		{material "wood"}
+	}
+	{volume "bodyback7"
+		{thickness 2}
+		{material "wood"}
+	}
+	{volume "part2"
+		{thickness 2}
+	}
+	{volume "part3"
+		{thickness 2}
+	}
+	{volume "part4"
+		{thickness 2}
+	}
+	{volume "turret1"
+		{thickness 8}
+	}
+	{volume "turret3"
+		{thickness 8}
+		{able {holed}}
+	}
+	{volume "wheelleft1"
+		{thickness 5}
+	}
+	{volume "wheelleft2"
+		{thickness 5}
+	}
+	{volume "wheelright1"
+		{thickness 5}
+	}
+	{volume "wheelright2"
+		{thickness 5}
+	}
+}

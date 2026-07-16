@@ -1,0 +1,17 @@
+{from "pattern reactive_ammo"
+	{tag "big bomb size2 fg itemin2hands"}
+	{inventory
+		{size 6 2}
+		{weight 100}
+	}
+	{entity "300mm_nebelwerfer"}
+	{mass 127}
+
+	{view "300mm_nebelwerfer"
+		{tail "rocket_smoke_nebel" "tail"}
+	}
+
+	("rocket_level_6" weight(127) filler(45))
+
+	{possibleDamageRadius 30}
+}

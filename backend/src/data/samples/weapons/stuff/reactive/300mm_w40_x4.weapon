@@ -1,0 +1,35 @@
+;_________________________________________
+; German Heavy Rocket Artillery
+;=========================================
+
+
+{from "pattern reactive"		; "pz38h_w40"
+	{filling "ammo 300mm_nebelwerfer" 4}
+	{fireSound "reactive/nebel_burst/"}
+	{calibre 300}
+
+	("rocket_artillery")
+
+	{spreading
+		{radiusTable
+			{0 0}
+			{100 10}
+			{200 20}
+			{279.99 30} ;// max range
+			{280 100}
+			{310 200}
+		}
+	}
+
+	{burst 
+		{min 4}
+		{noaiming}
+	}
+	{gravity 2}
+
+	{minRange 50}
+	{maxRange 280} ;//4,55km
+	("velocity" mps(230))
+	("reload time" seconds(220))
+	("fire rate" rpm(36)) ;// 6.6s to fire full salvo
+}

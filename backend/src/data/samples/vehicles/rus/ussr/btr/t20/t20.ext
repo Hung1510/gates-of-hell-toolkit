@@ -1,0 +1,36 @@
+
+	; armor notes
+	; tracks and wheels 15mm
+
+	("armoredcar_tier1")
+
+	("shield_cover")
+	{volume "shield_cover" {able {holed}}}
+
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+	("tracks" repair(30) thickness(15))
+
+	{volume "body1"
+		{thickness 10
+			{bottom 7}
+		}
+	}
+	{volume "body2"
+		{thickness 10
+			{bottom 7}
+		}
+	}
+	{volume "engine1"
+		{thickness 10
+			{bottom 7}
+		}
+	}
+	{volume "engine2"
+		{thickness 10
+			{bottom 7}
+		}
+	}
+	{volume "detail1"
+		{thickness 15}
+	}

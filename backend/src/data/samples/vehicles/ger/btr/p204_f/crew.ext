@@ -1,0 +1,31 @@
+;SDL
+	
+{boarder
+	{anm "right"
+		{forward	{begin	"board_sd222_driver"} {base "open_gunner"}}
+		{reverse 	{end	"emit_sd222_driver" } {base "open_gunner"}}
+	}
+
+	{anm "left"
+		{forward	{begin	"board_sd232_driver"} {base "open_driver"}}
+		{reverse 	{end	"emit_sd222_driver"} {base "open_driver"}}
+	}
+}
+
+(define "crew_human"
+	{placer
+		{place "%place" {group "%group"} {visor "%visor"}}
+	}
+	{boarder
+		{door "%door"}
+		{door "%door2"}
+		{link "%door" "%place" {anm "left"} {forward putoff} {reverse puton}}
+		{link "%door2" "%place" {anm "right"} {forward putoff} {reverse puton}}
+	}
+)
+
+
+("crew_human" place(gunner)		group(crew)	door(emit1) door2(emit2) visor(main))
+("crew_human" place(driver)		group(crew)	door(emit1) door2(emit2) visor(driver))
+("crew_human" place(charger)	group(crew)	door(emit1) door2(emit2) visor(none))
+("crew_human" place(commander)	group(crew)	door(emit1) door2(emit2) visor(around))

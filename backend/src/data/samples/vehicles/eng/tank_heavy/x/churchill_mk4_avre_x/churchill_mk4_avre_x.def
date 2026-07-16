@@ -1,0 +1,3 @@
+{game_entity
+	{extension "churchill_mk4_avre_x.mdl"} {RimLight}
+}

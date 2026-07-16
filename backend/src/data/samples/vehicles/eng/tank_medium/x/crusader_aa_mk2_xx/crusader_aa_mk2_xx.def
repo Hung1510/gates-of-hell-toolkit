@@ -1,0 +1,64 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "crusader_aa_mk2_xx.mdl"}
+	("tracks" thickness(20))
+	{volume "barrel1" {thickness 25}}
+	{volume "barrel2" {thickness 25}}
+	{volume "barrel3" {thickness 25}}
+	{volume "barrel4" {thickness 25}}
+
+;// Components
+	{volume "body1" {thickness 20 {left 14}}} ;// Front Lower Plate
+	{volume "body2"	;// Middle Hull, behind FLP
+		{thickness 14 
+			{top 9}
+			{bottom 10.35}
+		}
+	}
+	{volume "body3"	;// Driver Entrance
+		{thickness 14 
+			{front 22.22}
+			{top 12}
+		}
+	}
+	{volume "body4"	;// Turret Stand
+		{thickness 14 
+			{front 20}
+			{top 7}
+		}
+	}
+	{volume "turret1" {thickness 50.8 {top 20} {bottom 9}} {able {holed}}}
+	{volume "turret2" {thickness 50.8} {able {holed}}}
+	{volume "turret3" {thickness 50.8}}
+	{volume "turret4" {thickness 50.8}} ;// Mantlet
+	{volume "engine1" {thickness 14 {top 7} {bottom 6.35}}}	;// Main Part of Engine
+	{volume "engine2" {thickness 14}}	;// Rear Part
+	{volume "engine3" {thickness 14 {top 12} {bottom 6.35}}}
+	{volume "engine4" {thickness 14 {top 12} {bottom 6.35}}}
+
+;// Non-Components
+	{volume "armor1" {thickness 14.25} {able {holed}}} ;// Left Armor, Hull
+	{volume "armor2" {thickness 14.25} {able {holed}}} ;// Right Armor, Hull
+	{volume "armor3" {thickness 4}} ;// Boxes
+	{volume "armor4" {thickness 4}} ;// Boxes
+	{volume "armor5" {thickness 32}} ;// Driver Port Extra Armor
+	{volume "armor6" {thickness 32}} ;// Driver Port Extra Armor
+	{volume "armor7" {thickness 4}} ;// Boxes
+	{volume "armor8" {thickness 4}} ;// Boxes
+	{volume "armor9" {thickness 4}} ;// Boxes
+	{volume "armor10" {thickness 20} {able {holed}}} ;// Part of commander shield (turret)
+	{volume "armor11" {thickness 20} {able {holed}}} ;// Part of commander shield (turret)
+	{volume "armor12" {thickness 20} {able {holed}}} ;// Part of commander shield (turret)
+	{volume "armor13" {thickness 50.8}} ;// Ontop of turret4_vol
+	{volume "shieldl1" {thickness 4}}
+	{volume "shieldl2" {thickness 4}}
+	{volume "shieldl3" {thickness 4}}
+	{volume "shieldr1" {thickness 4}}
+	{volume "shieldr2" {thickness 4}}
+	{volume "shieldr3" {thickness 4}}
+
+;// Parts
+	{volume "part4" 	{thickness 7}}	;// Engine Hatch
+	{volume "part5" 	{thickness 7}} 	;// Engine Hatch
+	{volume "part6" 	{thickness 7}}	;// Engine Hatch
+}

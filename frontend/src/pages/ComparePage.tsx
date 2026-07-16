@@ -1,7 +1,28 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { SquadSelector } from "../components/SquadSelector";
-import { compareSquads } from "../api";
-import type { CompareEntry } from "../types";
+import { compareSquads, getUnitWeapons } from "../api";
+import type { CompareEntry, UnitWeaponInfo } from "../types";
+
+function computeSquadDps(
+  slots: { unitType: string; count: number }[] | undefined,
+  period: string | null | undefined,
+  weaponsByKey: Map<string, UnitWeaponInfo>
+): { dps: number | null; missingFor: string[] } {
+  if (!slots || !period) return { dps: null, missingFor: [] };
+  let total = 0;
+  const missingFor: string[] = [];
+  for (const s of slots) {
+    const info = weaponsByKey.get(`${s.unitType}:${period}`);
+    const damage = info?.weaponStats?.damage;
+    const rpm = info?.weaponStats?.rpm;
+    if (damage == null || rpm == null) {
+      missingFor.push(s.unitType);
+      continue;
+    }
+    total += s.count * damage * (rpm / 60);
+  }
+  return { dps: missingFor.length > 0 ? null : total, missingFor };
+}
 
 export function ComparePage() {
   const [aFaction, setAFaction] = useState("ger");
@@ -10,6 +31,8 @@ export function ComparePage() {
   const [bName, setBName] = useState("squad_officer_con");
   const [results, setResults] = useState<CompareEntry[] | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [aWeapons, setAWeapons] = useState<UnitWeaponInfo[]>([]);
+  const [bWeapons, setBWeapons] = useState<UnitWeaponInfo[]>([]);
 
   useEffect(() => {
     compareSquads(aFaction, aName, bFaction, bName)
@@ -17,14 +40,39 @@ export function ComparePage() {
       .catch((err) => setError(err instanceof Error ? err.message : String(err)));
   }, [aFaction, aName, bFaction, bName]);
 
+  useEffect(() => {
+    getUnitWeapons(aFaction).then(setAWeapons);
+  }, [aFaction]);
+  useEffect(() => {
+    getUnitWeapons(bFaction).then(setBWeapons);
+  }, [bFaction]);
+
+  const aWeaponsByKey = useMemo(() => new Map(aWeapons.map((w) => [`${w.unitId}:${w.period}`, w])), [aWeapons]);
+  const bWeaponsByKey = useMemo(() => new Map(bWeapons.map((w) => [`${w.unitId}:${w.period}`, w])), [bWeapons]);
+
   const [left, right] = results ?? [undefined, undefined];
+
+  const leftDps = useMemo(
+    () => computeSquadDps(left?.squad?.slots, left?.squad?.period, aWeaponsByKey),
+    [left, aWeaponsByKey]
+  );
+  const rightDps = useMemo(
+    () => computeSquadDps(right?.squad?.slots, right?.squad?.period, bWeaponsByKey),
+    [right, bWeaponsByKey]
+  );
 
   return (
     <div className="compare-page">
       <p className="disclaimer">
-        Cost and composition are pulled directly from real game data. DPS and armor
-        penetration aren't shown — the game files link weapon stats to soldiers through
-        a data source this toolkit doesn't have access to yet.
+        Cost and composition are pulled directly from real game data. DPS is now
+        estimated from real resolved weapon damage + fire rate (verified against known
+        real-world weapon specs before trusting the resolver - see the About tab) - but
+        it's an estimate, not shown by the game itself: it assumes every soldier fires
+        continuously and ignores accuracy, cover, suppression, and range falloff.
+        Armor penetration comparison isn't wired in yet (that needs matching this DPS
+        data against the Vehicles tab's armor data, still to come). If any unit in a
+        squad doesn't have a resolved weapon, DPS shows as unknown rather than a
+        partial/misleading number.
       </p>
 
       <div className="compare-selectors">
@@ -95,6 +143,27 @@ export function ComparePage() {
                 {right.stats?.totalCost != null && right.stats.totalMen > 0
                   ? (right.stats.totalCost / right.stats.totalMen).toFixed(1)
                   : "-"}
+              </td>
+            </tr>
+            <tr>
+              <td>Estimated DPS</td>
+              <td>
+                {leftDps.dps !== null ? (
+                  leftDps.dps.toFixed(1)
+                ) : (
+                  <span title={leftDps.missingFor.join(", ")}>
+                    unknown ({leftDps.missingFor.length} unresolved unit type(s))
+                  </span>
+                )}
+              </td>
+              <td>
+                {rightDps.dps !== null ? (
+                  rightDps.dps.toFixed(1)
+                ) : (
+                  <span title={rightDps.missingFor.join(", ")}>
+                    unknown ({rightDps.missingFor.length} unresolved unit type(s))
+                  </span>
+                )}
               </td>
             </tr>
             <tr>

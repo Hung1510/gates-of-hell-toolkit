@@ -1,0 +1,3 @@
+{from "browning_m2"
+	{entity "browning_m2_nomag"}
+}

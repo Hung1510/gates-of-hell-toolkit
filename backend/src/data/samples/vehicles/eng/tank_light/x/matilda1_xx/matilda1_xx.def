@@ -1,0 +1,74 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "matilda1_xx.mdl"}
+	{volume "body1"			; Hull front
+		{thickness 60
+			{top 60}			
+			{front 65}
+			{bottom 20}
+		}
+	}
+	{volume "body2"			;  Superstructure
+		{thickness 60
+			{top 20}
+			{rear 10}
+			{bottom 20}
+		}
+	}
+	{volume "engine1"
+		{thickness 60
+			{front 10}
+			{top 20}
+			{bottom 12}
+		}
+	}
+	{volume "turret1"		; Turret main
+		{thickness 60
+			{top 12}
+		}
+	}
+	{volume "turret2"		; Turret ring
+		{thickness 60}
+	}
+	{volume "turret3"		; Turret front1
+		{thickness 60}
+	}
+	{volume "turret4"		; Turret front2
+		{thickness 60}
+	}
+	{volume "turret5"		; Turret front3
+		{thickness 60}
+	}
+	{volume "barrel1"		
+		{thickness 40}
+	}
+	{volume "armor1"		
+		{thickness 60}
+	}
+	{volume "armor2"		
+		{thickness 60}
+	}
+	{volume "armor3"		
+		{thickness 60}
+	}
+	{volume "armor4"		
+		{thickness 60}
+	}
+	{volume "armor5"		
+		{thickness 4}
+	}
+	{volume "armor6"		
+		{thickness 4}
+	}
+	{volume "part1"		
+		{thickness 12}
+	}
+	{volume "part2"		
+		{thickness 12}
+	}
+	{volume "part3"		
+		{thickness 12}
+	}
+	
+	("tracks" thickness(15))
+}

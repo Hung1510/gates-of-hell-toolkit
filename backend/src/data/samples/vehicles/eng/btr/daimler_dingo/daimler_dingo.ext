@@ -1,0 +1,82 @@
+;SDL
+
+	; armor notes
+	; wheels 10mm 
+
+	("armoredcar_tier2")
+
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright1")
+	("wheel" args "wheelright2")
+	("fuel" args "fuel1")
+	("transmission" args "transmission")
+	{volume "transmission" {able {NoWoundDecal 0}}}
+
+	{volume "body1"
+		{thickness 12
+			{front 30}
+			{left 12}
+			{top 8}
+			{rear 12}
+			{bottom 8}
+		}
+		{able {holed}}
+	}
+	{volume "body2"
+		{thickness 12
+			{front 30}
+			{left 12}
+			{top 8}
+			{rear 12}
+			{bottom 8}
+		}
+	}
+	{volume "body3"
+		{thickness 12
+			{front 30}
+			{left 12}
+			{top 8}
+			{rear 12}
+			{bottom 8}
+		}
+	}
+	{volume "engine1"
+		{thickness 12
+			{front 12}
+			{left 12}
+			{top 8}
+			{rear 12}
+			{bottom 8}
+		}
+	}
+	{volume "engine2"
+		{thickness 12
+			{front 12}
+			{left 12}
+			{top 8}
+			{rear 12}
+			{bottom 8}
+		}
+	}	
+	{volume "engine3"
+		{thickness 12
+			{front 12}
+			{left 12}
+			{top 8}
+			{rear 12}
+			{bottom 8}
+		}
+	}
+	{volume "armor1"
+		{thickness 8}
+	}
+	{volume "armor2"
+		{thickness 8}
+	}
+	{volume "armor3"
+		{thickness 8}
+	}
+	{volume "armor4"		; storage box
+		{thickness 4}
+	}

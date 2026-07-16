@@ -1,0 +1,27 @@
+;SDL
+
+{boarder
+	{anm "left"
+		{forward {begin "board_lowarmor"} {end "seat_gaz98_driver"}}
+		{reverse {end "board_lowarmor" -1}}
+	}
+	{anm "right"
+		{forward {begin "board_lowarmor"} {end "seat_gaz98_driver"}}
+		{reverse {end "board_lowarmor" -1}}
+	}
+}
+
+(define "crew_human"
+	{placer
+		{place "%place" {linkbone "%place"} {group "crew"} {visor "%visor"} {turnoff {sensor}}}
+	}
+	{boarder
+		{door "%door"}
+		{door "%door2"}
+		{link "%door" "%place" {anm "left"} {forward putoff} {reverse puton}}
+		{link "%door2" "%place" {anm "right"} {forward putoff} {reverse puton}}
+	}
+)
+
+("crew_human" place(driver) door(emit3) door2(emit4) visor(driver))
+("crew_human" place(gunner) door(emit1) door2(emit2) visor(human))

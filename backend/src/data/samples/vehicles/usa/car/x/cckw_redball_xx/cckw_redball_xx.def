@@ -1,0 +1,61 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "cckw_redball_xx.mdl"}
+
+	{volume "armor1"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "body1"
+		{thickness 2}
+	}
+	{volume "body2"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "body3"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "body4"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "bodyback1"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "bodyback2"
+		{thickness 2}
+	}
+	{volume "engine"
+		{thickness 2}
+	}
+	{volume "part1"
+		{thickness 2}
+	}
+	{volume "part4"
+		{thickness 2}
+	}
+	{volume "part5"
+		{thickness 2}
+	}
+	{volume "wheelleft1"
+		{thickness 2}
+	}
+	{volume "wheelleft2"
+		{thickness 2}
+	}
+	{volume "wheelleft3"
+		{thickness 2}
+	}
+	{volume "wheelright1"
+		{thickness 2}
+	}
+	{volume "wheelright2"
+		{thickness 2}
+	}
+	{volume "wheelright3"
+		{thickness 2}
+	}
+}

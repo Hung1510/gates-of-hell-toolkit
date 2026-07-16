@@ -1,0 +1,36 @@
+{game_entity
+	(include "/properties/marine.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.0))
+	{props "marine" "vision_lev02_boat" "emit_on_sink" "explosion_throw_crew" "-steel" "wood"}
+	{targetClass "car"}
+	{patherid "shallow_water"}
+	{extension "goatley_boat.mdl"}
+	{extension "crew.ext"}
+
+	{volume "body"
+		{thickness 0.5}
+		{able {hole}}
+		{density 0.01}
+	}
+
+	{extender "inventory" {box {Size 6 4}}}
+
+	{mass 150}
+
+	{chassis "water"
+		("mobility_small_boat"
+			speed(6) ;----------------------------------Max speed.
+			speedatmaxturn(6) ;-------------------------Max speed at max turn.
+			reverse(6) ;--------------------------------Max speed in Reverse.
+			weight(0.15) ;------------------------------Weight in Tonnes.
+			power(1) ;----------------------------------Horse Power.
+			fuel(0.1) ;---------------------------------Fuel capacity in Litres.
+			type(fuel) ;--------------------------------Fuel type.
+			range(100000) ;-----------------------------Range in Kilometers.
+		)
+		{waterline 0}
+	}
+
+	("component" volume("body") component("body") repair(10))
+	("marine_durability" body(100) engine(60) gun(100))
+}

@@ -1,0 +1,24 @@
+;_________________________________________
+; US light tank gun
+;=========================================
+
+
+{from "pattern gun"			; L/53.5, "37mm M6" with littlejohn adaptor
+	{filling "bulletusa_37 littlejohn"}
+	{fireSound "cannon/s1/d1/Shared/Cannon_37to40mm/"}
+	{fireSoundclose "cannon/s1/1p/Shared/Cannon/"}	
+	{reloadSound "tank/1p/short/"}
+	("range_170")
+	{calibre 37}
+
+	("reload time" seconds(4)) ;semi-automatic breech
+
+	("velocity m/s" ap(1) apcr(1100) he(1) heat(1))
+	("armor health" damage(110))
+	("40_eng_slope_multipliers")
+
+	;APSV shot Mk.IT
+	("penetration_medium" shell(apcr) range(170) a(110) b(94) c(77) d(63) e(53)) ;RHA
+
+	("accuracy_direct" r1(0.90) range_ap(170) range_he(170) range_heat(170))
+}

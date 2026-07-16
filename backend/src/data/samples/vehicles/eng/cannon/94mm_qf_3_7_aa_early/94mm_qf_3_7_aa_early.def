@@ -1,0 +1,15 @@
+{game_entity	;// early war
+	(include "../94mm_qf_3_7_aa/94mm_qf_3_7_aa.inc")
+
+	{extender "inventory"
+		{box
+			{item "bulleteng_94_l50 he" 44}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{weapon "94mm_qf3_7_aa" filling "bulleteng_94_l50 he" 1}
+		}
+	}
+}

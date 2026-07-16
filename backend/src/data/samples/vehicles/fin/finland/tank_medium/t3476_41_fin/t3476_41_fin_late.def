@@ -1,0 +1,13 @@
+{
+	(include "t3476_41_fin.inc")
+
+	{extender "inventory"
+		{box
+			{item "bulletrus_76 apcbc" 19}		;77 rounds
+			{item "bulletrus_76 he" 52}
+			{item "bulletrus_76 heatb" 5}
+			{item "ammo mgun_rus dt" 1764}		;30 drums
+			{item "satchel_charge_rus" 1}
+		}
+	}
+}

@@ -1,0 +1,140 @@
+{game_entity
+	(include "/properties/cannon.ext")
+	{extension "155mm_k17.mdl"}
+	(include "/properties/selection/cannon_elongated.inc" scale(1.0))
+	{props "wheeled" "vision_lev05_can" "muzzle_150mm_155mm" "cannon_sandbag_standard" "trailer" "trailer_heavy" "no_shell"  "detect_artillery" "artillery_minimap_heavy"}
+	{patherId "cannon.large"}
+	{targetclass "howitzer"}
+	{targetSelector "cannon_howitzer"}
+
+	("solid_wheel" args "wheelright")
+	("solid_wheel" args "wheelleft")
+
+	("gun" repair(30) thickness(30))
+	("shield" args "shield" 10)
+
+	{Volume "shield" {able {holed}}}
+
+	("armor_heavy_cannon")
+	("crew_wheeled_cannon_6")
+
+	{boarder
+		{anm "gunner"
+			{forward {end "pose_m5_gunlayer" 10}}
+		}
+		{anm "gunner2"
+			{forward {end "pose_m5_charger" 10}}
+		}
+		{anm "charger"
+			{forward {end "pose_step_aside_right" 10}}
+		}
+		{anm "charger2"
+			{forward {end "pose_step_aside_left" 10}}
+		}
+		{anm "charger3"
+			{forward {end "pose_step_aside_left" 10}}
+		}
+		{anm "commander"
+			{forward {end "pose_watch_binocular" 10}}
+		}
+		{anm "driver1"	;// gunner
+			{forward {end "cannon_pak40_pusher_left" 10}}
+		}
+		{anm "driver2"	;// gunner2
+			{forward {end "cannon_pak40_pusher_right" 10}}
+		}
+		{anm "driver3"	;// charger
+			{forward {end "mgun_browning_driver_r" 10}}
+		}
+		{anm "driver4"	;// charger2
+			{forward {end "mgun_browning_driver_l" 10}}
+		}
+		{anm "driver5"	;// charger3
+			{forward {end "mgun_browning_driver_r" 10}}
+		}
+		{anm "driver6"	;// commander
+			{forward {end "mortar_driver_l" 10}}
+		}
+		{anm "seat1"	;// gunner
+			{forward {end "pose_seat_cannon_left" 10}}
+		}
+		{anm "seat2"	;// gunner2
+			{forward {end "pose_seat_cannon_right" 10}}
+		}
+		{anm "seat3"	;// charger
+			{forward {end "pose_seat_cannon_right" 10}}
+		}
+		{anm "seat4"	;// charger2
+			{forward {end "pose_seat_cannon_left" 10}}
+		}
+		{anm "seat5"	;// charger4
+			{forward {end "pose_seat_cannon_left" 10}}
+		}
+		{anm "seat6"	;// commander
+			{forward {end "pose_seat_cannon_left" 10}}
+		}
+	}
+
+	{extender "cannon"
+		{animation
+			{switch "close"}
+			;// "gunner" "gunner2" "charger" "charger2" "charger4" "commander"
+			{move "cannon_pak40_pusher_left" "cannon_pak40_pusher_right" "cannon_pak40_pusher_left" "cannon_pak40_pusher_right" "mgun_browning_driver_r" "mortar_driver_l"}
+			{aim "cannon_zis3_gunlayer" "cannon_k18_gunlayer_r1" "" "" "" ""}
+			{fire "cannon_gunlayer_fire-alert" "" "" "" "" ""}
+			{reload "" "cannon_zis3_charger" "" "" "" ""}
+		}
+		{move {workers "driver1" "driver2" "driver3" "driver4" "driver5" "driver6" minWorkers 2} {obstacle "close"}}			;// move state: cannon being pushed and which positions play animations
+		{attack {workers "gunner" "gunner2" "charger" "charger2" "charger3" "commander"} {obstacle "open"}}		;// fire/attack state: cannon aim, fire, and reload events
+		{trailing {workers "seat1" "seat2" "seat3" "seat4" "seat5" "seat6"}}									;// trailing state: cannon is being towed {obstacle} not needed. Uses "close"
+	}
+
+	{extender "inventory"
+		{box
+			{item "bullet_155 ger he" 10}
+			{item "sandbag_vehicle" 1}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{weapon "155mm_k17" filling "bullet_155 ger he" 1}
+			{gunner "gunner gunner2" minWorkers 1}
+			{charger "charger charger2 charger3" minWorkers 1}
+			{RestoreIKAfterAim}
+			("abm_dymamic_gun"
+				zeroing(8.0)	; // time it takes to aim until the reticle shrinks. Bigger values, more control.
+				dispersion(1)	; // time it takes to distort the reticle when you move the gun (how abrupt it loses zeroing). Bigger values, more control.
+			)
+		}
+	}
+
+	{mass 8800}
+	{Chassis "track"
+		("car_trace" fx("tracewheel06") step(0.08) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+		("mobility_cannon"
+			speed(3.7) ;----------------------------------Max speed.
+			weight(8800) ;--------------------------------Weight in Kilograms.
+		)
+	}
+
+	{bone "basis"
+		{speed2 1.5}
+	}
+	{bone "gun_rot"
+		{limits 0 42}
+		{speed2 2}
+	}
+	{bone "turret"
+		{limits -4.5 4.5}
+		{speed2 1.5}
+	}
+	(mod "mp"
+		{brain
+			{properties
+				{fire_mode hold}
+			}
+		}
+	)
+}

@@ -1,0 +1,29 @@
+;_________________________________________
+; French light AT cannon in German service
+;=========================================
+
+
+{from "pattern gun"			; L/32 "panzer35s" "panzerb2"
+	{filling "bullet_47x193"}
+	{fireSound "cannon/s2/d1/Shared/Cannon_45to47mm/"}
+	{fireSoundclose "cannon/s1/1p/Shared/Cannon/"}
+	{reloadSound "tank/1p/small_long/"}
+	("range_180")
+	{calibre 47}
+
+	("reload time" seconds(10))
+
+	("velocity m/s" ap(660) apcr(1) he(590) heat(1))
+	("armor health" damage(125))
+	("armor health custom" shell(apc) damage(125) velocity(660) filler(0))
+	("57_slope_multipliers")
+
+	; Pzgr.35(f)
+	("penetration_medium" shell(apc) range(170) a(53) b(40) c(28) d(21) e(17))
+
+	{parameters "he"
+		{range 170 170}
+	}
+
+	("accuracy_direct" r1(0.62) range_ap(170) range_he(160) range_heat(160))
+}

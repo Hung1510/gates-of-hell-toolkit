@@ -1,0 +1,12 @@
+;_________________________________________
+; USSR early Medium AT gun
+;=========================================
+
+
+{from "76mm_f32"			; L/30.5 "t3476_40" "kv1_39"
+	{fireSound "cannon/s3/d1/Shared/Cannon_75to76mm_LV/"}
+	{fireSoundclose "cannon/s2/1p/Shared/"}
+	{reloadSound "tank/1p/large/"}
+
+	("reload time" seconds(15))
+}

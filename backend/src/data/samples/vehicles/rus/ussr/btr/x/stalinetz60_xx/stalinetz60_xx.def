@@ -1,0 +1,35 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "stalinetz60_xx.mdl"}
+	{volume "body1"
+		{thickness 2}
+	}
+	{volume "body2"
+		{thickness 2}
+	}
+	{volume "body3"
+		{thickness 2}
+	}
+	{volume "body3"
+		{thickness 2}
+	}
+	{volume "engine1"
+		{thickness 2}
+	}
+	{volume "engine2"
+		{thickness 2}
+	}
+	{volume "engine3"
+		{thickness 2}
+	}
+	{volume "fuel"
+		{thickness 2}
+	}
+	{volume "part4"
+		{thickness 2}
+	}
+	{volume "part6"
+		{thickness 2}
+	}
+	("tracks" thickness(10))
+}

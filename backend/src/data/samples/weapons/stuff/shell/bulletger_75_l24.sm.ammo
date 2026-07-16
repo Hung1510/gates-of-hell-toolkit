@@ -1,0 +1,11 @@
+{from "pattern sm"
+	{tag "shell 75to76 smoke_size2"}
+	{entity "75mm_ger_l24_sm"}
+	{inventory {size 4 1}}
+	{mass 6.16}
+
+	{view "howitzer_shell_50-75_lv"
+		{tail "shell_tracer_75-88_he_long" "tail"}
+	}
+	("smoke_blast" cal(75))
+}

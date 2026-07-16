@@ -1,0 +1,37 @@
+;_________________________________________
+; German Light Rocket Artillery
+;=========================================
+
+
+{from "pattern reactive"		; "210mm_nebelwerfer42"
+	{tag "gun"}
+	{filling "ammo 210mm_nebelwerfer" 5}
+	{fireSound "reactive/nebel_burst/"}
+	{calibre 210}
+
+	("rocket_artillery")
+
+	{spreading
+		{radiusTable
+			{0 0}
+			{100 8}
+			{200 18}
+			{319.99 35} ;// max range
+			{320 100}
+			{365 200}
+		}
+	}
+
+	{burst
+		{min 5}
+		{noaiming}
+	}
+	{gravity 3.5}
+
+	{minRange 50}
+	{aimRange 320}
+	{maxRange 320} ;//7,85km
+	("velocity" mps(320))
+	("reload time" seconds(200))
+	("fire rate" rpm(37.5)) ;// 8s to fire full salvo
+}

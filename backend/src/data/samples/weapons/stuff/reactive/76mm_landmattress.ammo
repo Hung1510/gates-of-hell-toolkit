@@ -1,0 +1,17 @@
+{from "pattern reactive_ammo"
+	{tag "big mortar fg itemin2hands"}
+	{inventory
+		{size 8 1}
+		{weight 100}
+	}
+	{entity "land_mattress_he"}
+	{mass 29.14}
+
+	{view "land_mattress_he"
+		{tail "rocket_smoke_bm13" "tail"}
+	}
+
+	("rocket_level_3" weight(15.53) filler(2.67))
+
+	{possibleDamageRadius 30}
+}

@@ -1,0 +1,37 @@
+;_________________________________________
+; German Heavy Rocket Artillery
+;=========================================
+
+
+{from "pattern reactive"		; "sdkfz251d_1_stuka"
+	{tag "gun"}
+	{filling "ammo 280mm_nebelwerfer" 6}
+	{fireSound "reactive/nebel_burst/"}
+	{calibre 280}
+
+	("rocket_artillery")
+
+	{spreading
+		{radiusTable
+			{0 0}
+			{100 10}
+			{200 20}
+			{249.99 26} ;// max range
+			{250 100}
+			{310 200}
+		}
+	}
+
+	{burst 
+		{min 6}
+		{noaiming}
+	}
+	{gravity 2}
+
+	{minRange 50}
+	{aimRange 250}
+	{maxRange 250} ;//1.95km. 250m minimum arty range for game scale
+	("velocity" mps(230))
+	("reload time" seconds(240))
+	("fire rate" rpm(36)) ;// 10s to fire full salvo
+}

@@ -1,0 +1,4 @@
+{from "pattern heavy_headgear"
+	{tag "armor"}
+	{entity "uk_helm_brodie_mk3_beanie_mesh"}
+}

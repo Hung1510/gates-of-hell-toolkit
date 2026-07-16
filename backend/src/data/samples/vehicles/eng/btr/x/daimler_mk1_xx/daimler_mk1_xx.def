@@ -1,0 +1,137 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "daimler_mk1_xx.mdl"}
+	
+	{volume "wheelleft1"
+		{thickness 0.5}
+	}
+	{volume "wheelleft2"
+		{thickness 0.5}
+	}
+	{volume "wheelright1"
+		{thickness 0.5}
+	}
+	{volume "wheelright2"
+		{thickness 0.5}
+	}
+	{volume "body1"
+		{thickness 14
+			{front 14}
+			{left 14}
+			{top 8}
+			{rear 14}
+			{bottom 8}
+		}
+	}
+	{volume "body2"
+		{thickness 14
+			{front 14}
+			{left 14}
+			{top 8}
+			{rear 14}
+			{bottom 8}
+		}
+	}
+	{volume "body3"
+		{thickness 14
+			{front 14}
+			{left 14}
+			{top 8}
+			{rear 14}
+			{bottom 8}
+		}
+	}
+	{volume "body4"
+		{thickness 14
+			{front 14}
+			{left 14}
+			{top 8}
+			{rear 14}
+			{bottom 8}
+		}
+	}
+	{volume "body5"
+		{thickness 14
+			{front 14}
+			{left 14}
+			{top 8}
+			{rear 14}
+			{bottom 8}
+		}
+	}
+	{volume "turret1"
+		{thickness 16
+			{front 16}
+			{left 14}
+			{top 4}
+			{rear 10}
+			{bottom 4}
+		}
+	}
+	{volume "turret2"
+		{thickness 14}
+	}
+	{volume "turret3"
+		{thickness 14}
+	}
+	{volume "turret4"
+		{thickness 16
+			{front 16}
+			{left 14}
+			{top 4}
+			{rear 10}
+			{bottom 4}
+		}
+	}
+	{volume "turret5"		; Turret ring
+		{thickness 14}
+	}
+	{volume "turret6"		; Turret mantlet
+		{thickness 16}
+	}
+	{volume "mantlet"		; gun_rot mantlet
+		{thickness 16}
+	}
+	{volume "barrel1"		; barrel
+		{thickness 15}
+	}
+	{volume "barrel2"		; barrel
+		{thickness 15}
+	}
+
+	{volume "engine1"
+		{thickness 14
+			{front 14}
+			{left 14}
+			{top 8}
+			{rear 14}
+			{bottom 8}
+		}
+	}
+	{volume "engine2"
+		{thickness 14
+			{front 14}
+			{left 14}
+			{top 8}
+			{rear 14}
+			{bottom 8}
+		}
+	}
+	{volume "armor1"		; storage box
+		{thickness 4}
+	}
+	{volume "armor2"		; ram
+		{thickness 14}
+	}
+	{volume "part1"		; engine cover
+		{thickness 6}
+	}
+	{volume "part2"		; door left
+		{thickness 8}
+		{able {contact 0}{obstacle 0}}
+	}
+	{volume "part3"		; door right
+		{thickness 8}
+		{able {contact 0}{obstacle 0}}
+	}
+}

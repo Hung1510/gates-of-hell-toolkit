@@ -1,0 +1,188 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 20mm
+	; gun 25mm
+
+	("tank_medium_tier2")
+
+	("tracks" repair(30) thickness(20))
+	("gun" repair(30) thickness(25))
+
+	("shield_track" args "shield1" 20)
+	("shield_track" args "shield2" 20)
+	("shield_track" args "shield3" 20)
+	("shield_track" args "shield4" 20)
+	
+	{component "shield1" {tags "cut_part"}}
+	{component "shield2" {tags "cut_part"}}
+	{component "shield3" {tags "cut_part"}}
+	{component "shield4" {tags "cut_part"}}
+	
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("ammo" args "ammo5")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")
+
+	{volume "body1"			; transmission housing, cast
+		{thickness 38.1
+			{front 50.8}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body2"			; front middle left side, RHA
+		{thickness 38.1
+			{front 50.8}
+			{rear 10}
+		}
+	}
+	{volume "body3"			; upper front around hatches, cast
+		{thickness 38.1
+			{front 50.8}
+			{top 19.5}
+			{rear 10}
+		}
+		{CastSteel 0.8063}
+		{able {holed}}
+	}
+	{volume "body4"			; behind body1_vol
+		{thickness 38.1
+			{front 50.8}
+			{rear 10}
+		}
+	}
+	{volume "body5"			; co-driver hatch
+		{thickness 38.1
+			{top 19.5}
+			{front 50.8}
+		}
+		{CastSteel 0.8063}
+		{able {holed}}
+	}
+	{volume "body6"			; driver hatch
+		{thickness 38.1
+			{top 19.5}
+			{front 50.8}
+		}
+		{CastSteel 0.8063}
+		{able {holed}}
+	}
+	{volume "body7"			; upper Hull left, RHA
+		{thickness 38.1
+			{front 50.8}
+			{top 19.5}
+			{rear 10}
+			{bottom 25.4}
+		}
+	}
+	{volume "body8"			; upper Hull right, RHA
+		{thickness 38.1
+			{front 50.8}
+			{top 19.5}
+			{rear 10}
+			{bottom 25.4}
+		}
+	}
+	{volume "body9"			; transmission housing right side
+		{thickness 38.1
+			{front 50.8}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body10"		; transmission housing left side
+		{thickness 38.1
+			{front 50.8}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body11"		; front middle right side, cast
+		{thickness 38.1
+			{front 50.8}
+			{rear 10}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body12"		; hull MG, cast
+		{thickness 50.8}
+		{CastSteel 0.8063}
+	}
+	{volume "body13"			;left side armor plate, RHA
+		{thickness 63.5}
+	}
+	{volume "body14"			;right side armor plate, RHA
+		{thickness 63.5}
+	}
+	{volume "body15"			;right side armor plate, RHA
+		{thickness 63.5}
+	}
+	{volume "body16"		; upper front between hatches, RHA
+		{thickness 38.1
+			{front 50.8}
+			{top 19.5}
+			{rear 10}
+		}
+	}
+	{volume "engine1"
+		{thickness 38.1
+			{front 19.5}
+			{bottom 25.4}
+		}
+	}
+	{volume "engine2"
+		{thickness 38.1
+			{front 10}
+			{top 19.5}
+			{bottom 9.5}
+		}
+	}
+	{volume "turret1"
+		{thickness 51
+			{top 25.4}
+			{front 76}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret2"
+		{thickness 51
+			{front 76}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret3"
+		{thickness 76}
+		{CastSteel 0.8063}
+	}
+	{volume "turret4"	; rear turret
+		{thickness 51}
+		{CastSteel 0.8063}
+	}
+	{volume "turret5"	; weak spot on turret behind mantlet
+		{thickness 51}
+	}
+	{volume "mantlet"	; mantlet
+		{tags "turret"}
+		{component "turret"}
+		{thickness 51}
+		{CastSteel 0.8063}
+	}
+	{volume "armor3"	; square "rim" armor top of hull
+		{thickness 19.5
+			{top 5.9}
+		}
+	}
+	{volume "cupola"
+		{thickness 51
+			{top 19.5}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "basket"
+		{thickness 4}
+		{tags "armor"}
+	}

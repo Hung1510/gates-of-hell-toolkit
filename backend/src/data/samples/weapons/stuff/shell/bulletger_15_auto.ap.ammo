@@ -1,0 +1,20 @@
+{from "pattern ap"
+	{tag "20to25 zenite"}
+	{tag "auto bullet_fx size3"}
+	{inventory
+		{weight 10}
+		{size 2 2}
+		{block 10}
+	}
+	{entity "15mm_ger_auto_ap"}
+	{mass 0.32}
+
+	{trace
+		{view "/texture/fx/tracer_new/trace_solid_orange.mtl"
+			{ScaleY 0.22}
+			{ScaleX 1.75}
+			{Light 1}
+		}
+		{length 3}
+	}
+}

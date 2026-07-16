@@ -1,0 +1,57 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "bedford_qld_engineer_xx.mdl"}
+	{volume "body1"
+		{able {holed}}
+		{thickness 2}
+	}
+	{volume "body4"
+		{thickness 2}
+	}
+	{volume "body5"
+		{thickness 2}
+	}
+	{volume "bodyback1"
+		{material "wood"} 
+		{tags "wood"}
+		{thickness 2}
+	}
+	{volume "bodyback2"
+		{thickness 2}
+	}
+	{volume "bodyback3"
+		{thickness 2}
+	}
+	{volume "bodyback4"
+		{thickness 2}
+	}
+	{volume "bodyback5"
+		{material "wood"} 
+		{tags "wood"}
+		{thickness 2}
+	}
+	{volume "bodyback6"
+		{thickness 2}
+	}
+	{volume "engine1"
+		{thickness 4}
+	}
+	{volume "engine"
+		{thickness 4}
+	}
+	{volume "fuel1"
+		{thickness 2}
+	}
+	{volume "wheelleft1"
+		{thickness 2}
+	}
+	{volume "wheelleft2"
+		{thickness 2}
+	}
+	{volume "wheelright1"
+		{thickness 2}
+	}
+	{volume "wheelright2"
+		{thickness 2}
+	}
+}

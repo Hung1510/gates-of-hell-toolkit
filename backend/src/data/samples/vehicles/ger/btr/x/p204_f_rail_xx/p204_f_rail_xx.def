@@ -1,0 +1,106 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "p204_f_rail_xx.mdl"}
+
+	{volume "barrel1"
+		{thickness 20}
+	}
+	{volume "barrel2"
+		{thickness 20}
+	}
+	{volume "body1"			; Front Hull
+		{thickness 15
+			{front	15}		; Glacis
+			{top	20}
+			{rear	5}
+			{bottom	7}
+		}
+	}
+	{volume "body2"			; Center Hull
+		{thickness 15
+			{front  5}
+			{top	7}
+			{rear	5}
+			{bottom	7}
+		}
+	}
+	{volume "body3"			; Top, Front Hull
+		{thickness 15
+			{front	20}
+			{top	7}
+			{rear	5}
+			{bottom 5}
+		}
+	}
+	{volume "turret1"		; Main Turret
+		{thickness 15
+			{front	26}
+			{top	7}
+			{bottom 7}
+		}
+	}
+	{volume "turret2"		; Turret Ring
+		{thickness 15
+			{top	5}
+			{bottom 5}
+		}
+	}
+	{volume "engine"
+		{thickness 15
+			{front	5}
+			{top	7}
+			{bottom 7}
+		}
+	}
+	{volume "fenderl1"
+		{thickness 5}
+	}
+	{volume "fenderl2"
+		{thickness 5}
+	}
+	{volume "fenderl3"
+		{thickness 5}
+	}
+	{volume "fenderl4"
+		{thickness 5}
+	}
+	{volume "fenderl5"
+		{thickness 5}
+	}
+	{volume "fenderl6"
+		{thickness 5}
+	}
+	{volume "fenderl7"
+		{thickness 5}
+	}
+	{volume "fenderr5"
+		{thickness 5}
+	}
+	{volume "fenderr6"
+		{thickness 5}
+	}
+	{volume "fenderr7"
+		{thickness 5}
+	}
+	{volume "part1"		; Fender
+		{thickness 5}
+	}
+	{volume "part2"		; Door
+		{thickness 15}
+	}
+	{volume "part3"		; Turret Hatch
+		{thickness 7}
+	}
+	{volume "part4"		; Front Left Wheel
+		{thickness 10}
+	}
+	{volume "part5"		; Front Right Wheel
+		{thickness 10}
+	}
+	{volume "part6"		; Back Left Wheel
+		{thickness 10}
+	}
+	{volume "part7"		; Back Right Wheel
+		{thickness 10}
+	}
+}

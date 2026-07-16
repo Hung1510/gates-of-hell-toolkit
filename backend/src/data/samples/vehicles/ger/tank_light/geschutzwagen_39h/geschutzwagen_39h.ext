@@ -1,0 +1,90 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 15mm
+	; gun 20mm
+
+	;// Defines
+	("tank_light_tier2")
+	("tracks" repair(30) thickness(15))
+	("gun" repair(30) thickness(25))
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("transmission" args "transmission1")
+	("transmission" args "transmission2")
+	("shield_group" args "tshield1"  10 "shieldt") ;// Rear
+	("shield_group" args "tshield2"  10 "shieldt") ;// Rear
+	("shield_group" args "tshield3"  10 "shieldt") ;// Rear
+	("shield_group" args "tshield4"  20 "shieldt")
+	("shield_group" args "tshield5"  20 "shieldt")
+	("shield_group" args "tshield6"  20 "shieldt")
+	("shield_group" args "tshield7"  20 "shieldt")
+	("shield_group" args "tshield8"  20 "shieldt")
+	("shield_group" args "tshield9"  20 "shieldt")
+	("shield_group" args "tshield10" 10 "shieldt") ;// Rear
+	("shield_group" args "tshield11" 10 "shieldt") ;// Rear
+	("shield_group" args "gun_shield1"  20 "gun_shield")
+	("shield_group" args "gun_shield2"  20 "gun_shield")
+	("shield_group" args "gun_shield3"  20 "gun_shield")
+	("shield" args "shield1" 20)
+	("shield" args "shield2" 20)
+
+	;// Components
+	{volume "body1" ;// Lower Front Hull
+		{thickness 40
+			{top 12}
+			{bottom 20}
+		}
+	}
+	{volume "body2" {thickness 34}} ;// Left Frontal Wheel Cover
+	{volume "body3" {thickness 34}} ;// Right Frontal Wheel Cover
+	{volume "body4"  ;// Upper Front Hull
+		{thickness 40
+			{top 22}
+			{bottom 20}
+		}
+	}
+	{volume "body5" ;// Superstructure
+		{thickness 40
+			{top 22}
+			{bottom 20}
+		}
+	}
+	{volume "body6" ;// Upper Plate, directly frontal plate in front of driver
+			{thickness 40
+				{top 22}
+				{bottom 20}
+			}
+		}
+	{volume "body7" ;// Left Superstructure Plane
+		{thickness 40
+			{top 22}
+			{bottom 20}
+		}
+	}
+	{volume "body8" ;// Right Superstructure Plane
+		{thickness 40
+			{top 22}
+			{bottom 20}
+		}
+	}
+	{volume "engine1" {thickness 40 {top 22} {bottom 20}} {able {holed}}} ;// Intenrally behind shields
+	{volume "engine2" {thickness 40 {top 22} {bottom 20}} {able {holed}}}
+
+	;// Shields
+	{volume "tshield1" {tags "gun_shield"}}
+	{volume "tshield2" {tags "gun_shield"}}
+	{volume "tshield3" {tags "gun_shield"}}
+	{volume "tshield4" {tags "gun_shield"}}
+	{volume "tshield5" {tags "gun_shield"}}
+	{volume "tshield6" {tags "gun_shield"}}
+	{volume "tshield7" {tags "gun_shield"}}
+	{volume "tshield8" {tags "gun_shield"}}
+	{volume "tshield9" {tags "gun_shield"}}
+	{volume "tshield10" {tags "gun_shield"}}
+	{volume "tshield11" {tags "gun_shield"}}
+	{volume "shield1" {tags "gun_shield"} {able {holed}}}
+	{volume "shield2" {tags "gun_shield"}}
+	{volume "gun_shield3" {able {holed}}}

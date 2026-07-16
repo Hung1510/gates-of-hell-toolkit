@@ -1,0 +1,140 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "t35_xx.mdl"}
+	{volume "armor1"		; Right Side box of superstructure
+		{thickness 10
+			{front 20}
+			{rear 20}
+		}
+	}
+	{volume "armor2"		; Left Side box of superstructure
+		{thickness 10
+			{front 20}
+			{rear 20}
+		}
+	}
+	{volume "aux_turret11"	; Front Right Turret (Gun)
+		{thickness 50
+			{top 10}
+		}
+	}
+	{volume "aux_turret12"	; Front Right Turret Mantlet (Gun)
+		{thickness 50}
+	}
+
+	{volume "aux_turret21"	; Rear Left Turret (Gun)
+		{thickness 50
+			{top 10}
+		}
+	}
+	{volume "aux_turret22"	; Rear Left Turret Mantlet (Gun)
+		{thickness 50}
+	}
+
+	{volume "aux_turret31"	; Front Left Turret (MG)
+		{thickness 50
+			{front 23}
+			{top 10}
+		}
+	}
+	{volume "aux_turret41"	; Rear Right Turret (MG)
+		{thickness 50
+			{front 23}
+			{top 10}
+		}
+	}
+	{volume "barrel11"
+		{thickness 20}
+	}
+	{volume "barrel1"
+		{thickness 20}
+	}
+	{volume "barrel21"
+		{thickness 20}
+	}
+	{volume "barrel2"
+		{thickness 20}
+	}
+	{volume "body1"			; Nose
+		{thickness 50
+			{front 60}
+			{top 20}		; Glacis
+			{bottom 30}
+		}
+	}
+	{volume "body2"			; Hull
+		{thickness 50
+			{front 60}
+			{top 10}
+			{rear 10}
+		}
+	}
+	{volume "body3"			; Superstructure
+		{thickness 50
+			{top 10}
+		}
+	}
+	{volume "engine1"
+		{thickness 20
+			{front 10}
+			{top 10}
+		}
+	}
+
+	{volume "part10"
+		{thickness 2}
+	}
+	{volume "part1"
+		{thickness 2}
+	}
+	{volume "part2"
+		{thickness 2}
+	}
+	{volume "part3"
+		{thickness 2}
+	}
+	{volume "part4"
+		{thickness 2}
+	}
+	{volume "part5"
+		{thickness 2}
+	}
+	{volume "part6"
+		{thickness 2}
+	}
+	{volume "part7"
+		{thickness 2}
+	}
+	{volume "part8"
+		{thickness 2}
+	}
+	{volume "part9"
+		{thickness 2}
+	}
+	{volume "shieldl"
+		{thickness 11}
+	}
+	{volume "shieldr"
+		{thickness 11}
+	}
+	
+	{volume "turret1"		; Turret Ring
+		{thickness 20}
+	}
+	{volume "turret2"		; Turret Middle
+		{thickness 20
+			{top 15}
+			{bottom 15}
+		}
+	}
+	{volume "turret3"		; Turret Top
+		{thickness 15}
+	}
+	{volume "mantlet"		; Turret Mantlet
+		{thickness 20}
+	}
+	{volume "turret5"		; Turret MG port
+		{thickness 20}
+	}
+	("tracks" thickness(20))
+}

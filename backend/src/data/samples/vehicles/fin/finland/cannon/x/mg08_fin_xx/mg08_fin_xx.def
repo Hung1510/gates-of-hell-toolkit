@@ -1,0 +1,58 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "mg08_fin_xx.mdl"}
+	{volume "body10"
+		{thickness 6}
+	}
+	{volume "body11"
+		{thickness 6}
+	}
+	{volume "body12"
+		{thickness 6}
+	}
+	{volume "body13"
+		{thickness 6}
+	}
+	{volume "body14"
+		{thickness 6}
+	}
+	{volume "body15"
+		{thickness 6}
+	}
+	{volume "body16"
+		{thickness 6}
+	}
+	{volume "body17"
+		{thickness 6}
+	}
+	{volume "body18"
+		{thickness 6}
+	}
+	{volume "body1"
+		{thickness 6}
+	}
+	{volume "body2"
+		{thickness 6}
+	}
+	{volume "body3"
+		{thickness 6}
+	}
+	{volume "body4"
+		{thickness 6}
+	}
+	{volume "body5"
+		{thickness 6}
+	}
+	{volume "body6"
+		{thickness 6}
+	}
+	{volume "body7"
+		{thickness 6}
+	}
+	{volume "body8"
+		{thickness 6}
+	}
+	{volume "body9"
+		{thickness 6}
+	}
+}

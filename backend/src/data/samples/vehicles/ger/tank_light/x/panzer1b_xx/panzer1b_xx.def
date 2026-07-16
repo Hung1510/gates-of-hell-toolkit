@@ -1,0 +1,72 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{Extension "panzer1b_xx.mdl"}
+
+	{volume "body"			; Hull
+		{thickness 13
+			{top 8}			; Glacis
+			{rear 4}
+			{bottom 5}
+		}
+	}
+	{volume "body1"			; Superstructure
+		{thickness 13
+			{top 4}
+			{rear 8}
+			{bottom 5}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 13
+			{front 8}
+			{rear 4}
+			{bottom 5}
+		}
+	}
+	{volume "body3"			; Engine
+		{thickness 13}
+	}
+	{volume "body4"			; Track Wheel
+		{thickness 15}
+	}
+	{volume "body5"			; Track Wheel
+		{thickness 15}
+	}
+	{volume "body6"			; Track Wheel
+		{thickness 15}
+	}
+	{volume "body7"			; Track Wheel
+		{thickness 15}
+	}
+	{volume "body8"			; Track Wheel
+		{thickness 15}
+	}
+	{volume "body9"			; Track Wheel
+		{thickness 15}
+	}
+	{volume "body10"		; Track Wheel
+		{thickness 15}
+	}
+	{volume "body11"		; Track Wheel
+		{thickness 15}
+	}
+	{volume "turret"
+		{thickness 13
+			{front 14}
+			{top 8}
+			{bottom 4}
+		}
+	}
+	{Volume "part1"			; Track Wheel
+		{thickness 15}
+	}
+	{Volume "part2"			; Track Wheel
+		{thickness 15}
+	}
+	{Volume "part3"			; Track Wheel
+		{thickness 15}
+	}
+	{Volume "part4"			; Track Wheel
+		{thickness 15}
+	}
+}

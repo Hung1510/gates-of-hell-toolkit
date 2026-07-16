@@ -1,0 +1,67 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "ft17_mg_fin_xx.mdl"}
+
+	{volume "barrel1"
+		{thickness 8}
+	}
+	{volume "barrel2"
+		{thickness 8}
+	}
+	{volume "body1"			; Hull
+		{thickness 16
+			{top 8}			; Glacis
+			{rear 6}
+			{bottom 6}
+		}
+	}
+	{volume "body2"			;  Superstructure
+		{thickness 16
+			{top 8}
+			{rear 6}
+		}
+	}
+	{volume "engine"
+		{thickness 16
+			{front 8}
+			{top 8}
+			{bottom 6}
+		}
+	}
+	{volume "turret1"		; Turret Ring
+		{thickness 16
+			{top 6}
+		}
+	}
+	{volume "turret2"		; Turret
+		{thickness 16}
+	}
+	{volume "mantlet"
+		{thickness 16}
+	}
+	{volume "part2"
+		{thickness 16}
+	}
+	{volume "part3"
+		{thickness 16}
+	}
+	{volume "part4"
+		{thickness 10}
+	}
+	{volume "part8"
+		{thickness 15}
+	}
+	{volume "tail1"
+		{thickness 5}
+	}
+	{volume "tail2"
+		{thickness 5}
+	}
+	{volume "tail3"
+		{thickness 5}
+	}
+	{volume "detail1"
+		{thickness 5}
+	}
+	("tracks" thickness(15))
+}

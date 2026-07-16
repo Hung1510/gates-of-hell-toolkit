@@ -1,0 +1,41 @@
+;_________________________________________
+; short barreled USSR tank gun
+;=========================================
+
+ 
+{from "76mm_kt26"			; L/26 "t28_38"
+
+	("velocity m/s" ap(555) apcr(809) he(560) heat(325))
+	("range_180")
+
+	("armor health custom" shell(apcbc) damage(200) velocity(570) filler(0))
+	("armor health custom" shell(aphebc) damage(200) velocity(555) filler(150))
+	("armor health custom" shell(aphebc2) damage(200) velocity(555) filler(88))
+
+	; BR-350A
+	("penetration_medium" shell(aphebc) range(180) a(58) b(53) c(48) d(44) e(40))
+
+	; BR-350B
+	("penetration_medium" shell(aphebc2) range(180) a(66) b(61) c(56) d(52) e(48))
+
+	; BR-350P  ; only issued to ZiS-5 & F-34 guns; theoretical performance
+	("penetration_medium" shell(apcr) range(180) a(102) b(70) c(44) d(27) e(17))
+
+	; BP-350A
+	("penetration_medium" shell(heat) range(170) a(75) b(75) c(75) d(75) e(75))	; issued sometime in '43
+
+	; 76 psa - Vj4 (Finnish)
+	("penetration_medium" shell(apcbc) range(180) a(91) b(83) c(73) d(65) e(58)) ; issued sometime in '42
+	{parameters "apcbc" ("velocity" mps(570))}
+
+	; 76 hkr 42-18/24-38 (Finnish)
+	("penetration_medium" shell(heatb) range(170) a(87) b(87) c(87) d(87) e(87))	; issued sometime in '44
+	{parameters "heatb" ("velocity" mps(400))}
+
+	; 76 hrk Vj 42/C-18/24-38 (Finnish)
+	("penetration_medium" shell(heatc) range(170) a(115) b(115) c(115) d(115) e(115))	; issued sometime in '44
+	{parameters "heatc" ("velocity" mps(400))}
+
+
+	("accuracy_direct" r1(0.95) range_ap(180) range_he(180) range_heat(170))
+}

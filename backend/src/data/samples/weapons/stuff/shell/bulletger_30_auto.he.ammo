@@ -1,0 +1,17 @@
+{from "pattern he"
+	{tag "37to40 no_throw"}
+	{tag "auto size2"}
+	{inventory
+		{weight 10}
+		{size 3 2}
+		{block 10}
+	}
+	{entity "30mm_ger_auto_he"}
+	{mass 0.65}
+
+	{view "howitzer_shell_auto"
+		{tail "shell_tracer_37_he" "tail"}
+	}
+
+	("he_level_1" weight(0.33) filler(0.115))
+}

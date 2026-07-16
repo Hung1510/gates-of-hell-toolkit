@@ -1,0 +1,4 @@
+{weapon_bombing
+	("plane_bomb_weapon")
+	{filling "ammo air_bomb_rus_250kg" 2}
+}

@@ -1,0 +1,16 @@
+{
+	(include "../40mm_qf2/40mm_qf2.inc")
+
+	{extender "inventory"
+		{box
+			{item "bulleteng_40 ap" 60}	;// mid war (1942) APHV shots, 853 m/s
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{weapon "40mm_qf2" filling "bulleteng_40 ap" 1}
+		}
+	}
+}
+

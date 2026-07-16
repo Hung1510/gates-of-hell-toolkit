@@ -1,0 +1,65 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "latil_m2tl6_xx.mdl"}
+	{volume "wheelleft2"
+		{thickness 0.5}
+	}
+	{volume "wheelleft1"
+		{thickness 0.5}
+	}
+	{volume "wheelright2"
+		{thickness 0.5}
+	}
+	{volume "wheelright1"
+		{thickness 0.5}
+	}
+
+	{Volume "body1"
+		{thickness 2}
+		{able {holed}}
+	}
+	{Volume "body2"
+		{thickness 2}
+	}
+	{Volume "body3"
+		{thickness 2}
+	}
+	{volume "engine1"
+		{thickness 1.5}
+	}
+	{volume "engine2"
+		{thickness 1.5}
+	}	
+	{volume "bodyback1"
+		{thickness 2}
+		{able {holed}}
+	}	
+	{volume "bodyback2"
+		{thickness 2}
+		{able {holed}}
+	}	
+	{volume "bodyback3"
+		{thickness 2}
+		{able {holed}}
+	}	
+
+	;// Parts
+	{volume "part1" ;// Door
+		{thickness 2}
+	}
+	{volume "part2" ;// Door
+		{thickness 2}
+	}
+	{volume "part3" ;// Engine Hood
+		{thickness 1.5}
+	}
+	{volume "part4" ;// Back Door
+		{thickness 2}
+	}
+	{volume "part5" ;// Back Door
+		{thickness 2}
+	}
+	{volume "part6" ;// Engine Fan
+		{thickness 1.5}
+	}
+}

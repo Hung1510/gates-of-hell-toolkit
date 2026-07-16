@@ -1,0 +1,3 @@
+{game_entity
+	{extension "cruiser_mk1_cs_x.mdl"} {RimLight}
+}

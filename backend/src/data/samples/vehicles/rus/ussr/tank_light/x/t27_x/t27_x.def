@@ -1,0 +1,3 @@
+{game_entity
+	{extension "t27_x.mdl"} {RimLight}
+}

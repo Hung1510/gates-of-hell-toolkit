@@ -1,0 +1,40 @@
+;SDL	
+{boarder
+	{anm "driver"
+		{forward	{begin "board_t34_driver"} {end "pose_geschutzwagen_39h_driver"} {base "open_driver"}}
+		{reverse	{end "emit_body" 1} {base "open_driver" -1}}
+	}
+	{anm "gunner"
+		{forward	{begin "board_MiddleArmor"} {end "pose_geschutzwagen_39h_gunner"} {base "board"}}
+		{reverse	{end "emit_body" 1} {base "board"}}
+	}
+	{anm "charger"
+		{forward	{begin "board_MiddleArmor"} {end "pose_geschutzwagen_39h_charger"} {base "board"}}
+		{reverse	{end "emit_body" 1} {base "board"}}
+	}
+	{anm "commander"
+		{forward	{begin "board_MiddleArmor"} {end "pose_geschutzwagen_39h_commander"} {base "board"}}
+		{reverse	{end "emit_body" 1} {base "board"}}
+	}
+}
+
+(define "crew_human"
+	{placer
+		{place "%place" {group "%group"} {linkbone "%bone"} {turnoff %off {shadow}}}
+	}
+	{boarder
+		{door "%door"}
+		{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+	}
+)
+
+{placer
+	{place "driver"		{visor "main"}}
+	{place "gunner"		{visor "none"}}
+	{place "commander"	{visor "none"}}
+}
+
+("crew_human" place(driver)				door(emit0) bone(driver)  	animation(driver)	 group(crew) 		off({sensor}))
+("crew_human" place(gunner)				door(emit2) bone(gunner)  	animation(gunner)	 group(crew) 		off({targetable 0}))
+("crew_human" place(charger)			door(emit1)	bone(charger) 	animation(charger) 	 group(crew) 		off())
+("crew_human" place(commander)			door(emit1) bone(commander) animation(commander) group(crew) 		off({targetable 0}))

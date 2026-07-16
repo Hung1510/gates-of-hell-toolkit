@@ -1,0 +1,17 @@
+{from "pattern pistol"
+	{tag "silenced"}
+	{inventory {size 3 1}}
+	{filling "ammo 7_65mm_pistol" 8}
+	{entity "welrod"}
+	{fireSound "smallarms/s1/d1/Shared/Surpressed_Pistol/"}
+	{fireSoundclose "smallarms/s1/3p/Shared/Surpressed_Pistol/"}
+	{reloadSound "tt"}
+	{calibre 7.65}
+	{mass 1.2}
+
+	("reload time" seconds(5.5))
+	("fire rate" rpm(40))
+
+	("velocity" mps(280))
+	("human health" damage(120))
+}

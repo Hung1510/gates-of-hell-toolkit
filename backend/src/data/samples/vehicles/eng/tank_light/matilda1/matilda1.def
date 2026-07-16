@@ -1,0 +1,91 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle_elongated.inc" scale(0.9))
+	{props "light" "vision_lev02" "smoke" "4in_2x" "detect_tank_mg"}
+	{extension "matilda1.mdl"}
+	(include "matilda1.ext")
+	{targetclass "tank_medium"}
+	{targetSelector "tank_bullet"}
+	{patherId "matilda1"}
+	{collider "tank.light"}
+
+	{extender "enumerator"
+		{digit_folder "us2"}
+	}
+
+	("crew_2_human")
+
+	{boarder
+		{anm "left"
+			{forward {begin "board_tank_left"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward {begin "board_tank_right"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "armor1"
+			{forward {begin "board_LowArmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_1"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat1) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat2) door(emit4)  animation(armor1))
+
+	{sensor
+		{visor "main"
+			{bone "foresight3"}
+			{vision "tank_main_mg"}
+		}
+	}
+
+	{extender "smokescreen"
+		{cooldown 5}
+		{itemTags "grenade no8_smoke"}
+	}
+
+	{extender "inventory"
+		{box
+			{item "ammo mgun_eng belt" 3750}	; 16 belts (250 rounds each)
+			{item "satchel_charge_eng" 1}
+			{item "no8_smoke grenade" 4} 
+		}
+	}
+
+	{Weaponry
+		{place "mgun"
+			{type "main"}
+			{weapon "vickers_tank" filled}
+			{foresight "foresight3"}
+			{gunner "gunner"}
+			{charger "gunner"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 11000}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.2) len(-0.53))
+		("mobility_tank"
+			speed(13) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(4) ;---------Max speed in reverse on road, km/h.
+			traverse(20) ;-------Track traverse, per second, in degrees.
+			weight(11) ;---------Weight in Tonnes.
+			power(70) ;----------Engine Power, in hp.
+			track(25.0) ;--------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(191) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(58) ;----------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -15 25}
+		{speed2 10}
+	}
+	{bone "turret"
+		("turret_light" power_traverse(0)) ;// manual
+	}
+}

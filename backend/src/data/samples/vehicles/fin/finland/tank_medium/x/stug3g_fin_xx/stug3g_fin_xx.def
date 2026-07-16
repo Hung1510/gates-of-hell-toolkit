@@ -1,0 +1,80 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "stug3g_fin_xx.mdl"}
+
+	{volume "body1"			; Hull
+		{thickness	30
+			{front 80}		; 50mm base + 30mm plate
+			{top 25}		; Glacis
+			{rear 10}
+			{bottom 15}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 30
+			{front 80}
+			{right 19}		; Overhang (above tracks)
+		}
+		{able {holed}}
+	}
+	{volume "body3"			; Superstructure Top
+		{thickness 10
+			{front 80}
+			{rear 30}
+		}
+	}
+	{volume "body4"			; Superstructure Front
+		{thickness 30
+			{front 80}		; 50mm base + 30mm plate
+		}
+		{able {holed}}
+	}
+	{volume "engine"		; Hull 
+		{thickness 30
+			{front 10}
+			{top 16}
+			{rear 50}
+			{bottom 15}
+		}
+	}
+	{volume "barrel1"
+		{thickness 80}
+	}
+	{volume "barrel2"
+		{thickness 50
+			{front 80}
+		}
+	}
+	{volume "barrel3"
+		{thickness 25}
+	}
+	{volume "cupola"
+		{thickness 30
+			{top 10}
+		}
+	}
+	{volume "part3"
+		{thickness 6}
+		{able {holed}}
+	}
+	{volume "part4"
+		{thickness 20}
+	}
+	{volume "part5"
+		{thickness 20}
+	}
+	{volume "part6"
+		{thickness 20}
+	}
+	{volume "part7"
+		{thickness 20}
+	}
+	{volume "armor1" ; concrete
+		{thickness 20}
+	}
+	{volume "armor2"  ; concrete
+		{thickness 20}
+	}
+	
+	("tracks" thickness(20))
+}

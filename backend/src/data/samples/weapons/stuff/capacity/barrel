@@ -1,0 +1,11 @@
+{item	;// 55 gallon (~210L) drum
+	{tag "itemin2hands capacity"}
+	{filling "liquid" 210}
+	{entity "barrel1"}
+	{inventory
+		{size 3 5}
+		{weight 100}
+		{fsm "hand-only"}
+	}
+	{mass 19} ;// empty weight
+}

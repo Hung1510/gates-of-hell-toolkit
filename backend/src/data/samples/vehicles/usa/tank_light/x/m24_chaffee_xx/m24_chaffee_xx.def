@@ -1,0 +1,91 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "m24_chaffee_xx.mdl"}
+
+	{volume "body1"			; Hull
+		{thickness 25
+			{top 13}		; Glacis
+			{rear 8}
+			{bottom 19}
+		}
+	}
+	{volume "engine1"		; Hull
+		{thickness 19
+			{front 8}
+			{top 13}
+		}
+	}
+	{volume "turret1"		; main part
+		{thickness 25
+			{front 38}		
+			{top 13}
+		}
+	}
+	{volume "turret2"		; lower part
+		{thickness 25
+			{front 38}
+		}
+	}
+	{volume "turret3"		; front1
+		{thickness 38}
+	}
+	{volume "turret4"		; front2
+		{thickness 38}
+	}
+	{volume "turret5"		; front3
+		{thickness 38}
+	}
+	{volume "mantlet"
+		{thickness 38}
+		{able {holed}}
+	}
+	{volume "cupola"
+		{thickness 38
+			{top 12}
+		}
+	}
+	{volume "basket"
+		{thickness 5}
+	}
+	{volume "armor1"
+		{thickness 12}
+	}
+	{volume "armor2"
+		{thickness 12}
+	}
+	{volume "barrel1"
+		{thickness 25}
+	}
+	{volume "barrel2"
+		{thickness 25}
+	}
+	{volume "part3"
+		{thickness 10}
+	}
+	{volume "shieldl1"
+		{thickness 5}
+	}
+	{volume "shieldl2"
+		{thickness 5}
+	}
+	{volume "shieldl3"
+		{thickness 5}
+	}
+	{volume "shieldl4"
+		{thickness 5}
+	}
+	{volume "shieldr1"
+		{thickness 5}
+	}
+	{volume "shieldr2"
+		{thickness 5}
+	}
+	{volume "shieldr3"
+		{thickness 5}
+	}
+	{volume "shieldr4"
+		{thickness 5}
+	}
+
+	("tracks" thickness(15))
+}

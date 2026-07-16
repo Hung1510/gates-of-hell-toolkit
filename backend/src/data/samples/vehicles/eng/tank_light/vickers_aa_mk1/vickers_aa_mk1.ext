@@ -1,0 +1,70 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 15mm
+
+	("tankette_tier1")
+
+
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+
+	("tracks" repair(30) thickness(15))
+
+	{volume "body1"			; front_left
+		{thickness 14
+			{top 10}
+			{rear 5}
+			{bottom 6}
+		}
+	}
+	{volume "body2"			; left_middle
+		{thickness 14
+			{top 6}
+			{bottom 6}
+		}
+	}
+	{volume "body3"			; back
+		{thickness 14
+			{top 6}
+			{bottom 6}
+		}
+	}
+	{volume "body4"			; top
+		{thickness 14
+			{top 6}
+			{bottom 6}
+		}
+	}
+	{volume "engine1"
+		{thickness 14
+			{top 6}
+			{bottom 6}
+		}
+	}
+	{volume "engine2"
+		{thickness 14}
+	}
+	{volume "turret1" 	; Turret Ring	
+		{thickness 14}
+	}
+	{volume "turret2"		; main (commander shields)
+		{thickness 14
+			{top 5} 	; Small bit thats not covered by hole3_vol
+		}
+	}
+	{volume "armor1" 	; Engine Hatch Plate
+		{thickness 4}
+	}
+	{volume "armor2"	; gun_rot plate
+		{thickness 4}
+	}
+	{volume "armor3"	; under gun_rot plate (static, turret)
+		{thickness 4}
+	}
+	{volume "armor4"	; gun_rot top shieldl
+		{thickness 4}
+	}
+	{volume "armor5"	; gun_rot top shieldr
+		{thickness 4}
+	}

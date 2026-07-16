@@ -1,0 +1,15 @@
+{from "pattern mgun_light"
+	{filling "ammo vickers_go_mag" 96}
+	{entity "vickers_go_no2"}
+	{fireSound 	"smallarms/s3/d1/ENG/Vickers_GO/"}
+	{fireSoundclose "smallarms/s3/3p/ENG/Vickers_GO/"}
+	{reloadSound "mg34"}
+	{calibre 7.7}
+	{mass 13.4}
+
+	("fire rate" rpm(1000))
+	("velocity" mps(760))
+
+	("burst_long")
+	("spreading_low")
+}

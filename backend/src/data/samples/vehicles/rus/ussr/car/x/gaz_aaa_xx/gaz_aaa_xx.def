@@ -1,0 +1,63 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "gaz_aaa_xx.mdl"}
+	{volume "body1"
+		{thickness 2}
+	}
+	{volume "body1"
+		{thickness 2}
+	}
+	{volume "body2"
+		{thickness 2}
+	}
+	{volume "body3"
+		{thickness 2}
+	}
+	{volume "body4"
+		{thickness 2}
+	}
+	{volume "body5"
+		{thickness 2}
+	}
+	{volume "body6"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "body7"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "bodyback1"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "bodyback2"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "bodyback3"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "part1"
+		{thickness 2}
+	}
+	{volume "part2"
+		{thickness 2}
+	}
+	{volume "part3"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+		{able {visible 0}}
+	}
+	{volume "part4"
+		{thickness 2}
+	}
+	{volume "part5"
+		{thickness 2}
+	}
+}

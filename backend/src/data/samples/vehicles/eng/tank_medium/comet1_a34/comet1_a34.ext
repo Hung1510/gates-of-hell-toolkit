@@ -1,0 +1,158 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 20mm
+	; gun 25mm
+
+	("tank_medium_tier2")
+
+	("tracks" repair(30) thickness(20))
+	("gun" repair(30) thickness(25))
+
+	("shield_track" args "detail8" 20)
+	("shield_track" args "detail9" 20)
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("ammo" args "ammo5")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("transmission" args "transmission")
+
+	{volume "body1" ;// Beak
+		{thickness 36
+			{front 63.5}
+			{top 32}
+			{bottom 25.4}
+			{rear 14}
+		}
+	}
+
+	{volume "body2" ;// lower hull
+		{thickness 43
+			{front 76.2}
+			{top 20}
+			{bottom 14}
+			{rear 10}
+		}
+	}
+	
+	{volume "body3" ;// upper hull
+		{thickness 46
+			{front 76.2}
+			{top 25.4}
+			{bottom 25.4}
+			{rear 10}
+		}
+	}
+	{volume "body4" ;// upper hull side armor
+		{thickness 46
+			{front 76.2}
+			{top 25.4}
+			{bottom 25.4}
+			{rear 10}
+		}
+		{CastSteel 0.87} ;// layered armor array 32+14mm = ~42.5mm effective
+	}
+	{volume "body5" ;// hull mg mount
+		{thickness 89}
+	}
+	{volume "body6" ;// lower hull side armor
+		{thickness 43
+			{front 76.2}
+			{top 20}
+			{bottom 14}
+			{rear 10}
+		}
+		{CastSteel 0.79} ;// spaced armor array 29+14mm = ~36mm effective
+	}
+	
+	{volume "engine1" ;// lower engine
+		{thickness 14
+			{front 10}
+			{left 43}
+			{right 20} ;// lower rear part
+			{rear 32}
+		}
+	}
+	
+	{volume "engine2" ;// upper engine
+		{thickness 14
+			{front 10}
+			{left 25.4}
+			{rear 32}
+		}
+	}
+
+	{volume "engine3" ;// engine sides
+		{thickness 14
+			{front 10}
+			{left 43}
+			{right 20} ;// lower rear part
+			{rear 32}
+		}
+		{CastSteel 0.79} ;// spaced armor array 29+14mm = ~36mm effective
+	}
+
+	{volume "turret1"
+		{thickness 25.4
+			{front 102}
+			{left 63.5}
+			{rear 57.1}
+		}
+	}
+
+	{volume "turret2" {thickness 102}}
+
+	{volume "turret3" {thickness 102}}
+
+	{volume "turret4" {thickness 10}} ;\\ Fake turret vol inside mantlet, so when mantlet is pen and there's enough power past mantlet it can pen the turret technically.
+
+	{volume "turret5" {thickness 120}} ;\\ Turret ring
+
+
+;\\ Armor
+	{volume "basket" 
+		{thickness 6}
+		{tags "armor"}
+	}
+
+	{volume "cupola" {thickness 44}}
+
+	{volume "mantlet1" 
+		{thickness 102}
+		{component "turret"}
+		{tags "turret"}
+	}
+
+	{volume "armor1" 	;\\ Engine Extra Armor
+		{thickness 25
+			{front 32}
+			{top 14}
+		}
+		{able {holed}}
+	}
+
+	{volume "armor2"	;\\ Engine Extra Armor
+		{thickness 25
+			{front 32}
+			{top 14}
+		}
+		{able {holed}}
+	}
+
+	{volume "armor3" 	;\\ Boxes
+		{thickness 6}
+	}
+
+	{volume "armor4" 	;\\ Boxes
+		{thickness 6}
+	}
+	{volume "armor5" 	;\\ engine exhaust armor
+		{thickness 25}
+	}
+
+	{component "detail8" {tags "cut_part"}}
+	{component "detail9" {tags "cut_part"}}

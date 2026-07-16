@@ -1,0 +1,25 @@
+;_________________________________________
+; ARTY british medium field gun
+;=========================================
+
+
+{from "88mm_qf25_mk1"			; L/28 "qf 25pdr"
+	{range 370 370} ; // 12.253km
+
+	("reload time" seconds(10))
+
+	("velocity m/s" ap(578) apcr(1) he(200) heat(1)) ;real HE 532m/s
+	("armor health custom" shell(ap) damage(240) velocity(578) filler(0))
+
+	; AP Shot Mk.I-Mk.VIII, super charge
+	("penetration_medium" shell(ap) range(190) a(102) b(88) c(72) d(60) e(49))
+
+	("accuracy_indirect"		; // Applies logic for accuracy of indirect weapons over 200m
+		r1(0.9) 				; // Accuracy radius for direct-fire munitions
+		r2(4.96) 				; // Accuracy radius for indirect fire
+		rmax(20.57) 			; // Accuracy radius for indirect fire at maximum range
+		range_ap(190) 			; // Range after which accuracy drops to prevent farshooting
+		range_heat(190) 		; // Range after which accuracy drops to prevent farshooting
+		range_he(370)			; // Range after which accuracy drops to prevent farshooting
+	)
+}

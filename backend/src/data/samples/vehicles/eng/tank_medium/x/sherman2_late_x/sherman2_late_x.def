@@ -1,0 +1,3 @@
+{game_entity
+	{extension "sherman2_late_x.mdl"} {RimLight}
+}

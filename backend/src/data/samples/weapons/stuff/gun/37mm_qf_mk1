@@ -1,0 +1,25 @@
+;_________________________________________
+; british light AT cannon
+;=========================================
+
+
+{from "pattern gun"			; L/45 "37mm_qf_mk1"
+	{filling "bullet_37x257"}
+	{fireSound "cannon/s1/d1/Shared/Cannon_37to40mm/"}
+	{fireSoundclose "cannon/s1/3p/Shared/Cannon_37to40mm/"}
+	{reloadSound "utility/"}
+	("range_160")
+	{calibre 37}
+
+	("reload time" seconds(2.5))
+
+	("velocity m/s" ap(785) apcr(1) he(805) heat(1))
+	("armor health" damage(100))
+	("armor health custom" shell(ap) damage(100) velocity(785) filler(0))
+	("37_slope_multipliers_800ms")
+	
+	("accuracy_direct" r1(0.83) range_ap(160) range_he(160) range_heat(110))
+
+	; 37 mm sk ptr m/34 slpprj m/38
+	("penetration_medium" shell(ap) range(160) a(54) b(41) c(28) d(20) e(14))
+}

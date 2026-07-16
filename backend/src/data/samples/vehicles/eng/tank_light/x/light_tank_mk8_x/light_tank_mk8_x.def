@@ -1,0 +1,3 @@
+{game_entity
+	{extension "light_tank_mk8_x.mdl"} {RimLight}
+}

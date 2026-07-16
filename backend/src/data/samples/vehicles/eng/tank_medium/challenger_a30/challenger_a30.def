@@ -1,0 +1,121 @@
+{game_entity
+	(include "/properties/tank.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.1))
+	{props "medium" "vision_lev04" "muzzle_85mm_93mm_sides" "smoke" "2in_wp"}
+	{extension "challenger_a30.mdl"}
+	(include  "challenger_a30.ext")
+	{PatherId "comet"}
+	{targetclass "tank_medium"}
+	{targetSelector "tank_medium"}
+	{extender "smokescreen"
+		{cooldown 5}
+		{itemTags "mortareng_50 wp"}
+	}
+
+	{extender "enumerator"
+		{digit_folder "us2"}
+	}
+
+	{sensor
+		{visor "main"
+			{vision "tank_range_210"}
+		}
+	}
+
+	("crew_5_human_2_extended")
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_lowarmor"} {end "seat_m4_gunner"}}
+			{reverse {end "emit_tank_1_hold"} {base "open_driver"}}
+		}
+		{anm "left"
+			{forward {begin "board_plane_left"} {end "seat_m4_gunner"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward {begin "board_plane_left"} {end "seat_m4_gunner"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "armor1"
+			{forward {begin "board_lowarmor"} {end "pose_seat_challenger_a30_01"}}
+			{reverse {end "emit_tank_2"}}
+		}
+		{anm "armor2"
+			{forward {begin "board_lowarmor"} {end "pose_seat_challenger_a30_00"}}
+			{reverse {end "emit_tank_2"}}
+		}
+		{anm "armor3"
+			{forward {begin "board_lowarmor"} {end "pose_seat_challenger_a30_02"}}
+			{reverse {end "emit_tank_2"}}
+		}
+		{anm "armor4"
+			{forward {begin "board_lowarmor"} {end "pose_seat_challenger_a30_03"}}
+			{reverse {end "emit_tank_2"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3) animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4) animation(armor2))
+	("seat_human" place(seat3) bone(seat03) door(emit5) animation(armor3))
+	("seat_human" place(seat4) bone(seat04) door(emit6) animation(armor4))
+
+	{extender "inventory"
+		{box
+			{item "ammo bulleteng_76 apcbc" 22}			; 42 rounds
+			{item "ammo bulleteng_76 he" 16}
+			{item "ammo bulleteng_76 apds" 3}
+			{item "ammo mgun_usa belt" 3500}			; 3750 rounds
+			;{item "no36m grenade" 6}
+			{item "satchel_charge_eng" 1}
+			{item "mortareng_50 wp" 30}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "76mm_qf17_mk2" filling "ammo bulleteng_76 apcbc" 1}
+			{gunner "gunner"}
+			{charger "charger charger2" minWorkers 1}
+			("abm_dymamic"
+				zeroing(3)
+				dispersion(0.3)
+			)
+		}
+		{place "mgun2"
+			{type "coaxial"}
+			{weapon "browning_m19a4" filled}
+			{foresight "foresight5"}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 33000}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.52) len(0.61))
+		("mobility_tank"
+			speed(47) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(5) ;---------Max speed in reverse on road, km/h.
+			traverse(30) ;-------Track traverse, per second, in degrees.
+			weight(33) ;---------Weight in Tonnes.
+			power(600) ;---------Engine Power, in hp.
+			track(3) ;-----------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(530) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(193) ;---------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -10 20}
+		{speed2 5}
+	}
+	{bone "turret"
+		("turret_heavy" power_traverse(33)) ;// electric drive
+	}
+}

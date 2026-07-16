@@ -1,0 +1,17 @@
+{
+	(include "76mm_k02_30_40.inc")
+
+	{extender "inventory"
+		{box
+			{item "bulletrus_76 apcbc" 25}		;50 rounds
+			{item "bulletrus_76 he" 25}
+			{item "sandbag_vehicle" 1}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{weapon "76mm_m1902_30_40" filling "bulletrus_76 apcbc" 1}
+		}
+	}
+}

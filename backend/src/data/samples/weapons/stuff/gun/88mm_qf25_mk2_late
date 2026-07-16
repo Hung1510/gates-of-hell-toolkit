@@ -1,0 +1,13 @@
+;_________________________________________
+; ARTY british medium field gun
+;=========================================
+
+
+{from "88mm_qf25_mk2"			; L/28 "qf 25pdr" >1943
+
+	("velocity m/s" ap(610) apcr(1) he(200) heat(1)) ;real HE 532m/s
+	("armor health custom" shell(ap) damage(240) velocity(610) filler(0))
+
+	; AP Shot Mk.I-Mk.VIII, super charge + super charge increment(>1943)
+	("penetration_medium" shell(ap) range(190) a(110) b(95) c(78) d(64) e(53))
+}

@@ -1,0 +1,7 @@
+{from "pattern air_bomb"
+	{entity "250lb_gp_mk4"}
+	{tag "size2"}
+	{mass 100}
+
+	("he_level_6" weight(103) filler(43.5))
+}

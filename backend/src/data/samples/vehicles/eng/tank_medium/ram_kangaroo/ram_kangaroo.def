@@ -1,0 +1,129 @@
+{game_entity
+	(include "/properties/tank_assaultgun.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.1))
+	{props "medium" "-turret" "multi_turret" "open_top" "vision_lev04" "hatch"}
+	{extension "ram_kangaroo.mdl"}
+	(include  "ram_kangaroo.ext")
+	{PatherId "sherman"}
+	{targetclass "tank_medium"}
+	{targetSelector "tank_bullet"}
+
+	{extender "enumerator"
+		{digit_folder "us2"}
+	}
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_m4_crew"} {end "pose_ram_driver"} }
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "commander"
+			{forward {begin "board_m4_crew"} {end "pose_ram_commander1"} {base "open_commander"}}
+			{reverse {end "emit_tank_1_hold"} {base "open_commander"}}
+		}
+		{anm "crew1"
+			{forward {begin "board_m4_crew"} {end "pose_ram_crew1"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "crew2"
+			{forward {begin "board_m4_crew"} {end "pose_ram_crew2"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "crew3"
+			{forward {begin "board_m4_crew"} {end "pose_ram_crew3"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "crew4"
+			{forward {begin "board_m4_crew"} {end "pose_ram_crew4"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "crew5"
+			{forward {begin "board_m4_crew"} {end "pose_ram_crew5"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "crew6"
+			{forward {begin "board_m4_crew"} {end "pose_ram_crew6"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "crew7"
+			{forward {begin "board_m4_crew"} {end "pose_ram_crew7"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "armor1"
+			{forward {begin "board_HighArmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_2"}}
+		}
+		{anm "armor2"
+			{forward {begin "board_HighArmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_2"}}
+		}
+	}
+	
+	("seat_human" place(driver) bone(driver) door(emit1) animation(driver))
+	("seat_human" place(commander) bone(commander) door(emit0) animation(commander))
+	("seat_human" place(seat1) bone(seat01) door(emit8) animation(crew1))
+	("seat_human" place(seat2) bone(seat02) door(emit9) animation(crew2))
+	("seat_human" place(seat3) bone(seat03) door(emit2) animation(crew3))
+	("seat_human" place(seat4) bone(seat04) door(emit9) animation(crew4))
+	("seat_human" place(seat5) bone(seat05) door(emit8) animation(crew5))
+	("seat_human" place(seat6) bone(seat06) door(emit3) animation(crew6))
+	("seat_human" place(seat7) bone(seat07) door(emit2) animation(crew7))
+	("seat_human" place(seat8) bone(seat08) door(emit4) animation(armor1))
+	("seat_human" place(seat9) bone(seat09) door(emit5) animation(armor1))
+	("seat_human" place(seat10) bone(seat10) door(emit6) animation(armor1))
+	("seat_human" place(seat11) bone(seat11) door(emit7) animation(armor2))
+
+	{sensor
+		{visor "main"
+			{vision "tank_range_210"}
+		}
+		{visor "around"
+			{vision "vehicle_around"}		;// better vision than a in-closed turret 
+		}
+		{visor "human"
+			{vision "human"}
+			{bone "visor1"}
+		}
+	}
+	
+	{extender "inventory"
+		{box
+			{item "ammo mgun_usa belt" 4250}		;4750 rounds
+			{item "satchel_charge_usa" 1}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "mgun1"
+			{type "hull"}
+			{weapon "browning_m19a4_tank" filled}
+			{foresight "foresight4"}
+			{gunner "commander"}
+			{charger "commander"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+	}
+
+	{mass 24500}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.3) len(0.68))
+		("mobility_tank"
+			speed(40) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(6) ;---------Max speed in reverse on road, km/h.
+			traverse(30) ;-------Track traverse, per second, in degrees.
+			weight(24.5) ;-------Weight in Tonnes.
+			power(400) ;---------Engine Power, in hp.
+			track(6) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(680) ;----------Fuel capacity in Litres.
+			type(fuel) ;-------Fuel type. (diesel OR fuel)
+			range(230) ;---------Range in km, off-road.
+		)
+	}
+	
+	{bone "aux_turret1"
+		{speed2 30}
+	}
+}

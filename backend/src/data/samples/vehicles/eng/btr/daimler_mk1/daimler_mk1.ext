@@ -1,0 +1,132 @@
+;SDL
+
+	; armor notes
+	; wheels 10mm 
+	; gun 20mm
+
+	("armoredcar_tier2")
+
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelleft2")
+	("wheel" args "wheelright1")
+	("wheel" args "wheelright2")
+
+	("turret" repair(45))
+;	("mantlet" repair(30))
+	("gun" repair(30) thickness(20))
+
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("transmission" args "transmission")
+
+	{volume "transmission" {able {NoWoundDecal 0}}}
+
+	{volume "body1"
+		{thickness 14
+			{front 14}
+			{left 14}
+			{top 8}
+			{rear 14}
+			{bottom 8}
+		}
+	}
+	{volume "body2"
+		{thickness 14
+			{front 14}
+			{left 14}
+			{top 8}
+			{rear 14}
+			{bottom 8}
+		}
+	}
+	{volume "body3"
+		{thickness 14
+			{front 14}
+			{left 14}
+			{top 8}
+			{rear 14}
+			{bottom 8}
+		}
+	}
+	{volume "body4"
+		{thickness 14
+			{front 14}
+			{left 14}
+			{top 8}
+			{rear 14}
+			{bottom 8}
+		}
+	}
+	{volume "body5"
+		{thickness 14
+			{front 14}
+			{left 14}
+			{top 8}
+			{rear 14}
+			{bottom 8}
+		}
+	}
+
+	{volume "turret1"
+		{thickness 16
+			{front 16}
+			{left 14}
+			{top 4}
+			{rear 10}
+			{bottom 4}
+		}
+	}
+	{volume "turret2"
+		{thickness 14}
+	}
+	{volume "turret3"
+		{thickness 14}
+	}
+	{volume "turret4"
+		{thickness 16
+			{front 16}
+			{left 14}
+			{top 4}
+			{rear 10}
+			{bottom 4}
+		}
+	}
+	{volume "turret5"		; Turret ring
+		{thickness 14}
+	}
+	{volume "turret6"		; Turret mantlet
+		{thickness 16}
+	}
+	{volume "mantlet"		; gun_rot mantlet
+		{thickness 16}
+	}
+
+	{volume "engine1"
+		{thickness 14
+			{front 14}
+			{left 14}
+			{top 8}
+			{rear 14}
+			{bottom 8}
+		}
+	}
+	{volume "engine2"
+		{thickness 14
+			{front 14}
+			{left 14}
+			{top 8}
+			{rear 14}
+			{bottom 8}
+		}
+	}
+	{volume "armor1"		; storage box
+		{thickness 4}
+	}
+	{volume "armor2"		; ram
+		{thickness 14}
+	}

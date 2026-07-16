@@ -1,0 +1,39 @@
+;// Defines
+	("tank_light_tier1")
+	("tracks" repair(30) thickness(15))
+	("gun" repair(30) thickness(20))
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	
+;// Components
+	{volume "body1" ;// Superstructure
+		{thickness 12.7
+			{top 9.5}
+			{right 25.4}
+		}
+	}
+	{volume "body2" {thickness 9.5}}
+	{volume "body3" {thickness 9.5}}
+	{volume "body4" {thickness 9.5}}
+	{volume "body5" {thickness 9.5}}
+	{volume "body6" {thickness 9.5}}
+	{volume "body7" {thickness 9.5}}
+	{volume "body8" {thickness 25.4}{CastSteel 0.8063}}
+	{volume "body9" {thickness 25.4}{CastSteel 0.8063}}
+	{volume "body10" {thickness 25.4}{CastSteel 0.8063}}
+	{volume "turret1" {thickness 25.4}{CastSteel 0.8063}} ;//
+	{volume "turret2" {thickness 25.4 {top 9.5}}{CastSteel 0.8063}} ;//
+	{volume "turret3" {thickness 25.4}{CastSteel 0.8063}}	;// Part behind mantlet
+	{volume "turret4" {thickness 9.5}}	;// Ring
+	{volume "engine1" {thickness 12.7 {top 9.5}}} 	;// Main Part of Engine
+	{volume "engine2" {thickness 9.5}}
+	{volume "engine3" {thickness 9.5}}
+
+;// Non-Components
+	{volume "mantlet1" {thickness 25.4} {CastSteel 0.8063}{tags "armor"}}
+	{volume "mantlet2" {thickness 25.4} {CastSteel 0.8063}{tags "armor"}}
+	{volume "mantlet3" {thickness 25.4} {CastSteel 0.8063}{tags "armor"}}
+	{volume "armor1" {thickness 9.5 {right 12.7}}} ;// Engine Cover, Rear

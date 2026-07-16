@@ -1,0 +1,23 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "20mm_polsten_xx.mdl"}
+
+	{volume "wheelleft" {thickness 0.5}}
+	{volume "wheelright" {thickness 0.5}}
+
+	{Volume "body1" {thickness 6}}
+	{Volume "body2" {thickness 6}}
+	{Volume "body3" {thickness 6} {able {holed}}}
+	{Volume "body4" {thickness 6}}
+	{Volume "body5" {thickness 6}}
+	{Volume "body6" {thickness 6}}
+	{Volume "barrel1" {thickness 15}}
+	{Volume "barrel2" {thickness 15}}
+	{Volume "barrel3" {thickness 15}}
+	{Volume "barrel4" {thickness 15}}
+
+	;// Parts
+	{volume "part1_1" 	{thickness 6}} ;// Tow Bar
+	{volume "part1_2" 	{thickness 6}} ;// Tow Bar
+	{volume "part1_3" 	{thickness 6}} ;// Tow Bar
+}

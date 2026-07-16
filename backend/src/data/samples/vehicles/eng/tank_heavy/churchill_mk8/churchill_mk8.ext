@@ -1,0 +1,198 @@
+;SDL
+	
+	;notes
+	;tracks and wheels 30mm
+	;gun 30mm
+
+	("tank_heavy_tier1")
+
+	("shield_tear" args "shieldL1" 7)
+	("shield" args "shieldL2" 7)
+	("shield" args "shieldL3" 7)
+	("shield" args "shieldL4" 7)
+	("shield" args "shieldL5" 7)
+	("shield_tear" args "shieldL6" 7)
+	("shield_tear" args "shieldR1" 7)
+	("shield" args "shieldR2" 7)
+	("shield" args "shieldR3" 7)
+	("shield" args "shieldR4" 7)
+	("shield" args "shieldR5" 7)
+	("shield" args "shieldR6" 7)
+	("shield_track" args "shield1" 30)
+	("shield_track" args "shield2" 30)
+	("shield_track" args "shield3" 30)
+	("shield_track" args "shield4" 30)
+	("shield_track" args "shield5" 30)
+	("shield_track" args "shield6" 30)
+	("shield_track" args "shield7" 30)
+	("shield_track" args "shield8" 30)
+	("shield_track" args "shield9" 30)
+
+	("tracks" repair(30) thickness(30))
+	("gun" repair(30) thickness(25))
+
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull
+		{thickness
+			{front 139.7}	; Lower front
+			{top 57.1}		; Glacis
+			{right 57.15}
+			{left 57.15}
+			{rear 19}
+			{bottom 19.1}
+		}
+		{able {holed}}
+	}
+	{volume "body2"			; Superstructure
+		{thickness
+			{front 152}
+			{top 19}
+			{right 82.55}
+			{left 82.55}
+			{rear 20}
+		}
+		{able {holed}}
+	}
+	{volume "body3"			; Hull left
+		{thickness
+			{front 63.5}
+			{top 16}
+			{right 50.8}	; front lower plate
+			{left 95.25}
+			{rear 19}
+			{bottom 15.875}
+		}
+	}
+	{volume "body4"			; Hull right
+		{thickness
+			{front 63.5}
+			{top 16}
+			{right 50.8}	; front lower plate
+			{left 95.25}
+			{rear 19}
+			{bottom 15.875}
+		}
+	}
+	{volume "body5"
+		{thickness 102}
+	}
+	{volume "armor1"
+		{thickness 139}
+	}
+	{volume "armor2"
+		{thickness 25.4}
+	}
+	{volume "engine1"		; Front Half
+		{thickness
+			{front 20}
+			{top 15.9}
+			{right 82.55}
+			{left 82.55}
+			{rear 50.8}
+			{bottom 19}
+		}
+	}
+	{volume "engine2"		; Rear Half
+		{thickness
+			{front 50.8}
+			{top 15.9}
+			{right 25.4}
+			{left 25.4}
+			{rear 50.8}
+			{bottom 19}
+		}
+	}
+	{volume "engine3"		; Left
+		{thickness
+			{front 20}
+			{top 15.9}
+			{right 95.25}
+			{left 95.25}
+			{rear 25.4}
+			{bottom 15.9}
+		}
+		{HighHardness}
+	}
+	{volume "engine4"		; Right
+		{thickness
+			{front 20}
+			{top 15.9}
+			{right 95.25}
+			{left 95.25}
+			{rear 25.4}
+			{bottom 15.9}
+		}
+	}
+	{volume "turret1"		; Main Turret
+		{thickness 95.2
+			{front 152}
+			{top 20}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret2"		; lower skirt
+		{thickness 95.2
+			{front 152}
+			{top 20}
+			{bottom 25.4}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret3"		; ring
+		{thickness 127}
+		{CastSteel 0.8063}
+	}
+	{volume "turret4"		; cupola fundamentuma
+		{thickness 152
+			{top 20}
+		}
+	}
+	{volume "cupola1"
+		{thickness 152
+			{top 20}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "basket"
+		{thickness 7}
+		{able {obstacle 0}}
+	}
+	{volume "armorL1"
+		{thickness 38.1}
+	}
+	{volume "armorL2"
+		{thickness 38.1}
+	}
+	{volume "armorL3"
+		{thickness 38.1}
+	}
+	{volume "armorR1"
+		{thickness 38.1}
+	}
+	{volume "armorR2"
+		{thickness 38.1}
+	}
+	{volume "armorR3"
+		{thickness 38.1}
+	}
+	{volume "shieldL1"
+		{able {obstacle 0}}
+	}
+	{volume "shieldL7"
+		{able {obstacle 0}}
+	}
+	{volume "shieldR1"
+		{able {obstacle 0}}
+	}
+	{volume "shieldR7"
+		{able {obstacle 0}}
+	}
+	{volume "detail11"
+		{thickness 20}
+	}

@@ -1,0 +1,27 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "t20_xx.mdl"}
+
+	{volume "body1"
+		{thickness 10
+			{bottom 7}
+		}
+	}
+	{volume "body2"
+		{thickness 10
+			{bottom 7}
+		}
+	}
+	{volume "engine1"
+		{thickness 10
+			{bottom 7}
+		}
+	}
+	{volume "engine2"
+		{thickness 10
+			{bottom 7}
+		}
+	}
+
+	("tracks" thickness(15))
+}

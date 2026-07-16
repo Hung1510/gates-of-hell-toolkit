@@ -1,0 +1,28 @@
+;_________________________________________
+; ARTY - Russian medium howitzer
+;=========================================
+
+
+{from "pattern gun"			; L/27 "120mm_k78_31"
+	{filling "bullet_120_l27"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_105to130mm_LV/"}
+	{fireSoundclose "cannon/s4/3p/Shared/Cannon_105to130mm_LV/"}
+	{reloadSound "utility/"}
+	("medium_artillery")
+	{calibre 120}
+	{range 370 370} ; // 12.3km
+
+	("reload time" seconds(20))
+
+	("velocity m/s" ap(1) apcr(1) he(200) heat(335)) ; // Real HE 515m/s
+	("armor health" damage(320))
+
+	("accuracy_indirect"   ; // Applies logic for accuracy of indirect weapons over 200m
+		r1(1.05) 				; // Accuracy radius for direct-fire munitions
+		r2(5.48) 				; // Accuracy radius for indirect fire
+		rmax(21.13) 			; // Accuracy radius for indirect fire at maximum range
+		range_ap(190) 			; // Range after which accuracy drops to prevent farshooting.
+		range_heat(180) 		; // Range after which accuracy drops to prevent farshooting.
+		range_he(370)			; // Range after which accuracy drops to prevent farshooting.
+	)
+}

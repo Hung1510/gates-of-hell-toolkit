@@ -1,0 +1,9 @@
+{game_entity
+	{extension "88mm_qf25_mk1_4p_x.mdl"} {RimLight}
+	{volume "wheelleft"
+		{able {obstacle 0}}
+	}
+	{volume "wheelright"
+		{able {obstacle 0}}
+	}
+}

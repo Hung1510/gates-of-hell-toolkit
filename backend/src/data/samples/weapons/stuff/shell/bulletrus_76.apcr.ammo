@@ -1,0 +1,12 @@
+{from "pattern apcr"	;BR-350P
+	{tag "shell size2 75to76"}
+	{inventory {size 5 1}}
+	{entity "76mm_rus_apcr"}
+	{mass 6.05}
+
+	{view "howitzer_shell_50-75"
+		{tail "shell_tracer_rus_76_apcr" "tail"}
+	}
+
+	("apcr_blast" args 0.8)
+}

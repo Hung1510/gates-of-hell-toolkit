@@ -1,0 +1,74 @@
+;SDL
+
+	; armor notes
+	; tracks 15mm
+
+	("armoredcar_tier1")
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+
+	("turret" repair(50))
+	("gun" repair(30) thickness(20))
+	("tracks" repair(30) thickness(15))
+	("shield" args "shield1" 8)
+	("shield" args "shield2" 8)
+
+	{volume "body1"		; Lower Hull
+		{thickness 8}
+	}
+
+	{volume "body2"		; Upper Hull
+		{thickness 8}
+		{able {holed}}
+	}
+	{volume "body3"		; Upper Hull
+		{thickness 8
+			{front 10}
+		}
+		{able {holed}}
+	}
+
+	{volume "engine1"	; Lower
+		{thickness 8
+			{front 14.5}
+		}
+	}
+
+	{volume "engine2"	; Upper
+		{thickness 8
+			{front 14.5}
+			{top 6}
+		}
+	}
+
+	{volume "door_back"
+		{thickness 8}
+	}
+	{volume "turret1"		; Turret
+		{thickness 10}
+		{able {holed}}
+	}
+	{volume "hole5"
+		{tags "sticky"}
+	}
+	{volume "grill_right"
+		{thickness 0.5}
+	}
+	{volume "grill_left"
+		{thickness 0.5}
+	}
+
+	{volume "trackleft1"
+		{tags "mover" "track"}
+		{able {NoWoundDecal} {holed} {contact_ground 0}}
+	}
+	{volume "trackright1"
+		{tags "mover" "track"}
+		{able {NoWoundDecal} {holed} {contact_ground 0}}
+	}

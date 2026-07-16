@@ -1,0 +1,15 @@
+{from "pattern reactive_ammo"
+	{tag "bomb size3 he fg itemin2hands"}
+	{inventory
+		{size 8 2}
+		{weight 200}
+	}
+	{entity "sturmtiger_ammo"}
+	{mass 376}
+
+	{view "sturmtiger_ammo"
+		{tail "rocket_smoke_st" "tail"}
+	}
+
+	("rocket_level_7" weight(345) filler(125))
+}

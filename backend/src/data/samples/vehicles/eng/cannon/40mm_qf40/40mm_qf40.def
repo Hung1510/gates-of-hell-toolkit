@@ -1,0 +1,10 @@
+{
+	(include "40mm_qf40.inc")
+
+	{extender "inventory"
+		{box
+			{item "bullet_40x331_auto eng apbc" 152}		; 76 clips (4 rounds each)
+		}
+	}
+}
+

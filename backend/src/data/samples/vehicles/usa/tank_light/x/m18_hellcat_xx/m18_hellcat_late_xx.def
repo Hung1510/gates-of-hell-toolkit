@@ -1,0 +1,106 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "m18_hellcat_late_xx.mdl"}
+
+	{volume "body1"			;
+		{thickness 12.7	
+			{rear 5}
+			{bottom 8}
+		}
+	}
+	{volume "body2"			;
+		{thickness 12.7
+			{top 8}
+			{rear 5}
+			{bottom 8}
+		}
+	}
+	{volume "engine1"		; 
+		{thickness 12.7
+			{front 5}
+			{bottom 8}
+		}
+	}
+	{volume "engine2"		; 
+		{thickness 12.7
+			{front 5}
+			{top 8}
+		}
+	}
+	{volume "turret1"		; main part
+		{thickness 12.7
+			{front 25.4}
+			{top 8}
+		}
+		{able {holed}}
+	}
+	{volume "turret2"		; back part
+		{thickness 12.7
+			{top 13}
+		}
+		{able {holed}}
+	}
+	{volume "turret3"		; mgun mount place
+		{thickness 12.7}
+		{able {holed}}
+	}
+	{volume "turret4"		; 
+		{thickness 25.4}
+	}
+	{volume "shieldl1"
+		{thickness 4}
+	}
+	{volume "shieldl2"
+		{thickness 4}
+	}
+	{volume "shieldl3"
+		{thickness 4}
+	}
+	{volume "shieldl4"
+		{thickness 4}
+	}
+	{volume "shieldl5"
+		{thickness 4}
+	}
+	{volume "shieldl6"
+		{thickness 4}
+	}
+	{volume "shieldl7"
+		{thickness 4}
+	}
+	{volume "shieldr1"
+		{thickness 4}
+	}
+	{volume "shieldr2"
+		{thickness 4}
+	}
+	{volume "shieldr3"
+		{thickness 4}
+	}
+	{volume "shieldr4"
+		{thickness 4}
+	}
+	{volume "shieldr5"
+		{thickness 4}
+	}
+	{volume "shieldr6"
+		{thickness 4}
+	}
+	{volume "shieldr7"
+		{thickness 4}
+	}
+	{volume "barrel1"
+		{thickness 25}
+	}
+	{volume "barrel2"
+		{thickness 25}
+	}
+	{volume "barrel3"
+		{thickness 25}
+	}
+	{volume "barrel4"
+		{thickness 25}
+	}
+
+	("tracks" thickness(15))
+}

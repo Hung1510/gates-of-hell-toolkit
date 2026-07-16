@@ -1,0 +1,80 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "marder3m_xx.mdl"}
+
+	{volume "barrel2"
+		{thickness 20}
+	}
+	{volume "barrel"
+		{thickness 20}
+	}
+	{volume "body1"			; Hull and Superstructure Front Half
+		{thickness 15
+			{front 15}
+			{top 10}		; Glacis
+			{rear 6}
+			{bottom 8}
+		}
+	}
+	{volume "body2"			; Driver's Cabin
+		{thickness 15
+			{top 8}
+		}
+	}
+	{volume "body3"			; Hull Rear Half
+		{thickness 15
+			{front 6}
+			{top 6}
+			{rear 10}
+			{bottom 8}
+		}
+	}
+	{volume "body4"			; Super Superstructure Rear Bottom Half
+		{thickness 15
+			{top 8}
+			{front 6}
+			{bottom 8}
+		}
+		{able {holed}}
+	}
+	{volume "cabin1"
+		{thickness 15}
+	}
+	{volume "cabin2"
+		{thickness 15}
+	}
+	{volume "cabin3"
+		{thickness 15}
+	}
+	{volume "cabin5"
+		{thickness 15}
+	}
+	{volume "cabin6"
+		{thickness 15}
+	}
+	{volume "cabin7"
+		{thickness 15}
+	}
+	{volume "engine"
+		{thickness 15}
+	}
+	{volume "part1"
+		{thickness 15}
+	}
+	{volume "part2"
+		{thickness 15}
+	}
+	{volume "part3"
+		{thickness 15}
+	}
+	{volume "part4"
+		{thickness 15}
+	}
+	{volume "part5"
+		{thickness 15}
+	}
+	{volume "part6"
+		{thickness 15}
+	}
+	("tracks" thickness(15))
+}

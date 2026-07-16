@@ -1,0 +1,10 @@
+{from "pattern he2"
+	{tag "shell size5 fg 150to152 arty"}
+	{inventory {size 6 2}}
+	{entity "150mm_ger_l11_stielgr"}
+	{mass 90}
+
+	{view "150mm_ger_l11_stielgr"}
+
+	("he_level_6" weight(90) filler(27))
+}

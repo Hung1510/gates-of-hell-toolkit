@@ -1,0 +1,114 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "cruiser_mk2a_cs_xx.mdl"}
+	("tracks" thickness(15))
+	{volume "barrel" {thickness 15}}
+
+	{volume "body1"
+		{thickness 22
+			{top 7}
+			{bottom 7}
+			{rear 12}
+		}
+	}
+	{volume "body2"
+		{thickness 22
+			{top 7}
+			{bottom 7}
+			{rear 12}
+		}
+	}
+	{volume "body3"
+		{thickness 22
+			{top 7}
+			{bottom 7}
+			{rear 12}
+		}
+	}
+	{volume "body4"
+		{thickness 22
+			{top 7}
+			{bottom 7}
+			{rear 12}
+		}
+	}
+	{volume "body5"
+		{thickness 22
+			{top 7}
+			{bottom 7}
+			{rear 12}
+		}
+	}
+	{volume "engine1"
+		{thickness 12
+			{left 22}
+			{top 7}
+			{bottom 7}
+		}
+	}
+	{volume "engine2"
+		{thickness 12
+			{left 22}
+			{top 7}
+			{bottom 7}
+		}
+	}
+	{volume "engine3"
+		{thickness 12
+			{left 22}
+			{top 7}
+			{bottom 7}
+		}
+	}
+	{volume "engine4"
+		{thickness 12
+			{left 22}
+			{top 7}
+			{bottom 7}
+		}
+	}
+	{volume "engine5"
+		{thickness 12
+			{left 22}
+			{top 7}
+			{bottom 7}
+		}
+	}
+	{volume "turret1"
+		{thickness 22
+			{top 7}
+			{bottom 7}
+		}
+	}
+	{volume "turret2"
+		{thickness 22
+			{top 7}
+			{bottom 7}
+		}
+	}
+	{volume "turret3" {thickness 22}}
+	{volume "turret4" {thickness 22}}
+
+	;// Non-Components
+	{volume "basket" {thickness 7}}
+	{volume "cupola1" {thickness 7}}
+	{volume "cupola2" {thickness 7}}
+	{volume "mantlet1" {thickness 22}}
+	{volume "mantlet2" {thickness 22}}
+	{volume "armor1" {thickness 5}}
+	{volume "armor2" {thickness 5}}
+	{volume "armor3" {thickness 5}}
+	{volume "armor4" {able {holed}} {thickness 5}} ;// Engine Cover (Right)
+	{volume "armor5" {able {holed}} {thickness 5}} ;// Engine Cover (Left)
+	{volume "armor6" {able {holed}} ;// Armor over the Mantlet, spaced.
+		{thickness 22
+			{top 7}
+			{bottom 7}
+		}
+	}
+
+	;// Parts
+	{volume "part1" {thickness 7}} ;// Co-Driver Hatch
+	{volume "part5" {thickness 7}} ;// Engine Hatch
+	{volume "part6" {thickness 7}} ;// Engine Hatch
+}

@@ -1,4 +1,4 @@
-import type { Squad, TechNode, FactionSummary, SquadTemplate, BuildResult, CompareEntry, UnitCostEntry, ValidationWarning } from "./types";
+import type { Squad, TechNode, FactionSummary, SquadTemplate, BuildResult, CompareEntry, UnitCostEntry, ValidationWarning, Vehicle, VehicleFactionSummary, UnitWeaponInfo } from "./types";
 
 // In dev, Vite proxies /api to the backend (see vite.config.ts).
 // In production, set VITE_API_BASE to the deployed backend URL.
@@ -66,4 +66,16 @@ export function compareSquads(aFaction: string, aName: string, bFaction: string,
 
 export function validateTechNode(faction: string, node: TechNode): Promise<{ warnings: ValidationWarning[] }> {
   return postJSON("/api/techtree/validate", { faction, node });
+}
+
+export function getVehicles(faction: string): Promise<Vehicle[]> {
+  return getJSON(`/api/vehicles?faction=${encodeURIComponent(faction)}`);
+}
+
+export function getVehicleFactions(): Promise<VehicleFactionSummary[]> {
+  return getJSON("/api/vehicles/factions");
+}
+
+export function getUnitWeapons(faction: string): Promise<UnitWeaponInfo[]> {
+  return getJSON(`/api/units/weapons?faction=${encodeURIComponent(faction)}`);
 }

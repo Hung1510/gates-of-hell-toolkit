@@ -1,0 +1,3 @@
+{game_entity
+	{extension "m10_gmc_late_x.mdl"} {RimLight}
+}

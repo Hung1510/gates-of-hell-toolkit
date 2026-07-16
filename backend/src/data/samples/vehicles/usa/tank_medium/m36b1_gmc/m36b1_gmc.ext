@@ -1,0 +1,109 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 20mm
+	; gun 25mm
+
+	("tank_medium_tier2")
+
+	("tracks" repair(30) thickness(20))
+	("gun" repair(30) thickness(30))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("ammo" args "ammo5")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull lower Front
+		{thickness 38.1
+			{front 107.9}	; 
+			{top 51}		; front upper part 
+			{rear 10}
+			{bottom 25.4}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body2"			; 
+		{thickness 38.1
+			{front 63.5}
+			{top 19.5}
+			{bottom 9.5}
+		}
+	}
+	{volume "body3"
+		{thickness 19.5
+			{left 39}
+			{right 39}
+		}
+	}
+	{volume "body4"	; turret ring armor
+		{thickness 19.5
+			{top 5.9}
+		}
+	}
+	{volume "body7"		; Hull lower middle
+		{thickness 38.1
+			{top 51}
+			{rear 10}
+			{bottom 25.4}
+		}
+	}
+	{volume "body8"		; Hull lower Front right
+		{thickness 38.1
+			{front 107.9}	; 
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body9"		; Hull lower Front left
+		{thickness 38.1
+			{front 107.9}	; 
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "engine1"
+		{thickness 38.1
+			{front 19.5}
+			{bottom 25.4}
+		}
+	}
+	{volume "engine2"
+		{thickness 38.1
+			{front 10}
+			{top 19.5}
+			{bottom 9.5}
+		}
+	}
+	{volume "engine3"
+		{thickness 38.1
+			{front 9.5}
+			{top 9.5}
+			{bottom 9.5}
+		}
+	}
+	{volume "turret1"		; main part
+		{thickness 31.7}
+		{able {holed}}
+	}
+	{volume "turret2"		; rear part
+		{thickness 25.4}
+	}
+	{volume "turret3"		; 
+		{thickness 31.7
+			{left 50.8}		;side
+		}
+	}
+	{volume "turret4"
+		{thickness 31.7
+			{left 50.8}		;side
+		}
+	}
+	{volume "mantlet"
+		{thickness 76.2}
+		{tags "turret"}
+		{component "turret"}
+	}

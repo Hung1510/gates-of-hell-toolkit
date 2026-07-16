@@ -1,0 +1,13 @@
+;_________________________________________
+; British light Mortar - 2 inch 
+;=========================================
+
+
+{from "pattern mortar"
+	{filling "mortareng_50"}
+	{fireSound "cannon/s1/d1/Shared/Mortar/"}
+	{fireSoundClose "cannon/s1/d1/Shared/Mortar/"}
+	{calibre 50}
+	("light_mortar_range")
+	("reload time" seconds(2.6))
+}

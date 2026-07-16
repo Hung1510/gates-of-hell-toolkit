@@ -1,0 +1,81 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "tiger2p_xx.mdl"}
+
+	{volume "barrel"
+		{thickness 30}
+	}
+	{volume "body1"			; Hull
+		{thickness 80
+			{front 100}		; Lower Nose
+			{top 150}		; Glacis
+			{rear 25}
+			{bottom 25}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 80
+			{front 150}
+			{top 40}
+			{rear 25}
+			{bottom 25}		; Overhang (above tracks)
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "cupola"
+		{thickness 100
+			{top 40}
+			{bottom 25}
+		}
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+	}
+	{volume "engine1"		; Hull
+		{thickness 80
+			{front 25}
+			{rear 80}
+			{top 25}
+			{bottom 25}
+		}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 80
+			{front 25}
+			{top 40}
+			{rear 80}
+			{bottom 25}		; Overhang (above tracks)
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "mantlet"
+		{thickness 120}
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+	}
+	
+	{volume "turret1"		; Main Turret
+		{thickness 80
+			{front 100}
+			{top 40}
+			{bottom 25}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "turret3"		; Buldge for Cupola
+		{thickness 80
+			{top 40}
+			{bottom 25}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "turret2"		; Turret Ring
+		{thickness 80
+			{front 100}
+			{top 25}
+			{bottom 25}
+		}
+		{Quality "large_flaw"}
+	}
+	("tracks" thickness(30))
+}

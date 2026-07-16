@@ -1,0 +1,12 @@
+{from "pattern pistol"
+	{tag "pistol_shell"}
+	{filling "ammo pistol" 13}
+	{entity "hipower_1935"}
+	{fireSound "smallarms/s1/d1/Shared/FN_Browning_HiPower_P35/"}
+	{fireSoundclose "smallarms/s1/3p/Shared/FN_Browning_HiPower_P35/"}
+	{reloadSound "tt"}
+	{calibre 9}
+	{mass 1.00}
+
+	("velocity" mps(335))
+}

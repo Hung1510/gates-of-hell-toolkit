@@ -1,0 +1,12 @@
+{from "pattern ap"
+	{tag "shell size2 75to76"}
+	{inventory {size 6 1}}
+	{entity "76x539mm_usa_ap"}
+	{mass 11}
+
+	{view "howitzer_shell_50-75"
+		{tail "shell_tracer_usa_76_ap" "tail"}
+	}
+
+	("ap_blast" args 0.78)
+}

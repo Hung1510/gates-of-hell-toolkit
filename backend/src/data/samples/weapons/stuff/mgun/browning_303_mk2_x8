@@ -1,0 +1,14 @@
+{from "browning_303_mk2"		;hurricane_mk1a
+	{filling "mgun_usa" 2672}
+	{calibre 7.7}
+	{fireSound " "}
+	{fireSound " "}
+	{mass 224}
+
+	{traceFreq 5}
+
+	("fire rate" rpm(6800)) ;// 1150 rpm per gun irl
+	("reload time" seconds(30))
+
+	{Spreading {BurstAccuracy 100}}
+}

@@ -1,0 +1,103 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "m5a1_stuart_late_xx.mdl"}
+
+	{volume "body1"			; Hull
+		{thickness 28.5
+			{top 28.5}			;front upper
+			{front 63.5}			;front lower
+			{rear 10}
+			{bottom 12.7}
+		}
+	}
+	{volume "body2"			; hull upper
+		{thickness 28.5
+			{top 12.7}
+			{front 28.5}
+			{rear 10}
+		}
+	}
+	{volume "body3"			; turret ring
+		{thickness 28.5
+			{top 12.7}
+		}
+	}
+	{volume "engine1"
+		{thickness 28.5
+			{front 10}
+			{bottom 12.7}
+			{rear 25.4}
+		}
+	}
+	{volume "engine2"
+		{thickness 28.5
+			{bottom 12.7}
+			{top 12.7}
+		}
+	}
+	{volume "engine3"
+		{thickness 28.5
+			{bottom 12.7}
+		}
+	}
+	{volume "turret1"		; Turret main
+		{thickness 31.8
+			{top 12.7}
+			{front 44.4}
+		}
+	}
+	{volume "turret2"		; Turret ring
+		{thickness 31.8}
+	}
+	{volume "turret3"		; Turret front ring
+		{thickness 44.4}
+	}
+	{volume "mantlet"
+		{thickness 50.8}
+	}
+	{volume "basket"
+		{thickness 5}
+	}
+	{volume "grill"
+		{thickness 5}
+	}
+	{volume "armor1"
+		{thickness 12.7}
+		{able {holed}}
+	}
+	{volume "shield1"
+		{thickness 10}
+	}
+	{volume "shield2"
+		{thickness 10}
+	}
+	{volume "shield3"
+		{thickness 10}
+	}
+	{volume "shieldl1"
+		{thickness 5}
+	}
+	{volume "shieldl2"
+		{thickness 5}
+	}
+	{volume "shieldl3"
+		{thickness 5}
+	}
+	{volume "shieldr1"
+		{thickness 5}
+	}
+	{volume "shieldr2"
+		{thickness 5}
+	}
+	{volume "shieldr3"
+		{thickness 5}
+	}
+	{volume "barrel1"
+		{thickness 20}
+	}
+	{volume "barrel2"
+		{thickness 20}
+	}
+
+	("tracks" thickness(15))
+}

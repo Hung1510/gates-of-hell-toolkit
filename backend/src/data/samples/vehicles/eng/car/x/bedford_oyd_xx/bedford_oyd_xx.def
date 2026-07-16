@@ -1,0 +1,80 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "bedford_oyd_xx.mdl"}
+	{volume "body1"
+		{thickness 2}
+	}
+	{volume "body2"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "body3"
+		{thickness 2}
+	}
+	{volume "body4"
+		{thickness 2}
+	}
+	{volume "body5"
+		{thickness 2}
+	}
+	{volume "bodyback1"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "bodyback2"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "bodyback3"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "bodyback4"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "bodyback5"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "bodyback6"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "bodyback7"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "engine"
+		{thickness 10}
+	}
+	{volume "part2"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "part3"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "wheelleft1"
+		{thickness 2}
+	}
+	{volume "wheelleft2"
+		{thickness 2}
+	}
+	{volume "wheelright1"
+		{thickness 2}
+	}
+	{volume "wheelright2"
+		{thickness 2}
+	}
+}

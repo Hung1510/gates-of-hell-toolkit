@@ -1,0 +1,10 @@
+{game_entity ;// qa-rob
+	(include "../daimler_dingo/daimler_dingo.inc")
+	{extender "inventory"
+		{weapon "mgun" {mask "mountable"}}
+		{box
+			{item "boys_mk1" filling "atrifle_eng ap ammo" 5 {user "mgun"}}
+			{item "atrifle_eng ap ammo" 50}
+		}
+	}
+}

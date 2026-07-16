@@ -1,0 +1,112 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "comet1_a34_xx.mdl"}
+	
+	("tracks" thickness(20))
+
+	{volume "body1" ;\\ Beak
+		{thickness 29 ;\\ Sides
+			{front 63.5}
+			{top 32}
+			{bottom 25.4}
+			{rear 10}
+		}
+	}
+
+	{volume "body2" ;\\ LPB
+		{thickness 29 ;\\ Sides
+			{front 76.2}
+			{top 20}
+			{bottom 25.4}
+			{rear 10}
+		}
+	}
+	
+	{volume "body3" ;\\ UPB
+		{thickness 32 ;\\ Sides
+			{front 76.2}
+			{top 25.4}
+			{bottom 25.4}
+			{rear 10}
+		}
+	}
+	
+	{volume "engine1" ;\\ UPE
+		{thickness 14
+			{left 25.4}
+			{rear 32}
+		}
+	}
+	
+	{volume "engine2" ;\\ LPE
+		{thickness 14
+			{left 25.4}
+			{rear 32}
+		}
+	}
+
+	{volume "turret1"
+		{thickness 25.4
+			{front 63.5}
+			{left 63.5}
+			{rear 57.1}
+		}
+	}
+
+	{volume "turret2" {thickness 102}}
+
+	{volume "turret3" {thickness 102}}
+
+	{volume "turret4" {thickness 8}} ;\\ Fake turret vol inside mantlet, so when mantlet is pen and there's enough power past mantlet it can pen the turret technically.
+
+	{volume "turret5" {thickness 120}} ;\\ Turret ring
+
+
+;\\ Armor
+	{volume "basket" {thickness 6}}
+
+	{volume "cupola1" {thickness 44}}
+
+	{volume "mantlet1" {thickness 102}}
+
+	{volume "barrel1" {thickness 25}}
+
+	{volume "armor1" 	;\\ Engine Extra Armor
+		{thickness 32}
+		{able {holed}}
+	}
+
+	{volume "armor2"	;\\ Engine Extra Armor
+		{thickness 32}
+		{able {holed}}
+	}
+
+	{volume "armor3" 	;\\ Boxes
+		{thickness 6}
+	}
+
+	{volume "armor4" 	;\\ Boxes
+		{thickness 6}
+	}
+
+
+;\\ xx
+	{volume "part1" 	;\\ Engine Hatch
+		{thickness 10}
+	}
+	{volume "part2" 	;\\ Engine Hatch
+		{thickness 10}
+	}
+	{volume "part3" 	;\\ Engine Hatch
+		{thickness 10}
+	}
+	{volume "part4" 	;\\ Track Wheel
+		{thickness 20}
+	}
+	{volume "part5" 	;\\ Track Wheel
+		{thickness 20}
+	}
+	{volume "part6" 	;\\ driver visor
+		{thickness 76}
+	}
+}

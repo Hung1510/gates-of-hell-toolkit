@@ -1,0 +1,60 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "sdkfz10_4_xx.mdl"}
+	{volume "barrel1"
+		{thickness 20}
+	}
+	{volume "barrel2"
+		{thickness 20}
+	}
+	{volume "barrel3"
+		{thickness 20}
+	}
+	{volume "body1"
+		{thickness 4}
+	}
+	{volume "body2"
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "body3"
+		{thickness 4}
+	}
+	{volume "body6"
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "engine"
+		{thickness 4}
+	}
+	{volume "part1"
+		{thickness 2}
+	}
+	{volume "part2"
+		{thickness 2}
+	}
+	{volume "part3"
+		{thickness 2}
+	}
+	{volume "part4"
+		{thickness 2}
+	}
+	{volume "part5"
+		{thickness 2}
+	}
+
+	{volume "turret2"
+		{thickness 8}
+	}
+	{volume "turret"
+		{thickness 8}
+		{able {holed}}
+	}
+	{volume "wheelleft1"
+		{thickness 0.5}
+	}
+	{volume "wheelright1"
+		{thickness 0.5}
+	}
+	("tracks" thickness(15))
+}

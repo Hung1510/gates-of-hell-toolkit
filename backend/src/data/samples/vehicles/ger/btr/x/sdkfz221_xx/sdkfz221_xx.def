@@ -1,0 +1,54 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "sdkfz221_xx.mdl"}
+	
+	{volume "body1"			; Hull
+		{thickness 9
+			{top 6}
+			{front 15}
+			{rear 6}
+		}
+	}
+	{volume "body2"			; Lower Center section
+		{thickness 9
+			{rear 6}
+			{bottom 4}
+		}
+	}
+	{volume "body3"			; Driver Port
+		{thickness 9
+			{top 6}
+			{front 15}
+		}
+	}
+	{volume "engine"
+		{thickness 9
+			{top 6}
+			{front 6}		; Nose
+			{rear 4}
+			{bottom 4}
+		}
+	}
+	{volume "turret"		; Turret 
+		{thickness 10}
+		{able {holed}}
+	}
+	{volume "part1"
+		{thickness 9}		; Door
+	}
+	{volume "part2"
+		{thickness 9}		; Door
+	}
+	{volume "part3"			; Wheel
+		{thickness 8}
+	}
+	{volume "part4"			; Wheel
+		{thickness 8}
+	}
+	{volume "wheelleft2"
+		{thickness 8}
+	}
+	{volume "wheelright2"
+		{thickness 8}
+	}
+}

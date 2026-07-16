@@ -1,0 +1,12 @@
+;_________________________________________
+; German heavy AT Gun
+;=========================================
+
+
+{from "88mm_kwk43"			; L/71 "pak43"
+	{fireSound "cannon/s4/d1/Shared/Cannon_85to100mm_HV/"}
+	{fireSoundclose "cannon/s4/3p/Shared/Cannon_85to100mm_HV/"}
+	{reloadSound "utility/"}
+	("reload time" seconds(7.5))
+
+}

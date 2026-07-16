@@ -1,0 +1,60 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "gaz98_xx.mdl"}
+
+	{volume "armor1"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+		{able {holed}}
+	}
+
+	{volume "armor2"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+		{able {holed}}
+	}
+	{volume "body1"			; Hull
+		{thickness 3}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "body2"			; Windshield Frame
+		{thickness 2}
+	}
+	{volume "engine1"
+		{thickness 2}
+	}
+	{volume "engine2"
+		{thickness 2}
+	}
+	{volume "propeller"
+		{thickness 3}
+		{able {obstacle 0}}
+	}
+	{volume "wheelleft1"
+		{thickness 10}
+		{material "wood"}
+		{tags "wood"}
+		{able {obstacle 0}}
+	}
+	{volume "wheelleft2"
+		{thickness 10}
+		{material "wood"}
+		{tags "wood"}
+		{able {obstacle 0}}
+	}
+	{volume "wheelright1"
+		{thickness 10}
+		{material "wood"}
+		{tags "wood"}
+		{able {obstacle 0}}
+	}
+	{volume "wheelright2"
+		{thickness 10}
+		{material "wood"}
+		{tags "wood"}
+		{able {obstacle 0}}
+	}
+}

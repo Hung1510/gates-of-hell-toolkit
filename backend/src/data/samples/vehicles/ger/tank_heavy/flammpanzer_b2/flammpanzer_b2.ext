@@ -1,0 +1,168 @@
+;SDL
+	
+	;notes
+	;tracks and wheels 20mm
+	;gun 20mm and 25mm
+
+	("tank_heavy_tier1")
+
+	("tracks" repair(40) thickness(20))
+	("gun" repair(30) thickness(20))
+
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("ammo" args "ammo5")
+	("ammo" args "ammo6")
+	("ammo" args "ammo7")
+	("ammo" args "ammo8")
+	("ammo" args "ammo9")
+	("ammo" args "ammo10")
+	("shield_track" args "shield1" 30)
+	("transmission" args "transmission")
+	
+
+
+	{volume "body1"			; Hull
+		{thickness 55
+			{front 60}
+			{bottom 20}
+		}
+	}
+	{volume "body2"			; Hull
+		{thickness 55
+			{front 60}
+			{top 25}
+			{rear 10}
+			{bottom 20}
+		}
+	}
+	{volume "body3"			; 75mm gun shield
+		{thickness 60}
+	}
+	{volume "body4"			; driver 
+		{thickness 55
+			{front 60}
+			{top 25}
+			{bottom 20}
+		}
+	}
+	{volume "body5"			; flamm gunner
+		{thickness 55
+			{front 60}
+			{top 25}
+			{bottom 20}
+		}
+	}
+	{volume "body6"			; right block
+		{thickness 55
+			{front 60}
+			{top 25}
+			{rear 10}
+			{bottom 12.7}
+		}
+	}
+	{volume "body7"			; left block
+		{thickness 55
+			{front 60}
+			{top 25}
+			{rear 10}
+			{bottom 12.7}
+		}
+	}
+	{volume "body8"			; left front small part
+		{thickness 55
+			{front 60}
+			{top 25}
+			{bottom 20}
+		}
+	}
+	{volume "body9"			; right front small part
+		{thickness 55
+			{front 60}
+			{top 25}
+			{bottom 20}
+		}
+	}
+	{volume "fuel3"			; Fuel container
+		{thickness 55
+			{top 25}
+			{rear 50}
+		}
+		{able {contact 1} {NoWoundDecal 0}}
+	}
+	{volume "engine1"		; Hull
+		{thickness 55
+			{front 10}
+			{top 25}
+			{rear 50}
+			{bottom 20}
+		}
+	}
+	{volume "engine2"		; left block
+		{thickness 55
+			{front 10}
+			{top 25}
+			{rear 50}
+			{bottom 12.7}
+		}
+	}
+	{volume "engine3"		; right block
+		{thickness 55
+			{front 10}
+			{top 25}
+			{rear 50}
+			{bottom 12.7}
+		}
+	}
+	{volume "turret1"
+		{thickness 56
+			{top 30}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret2"			; turret ring
+		{thickness 60}
+	}
+	{volume "mantlet"
+		{thickness 56}
+		{CastSteel 0.8063}
+	}
+	{volume "mantlet2"
+		{thickness 56}
+		{CastSteel 0.8063}
+	}
+	{volume "cupola"
+		{thickness 48
+			{top 30}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "armor1"
+		{thickness 55}
+	}
+	{volume "armor2"
+		{thickness 55}
+	}
+	{volume "armor3"
+		{thickness 55}
+	}
+	{volume "armor4"
+		{thickness 55}
+	}
+	{volume "armor5"
+		{thickness 55}
+	}
+	{volume "armor6"
+		{thickness 55}
+	}
+	{volume "armor7"
+		{thickness 55}
+	}
+	{volume "armor8"
+		{thickness 55}
+	}

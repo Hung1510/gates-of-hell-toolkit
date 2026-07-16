@@ -1,0 +1,3 @@
+{game_entity
+	{extension "sexton_mk2_x.mdl"} {RimLight}
+}

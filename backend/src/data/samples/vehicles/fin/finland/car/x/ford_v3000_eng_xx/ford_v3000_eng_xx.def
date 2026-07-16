@@ -1,0 +1,80 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "ford_v3000_eng_xx.mdl"}
+
+	{volume "body1"
+		{thickness 2}
+	}
+	{volume "body2"
+		{able {holed}}
+		{thickness 2}
+	}
+	{volume "body3"
+		{thickness 2}
+	}
+	{volume "bodyback1"
+		{able {holed}}
+		{thickness 2}
+		{material "wood"}
+	}
+	{volume "bodyback2"
+		{thickness 2}
+		{material "wood"}
+	}
+	{volume "bodyback3"
+		{thickness 2}
+	}
+	{volume "bodyback4"
+		{thickness 2}
+	}
+	{volume "bodyback5"
+		{thickness 2}
+	}
+	{volume "bodyback6"
+		{thickness 2}
+	}
+	{volume "bodyback7"
+		{thickness 2}
+	}
+	{volume "engine"
+		{thickness 15}
+	}
+	{volume "part2"
+		{thickness 2}
+	}
+	{volume "part3"
+		{thickness 2}
+		{material "wood"}
+	}
+	{volume "part4"
+		{thickness 2}
+		{material "wood"}
+	}
+	{volume "part5"
+		{thickness 2}
+		{able {obstacle 0}}
+	}
+	{volume "part6"
+		{thickness 2}
+		{able {obstacle 0}}
+	}
+	{volume "part7"
+		{thickness 2}
+	}
+	{volume "part8"
+		{thickness 2}
+	}		
+	{volume "wheelleft1"
+		{thickness 2}
+	}
+	{volume "wheelleft2"
+		{thickness 2}
+	}
+	{volume "wheelright1"
+		{thickness 2}
+	}
+	{volume "wheelright2"
+		{thickness 2}
+	}
+}
+

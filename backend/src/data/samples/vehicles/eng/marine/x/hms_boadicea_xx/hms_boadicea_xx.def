@@ -1,0 +1,69 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "hms_boadicea_xx.mdl"}
+
+;// Components
+	{volume "body_front1" {thickness 16}}
+	{volume "body_front2" {thickness 16}}
+	{volume "body_front3" {thickness 16}}
+	{volume "body_front4" {thickness 16}}
+	{volume "body_front5" {thickness 16}}
+	{volume "body_center" {thickness 16}}
+	{volume "body_rear1" {thickness 16}}
+	{volume "body_rear2" {thickness 16}}
+	{volume "body_rear3" {thickness 4}}
+
+	{volume "cabin1" {thickness 4}}
+	{volume "cabin2" {thickness 4}}
+	{Volume "engine" {thickness 2}}
+
+;// Non-Components
+	{volume "armor1" {thickness 4}}
+	{volume "armor2" {thickness 4}}
+	{volume "armor3" {thickness 4}}
+	{volume "armor4" {thickness 4}}
+	{volume "armor5" {thickness 4} {able {holed}}}
+	{volume "armor6" {thickness 4} {able {holed}}}
+	{volume "armor7" {thickness 4} {able {holed}}}
+	{volume "armor8" {thickness 16}}
+	{volume "armor9" {thickness 16}}
+
+	{volume "shield1" {able {holed}}}
+	{volume "shield2" {able {holed}}}
+	{volume "shield3" {able {holed}}}
+	{volume "shield4" {able {holed}}}
+
+;// xx
+
+	{volume "barrel11" {thickness 25}}
+	{volume "barrel12" {thickness 25}}
+	{volume "barrel13" {thickness 25}}
+	{volume "barrel14" {thickness 25}}
+	{volume "barrel15" {thickness 25}}
+	{volume "barrel21" {thickness 25}}
+	{volume "barrel22" {thickness 25}}
+	{volume "barrel23" {thickness 25}}
+	{volume "barrel24" {thickness 25}}
+	{volume "barrel25" {thickness 25}}
+	{volume "barrel31" {thickness 25}}
+	{volume "barrel32" {thickness 25}}
+	{volume "barrel33" {thickness 25}}
+	{volume "barrel34" {thickness 25}}
+	{volume "barrel35" {thickness 25}}
+	{volume "barrel41" {thickness 25}}
+	{volume "barrel42" {thickness 25}}
+	{volume "barrel43" {thickness 25}}
+	{volume "barrel44" {thickness 25}}
+	{volume "barrel45" {thickness 25}}
+
+	{volume "barrel51" {thickness 15}}
+	{volume "barrel52" {thickness 15}}
+	{volume "barrel53" {thickness 15}}
+	{volume "barrel54" {thickness 15}}
+	{volume "barrel55" {thickness 15}}
+	{volume "barrel61" {thickness 15}}
+	{volume "barrel62" {thickness 15}}
+	{volume "barrel63" {thickness 15}}
+	{volume "barrel64" {thickness 15}}
+	{volume "barrel65" {thickness 15}}
+}

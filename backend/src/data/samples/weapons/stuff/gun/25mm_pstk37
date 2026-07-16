@@ -1,0 +1,11 @@
+;_________________________________________
+; early light AT german cannon
+;=========================================
+
+
+{from "25mm_kwk121f"			; L/72 "25mm_pstk37"
+	{filling "bulletger_25"}
+	{reloadSound "utility/"}
+
+	("reload time" seconds(2.5))
+}

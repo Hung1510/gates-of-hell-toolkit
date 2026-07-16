@@ -1,0 +1,71 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "blitz3_6_xx.mdl"}
+	
+	{Volume "body"
+		{thickness 2}
+	}
+	{Volume "bodyback1"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{Volume "bodyback2"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{Volume "bodyback3"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{Volume "bodyback4"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{Volume "bodyback5"
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "cabin"
+		{thickness 2}
+		{able {holed}}
+	}
+	{volume "engine"
+		{thickness 2}
+	}
+	{volume "part1"		;// Right Door
+		{thickness 2}
+		{able {obstacle 0}}
+	}
+	{volume "part2"		;// Left Door
+		{thickness 2}
+		{able {obstacle 0}}
+	}
+	{volume "part3"		;// Right Engine Cover
+		{thickness 2}
+	}
+	{volume "part4"		;// Left Engine Cover
+		{thickness 2}
+	}
+	{volume "part5"		;// Front Left Wheel
+		{thickness 0.5}
+	}
+	{volume "part6"		;// Back Right Wheel
+		{thickness 0.5}
+	}
+	{volume "part7"		;// Back Door
+		{thickness 2}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "wheelleft2"
+		{thickness 0.5}
+	}
+	{volume "wheelright1"
+		{thickness 0.5}
+	}
+}

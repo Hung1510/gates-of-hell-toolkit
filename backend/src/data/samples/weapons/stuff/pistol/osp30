@@ -1,0 +1,12 @@
+{from "pattern pistol"
+	{filling "flare" 1}
+	{entity "osp30"}
+
+	("flare_pistol")
+
+	{parameters "signal"
+		{range 250 250}
+		{gravity 0.08}
+		{speed 10}
+	}
+}

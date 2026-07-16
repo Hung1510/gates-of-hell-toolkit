@@ -1,0 +1,160 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 20mm
+	; gun 25mm
+	; track guards 5mm
+
+	("tank_medium_tier2")
+
+	("shield" args "detail3" 20)
+	("shield" args "shieldl1" 5)
+	("shield" args "shieldl2" 5)
+	("shield" args "shieldl3" 5)
+	("shield" args "shieldl4" 5)
+	("shield" args "shieldl5" 5)
+	("shield" args "shieldl6" 5)
+	("shield" args "shieldl7" 5)
+	("shield" args "shieldr1" 5)
+	("shield" args "shieldr2" 5)
+	("shield" args "shieldr3" 5)
+	("shield" args "shieldr4" 5)
+	("shield" args "shieldr5" 5)
+	("shield" args "shieldr6" 5)
+	("shield" args "shieldr7" 5)
+
+	("tracks" repair(30) thickness(20))
+	("gun" repair(30) thickness(25))
+
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull
+		{thickness 45
+			{front 45}		; Glacis & Lower Hull
+			{rear 10}
+			{bottom 20}
+		}
+		{HighHardness}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 40
+			{front 45}		; Glacis
+			{top 16}
+			{rear 10}
+			{bottom 16}
+		}
+		{HighHardness}
+	}
+	{volume "body3"			; Nose
+		{thickness 45
+			{front 100}
+			{top 90}
+		}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "body4"			; Hull MG Port
+		{thickness 45
+			{front 70}
+		}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "body5"			; Drivers Hatch
+		{thickness 75}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "engine1"		; Hull
+		{thickness 45
+			{front 10}
+			{rear 40}
+			{bottom 13}
+		}
+		{HighHardness}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 40
+			{front 10}
+			{top 16}
+			{bottom 13}
+		}
+		{HighHardness}
+	}
+	{volume "turret1"		; Turret Ring
+		{thickness 45}
+		{HighHardness}
+	}
+	{volume "turret2"		; Turret
+		{thickness 45
+			{top 15}
+		}
+		{HighHardness}
+	}
+	{volume "turret3"		; Turret
+		{thickness 45}
+		{HighHardness}
+	}
+	{volume "turret4"
+		{thickness 45}
+		{HighHardness}
+	}
+	{volume "armor1"		; Turret ext
+		{thickness 45}
+		{able {holed}}
+		{HighHardness}
+	}
+	{volume "armor1"		; Turret ext
+		{thickness 15}
+		{able {holed}}
+		{HighHardness}
+	}
+	{volume "armor2"		; Turret ext
+		{thickness 15}
+		{HighHardness}
+	}
+	{volume "armor3"		; Turret ext
+		{thickness 15}
+		{HighHardness}
+	}
+	{volume "armor4"		; hull ext
+		{thickness 15}
+		{HighHardness}
+	}
+	{volume "armor5"		; hull ext
+		{thickness 15}
+		{HighHardness}
+	}
+	{volume "armor6"		; hull ext
+		{thickness 2}
+	}
+	
+	{volume "barrel1"
+		{thickness 20
+			{front 45}
+		}
+		{HighHardness}
+	}
+
+	{component "shieldl1" {tags "cut_part"}}
+	{component "shieldl2" {tags "cut_part"}}
+	{component "shieldl3" {tags "cut_part"}}
+	{component "shieldl4" {tags "cut_part"}}
+	{component "shieldl5" {tags "cut_part"}}
+	{component "shieldl6" {tags "cut_part"}}
+	{component "shieldl7" {tags "cut_part"}}
+	{component "shieldr1" {tags "cut_part"}}
+	{component "shieldr2" {tags "cut_part"}}
+	{component "shieldr3" {tags "cut_part"}}
+	{component "shieldr4" {tags "cut_part"}}
+	{component "shieldr5" {tags "cut_part"}}
+	{component "shieldr6" {tags "cut_part"}}
+	{component "shieldr7" {tags "cut_part"}}

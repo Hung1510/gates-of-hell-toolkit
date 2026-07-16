@@ -1,0 +1,54 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "kht130_fin_xx.mdl"}
+	
+	{volume "body1"			; Hull
+		{thickness 15
+			{top 7}			; Glacis
+			{rear 5}
+			{bottom 6}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 15
+			{top 10}
+			{bottom 5}
+		}
+	}
+	{volume "body3"			; Driver Door Top
+		{thickness 15
+			{top 10}
+			{rear 5}
+		}
+	}
+	{volume "body4"			; Driver Door Bottom
+		{thickness 15
+			{front 7}
+			{rear 5}
+			{bottom 5}
+		}
+	}
+	{volume "engine"
+		{thickness 15
+			{front 5}
+			{top 6}
+			{bottom 6}
+		}
+	}
+	{volume "turret1"		; Turret Ring
+		{thickness 15}
+	}
+	{volume "turret2"		; Turret
+		{thickness 15
+			{top 10}
+		}
+	}
+	{volume "mantlet"
+		{thickness 15}
+	}
+	{volume "part3"
+		{thickness 10}
+	}
+
+	("tracks" thickness(15))
+}

@@ -1,0 +1,24 @@
+{game_entity
+;// Defines
+	(include "/properties/vehicle_xx.ext")
+	{extension "sdkfz251b_xx.mdl"}
+	("tracks" thickness(15))
+
+;// Components
+	{volume "body1" {thickness 8 {front 12} {top 5.5} {bottom 5.5}} {able {holed}}} 	;// Upper body
+	{volume "body2" {thickness 8 {front 12} {top 5.5} {bottom 5.5}}} 	;// Lower body 1_1
+	{volume "body3" {thickness 8 {front 12} {top 5.5} {bottom 5.5}}} 	;// Lower body 1_1
+	{volume "engine" {thickness 8 {front 14.5} {top 5.5}}} 	;// Entire engine deck
+	{volume "wheelright1" {thickness 0.5}}
+	{volume "wheelleft1" {thickness 0.5}}
+
+
+;//Non-Components
+	{volume "gun_shield" {thickness 8} {able {holed}}} 	;// Gun shield (front)
+	{volume "doorl" {thickness 8}}
+	{volume "doorr" {thickness 8}}
+
+;// Parts
+	{volume "part7" {thickness 5.5}}
+	{volume "part8" {thickness 5.5}}
+}

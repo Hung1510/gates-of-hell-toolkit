@@ -1,0 +1,12 @@
+{from "pattern heatc"	; 76 hkr Vj 42/C-18/24-38
+	{tag "shell size2 size2_heat_shell heat_medium"}
+	{inventory {size 5 1}}
+	{entity "76mm_fin_heatc"}
+	{mass 6.11}
+
+	{view "howitzer_shell_50-75"
+		{tail "shell_tracer_75_heat" "tail"}
+	}
+
+	("he_level_2" weight(4.67) filler(0.894))
+}

@@ -1,0 +1,8 @@
+;_________________________________________
+; British Aerial Rocket Launcher
+;=========================================
+
+
+{from "76mm_rp3_x2"		; "cromwell4_tulip"
+	{filling "ammo 76mm_rp3" 4}
+}

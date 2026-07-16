@@ -1,0 +1,36 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "universal_carrier_mk1_xx.mdl"}
+	
+	{volume "body1"
+		{thickness 10}
+	}
+	{volume "body2"
+		{thickness 10}
+		{able {holed}}
+	}
+	{volume "body3"
+		{thickness 10}
+		{able {holed}}
+	}
+	{volume "body4"
+		{thickness 10}
+	}
+	{volume "body5"
+		{thickness 10}
+	}
+	{volume "engine"
+		{thickness 10}
+	}
+	{volume "part1"
+		{thickness 4}
+	}
+	{volume "shield1"
+		{thickness 4}
+	}
+	{volume "shield2"
+		{thickness 4}
+	}
+	
+	("tracks" thickness(10))
+}

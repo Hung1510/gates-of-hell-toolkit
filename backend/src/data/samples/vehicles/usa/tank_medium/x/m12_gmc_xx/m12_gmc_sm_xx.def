@@ -1,0 +1,116 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "m12_gmc_xx.mdl"}
+	
+	{volume "body1"	
+		{thickness 38.1
+			{front 50.8} 
+			{top 12.7}
+			{rear 10}
+			{bottom 25}
+		}
+	}
+	{volume "body2"
+		{thickness 50.8}
+	}
+	{volume "body3"
+		{thickness 50.8}
+	}
+	{volume "body4"
+		{thickness 38.1
+			{front 50.8}
+			{rear 25}
+			{bottom 25}
+		}
+	}
+	{volume "body5"			
+		{thickness 38.1
+			{front 10}
+			{bottom 25}
+			{top 12.7}
+		}
+		{able {holed}}
+	}
+	{volume "body6"
+		{thickness 38.1
+			{front 10}
+			{rear 25}
+			{top 12.7}
+			{bottom 25}
+		}
+	}
+	{volume "body7"
+		{thickness 38.1
+			{front 10}
+			{rear 25}
+			{top 12.7}
+			{bottom 25}
+		}
+	}
+	{volume "body7"
+		{thickness 38.1
+			{front 10}
+			{rear 25}
+			{top 12.7}
+			{bottom 25}
+		}
+	}
+	{volume "body8"
+		{thickness 38.1
+			{front 50.8}
+			{rear 10}
+			{bottom 25}
+			{top 12.7}
+		}
+	}
+	{volume "engine1"
+		{thickness 38.1
+			{front 10}
+			{rear 10}
+			{top 12.7}
+		}
+	}
+	{volume "engine2"
+		{thickness 38.1
+			{front 10}
+			{rear 10}
+			{top 12.7}
+		}
+	}
+	{volume "engine3"
+		{thickness 38.1
+			{bottom 25}
+			{top 12.7}
+		}
+	}
+	{volume "engine4"
+		{thickness 38.1
+			{bottom 25}
+			{top 12.7}
+		}
+	}
+	{volume "barrel1"
+		{thickness 25}
+		{able {holed}}
+	}
+	{volume "armor1"
+		{thickness 20}
+	}
+	{volume "armor2"
+		{thickness 20}
+	}
+	{volume "armor3"
+		{thickness 20}
+	}
+	{volume "barrel1"
+		{thickness 30}
+	}
+	{volume "barrel2"
+		{thickness 30}
+	}
+	{volume "barrel3"
+		{thickness 30}
+	}
+
+	("tracks" thickness(20))
+}

@@ -1,0 +1,90 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "sturmtiger_xx.mdl"}
+
+	{volume "shieldl2"
+		{thickness 4}
+	}
+	{volume "shieldl3"
+		{thickness 4}
+	}
+	{volume "shieldl5"
+		{thickness 4}
+	}
+	{volume "shieldr1"
+		{thickness 4}
+	}
+	{volume "shieldr5"
+		{thickness 4}
+	}
+	{volume "barrel"
+		{thickness 80}
+	}
+	{volume "body1"			; Hull
+		{thickness 60
+			{front 150}		; Lower Nose // 100mm base + 50mm plate bolted on
+			{top 60}		; Glacis
+			{bottom 25}
+		}
+	}
+	{volume "body2"			; Superstructure Bottom
+		{thickness 80
+			{front 150}
+			{bottom 25}
+		}
+	}
+	{volume "body3"			; Superstructure Top
+		{thickness 80
+			{front 150}
+			{top 40}
+		}
+	}
+	{volume "body4"			; MG port
+		{thickness 150}
+		{tags "mg_port"}
+	}
+	{volume "engine1"		; Hull
+		{thickness 60
+			{front 30}
+			{rear 80}
+			{bottom 25}
+		}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 80
+			{front 30}
+			{top 25}
+			{rear 80}
+		}
+	}
+	{volume "mantlet"		; Armor on Gun
+		{thickness 110}
+		{able {holed}}
+	}
+	{volume "mantlet1"		; Left Cheek
+		{thickness 110}
+		{able {holed}}
+	}
+	{volume "mantlet2"		; Right Cheek
+		{thickness 110}
+	}
+	{volume "barrel"
+		{thickness 80}
+		{able {holed} {Contact 1}}
+	}
+
+	{volume "part3"
+		{thickness 4}
+	}
+	{volume "part4"
+		{thickness 40}
+	}
+	{volume "part5"
+		{thickness 80}
+	}
+	{volume "part6"
+		{thickness 4}
+	}
+
+	("tracks" thickness(30))
+}

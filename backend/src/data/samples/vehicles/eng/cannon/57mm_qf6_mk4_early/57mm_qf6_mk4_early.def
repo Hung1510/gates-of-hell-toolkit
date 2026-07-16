@@ -1,0 +1,16 @@
+{game_entity	;// Feb 1943
+	(include "../57mm_qf6/57mm_qf6_mk4.inc")
+
+	{extender "inventory"
+		{box
+			{item "bullet_57x441 eng apcbc" 36}	;50 rounds, 25% HE
+			{item "bullet_57x441 eng he" 13}
+			{item "sandbag_vehicle" 1}
+		}
+	}
+	{Weaponry
+		{place "gun"
+			{weapon "57mm_qf6_l50" filling "bullet_57x441 eng apcbc" 1}
+		}
+	}
+}

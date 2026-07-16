@@ -1,0 +1,158 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 20mm
+	; gun 20mm
+	; track guards 5mm
+
+	{volume "shieldl1"
+		{thickness 5}
+	}
+	{volume "shieldl2"
+		{thickness 5}
+	}
+	{volume "shieldr1"
+		{thickness 5}
+	}
+	{volume "shieldr2"
+		{thickness 5}
+	}
+
+	{volume "shieldhl1"
+		{thickness 15}
+		{material "sand"}
+	}
+	{volume "shieldhl2"
+		{thickness 15}
+		{material "sand"}
+	}
+	{volume "shieldhr1"
+		{thickness 15}
+		{material "sand"}
+	}
+	{volume "shieldhr2"
+		{thickness 15}
+		{material "sand"}
+	}
+	{volume "shieldtl"
+		{thickness 15}
+		{material "sand"}
+	}
+	{volume "shieldtr"
+		{thickness 15}
+		{material "sand"}
+	}
+
+	{volume "grill1"
+		{thickness 2}
+	}
+	{volume "grill2"
+		{thickness 2}
+	}
+	{volume "grill3"
+		{thickness 2}
+	}
+	{volume "grill4"
+		{thickness 2}
+	}
+	{volume "grill5"
+		{thickness 2}
+	}
+	{volume "grill6"
+		{thickness 2}
+	}
+	{volume "grill7"
+		{thickness 2}
+	}
+
+	{volume "body1"			; Hull
+		{thickness 45
+			{front 45}		; Glacis & Lower Hull
+			{rear 10}
+			{bottom 20}
+		}
+		{HighHardness}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 45
+			{front 45}		; Glacis
+			{top 16}
+			{rear 10}
+			{bottom 20}
+		}
+		{HighHardness}
+	}
+	{volume "body3"			; Nose
+		{thickness 45
+			{front 100}
+		}
+		{HighHardness}
+	}
+	{volume "body4"			; Hull MG Port
+		{thickness 60
+			{front 70}
+		}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "body5"			; Drivers Hatch
+		{thickness 75}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "engine1"		; Hull
+		{thickness 45
+			{front 10}
+			{bottom 20}
+		}
+		{HighHardness}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 45
+			{front 10}
+			{top 20}
+			{bottom 20}
+		}
+		{HighHardness}
+	}
+	{volume "turret1"		; Turret Ring
+		{thickness 75
+			{front 90}
+			{rear 52}
+		}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "turret2"		; Turret
+		{thickness 75
+			{front 90}
+			{top 20}
+			{rear 52}
+		}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "turret3"		; Mantlet
+		{thickness 90}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "barrel1"
+		{thickness 90
+			{front 200}
+		}
+		{HighHardness}
+	}
+	{volume "barrel2"
+		{thickness 30}
+	}
+	{Volume "cupola"
+		{thickness 90
+			{top 20}
+		}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "part3"
+		{thickness 20}
+	}

@@ -1,0 +1,60 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "bedford_oyc_fuel_xx.mdl"}
+	{volume "body10"
+		{thickness 4}
+	}
+	{volume "body11"
+		{thickness 4}
+	}
+	{volume "body1"
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "body2"
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "body3"
+		{thickness 4}
+	}
+	{volume "body4"
+		{thickness 4}
+	}
+	{volume "body5"
+		{thickness 4}
+	}
+	{volume "body6"
+		{thickness 4}
+	}
+	{volume "body7"
+		{thickness 4}
+	}
+	{volume "body8"
+		{thickness 4}
+	}
+	{volume "body9"
+		{thickness 4}
+	}
+	{volume "bodyback1"
+		{thickness 4}
+	}
+	{volume "engine"
+		{thickness 4}
+	}
+	{volume "transmission"
+		{thickness 4}
+	}
+	{volume "wheelleft1"
+		{thickness 1}
+	}
+	{volume "wheelleft2"
+		{thickness 1}
+	}
+	{volume "wheelright1"
+		{thickness 1}
+	}
+	{volume "wheelright2"
+		{thickness 1}
+	}
+}

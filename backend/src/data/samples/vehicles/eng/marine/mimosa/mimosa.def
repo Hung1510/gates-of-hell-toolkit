@@ -1,0 +1,31 @@
+{game_entity
+	(include "/properties/marine.ext")
+	(include "/properties/selection/vehicle_big.inc" scale(1.1))
+	{props "marine" "engine" "vision_lev04_boat" "emit_on_sink" "explosion_throw_crew" "boat" "big"}
+ 	{targetClass "car"}
+	{targetSelector "cannon_zenite"}
+	{patherID "water"}
+	{extension "mimosa.mdl"}
+	(include "mimosa.ext")
+	{extension "crew.ext"}
+
+	{extender "inventory"
+		{box
+		}
+	}
+
+	{mass 13000}
+	{chassis "water"
+		("mobility_small_boat"
+			speed(19) ;---------------------------------Max speed.
+			speedatmaxturn(13) ;------------------------Max speed at max turn.
+			reverse(10) ;-------------------------------Max speed in Reverse.
+			weight(13.0) ;------------------------------Weight in Tonnes.
+			power(120) ;--------------------------------Horse Power.
+			fuel(5000) ;--------------------------------Fuel capacity in Litres. ;// PLACEHOLDER
+			type(fuel) ;--------------------------------Fuel type.
+			range(500) ;--------------------------------Range in Kilometers. ;//PLACEHOLDER
+		)
+		{waterline 0}
+	}
+}

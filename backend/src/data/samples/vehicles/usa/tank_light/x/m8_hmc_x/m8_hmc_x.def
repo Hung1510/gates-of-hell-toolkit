@@ -1,0 +1,3 @@
+{game_entity
+	{extension "m8_hmc_x.mdl"} {RimLight}
+}

@@ -1,0 +1,7 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "t3485_44a_flame_xx.mdl"}
+	(include "t3485_44.ext")
+	
+	("tracks" thickness(20))
+}

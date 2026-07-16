@@ -1,0 +1,3 @@
+{game_entity
+	{extension "m22_locust_x.mdl"} {RimLight}
+}

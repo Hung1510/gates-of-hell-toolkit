@@ -1,0 +1,5 @@
+{game_entity
+	{extension "m4a1_75_mid_armor_x.mdl"} {RimLight}
+	{volume "turret4"
+	}
+}

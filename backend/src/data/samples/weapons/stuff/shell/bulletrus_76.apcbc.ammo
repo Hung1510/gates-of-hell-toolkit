@@ -1,0 +1,12 @@
+{from "pattern apcbc"	;76 psa - Vj4
+	{tag "shell size2 75to76"}
+	{inventory {size 5 1}}
+	{entity "76mm_fin_apcbc"}
+	{mass 6.32}
+
+	{view "howitzer_shell_50-75_lv"
+		{tail "shell_tracer_rus_76_ap" "tail"}
+	}
+
+	("ap_blast" args 0.78)
+}

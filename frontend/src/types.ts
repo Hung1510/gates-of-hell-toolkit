@@ -72,3 +72,55 @@ export interface BuildResult<T> {
   code: string;
   parsedBack: T;
 }
+
+export interface ArmorVolume {
+  name: string;
+  baseThickness: number;
+  facings: Partial<Record<"front" | "rear" | "top" | "bottom" | "side", number>>;
+  highHardness: boolean;
+  castSteel: number | null;
+}
+
+export interface VehicleMobility {
+  speed: number | null;
+  weight: number | null;
+  power: number | null;
+  range: number | null;
+}
+
+export interface Vehicle {
+  id: string;
+  faction: string;
+  category: string;
+  weapons: string[];
+  primaryWeapon: string | null;
+  mass: number | null;
+  targetClass: string | null;
+  mobility: VehicleMobility | null;
+  armor: ArmorVolume[];
+}
+
+export interface ResolvedWeaponStats {
+  damage: number | null;
+  damageTarget: "human" | "armor" | null;
+  rpm: number | null;
+  penetrationTable: { rangeM: number; penetrationMm: number }[] | null;
+  calibre: number | null;
+  velocity: number | null;
+  unresolvedTemplates: string[];
+}
+
+export interface UnitWeaponInfo {
+  unitId: string;
+  faction: string;
+  period: string;
+  primaryWeapon: string | null;
+  weaponStats: ResolvedWeaponStats | null;
+}
+
+export interface VehicleFactionSummary {
+  faction: string;
+  count: number;
+  withArmor: number;
+  withWeapon: number;
+}

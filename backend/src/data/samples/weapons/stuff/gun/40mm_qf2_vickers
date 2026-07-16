@@ -1,0 +1,29 @@
+;_________________________________________
+; British naval medium AA gun
+;=========================================
+
+
+{from "pattern gun"			; L/39 "hms_boadicea"
+	{filling "bullet_40x158mm_auto" 25}
+	{fireSound "cannon/s1/d1/Shared/Autocannon_37to40mm/"}
+	{fireSoundclose "cannon/s1/3p/Shared/Autocannon_37to40mm/"}
+	{reloadSound "tank/reload_small"}
+	("range_autocannon_37-40")
+	{cursor "ironsights/aa"}
+	{calibre 40}
+	("medium_aa")
+
+	("fire rate" rpm(200))
+	("reload time" seconds(1.5))
+
+	("velocity" mps(590))
+	("armor health" damage(110))
+	("40_slope_multipliers")
+
+	("accuracy_direct_auto" r1(0.55) range_ap(160) range_he(160) range_heat(160))
+
+	{parameters "he"
+		(mod "mp" {unlimitedRangeTPC 1})	;// unrestricts range in TPC/FPC for shooting at aircraft
+		{FalloffStrength 0}
+	}
+}

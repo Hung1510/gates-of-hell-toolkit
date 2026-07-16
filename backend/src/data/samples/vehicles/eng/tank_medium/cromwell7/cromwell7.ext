@@ -1,0 +1,155 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 20mm
+	; gun 25mm
+
+	("tank_medium_tier2")
+
+	("tracks" repair(30) thickness(20))
+	("gun" repair(30) thickness(25))
+
+	("shield_track" args "shield1" 20)
+	("shield" args "detail3" 20)
+	("shield" args "detail4" 20)
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("transmission" args "transmission")
+
+	{volume "body1"
+		{thickness 39
+			{front 57}
+			{top 30}
+			{bottom 25.4}
+			{rear 20}
+		}
+	}
+	{volume "body2"
+		{thickness 44
+			{front 63.5}
+			{top 20}
+			{bottom 20}
+			{rear 20}
+		}
+	}
+	{volume "body3"
+		{thickness 46
+			{front 63.5}
+			{top 20}
+			{bottom 10}
+			{rear 20}
+		}
+	}
+	{volume "body4" ;// volume for lower side armor as its a spaced armor array
+		{thickness 46
+			{front 63.5}
+			{top 20}
+			{bottom 10}
+			{rear 20}
+		}
+		{CastSteel 0.79} ;// spaced armor array 32+14mm = ~39mm effective
+	}
+	{volume "body5" ;// volume for upper front plate
+		{thickness 102}
+		{able {holed}}
+		{CastSteel 0.77} ;// layered armor array 64+38mm = ~93.4mm effective
+	}
+	{volume "body6" ;// volume for lower front plate
+		{thickness 82.4}
+		{CastSteel 0.81} ;// layered armor array 57+25.4mm = ~76mm effective
+	}
+	{volume "body7" ;// hull mg mount
+		{thickness 76}
+	}
+	{volume "engine1"
+		{thickness 39
+			{front 25}
+			{top 14}
+			{bottom 10}
+			{rear 38}
+		}
+	}
+	{volume "engine2"
+		{thickness 38
+			{front 25}
+			{top 14}
+			{bottom 20}
+			{rear 20}
+		}
+	}
+	{volume "engine3" ;// volume for lower side armor as its a spaced armor array
+		{thickness 39
+			{front 25}
+			{top 14}
+			{bottom 10}
+			{rear 38}
+		}
+		{CastSteel 0.79} ;// spaced armor array 25+14mm = ~32.5mm effective
+	}
+	{volume "turret1"
+		{thickness 63.7
+			{front 101.4}
+			{top 20}
+			{bottom 19}
+			{rear 56.7}
+		}
+		{CastSteel 0.85} ;// layered armor array ~60,53mm effective s,r
+		{able {holed}}
+	}
+	{volume "turret2"
+		{thickness 44}
+	}
+	{volume "turret3" 	;\\ Mantlet
+		{thickness 88.9}
+	}
+	{volume "turret4" ;// volume for top turret armor as its not layered armor
+		{thickness 63.7
+			{front 101.4}
+			{top 20}
+			{bottom 19}
+			{rear 56.7}
+		}
+	}
+	{volume "turret5" 	;// front turret armor
+		{thickness 101.4}
+		{CastSteel 0.76} ;// layered armor array 12.7+64+25.4mm = ~91.2mm effective
+		{able {holed}}
+	}
+	{volume "armor1" 	;\\ Engine Extra Armor
+		{thickness 25
+			{front 14}
+			{bottom 32}
+		}
+		{able {holed}}
+	}
+	{volume "armor2"	;\\ Engine Extra Armor
+		{thickness 25
+			{front 14}
+			{bottom 32}
+		}
+		{able {holed}}
+	}
+	{volume "armor3" 	;\\ Boxes
+		{thickness 6}
+	}
+	{volume "armor4" 	;\\ Boxes
+		{thickness 6}
+	}
+	{volume "armor5" 	;\\ Boxes
+		{thickness 6}
+	}
+	{volume "armor6"	;\\ Boxes
+		{thickness 6}
+	}
+	{volume "armor7" 	;\\ Engine rear intake
+		{thickness 25}
+	}
+
+	{component "detail3" {tags "cut_part"}}
+	{component "detail4" {tags "cut_part"}}
+	{component "shield1" {tags "cut_part"}}

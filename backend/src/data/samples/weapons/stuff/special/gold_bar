@@ -1,0 +1,11 @@
+{item
+	{tag "itemin2hands distributable"}
+	{entity "gold_bar"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

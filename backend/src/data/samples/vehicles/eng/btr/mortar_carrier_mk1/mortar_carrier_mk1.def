@@ -1,0 +1,177 @@
+{game_entity
+	(include "/properties/tank_assaultgun.ext")
+	(include "/properties/selection/vehicle.inc" scale(0.9))
+	{props "mortar" "armored_car" "smoke" "mobilegun" "with_gun" "4in" "explosion_throw_crew" "vision_lev02" "detect_artillery_small" "artillery_minimap_light"}
+	{extension "mortar_carrier_mk1.mdl"}
+	(include "mortar_carrier_mk1.ext")
+	{patherId "universal"}
+	{collider "tank.light"}
+	{targetclass "armoredcar" "bullet"}
+	{targetSelector "cannon_howitzer"}
+
+	{extender "enumerator"
+		{digit_folder "us2"}
+	}
+
+	{extender "shield" {on}}
+
+	{boarder
+		{anm "left"
+			{forward {begin "board_tank_left"} {end "pose_univ_carrier_gunner"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward {begin "board_tank_right"} {end "pose_univ_carrier_driver"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "gunner2"
+			{forward {begin "board_tank_right"} {end "pose_univ_carrier_gunner2b"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "gunner3"
+			{forward {begin "board_tank_right"} {end "pose_uc_mortar"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "armor1"
+			{forward {begin "board_tank_left"} {end "pose_univ_carrier_pass_seat01b"}}
+			{reverse {end "emit_tank_1"}}
+		}
+		{anm "armor3"
+			{forward {begin "board_tank_left"} {end "pose_univ_carrier_pass_seat03"}}
+			{reverse {end "emit_tank_1"}}
+		}
+		{anm "armor4"
+			{forward {begin "board_tank_right"} {end "pose_univ_carrier_pass_seat04"}}
+			{reverse {end "emit_tank_1"}}
+		}
+		{anm "armor5"
+			{forward {begin "board_tank_right"} {end "pose_univ_carrier_pass_seat01b"}}
+			{reverse {end "emit_tank_1"}}
+		}
+	}
+
+	("crew_human_visible_anm2" place(driver) door(emit2) door2(emit1) anm_left(right) anm_right(right))
+	("crew_human_visible_anm2" place(gunner) door(emit1) door2(emit2) anm_left(left) anm_right(left))
+	("crew_human_visible_anm2" place(gunner3) door(emit3) door2(emit4) anm_left(gunner3) anm_right(gunner3))
+
+	("seat_human" place(seat1) bone(seat01) door(emit3) animation(armor1))
+	;("seat_human" place(seat3) bone(seat03) door(emit5) animation(armor3))
+	("seat_human" place(seat4) bone(seat04) door(emit6) animation(armor4))
+	("seat_human" place(seat5) bone(seat05) door(emit4) animation(armor5))
+
+	{sensor
+		{visor "main"
+			{vision "cannon_mortar"}
+			{bone "visor"}
+		}
+	}
+
+	{Placer
+		{place "weapon1"
+			{entity "lee_enfield_no1_mk3"}
+			{Linkbone "weapon1"}
+			{handlebone "body"}
+		}
+		{place "weapon2"
+			{entity "lee_enfield_no1_mk3"}
+			{Linkbone "weapon2"}
+			{handlebone "body"}
+		}
+		{place "weapon3"
+			{entity "lee_enfield_no1_mk3"}
+			{Linkbone "weapon3"}
+			{handlebone "body"}
+		}
+	}
+
+	{extender "smokescreen"
+		{cooldown 5}
+		{itemTags "grenade no8_smoke"}
+	}
+
+	{extender "inventory"
+		{weapon "mgun" {mask "mountable"}}
+		{box
+			{item "bren_mk1" filled {user "mgun"}}
+			{item "bren_mag ammo" 840}
+			{item "ammo mortareng_50 he" 26}		; 36 rounds
+			{item "ammo mortareng_50 sm" 10}
+			{item "no8_smoke grenade" 8}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{Barrels 1}
+			{weapon "weapon 51mm_sbml_2in" filling "ammo mortareng_50 he" 1}
+			{gunner "gunner3"}
+			{charger "gunner3"}
+			{foresight "foresight"}
+			("abm_dymamic_mortar"
+				zeroing(2.5)	; // time it takes to aim until the reticle shrinks. Bigger values, more control.
+				dispersion(1)	; // time it takes to distort the reticle when you move the gun (how abrupt it loses zeroing). Bigger values, more control.
+			)
+		}
+		{place "mgun"
+			{type "hull"}
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			{gunner "gunner"}
+			{charger "gunner"}
+			("abm_mgun")
+			{rotate}
+			{basic}
+			{ai_in_manual}
+		}
+;		{place "mgun2"
+;			{type "aa"}
+;			{LinkBone "mgun2"}
+;			{LinkAnimation "off"}
+;			{gunner "gunner2"}
+;			{charger "gunner2"}
+;			("abm_mgun")
+;			{rotate}
+;			{basic}
+;			{ai_in_manual}
+;		}
+	}
+
+	{mass 3750}
+	{Chassis "track"
+		("tank_trace" fx("tracks_mid") step(0.32) len(0.5))
+		("mobility_tank"
+			speed(48) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(20) ;--------Max speed in reverse on road, km/h.
+			traverse(35) ;-------Track traverse, per second, in degrees.
+			weight(3.75) ;-------Weight in Tonnes.
+			power(85) ;----------Engine Power, in hp.
+			track(5) ;-----------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(91) ;-----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(150) ;---------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_base"	;// turret
+		{speed2 30}
+	}
+	{bone "gun"
+		{limits -50 34}
+		{speed2 10}
+	}
+	{bone "mgun_h_rot1"
+		{speed2 60}
+	}
+	{bone "mgun_h_rot2"
+		{speed2 60}
+	}
+	{bone "mgun_a_rot1"
+		{speed2 60}
+	}
+	{bone "mgun_a_rot2"
+		{speed2 60}
+	}
+}
+

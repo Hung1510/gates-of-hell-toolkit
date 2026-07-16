@@ -1,0 +1,165 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "t3476_41e_xx.mdl"}
+
+	{volume "body1"			; Hull
+		{thickness 45
+			{front 45}		; Glacis & Lower Hull
+			{rear 10}
+			{bottom 20}
+		}
+		{HighHardness}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 40
+			{front 45}		; Glacis
+			{top 16}
+			{rear 10}
+			{bottom 16}
+		}
+		{HighHardness}
+	}
+	{volume "body3"			; Nose
+		{thickness 45
+			{front 100}
+		}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "body4"			; Hull MG Port
+		{thickness 45
+			{front 70}
+		}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "body5"			; Drivers Hatch
+		{thickness 45}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{volume "engine1"		; Hull
+		{thickness 45
+			{front 10}
+			{rear 40}
+			{bottom 13}
+		}
+		{HighHardness}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 40
+			{front 10}
+			{top 16}
+			{bottom 13}
+		}
+		{HighHardness}
+	}
+	{volume "turret1"		; Turret Ring
+		{thickness 45}
+		{HighHardness}
+	}
+	{volume "turret2"		; Turret
+		{thickness 45
+			{top 15}
+		}
+		{HighHardness}
+	}
+	{volume "turret3"		; Turret
+		{thickness 45}
+		{HighHardness}
+	}
+	{volume "turret4"
+		{thickness 45}
+		{HighHardness}
+	}
+	{volume "armor1"		; Turret ext
+		{thickness 45}
+		{able {holed}}
+		{HighHardness}
+	}
+	{volume "armor1"		; Turret ext
+		{thickness 15}
+		{able {holed}}
+		{HighHardness}
+	}
+	{volume "armor2"		; Turret ext
+		{thickness 15}
+		{HighHardness}
+	}
+	{volume "armor3"		; Turret ext
+		{thickness 15}
+		{HighHardness}
+	}
+	{volume "armor4"		; hull ext
+		{thickness 15}
+		{HighHardness}
+	}
+	{volume "armor5"		; hull ext
+		{thickness 15}
+		{HighHardness}
+	}
+	{volume "armor6"		; hull ext
+		{thickness 2}
+	}
+	{volume "barrel1"
+		{thickness 20
+			{front 45}
+		}
+		{HighHardness}
+	}
+	{volume "barrel2"
+		{thickness 20}
+	}
+	{volume "barrel1"
+		{thickness 20}
+	}
+	{volume "part2"
+		{thickness 20}
+	}
+	{volume "part3"
+		{thickness 16}
+	}
+	{volume "shieldl1"
+		{thickness 5}
+	}
+	{volume "shieldl2"
+		{thickness 5}
+	}
+	{volume "shieldl3"
+		{thickness 5}
+	}
+	{volume "shieldl4"
+		{thickness 5}
+	}
+	{volume "shieldl5"
+		{thickness 5}
+	}
+	{volume "shieldl6"
+		{thickness 5}
+	}
+	{volume "shieldl7"
+		{thickness 5}
+	}
+	{volume "shieldr1"
+		{thickness 5}
+	}
+	{volume "shieldr2"
+		{thickness 5}
+	}
+	{volume "shieldr3"
+		{thickness 5}
+	}
+	{volume "shieldr4"
+		{thickness 5}
+	}
+	{volume "shieldr5"
+		{thickness 5}
+	}
+	{volume "shieldr6"
+		{thickness 5}
+	}
+	{volume "shieldr7"
+		{thickness 5}
+	}
+	("tracks" thickness(20))
+}

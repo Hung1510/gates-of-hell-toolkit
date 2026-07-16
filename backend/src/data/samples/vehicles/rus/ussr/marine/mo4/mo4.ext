@@ -1,0 +1,131 @@
+;SDL
+	; armor notes
+
+	("gun1" repair(30) thickness(20))
+	("gun2" repair(30) thickness(20))
+	("gun3" repair(30) thickness(8))
+	("gun4" repair(30) thickness(8))
+	("engine" repair(30))
+	("cabin" repair(30))
+	("fuel" args "fuel")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("lamp" args "lamp")
+
+	{component "body"}
+	("component" volume("body_front") component("body_front") repair(10))
+	("component" volume("body_center") component("body_center") repair(10))
+	("component" volume("body_rear") component("body_rear") repair(10))
+	("marine_durability" body(600) engine(450) gun(150)) ;// had 3 engines
+
+	{volume "body1"
+		{material "wood"} {tags "wood"}
+	}
+
+	("armor" args "armor1" 2)
+	("armor" args "armor5" 2)
+	("armor" args "armor6" 2)
+	("armor" args "armor7" 2)
+	("armor" args "armor8" 2)
+
+	{volume "body_front"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 4}
+	}
+	{volume "body_rear"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 4}
+	}
+	{volume "body_center"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 4}
+	}
+	{volume "box1"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 2}
+	}
+	{volume "box2"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 2}
+	}
+	{volume "box3"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 2}
+	}
+	{volume "box4"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 2}
+	}
+	{volume "box5"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 2}
+	}
+	{volume "box6"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 2}
+	}
+	{volume "cabin"
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "detail1"
+		{material "wood"}
+		{tags "wood"}
+		{thickness 2}
+	}
+	{Volume "engine"
+		{thickness 2}
+	}
+	{volume "lifering1"
+		{thickness 0.5}
+		{material "fabric"}
+		{able {NoWoundDecal}{holed}}
+	}
+	{volume "lifering2"
+		{thickness 0.5}
+		{material "fabric"}
+		{able {NoWoundDecal}{holed}}
+	}
+	{volume "lifering3"
+		{thickness 0.5}
+		{material "fabric"}
+		{able {NoWoundDecal}{holed}}
+	}
+	{volume "lifering4"
+		{thickness 0.5}
+		{material "fabric"}
+		{able {NoWoundDecal}{holed}}
+	}
+	{volume "lifering5"
+		{thickness 0.5}
+		{material "fabric"}
+		{able {NoWoundDecal}{holed}}
+	}
+	{volume "lifering6"
+		{thickness 0.5}
+		{material "fabric"}
+		{able {NoWoundDecal}{holed}}
+	}
+
+	("glass" args "window1")
+	("glass" args "window2")
+	("glass" args "window3")
+	("glass" args "window4")
+	("glass" args "window5")
+	("glass" args "window6")
+	("glass" args "window8")
+	("glass" args "window9")
+	("glass" args "window10")
+	("glass" args "window11")
+	("glass" args "window12")
+	("glass" args "window13")
+	("glass" args "window14")

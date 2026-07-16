@@ -1,0 +1,73 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "t26_38_xx.mdl"}
+
+	{volume "barrel"
+		{thickness 20}
+	}
+	{volume "body1"			; Hull
+		{thickness 15
+			{top 7}			; Glacis
+			{rear 5}
+			{bottom 6}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 15
+			{top 10}
+			{bottom 5}
+		}
+	}
+	{volume "body3"			; Driver Door Top
+		{thickness 15
+			{top 10}
+			{rear 5}
+		}
+	}
+	{volume "body4"			; Driver Door Bottom
+		{thickness 15
+			{front 7}
+			{rear 5}
+			{bottom 5}
+		}
+	}
+	{volume "engine"
+		{thickness 15
+			{front 5}
+			{top 6}
+			{bottom 6}
+		}
+	}
+	{volume "turret1"		; Turret Ring
+		{thickness 15}
+	}
+	{volume "turret2"		; Turret Front
+		{thickness 15
+			{top 10}
+		}
+	}
+	{volume "turret3"		; Main Turret
+		{thickness 15
+			{top 10}
+		}
+	}
+	{volume "mantlet1"
+		{thickness 15}
+	}
+	{volume "mantlet2"
+		{thickness 15}
+	}
+	{volume "part1"
+		{thickness 10}
+	}
+	{volume "part2"
+		{thickness 15}
+	}
+	{volume "part3"
+		{thickness 15}
+	}
+	{volume "part4"
+		{thickness 15}
+	}
+	("tracks" thickness(15))
+}

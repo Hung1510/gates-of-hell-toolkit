@@ -1,0 +1,94 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "ba10_xx.mdl"}
+
+	{volume "body1"
+		{thickness 10
+			{top 6}
+			{bottom 4}
+		}
+	}
+	{volume "body2"
+		{thickness 10
+			{top 6}
+			{bottom 4}
+		}
+	}
+	{volume "body3"
+		{thickness 10
+			{top 6}
+			{bottom 4}
+		}
+	}
+	{volume "body4"
+		{thickness 10
+			{top 6}
+			{bottom 4}
+		}
+	}
+	{volume "body5"
+		{thickness 10
+			{top 6}
+			{bottom 4}
+		}
+	}
+	{volume "body6"
+		{thickness 10
+			{top 6}
+			{bottom 4}
+		}
+	}
+	{volume "body7"
+		{thickness 10
+			{top 6}
+			{bottom 4}
+		}
+	}
+	{volume "body8"
+		{thickness 10
+			{top 6}
+			{bottom 4}
+		}
+	}
+	{volume "engine1"
+		{thickness 10
+			{top 6}
+			{rear 4}
+			{bottom 4}
+		}
+	}
+	{volume "turret1"
+		{thickness 10}
+	}
+	{volume "turret2"
+		{thickness 10}
+	}
+	{volume "barrel"
+		{thickness 20}
+	}
+	{volume "part1"
+		{thickness 10}
+		{able {obstacle 0}}
+	}
+	{volume "shield1"
+		{thickness 9}
+	}
+	{volume "wheelleft1"
+		{thickness 10}
+	}
+	{volume "wheelleft2"
+		{thickness 10}
+	}
+	{volume "wheelleft3"
+		{thickness 10}
+	}
+	{volume "wheelright1"
+		{thickness 10}
+	}
+	{volume "wheelright2"
+		{thickness 10}
+	}
+	{volume "wheelright3"
+		{thickness 10}
+	}
+}

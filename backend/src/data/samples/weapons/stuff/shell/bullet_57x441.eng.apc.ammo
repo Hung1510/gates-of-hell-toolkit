@@ -1,0 +1,12 @@
+{from "pattern apc"	;APC Shot Mk.VIIIT
+	{tag "shell size1 50to57"}
+	{inventory {size 5 1}}
+	{entity "57mm_eng_apc"}
+	{mass 5.87}
+
+	{view "howitzer_shell_50-75_small"
+		{tail "shell_tracer_eng_57_ap" "tail"}
+	}
+
+	("ap_blast" args 0.5)
+}

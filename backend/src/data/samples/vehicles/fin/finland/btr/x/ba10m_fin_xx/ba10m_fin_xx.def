@@ -1,0 +1,110 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "ba10m_fin_xx.mdl"}
+	{volume "barrel"
+		{thickness 20}
+	}
+	{volume "body1"
+		{thickness 10
+			{top 6}
+			{bottom 4}
+		}
+	}
+	{volume "body2"
+		{thickness 10
+			{top 6}
+			{bottom 4}
+		}
+	}
+	{volume "body3"
+		{thickness 10
+			{top 6}
+			{bottom 4}
+		}
+	}
+	{volume "body4"
+		{thickness 10
+			{top 6}
+			{bottom 4}
+		}
+	}
+	{volume "body5"
+		{thickness 10
+			{top 6}
+			{bottom 4}
+		}
+	}
+	{volume "body6"
+		{thickness 10
+			{top 6}
+			{bottom 4}
+		}
+	}
+	{volume "body7"
+		{thickness 10
+			{top 6}
+			{bottom 4}
+		}
+	}
+	{volume "body8"
+		{thickness 10
+			{top 6}
+			{bottom 4}
+		}
+	}
+	{volume "engine1"
+		{thickness 10
+			{top 6}
+			{rear 4}
+			{bottom 4}
+		}
+	}
+	{volume "turret1"
+		{thickness 10}
+	}
+	{volume "turret2"
+		{thickness 10}
+	}
+	{volume "detail3"	; spare wheel
+		{thickness 10}
+	}
+	{volume "detail4"	; spare wheel
+		{thickness 10}
+	}
+	{volume "detail11"	; spare track
+		{thickness 10}
+	}
+	{volume "detail12"	; spare track
+		{thickness 10}
+	}
+	{volume "armor1"
+		{thickness 10}
+	}
+	{volume "fuel2"
+		{thickness 10}
+	}
+	{volume "fuel3"
+		{thickness 10}
+	}
+	{volume "part1"
+		{thickness 10}
+	}
+	{volume "wheelleft1"
+		{thickness 10}
+	}
+	{volume "wheelleft2"
+		{thickness 10}
+	}
+	{volume "wheelleft3"
+		{thickness 10}
+	}
+	{volume "wheelright1"
+		{thickness 10}
+	}
+	{volume "wheelright2"
+		{thickness 10}
+	}
+	{volume "wheelright3"
+		{thickness 10}
+	}
+}

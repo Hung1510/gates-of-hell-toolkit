@@ -1,0 +1,103 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "sdkfz234_3_xx.mdl"}
+	{volume "barrel1"
+		{thickness 20}
+	}
+	{volume "barrel3"
+		{thickness 20}
+	}
+	{volume "barrel4"
+		{thickness 20}
+	}
+	{volume "body1"			; Hull front
+		{thickness 8
+			{front 30}
+			{top 15}
+			{rear 5}
+		}
+		{able {holed}}
+	}
+	{volume "body2"			; transmission part
+		{thickness 8	}
+		{tags "no_target"}
+	}
+	{volume "body3"			; Top Superstructure
+		{thickness 8
+			{front 30}
+			{top 5}
+		}
+		{tags "no_target"}
+		{able {holed}}
+	}
+	{volume "body4"			; Top Superstructure
+		{thickness 8
+			{rear 14}
+			{top 5}
+		}
+		{tags "no_target"}
+		{able {holed}}
+	}
+	{volume "turret1"		; Main turret
+		{thickness 14.5}
+	}
+	{volume "engine1"		; Hull
+		{thickness 8
+			{top 5}
+			{rear 10}
+		}
+	}
+	{volume "engine2"		; transmission part
+		{thickness 8}
+	}
+	{volume "part1"
+		{thickness 5}
+	}
+	{volume "part2"
+		{thickness 5}
+	}
+	{volume "gun_shield1"
+		{thickness 14.5}
+	}
+	{volume "gun_shield2"
+		{thickness 14.5}
+	}
+	{volume "gun_shield3"
+		{thickness 14.5}
+	}
+	{volume "tshield1"		; top ext.armor plates
+		{thickness 14.5}
+		{able {holed}}
+	}
+	{volume "tshield2"		; top ext.armor plates
+		{thickness 14.5}
+		{able {holed}}
+	}
+	{volume "tshield3"		; top ext.armor plates
+		{thickness 14.5}
+	}
+	{volume "wheelright1"	;
+		{thickness 10}
+	}
+	{volume "wheelright2"	;
+		{thickness 10}
+	}
+	{volume "wheelright3"	;
+		{thickness 10}
+	}
+	{volume "wheelright4"	;
+		{thickness 10}
+	}
+	{volume "wheelleft1"	;
+		{thickness 10}
+	}
+	{volume "wheelleft2"	;
+		{thickness 10}
+	}
+	{volume "wheelleft3"	;
+		{thickness 10}
+	}
+	{volume "wheelleft4"	;
+		{thickness 10}
+	}
+}

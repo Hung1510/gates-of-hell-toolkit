@@ -1,0 +1,96 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "crusader_mk3_xx.mdl"}
+	("tracks" thickness(20))
+	{volume "barrel" {thickness 25}}
+
+;// Components
+	{volume "body1" {thickness 20 {left 14}}} ;// Front Lower Plate
+	{volume "body2"	;// Middle Hull, behind FLP
+		{thickness 14 
+			{top 9}
+			{bottom 10.35}
+		}
+	}
+	{volume "body3"	;// Driver Entrance
+		{thickness 14 
+			{front 22.22}
+			{top 12}
+		}
+	}
+	{volume "body4"	;// Turret Stand
+		{thickness 14 
+			{front 20}
+			{top 7}
+		}
+	}
+	{volume "turret1" ;// Bulk1_1, front
+		{thickness 14 
+			{top 12.7}
+			{bottom 9}
+		}
+		{able {holed}}
+	}
+	{volume "turret2" ;// Bulk1_2, second behind front
+		{thickness 14 
+			{top 12.7}
+			{bottom 9}
+		}
+		{able {holed}}
+	}
+	{volume "turret3" ;// Bulk1_3, middle
+		{thickness 14 
+			{top 12.7}
+			{bottom 9}
+		}
+		{able {holed}}
+	}
+	{volume "turret4" ;// Bulk1_3, rear
+		{thickness 14 
+			{top 12.7}
+			{bottom 9}
+			{rear 17}
+		}
+		{able {holed}}
+	}
+	{volume "turret5" {thickness 12.7}} ;// Top
+	{volume "turret6" {thickness 12.7}} ;// Top
+	{volume "turret7" {thickness 31.75} {able {holed}}} ;// Front Part
+	{volume "turret8" {thickness 12.7}} ;// Ring
+	{volume "turret9" {thickness 12.7}} ;// Ring
+	{volume "turret10" {thickness 88.9}} ;// Used to be mantlet.
+	{volume "engine1" {thickness 14  {top 7} {bottom 6.35}}}	;// Main Part of Engine
+	{volume "engine2" {thickness 14 }}	;// Rear Part
+	{volume "engine3" {thickness 14  {top 12} {bottom 6.35}}}
+	{volume "engine4" {thickness 14  {top 12} {bottom 6.35}}}
+
+;// Non-Components
+	{volume "armor1" {thickness 14.25} {able {holed}}} ;// Left Armor, Hull
+	{volume "armor2" {thickness 14.25} {able {holed}}} ;// Right Armor, Hull
+	{volume "armor3" {thickness 4}} ;// Boxes
+	{volume "armor4" {thickness 4}} ;// Boxes
+	{volume "armor5" {thickness 32}} ;// Driver Port Extra Armor
+	{volume "armor6" {thickness 32}} ;// Driver Port Extra Armor
+	{volume "armor7" {thickness 4}} ;// Boxes
+	{volume "armor8" {thickness 4}} ;// Boxes
+	{volume "armor9" {thickness 9}} ;// Turret Extra Armor
+	{volume "armor10" {thickness 9}} ;// Turret Extra Armor
+	{volume "armor11" {thickness 9}} ;// Plate outside of turret, which is attached to turret7_vol
+	{volume "shieldl1" {thickness 4}}
+	{volume "shieldl2" {thickness 4}}
+	{volume "shieldl3" {thickness 4}}
+	{volume "shieldr1" {thickness 4}}
+	{volume "shieldr2" {thickness 4}}
+	{volume "shieldr3" {thickness 4}}
+
+;// Parts
+	{volume "part2" 	{thickness 9}}	;// Driver Hatch
+	{volume "part3" 	{thickness 9}}	;// Driver Hatch
+	{volume "part4" 	{thickness 9}}	;// Munition Hatch 
+	{volume "part5" 	{thickness 7}} 	;// Engine Hatch
+	{volume "part6" 	{thickness 7}}	;// Engine Hatch
+	{volume "part7" 	{thickness 12.7}} ;// Hatch
+	{volume "part8" 	{thickness 12.7}} ;// Hatch
+	{volume "part9_1" 	{thickness 12.7}} ;// Turret Roof
+	{volume "part9_2" 	{thickness 12.7}} ;// Turret Roof
+}

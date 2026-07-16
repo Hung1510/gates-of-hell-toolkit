@@ -1,0 +1,99 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "sdkfz234_1_xx.mdl"}
+
+	{volume "body1"			; Hull front
+		{thickness 8
+			{front 30}
+			{top 15}
+			{rear 5}
+		}
+		{able {holed}}
+	}
+	{volume "body2"			; transmission part
+		{thickness 8}
+		{tags "no_target"}
+	}
+	{volume "body3"			; Top Superstructure front
+		{thickness 8
+			{front 30}
+			{top 5}
+		}
+		{tags "no_target"}
+		{able {holed}}
+	}
+	{volume "body4"			; Top Superstructure rear
+		{thickness 8
+			{rear 14.5}
+			{top 5}
+		}
+		{tags "no_target"}
+		{able {holed}}
+	}
+	{volume "turret1"			; turret main
+		{thickness 8
+			{front 30}
+		}
+		{tags "no_target"}
+		{able {holed}}
+	}
+	{volume "engine1"		; Hull
+		{thickness 8
+			{top 5}
+			{rear 10}
+		}
+	}
+	{volume "engine2"		; transmission part
+		{thickness 8}
+		{tags "no_target"}
+	}
+	{volume "barrel1"
+		{thickness 25}
+	}
+	{volume "barrel2"
+		{thickness 25}
+	}
+	{volume "barrel3"
+		{thickness 20}
+	}
+	{volume "shield1"
+		{thickness 5}
+	}
+	{volume "shield2"
+		{thickness 5}
+	}
+	{volume "shield3"
+		{thickness 5}
+	}
+	{volume "shield4"
+		{thickness 5}
+	}
+	{volume "shield5"
+		{thickness 5}
+	}
+	{volume "wheelleft1"
+		{thickness 10}
+	}
+	{volume "wheelleft2"
+		{thickness 10}
+	}
+	{volume "wheelleft3"
+		{thickness 10}
+	}
+	{volume "wheelleft4"
+		{thickness 10}
+	}
+	{volume "wheelright1"
+		{thickness 10}
+	}
+	{volume "wheelright2"
+		{thickness 10}
+	}
+	{volume "wheelright3"
+		{thickness 10}
+	}
+	{volume "wheelright4"
+		{thickness 10}
+	}
+
+}

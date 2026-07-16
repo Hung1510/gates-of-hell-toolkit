@@ -1,0 +1,16 @@
+{from "pattern reactive_ammo"
+	{tag "shell size2 he fg itemin2hands"}
+	{inventory
+		{size 6 1}
+		{weight 100}
+	}
+	{entity "hvar_he_rocket"}
+	{mass 62.818}
+
+	{view "hvar_he_rocket"
+		{tail "rocket_smoke" "tail"}
+	}
+
+	("rocket_level_3" weight(20.8) filler(3.45))
+
+}

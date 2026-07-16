@@ -1,0 +1,3 @@
+{game_entity
+	{extension "grille_k_x.mdl"} {RimLight}
+}

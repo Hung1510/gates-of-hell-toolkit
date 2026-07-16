@@ -1,0 +1,12 @@
+{from "pattern he"
+	{tag "shell size5 150to152 arty"}		;// shell stats
+	{inventory {size 4 2} {weight 100}}
+	{entity "230mm_eng_he"}
+	{mass 18.14}
+
+	{view "230mm_eng_he"
+;		{tail "shell_tracer_100-152_he" "tail"}
+	}
+
+	("he_level_4" weight(18.14) filler(12.7))
+}

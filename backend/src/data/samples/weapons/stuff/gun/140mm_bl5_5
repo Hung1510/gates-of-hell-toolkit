@@ -1,0 +1,34 @@
+;_________________________________________
+; ARTY - British heavy howitzer
+;=========================================
+
+
+{from "pattern gun"			; L/30 "BL 5.5-inch"
+	{filling "bulleteng_140"}
+	{fireSound "cannon/s5/d1/Shared/Cannon_150to210mm/"}
+	{fireSoundClose "cannon/s5/3p/Shared/Cannon_150to210mm/"}
+	{reloadSound "utility/"}
+	("heavy_artillery")
+	{calibre 140}
+	{range 400 400} ; // 14.81km, 100-lb shell
+
+	("reload time" seconds(30))
+
+	("velocity" mps(208)) ;// 511m/s
+	("armor health" damage(400))
+	("85-155_slope_multipliers")
+
+	{parameters "he2"	;// 82-lb shell (1944)
+		{range 420 420}
+		("velocity" mps(213)) ;real HE 590m/s
+	}
+	
+	("accuracy_indirect"   ; // Applies logic for accuracy of indirect weapons over 200m
+		r1(0.95) 				; // Accuracy radius for direct-fire munitions
+		r2(7.08) 				; // Accuracy radius for indirect fire
+		rmax(26.3) 				; // Accuracy radius for indirect fire at maximum range
+		range_ap(190) 			; // Range after which accuracy drops to prevent farshooting.
+		range_heat(190) 		; // Range after which accuracy drops to prevent farshooting.
+		range_he(420)			; // Range after which accuracy drops to prevent farshooting.
+	)
+}

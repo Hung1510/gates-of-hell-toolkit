@@ -1,0 +1,4 @@
+{from "pattern heavy_headgear"
+	{tag "armor"}
+	{entity "ger_stalhelm_lw_camo2_band_var2"}
+}

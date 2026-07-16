@@ -1,0 +1,118 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "kv1s_xx.mdl"}
+
+	{volume "body1"			; Hull
+		{thickness
+			{front 60}
+			{top 50}		; Glacis
+			{right 60}
+			{left 60}
+			{rear 5}
+			{bottom 40}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness
+			{front 75}
+			{top 40}
+			{right 60}
+			{left 60}
+			{rear 5}
+			{bottom 5}
+		}
+	}
+	{volume "engine1"		; Hull
+		{thickness
+			{front 5}
+			{top 5}
+			{right 60}
+			{left 60}
+			{rear 60}
+			{bottom 30}
+		}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness
+			{front 5}
+			{top 30}
+			{right 60}
+			{left 60}
+			{rear 60}
+			{bottom 5}
+		}
+	}
+	{volume "armor"			; Nose Armor Plate
+		{thickness 25}
+		{CastSteel 0.8063}
+	}
+	{volume "turret1"		; Main Turret
+		{thickness 82
+			{top 30}
+			{left 40}		;Top Front
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret2"		; Rear Bubble
+		{thickness 82
+			{top 30}
+			{bottom 40}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret3"		; Front left cheek
+		{thickness 82}
+		{CastSteel 0.8063}
+	}
+	{volume "turret4"		; Front right cheek
+		{thickness 82}
+		{CastSteel 0.8063}
+	}
+	{volume "turret5"		; Front center cheek
+		{thickness 82
+			{front 5}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret6"		; Rear MG
+		{thickness 82}
+		{CastSteel 0.8063}
+	}
+	{volume "turret7"		; Turret base ring
+		{thickness 82}
+		{CastSteel 0.8063}
+	}
+	{volume "mantlet1"		; Front
+		{thickness 55
+			{front 90}
+			{rear 5}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "mantlet2"		; Back
+		{thickness 55
+			{front 55}
+			{top 50}
+			{left 75}
+		}
+		{CastSteel 0.8063}
+	}
+
+	{volume "barrel"
+		{thickness 30}
+	}
+
+	{volume "detail1"
+		{thickness 5}
+	}
+	{volume "detail2"
+		{thickness 5}
+	}
+	{volume "detail3"
+		{thickness 5}
+	}
+	{volume "detail4"
+		{thickness 5}
+	}
+	("tracks" thickness(20))
+}
