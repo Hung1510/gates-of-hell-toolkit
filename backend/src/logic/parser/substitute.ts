@@ -12,7 +12,7 @@ export interface Bindings {
 // proof the substitution didn't fully resolve, rather than silently
 // producing a wrong number.
 export function substitute(node: Node, bindings: Bindings): Node {
-  if (node.kind === "word" && node.value.startsWith("%")) {
+  if ((node.kind === "word" || node.kind === "string") && node.value.startsWith("%")) {
     const key = node.value.slice(1);
     if (bindings.keyword && key in bindings.keyword) {
       return bindings.keyword[key];

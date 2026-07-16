@@ -8,11 +8,12 @@ import { parseInvocation } from "../invocation.js";
 import { substitute } from "../substitute.js";
 import { buildRegistryForPath } from "../weaponRegistry.js";
 import { resolveWeaponStats } from "../weaponResolver.js";
+import { resolveWeaponFile } from "../weaponFileResolver.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const WEAPONS_ROOT = path.join(__dirname, "..", "..", "..", "data", "samples", "weapons", "stuff");
 
-function resolveWeaponFile(relPath: string) {
+function resolveSimpleWeaponFile(relPath: string) {
   const fullPath = path.join(WEAPONS_ROOT, relPath);
   const registry = buildRegistryForPath(path.dirname(fullPath), WEAPONS_ROOT);
   const ast = parse(readFileSync(fullPath, "utf-8"));
@@ -65,7 +66,7 @@ describe("substitute", () => {
 
 describe("resolveWeaponStats - real weapon files", () => {
   it("resolves K98k rifle to real, cross-checkable values", () => {
-    const stats = resolveWeaponFile("rifle/k98");
+    const stats = resolveSimpleWeaponFile("rifle/k98");
     expect(stats.damage).toBe(70);
     expect(stats.damageTarget).toBe("human");
     expect(stats.calibre).toBe(7.92);
@@ -76,7 +77,7 @@ describe("resolveWeaponStats - real weapon files", () => {
   });
 
   it("resolves Mosin rifle differently from K98k (different rate template)", () => {
-    const stats = resolveWeaponFile("rifle/mosin");
+    const stats = resolveSimpleWeaponFile("rifle/mosin");
     expect(stats.damage).toBe(70);
     // real Mosin-Nagant muzzle velocity is ~865 m/s - matches historical spec
     expect(stats.velocity).toBe(865);
@@ -84,7 +85,7 @@ describe("resolveWeaponStats - real weapon files", () => {
   });
 
   it("resolves a gun-category weapon with keyword args and arithmetic penetration table", () => {
-    const stats = resolveWeaponFile("gun/20mm_mg151");
+    const stats = resolveSimpleWeaponFile("gun/20mm_mg151");
     expect(stats.damageTarget).toBe("armor");
     expect(stats.calibre).toBe(20);
     expect(stats.penetrationTable).not.toBeNull();
@@ -96,5 +97,37 @@ describe("resolveWeaponStats - real weapon files", () => {
     // own data, not a resolver bug - documented in the README)
     const sorted = [...stats.penetrationTable!].sort((a, b) => a.rangeM - b.rangeM);
     expect(sorted[0].penetrationMm).toBeGreaterThan(sorted[2].penetrationMm);
+  });
+});
+
+describe("resolveWeaponFile - vehicle guns (weapon-inherits-from-weapon + multi-shell)", () => {
+  it("resolves SU-85's gun (85mm_d5s) by following its {from} chain to 85mm_zis53", () => {
+    const filePath = path.join(WEAPONS_ROOT, "gun", "85mm_d5s");
+    const stats = resolveWeaponFile(filePath, WEAPONS_ROOT);
+
+    expect(stats.calibre).toBe(85);
+    expect(stats.damageTarget).toBe("armor");
+    expect(stats.shells.length).toBeGreaterThanOrEqual(3);
+
+    const aphe = stats.shells.find((s) => s.shellType === "aphe");
+    const aphebc = stats.shells.find((s) => s.shellType === "aphebc");
+    const apcr = stats.shells.find((s) => s.shellType === "apcr");
+    expect(aphe).toBeDefined();
+    expect(aphebc).toBeDefined();
+    expect(apcr).toBeDefined();
+
+    // cross-check against the raw literal a(...) args in the source file:
+    // aphe a(142), aphebc a(122), apcr a(175) - all correspond to the 30m
+    // penetration point in the resolved table
+    expect(aphe!.penetrationTable?.find((p) => p.rangeM === 30)?.penetrationMm).toBe(142);
+    expect(aphebc!.penetrationTable?.find((p) => p.rangeM === 30)?.penetrationMm).toBe(122);
+    expect(apcr!.penetrationTable?.find((p) => p.rangeM === 30)?.penetrationMm).toBe(175);
+
+    // apcr (solid AP-CR penetrator) has no HE filler in the real source
+    // data, so it correctly has no resolved damage - not a gap, a fact
+    expect(apcr!.damage).toBeNull();
+    // aphe/aphebc DO have HE filler and resolve to a real damage number
+    expect(aphe!.damage).not.toBeNull();
+    expect(aphebc!.damage).not.toBeNull();
   });
 });

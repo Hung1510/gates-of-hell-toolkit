@@ -425,6 +425,17 @@ header h1 {
   color: #9aa0a6;
 }
 
+.gun-stats {
+  margin-bottom: 16px;
+}
+
+.gun-stats-note {
+  font-size: 11px;
+  color: #6b7078;
+  font-style: italic;
+  margin-top: 6px;
+}
+
 .zoom-controls {
   display: flex;
   align-items: center;

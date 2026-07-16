@@ -42,11 +42,13 @@ export function VehiclesPage() {
     <div className="vehicles-page">
       <p className="disclaimer">
         Armor thickness values are real, literal numbers straight from the game's own vehicle
-        files (verified by hand against known SU-85 specs before trusting this). Weapon
-        penetration/damage numbers are NOT shown yet - that needs a separate macro-resolution
-        engine still being built. The "weapon" list can include non-combat slots (vision
-        systems, searchlights) alongside the actual gun; "primary weapon" is a best-effort
-        guess, not a verified classification.
+        files (verified by hand against known SU-85 and M26 Pershing specs before trusting this).
+        Gun penetration/damage per ammo type is now resolved too, via the game's own macro/template
+        system (verified against the SU-85's real 85mm gun data before shipping) - click a vehicle
+        to see it. Coverage varies: not every vehicle has a resolvable gun (many are cars/trailers/
+        planes without cannon-type weapons). The "weapon" list can include non-combat slots (vision
+        systems, searchlights) alongside the actual gun; "primary weapon" is a best-effort guess,
+        not a verified classification.
       </p>
 
       <div className="controls">
@@ -114,6 +116,38 @@ export function VehiclesPage() {
                           <strong>Mobility:</strong> speed {v.mobility.speed} km/h, weight{" "}
                           {v.mobility.weight} t, power {v.mobility.power} hp, range {v.mobility.range} km
                         </p>
+                      )}
+                      {v.gunStats && v.gunStats.shells.length > 0 && (
+                        <div className="gun-stats">
+                          <strong>Gun penetration (mm) by ammo type:</strong>
+                          <table className="armor-detail-table">
+                            <thead>
+                              <tr>
+                                <th>Shell</th>
+                                <th>Damage vs armor</th>
+                                {v.gunStats.shells[0].penetrationTable?.map((p) => (
+                                  <th key={p.rangeM}>{p.rangeM}m</th>
+                                ))}
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {v.gunStats.shells.map((shell) => (
+                                <tr key={shell.shellType}>
+                                  <td>{shell.shellType}</td>
+                                  <td>{shell.damage != null ? shell.damage.toFixed(0) : "-"}</td>
+                                  {shell.penetrationTable?.map((p) => (
+                                    <td key={p.rangeM}>{p.penetrationMm.toFixed(0)}</td>
+                                  ))}
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                          <p className="gun-stats-note">
+                            Estimate only - verified against the game's own resolved values for a
+                            handful of real weapons before shipping, but not exhaustively checked
+                            against every gun. Penetration curves come from the game's own formulas.
+                          </p>
+                        </div>
                       )}
                       <table className="armor-detail-table">
                         <thead>

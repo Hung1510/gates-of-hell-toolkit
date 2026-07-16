@@ -262,12 +262,11 @@ everything else, just deeply nested). New "Vehicles" tab in the app.
   mantlet 52mm, cupola 20mm - matches known real-world SU-85 specs. Also
   spot-checked the US M10 GMC: 19mm base hull, 38mm effective front -
   matches known real specs there too.
-- Weapon references (e.g. `85mm_d5s`) are extracted but NOT resolved to
-  damage/penetration numbers yet - that requires the same macro-expansion
-  engine discussed for infantry weapons (see "Known gaps" below). The
-  `weapons` list can include non-combat engine slots (`commander_vision`,
-  `searchlight`) alongside the real gun; `primaryWeapon` is a best-effort
-  filter, not a verified classification.
+- Weapon references (e.g. `85mm_d5s`) are now resolved to real
+  damage/penetration numbers per ammo type - see "Vehicle gun penetration"
+  below. The `weapons` list can still include non-combat engine slots
+  (`commander_vision`, `searchlight`) alongside the real gun;
+  `primaryWeapon` is a best-effort filter, not a verified classification.
 - Wreck/destroyed decoration variants (`_x`/`_xx` suffix, confirmed by
   content inspection) are filtered out - these aren't real playable units.
 - **All 5 factions now have complete vehicle data**: eng (217), rus (155),
@@ -333,19 +332,47 @@ The macro-expansion engine discussed above as a "known gap" is now built:
   unit in the squad doesn't resolve.
 
 ### Still not done
-- **Vehicle gun penetration**: tank/aircraft guns turned out to need more
-  than the infantry-weapon resolver. Real complexity found while
-  investigating: weapons can inherit from OTHER WEAPON FILES (not just
-  `define` templates) via the same `{from "..."}` syntax - e.g. the SU-85's
-  gun file `85mm_d5s` is just `{from "85mm_zis53" ...}` with a couple of
-  overrides, and the actual damage/penetration values live in
-  `85mm_zis53`. On top of that, tank guns use a `"penetration_long"`
-  template (not `"penetration"`) with per-ammo-type variants (AP/APCR/HE
-  each get their own call with a `shell(...)` keyword arg) rather than a
-  single curve. This is a real, tractable next step, not a dead end - just
-  bigger than the infantry case, and deliberately not rushed to ship
-  alongside it.
-- Full "can Tank A penetrate Tank B's front armor" comparison needs the
-  above, matched against the already-working Vehicles tab armor data.
+- Full "can Tank A penetrate Tank B's front armor" comparison UI - the
+  data now exists on both sides (vehicle armor thickness + resolved gun
+  penetration per ammo type), but they aren't matched against each other
+  in the UI yet, just shown separately on the Vehicles tab.
+
+### Vehicle gun penetration (built and verified)
+Turned out to need more than the infantry-weapon resolver - two real,
+distinct complications found and solved:
+
+- **Weapon-inherits-from-weapon**: `{from "..."}` can reference either a
+  `define` template (already handled) OR another actual weapon file
+  sitting in the same directory - e.g. the SU-85's gun file `85mm_d5s` is
+  just `{from "85mm_zis53" ...}` with a couple of overrides, and the real
+  damage/penetration values live entirely in `85mm_zis53`.
+  `logic/parser/weaponFileResolver.ts` follows this chain (recursively,
+  with a depth safety net), merging base-weapon stats with the override
+  file's own values.
+- **Multi-ammo-type resolution**: tank/aircraft guns use a
+  `"penetration_long"`/`"medium"`/`"short"` template family (not the
+  simpler `"penetration"` used by infantry weapons) wrapped in a
+  `{parameters "%shell" ...}` block, invoked once per ammo type
+  (AP/APCR/HE each get their own call with a `shell(...)` arg). A real bug
+  was caught and fixed here: the `%shell` placeholder is a quoted
+  **string**, not a bare word, and the original substitution logic only
+  handled word-type placeholders - before the fix, all three ammo types
+  for a gun collapsed into one falsely-merged entry. After the fix, all
+  three resolve to distinct, correct results.
+- **Verified against the raw source file, not just internal consistency**:
+  SU-85's three ammo types (`aphe`, `aphebc`, `apcr`) resolve to
+  penetration values at 30m of 142mm/122mm/175mm - matching the literal
+  `a(142)`/`a(122)`/`a(175)` arguments in the weapon file exactly.
+  `apcr` (a solid AP-CR penetrator) correctly resolves to `damage: null`
+  since the real source data has no HE-filler damage call for it - not a
+  gap, a historically accurate fact (AP-CR shells don't carry an
+  explosive filler).
+- Applied automatically: every vehicle's `primaryWeapon` gets resolved
+  gun stats via `vehicleLoader.ts`, exposed as `gunStats` in
+  `GET /api/vehicles`, and shown in the Vehicles tab's expandable vehicle
+  detail (a table of damage/penetration-by-range, one row per ammo type).
+  Coverage varies by vehicle (not every vehicle has a resolvable gun -
+  many are cars/trailers/planes without cannon-type weapons), shown
+  honestly rather than hidden.
 
 

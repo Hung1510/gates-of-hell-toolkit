@@ -88,16 +88,10 @@ export interface VehicleMobility {
   range: number | null;
 }
 
-export interface Vehicle {
-  id: string;
-  faction: string;
-  category: string;
-  weapons: string[];
-  primaryWeapon: string | null;
-  mass: number | null;
-  targetClass: string | null;
-  mobility: VehicleMobility | null;
-  armor: ArmorVolume[];
+export interface ShellStats {
+  shellType: string;
+  damage: number | null;
+  penetrationTable: { rangeM: number; penetrationMm: number }[] | null;
 }
 
 export interface ResolvedWeaponStats {
@@ -107,7 +101,21 @@ export interface ResolvedWeaponStats {
   penetrationTable: { rangeM: number; penetrationMm: number }[] | null;
   calibre: number | null;
   velocity: number | null;
+  shells: ShellStats[];
   unresolvedTemplates: string[];
+}
+
+export interface Vehicle {
+  id: string;
+  faction: string;
+  category: string;
+  weapons: string[];
+  primaryWeapon: string | null;
+  gunStats: ResolvedWeaponStats | null;
+  mass: number | null;
+  targetClass: string | null;
+  mobility: VehicleMobility | null;
+  armor: ArmorVolume[];
 }
 
 export interface UnitWeaponInfo {

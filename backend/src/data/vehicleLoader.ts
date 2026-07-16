@@ -4,9 +4,13 @@ import path from "path";
 import { parse } from "../logic/parser/ast.js";
 import { extractArmorVolumes, ArmorVolume } from "../logic/parser/vehicleArmor.js";
 import { extractVehicleDef, VehicleDef } from "../logic/parser/vehicleDef.js";
+import { resolveWeaponFile } from "../logic/parser/weaponFileResolver.js";
+import { ResolvedWeaponStats } from "../logic/parser/weaponResolver.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const VEHICLES_DIR = path.join(__dirname, "samples", "vehicles");
+const WEAPONS_ROOT = path.join(__dirname, "samples", "weapons", "stuff");
+const GUN_CATEGORIES = ["gun", "mgun", "rifle"]; // vehicle-mounted weapons found in these so far
 
 export interface Vehicle {
   id: string;
@@ -14,6 +18,7 @@ export interface Vehicle {
   category: string; // e.g. "tank_medium", "cannon", "car" - inferred from folder structure
   weapons: string[]; // raw list - may include non-combat "weapon" slots like vision/searchlight
   primaryWeapon: string | null; // best-effort guess at the actual gun, excluding known non-combat slots
+  gunStats: ResolvedWeaponStats | null; // resolved damage/penetration for primaryWeapon, where found
   mass: number | null;
   targetClass: string | null;
   mobility: VehicleDef["mobility"];
@@ -27,6 +32,26 @@ const NON_COMBAT_WEAPON_PATTERNS = [/vision/i, /searchlight/i, /periscope/i];
 
 function guessPrimaryWeapon(weapons: string[]): string | null {
   return weapons.find((w) => !NON_COMBAT_WEAPON_PATTERNS.some((p) => p.test(w))) ?? null;
+}
+
+const gunStatsCache = new Map<string, ResolvedWeaponStats | null>();
+
+function resolveGunStatsCached(weaponId: string): ResolvedWeaponStats | null {
+  if (gunStatsCache.has(weaponId)) return gunStatsCache.get(weaponId)!;
+  for (const cat of GUN_CATEGORIES) {
+    const candidate = path.join(WEAPONS_ROOT, cat, weaponId);
+    if (existsSync(candidate)) {
+      try {
+        const stats = resolveWeaponFile(candidate, WEAPONS_ROOT);
+        gunStatsCache.set(weaponId, stats);
+        return stats;
+      } catch {
+        break;
+      }
+    }
+  }
+  gunStatsCache.set(weaponId, null);
+  return null;
 }
 
 function findDefFiles(dir: string, results: string[] = []): string[] {
@@ -101,12 +126,15 @@ export function loadAllVehicles(): Map<string, Vehicle[]> {
         }
       }
 
+      const primaryWeapon = guessPrimaryWeapon(weapons);
+
       vehicles.push({
         id,
         faction,
         category: inferCategory(defPath, faction),
         weapons,
-        primaryWeapon: guessPrimaryWeapon(weapons),
+        primaryWeapon,
+        gunStats: primaryWeapon ? resolveGunStatsCached(primaryWeapon) : null,
         mass,
         targetClass,
         mobility,

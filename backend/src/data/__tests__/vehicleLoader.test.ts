@@ -47,4 +47,13 @@ describe("loadAllVehicles", () => {
       }
     }
   });
+
+  it("resolves gun stats for vehicles with a real gun (su85 -> 85mm_d5s -> 85mm_zis53 chain)", () => {
+    const rus = all.get("rus") ?? [];
+    const su85 = rus.find((v) => v.id === "su85");
+    expect(su85?.gunStats).not.toBeNull();
+    expect(su85?.gunStats?.calibre).toBe(85);
+    const aphe = su85?.gunStats?.shells.find((s) => s.shellType === "aphe");
+    expect(aphe?.penetrationTable?.find((p) => p.rangeM === 30)?.penetrationMm).toBe(142);
+  });
 });
