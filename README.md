@@ -251,6 +251,27 @@ doesn't.
   full squad-name coverage) directly to visitors, not just in this
   README.
 
+## UI Design
+"Field-operations dossier" visual identity, not a generic dark dev-tool
+theme - grounded in the WWII subject matter rather than a templated look:
+- Palette: ink-black backgrounds, aged-paper text, brass/shell-casing
+  accent, olive-drab success, brick-red danger.
+- Type: `Big Shoulders Stencil Text` (display, genuine stencil character)
+  paired with `IBM Plex Sans` (body) and `IBM Plex Mono` (tabular
+  data/unit ids - a ledger feel for what's meant to look like verified
+  records, not prose).
+- Navigation reads as folder tabs on a dossier, not a generic pill nav.
+- Signature element: `FactionBadge` (colored-ring faction code) used
+  everywhere a faction appears across squads/vehicles/comparisons - one
+  consistent visual anchor rather than scattered one-off treatments.
+- New Home tab: a grouped tool overview (Data / Compare / Build /
+  Utilities), directly inspired by real fan-made stat hubs for other
+  wargames (e.g. coh3stats.com's Explorer page) rather than dropping
+  straight into a data table with no front door - reviewed that site's
+  actual structure before building this, adapted into this toolkit's own
+  visual language rather than copied wholesale.
+- Respects `prefers-reduced-motion` and keeps visible focus rings.
+
 ## Vehicles (new)
 Real vehicle armor thickness and weapon-slot/mobility data, parsed from
 `-vehicle.pak`'s `.def`/`.ext` files (same `.set`-family grammar as
@@ -332,10 +353,30 @@ The macro-expansion engine discussed above as a "known gap" is now built:
   unit in the squad doesn't resolve.
 
 ### Still not done
-- Full "can Tank A penetrate Tank B's front armor" comparison UI - the
-  data now exists on both sides (vehicle armor thickness + resolved gun
-  penetration per ammo type), but they aren't matched against each other
-  in the UI yet, just shown separately on the Vehicles tab.
+- Full angle/slope-aware penetration modeling - the comparison (see below)
+  uses a single "effective frontal armor" number per vehicle, not the
+  real 3D geometry of where a shell actually lands.
+
+### Armor vs Gun comparison (built and verified)
+New "Armor vs Gun" tab: pick two vehicles, see each one's gun matched
+against the other's frontal armor, ammo type by ammo type, range by range.
+
+- **"Effective frontal armor" is a deliberate, disclosed simplification**:
+  the thickest explicit `front` facing override among a vehicle's armor
+  volumes (273/340 armored vehicles have at least one), or - if none
+  exist - the thickest base thickness across all volumes as a fallback
+  (67/340 vehicles, labeled "fallback" in the UI, not presented as
+  equivalent to a verified frontal plate value).
+- Verified the comparison itself produces a believable result, not just
+  a bug-free one: SU-85 (`aphe`) vs Tiger I's ~130mm effective front
+  armor - resolves to "Bounces" at 100m (125mm penetration) but
+  "Penetrates" at 30m (142mm) - which matches the real historical account
+  of SU-85s needing to close distance against Tiger I frontal armor,
+  rather than an arbitrary or clearly-wrong result.
+- Explicitly does NOT model shell angle/slope, exact impact location, or
+  ammo selection AI - stated in the UI, not hidden. It's a useful
+  approximation for "which gun beats which armor in the ballpark," not a
+  combat simulator.
 
 ### Vehicle gun penetration (built and verified)
 Turned out to need more than the infantry-weapon resolver - two real,

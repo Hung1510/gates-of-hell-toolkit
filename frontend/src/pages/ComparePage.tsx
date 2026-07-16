@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { SquadSelector } from "../components/SquadSelector";
+import { FactionBadge } from "../components/FactionBadge";
 import { compareSquads, getUnitWeapons } from "../api";
 import type { CompareEntry, UnitWeaponInfo } from "../types";
 
@@ -101,11 +102,11 @@ export function ComparePage() {
               <th>Stat</th>
               <th>
                 <div className="display-name">{left.squad?.displayName ?? left.name}</div>
-                <div className="internal-id">{left.name} ({left.faction})</div>
+                <div className="internal-id">{left.name} <FactionBadge faction={left.faction} /></div>
               </th>
               <th>
                 <div className="display-name">{right.squad?.displayName ?? right.name}</div>
-                <div className="internal-id">{right.name} ({right.faction})</div>
+                <div className="internal-id">{right.name} <FactionBadge faction={right.faction} /></div>
               </th>
             </tr>
           </thead>

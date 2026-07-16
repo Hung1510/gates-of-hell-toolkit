@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import type { Squad } from "../types";
 import { getSquads } from "../api";
+import { FactionBadge } from "./FactionBadge";
 
 interface Props {
   label: string;
@@ -33,7 +34,7 @@ export function SquadSelector({ label, faction, squadName, onFactionChange, onSq
 
   return (
     <div className="squad-selector">
-      <h4>{label}</h4>
+      <h4>{label} <FactionBadge faction={faction} size="md" /></h4>
       <label>
         Faction
         <select value={faction} onChange={(e) => onFactionChange(e.target.value)}>

@@ -1,4 +1,5 @@
 import type { Squad } from "../types";
+import { FactionBadge } from "./FactionBadge";
 
 interface Props {
   squads: Squad[];
@@ -46,7 +47,7 @@ export function SquadTable({ squads, costById }: Props) {
                 )}
               </td>
               <td>{s.template}</td>
-              <td>{s.side ?? "-"}</td>
+              <td>{s.side ? <FactionBadge faction={s.side} /> : "-"}</td>
               <td>{s.period ?? "-"}</td>
               <td>
                 {s.minStage ?? "-"}–{s.maxStage ?? "-"}
