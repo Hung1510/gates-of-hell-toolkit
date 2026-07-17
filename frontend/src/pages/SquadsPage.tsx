@@ -1,7 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { useSquads } from "../hooks/useSquads";
 import { SquadTable } from "../components/SquadTable";
+import { TableSkeleton } from "../components/TableSkeleton";
 import { getUnitCosts } from "../api";
+import { computeSquadCost } from "../lib/squadCost";
 import type { UnitCostEntry } from "../types";
 
 export function SquadsPage() {
@@ -20,15 +22,6 @@ export function SquadsPage() {
   }, [faction]);
   const costById = useMemo(() => new Map(costs.map((c) => [c.id, c.cost])), [costs]);
 
-  function squadCost(slots: { unitType: string; count: number }[]): number | null {
-    let total = 0;
-    for (const s of slots) {
-      const c = costById.get(s.unitType);
-      if (c === null || c === undefined) return null;
-      total += c * s.count;
-    }
-    return total;
-  }
 
   const filtered = useMemo(() => {
     const min = costMin.trim() ? parseFloat(costMin) : null;
@@ -49,7 +42,7 @@ export function SquadsPage() {
       }
 
       if (min !== null || max !== null) {
-        const cost = squadCost(s.slots);
+        const cost = computeSquadCost(s.slots, costById);
         if (cost === null) return false;
         if (min !== null && cost < min) return false;
         if (max !== null && cost > max) return false;
@@ -112,7 +105,7 @@ export function SquadsPage() {
         </label>
       </div>
 
-      {loading && <p>Loading squads...</p>}
+      {loading && <TableSkeleton columns={7} />}
       {error && (
         <p className="error">
           Failed to load: {error}. (If this faction's .set files haven't been

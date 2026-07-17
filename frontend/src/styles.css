@@ -420,21 +420,196 @@ button:disabled {
   font-weight: 600;
 }
 
-.pen-yes {
+.pen-overmatch {
+  color: #7fb2ff;
+  font-weight: 600;
+}
+
+.pen-overmatch::before {
+  content: "\21D1  ";
+}
+
+.pen-penetrates {
   color: var(--olive);
   font-weight: 600;
 }
 
-.pen-yes::before {
+.pen-penetrates::before {
   content: "\2713  ";
 }
 
-.pen-no {
+.pen-marginal {
+  color: var(--brass);
+}
+
+.pen-marginal::before {
+  content: "\2248  ";
+}
+
+.pen-bounces {
   color: var(--danger);
 }
 
-.pen-no::before {
+.pen-bounces::before {
   content: "\2717  ";
+}
+
+.site-footer {
+  margin-top: 32px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  color: var(--faint);
+  font-size: 11.5px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.site-footer a {
+  color: var(--brass);
+}
+
+.dps-breakdown-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.path-target-row {
+  background: rgba(193, 144, 74, 0.08);
+}
+
+.path-target-row td:first-child {
+  font-weight: 600;
+  color: var(--brass);
+}
+
+.global-search {
+  position: relative;
+  margin: 12px 0;
+  max-width: 420px;
+}
+
+.global-search input {
+  width: 100%;
+  padding: 9px 12px;
+  background: var(--ink);
+  border: 1px solid var(--border);
+  color: var(--paper);
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.global-search-results {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: var(--panel-raised);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  max-height: 360px;
+  overflow-y: auto;
+  z-index: 20;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.global-search-status {
+  padding: 10px 14px;
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
+.global-search-result {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  text-align: left;
+  padding: 8px 14px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  color: var(--paper);
+  cursor: pointer;
+  font-size: 12.5px;
+}
+
+.global-search-result:hover {
+  background: rgba(193, 144, 74, 0.08);
+}
+
+.global-search-kind {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 3px;
+  flex-shrink: 0;
+  color: var(--ink);
+}
+
+.kind-squad {
+  background: var(--olive);
+}
+
+.kind-vehicle {
+  background: var(--brass);
+}
+
+.kind-weapon {
+  background: #4d6a8f;
+}
+
+.kind-tech {
+  background: var(--danger);
+}
+
+.global-search-label {
+  flex: 1;
+}
+
+.global-search-sublabel {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.favorite-star {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--muted);
+  padding: 0 4px;
+  line-height: 1;
+}
+
+.favorite-star.active {
+  color: var(--brass);
+}
+
+.favorite-star:hover {
+  color: var(--brass-dim);
+}
+
+.skeleton-bar {
+  height: 12px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--panel-raised) 25%, var(--border) 50%, var(--panel-raised) 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.skeleton-table td {
+  padding: 8px 10px;
 }
 
 /* ---------------- forms / builder ---------------- */
@@ -858,6 +1033,36 @@ button:disabled {
 
   .compare-selectors {
     flex-direction: column;
+  }
+
+  /* 13 tabs would wrap into 5-6 rows on a phone-width screen if left to
+     flex-wrap, burying content below a wall of buttons - horizontal
+     scroll is the standard pattern for tab-heavy nav on mobile. */
+  .main-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 2px;
+    /* fade hint at the right edge so it's visually obvious there's more to scroll */
+    mask-image: linear-gradient(to right, black calc(100% - 24px), transparent 100%);
+  }
+
+  .main-nav button {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  /* wide data tables (6-7 columns) would otherwise squish illegibly on a
+     narrow screen - a table can scroll internally via CSS alone (no
+     wrapper markup needed) by setting display:block on it */
+  .squad-table,
+  .compare-table,
+  .vehicle-table,
+  .armor-detail-table,
+  .ask-results-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 }
 

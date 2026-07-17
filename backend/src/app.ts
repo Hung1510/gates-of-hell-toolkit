@@ -12,6 +12,7 @@ import { askTheMod } from "./logic/askTheMod.js";
 import { inspectSave, editSave } from "./logic/saveEditor.js";
 import { loadAllVehicles, getVehiclesForFaction } from "./data/vehicleLoader.js";
 import { loadAllSoldierWeapons } from "./data/soldierWeaponLoader.js";
+import { loadAllWeapons } from "./data/weaponBrowserLoader.js";
 import type { Squad } from "./logic/parser/squads.js";
 import type { TechNode } from "./logic/parser/techtree.js";
 
@@ -327,6 +328,15 @@ export function createApp() {
     const all = loadAllSoldierWeapons();
     const filtered = faction ? all.filter((s) => s.faction === faction) : all;
     res.json(filtered);
+  });
+
+  // GET /api/weapons -> every resolved weapon across all categories,
+  // independent of which soldier/vehicle carries it. Only includes files
+  // where the resolver actually produced meaningful stats (damage,
+  // calibre, or per-shell data) - filters out accessories/scopes/ammo
+  // definitions that share the same folders.
+  app.get("/api/weapons", (_req, res) => {
+    res.json(loadAllWeapons());
   });
 
   return app;

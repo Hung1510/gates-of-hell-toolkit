@@ -126,6 +126,12 @@ export interface UnitWeaponInfo {
   weaponStats: ResolvedWeaponStats | null;
 }
 
+export interface BrowsableWeapon {
+  id: string;
+  category: string;
+  stats: ResolvedWeaponStats;
+}
+
 export interface VehicleFactionSummary {
   faction: string;
   count: number;

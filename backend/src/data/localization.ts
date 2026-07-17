@@ -33,6 +33,21 @@ const SQUAD_POT_SUPPLEMENT_FILE: Partial<Record<string, string>> = {
   usa: "desc_squad_usa_dcg_late.pot",
 };
 
+// Doctrine-unlock squad names, found by a fresh listing of default.pak's
+// full contents (not previously checked) - "doctrine_<id>" prefix in the
+// msgctxt, covering special doctrine-tree unit unlocks (mostly
+// vehicle-crewed squads) that aren't in the base or dcg_late files.
+// Confirmed real by cross-checking against actual unnamed squads before
+// trusting it: 60/158 previously-unnamed German squads matched exactly
+// (e.g. "tiger1h" -> "Tiger Ausf. H", "jagdpanther" -> "Jagdpanther").
+const SQUAD_DOCTRINE_FILE: Record<string, string> = {
+  ger: "desc_squad_doctrines_ger.pot",
+  rus: "desc_squad_doctrines_rus.pot",
+  eng: "desc_squad_doctrines_eng.pot",
+  fin: "desc_squad_doctrines_fin.pot",
+  usa: "desc_squad_doctrines_usa.pot",
+};
+
 const BREED_POT_FILE: Record<string, string> = {
   ger: "desc_breed_mp_ger.pot",
   rus: "desc_breed_mp_rus.pot",
@@ -78,6 +93,16 @@ function loadAll(): Map<string, LocalizationData> {
     if (supplement) {
       for (const [k, v] of loadPotFile(supplement)) {
         if (!squadNames.has(k)) squadNames.set(k, v);
+      }
+    }
+    const doctrineFile = SQUAD_DOCTRINE_FILE[faction];
+    if (doctrineFile) {
+      for (const [k, v] of loadPotFile(doctrineFile)) {
+        // keys look like "desc/squad/doctrine_<id>" - strip the
+        // "doctrine_" infix so they align with the standard
+        // "desc/squad/<id>" lookup pattern used everywhere else
+        const stripped = k.replace(/^desc\/squad\/doctrine_/, "desc/squad/");
+        if (!squadNames.has(stripped)) squadNames.set(stripped, v);
       }
     }
     const unitNames = BREED_POT_FILE[faction] ? loadPotFile(BREED_POT_FILE[faction]) : new Map();

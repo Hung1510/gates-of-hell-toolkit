@@ -1,4 +1,4 @@
-import type { Squad, TechNode, FactionSummary, SquadTemplate, BuildResult, CompareEntry, UnitCostEntry, ValidationWarning, Vehicle, VehicleFactionSummary, UnitWeaponInfo } from "./types";
+import type { Squad, TechNode, FactionSummary, SquadTemplate, BuildResult, CompareEntry, UnitCostEntry, ValidationWarning, Vehicle, VehicleFactionSummary, UnitWeaponInfo, BrowsableWeapon } from "./types";
 
 // In dev, Vite proxies /api to the backend (see vite.config.ts).
 // In production, set VITE_API_BASE to the deployed backend URL.
@@ -78,4 +78,8 @@ export function getVehicleFactions(): Promise<VehicleFactionSummary[]> {
 
 export function getUnitWeapons(faction: string): Promise<UnitWeaponInfo[]> {
   return getJSON(`/api/units/weapons?faction=${encodeURIComponent(faction)}`);
+}
+
+export function getWeapons(): Promise<BrowsableWeapon[]> {
+  return getJSON("/api/weapons");
 }

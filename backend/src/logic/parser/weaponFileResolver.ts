@@ -43,12 +43,25 @@ function findFromFileReference(topLevel: Node[], dir: string): string | null {
     if (node.items[0]?.kind !== "word" || node.items[0].value !== "from") continue;
     const nameNode = node.items[1];
     if (nameNode?.kind !== "string") continue;
+
     // only treat this as a file reference if a sibling file with that
     // exact name actually exists (otherwise it's a `define`-based
     // template reference, already handled inside resolveWeaponStats
     // itself, which correctly ignores it here)
-    const candidate = path.join(dir, nameNode.value);
-    if (existsSync(candidate)) return candidate;
+    const direct = path.join(dir, nameNode.value);
+    if (existsSync(direct)) return direct;
+
+    // verified real (if rare - only 1 occurrence found) convention:
+    // {from "weapon panzershreck_43"} refers to the sibling file
+    // "panzershreck_43.weapon", not a file literally named
+    // "weapon panzershreck_43". Other prefixes seen in the data
+    // ("pattern", "knife", "hand") are template references, not files,
+    // and correctly fall through to registry lookup instead.
+    const weaponPrefixMatch = nameNode.value.match(/^weapon (.+)$/);
+    if (weaponPrefixMatch) {
+      const withExt = path.join(dir, `${weaponPrefixMatch[1]}.weapon`);
+      if (existsSync(withExt)) return withExt;
+    }
   }
   return null;
 }

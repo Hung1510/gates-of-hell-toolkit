@@ -1,5 +1,7 @@
 import { Fragment, useEffect, useMemo, useState } from "react";
 import { getVehicles, getVehicleFactions } from "../api";
+import { FavoriteStar } from "../components/FavoriteStar";
+import { TableSkeleton } from "../components/TableSkeleton";
 import type { Vehicle, VehicleFactionSummary } from "../types";
 
 function formatArmor(v: Vehicle): string {
@@ -18,13 +20,17 @@ export function VehiclesPage() {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("");
   const [expanded, setExpanded] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     getVehicleFactions().then(setFactionSummaries);
   }, []);
 
   useEffect(() => {
-    getVehicles(faction).then(setVehicles);
+    setLoading(true);
+    getVehicles(faction)
+      .then(setVehicles)
+      .finally(() => setLoading(false));
     setExpanded(null);
   }, [faction]);
 
@@ -82,21 +88,40 @@ export function VehiclesPage() {
         {filtered.length} of {vehicles.length} vehicles
       </p>
 
+      {loading ? (
+        <TableSkeleton columns={6} />
+      ) : (
       <table className="vehicle-table">
         <thead>
           <tr>
-            <th>Id</th>
-            <th>Category</th>
-            <th>Primary weapon</th>
-            <th>Mass (kg)</th>
-            <th>Speed (km/h)</th>
-            <th>Strongest armor (mm)</th>
+            <th scope="col" aria-label="Favorite"></th>
+            <th scope="col">Id</th>
+            <th scope="col">Category</th>
+            <th scope="col">Primary weapon</th>
+            <th scope="col">Mass (kg)</th>
+            <th scope="col">Speed (km/h)</th>
+            <th scope="col">Strongest armor (mm)</th>
           </tr>
         </thead>
         <tbody>
           {filtered.map((v) => (
             <Fragment key={v.id}>
-              <tr onClick={() => setExpanded(expanded === v.id ? null : v.id)} style={{ cursor: "pointer" }}>
+              <tr
+                onClick={() => setExpanded(expanded === v.id ? null : v.id)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    setExpanded(expanded === v.id ? null : v.id);
+                  }
+                }}
+                tabIndex={0}
+                role="button"
+                aria-expanded={expanded === v.id}
+                style={{ cursor: "pointer" }}
+              >
+                <td>
+                  <FavoriteStar kind="vehicle" faction={v.faction} id={v.id} label={v.id} />
+                </td>
                 <td>{v.id}</td>
                 <td>{v.category}</td>
                 <td>{v.primaryWeapon ?? "-"}</td>
@@ -106,7 +131,7 @@ export function VehiclesPage() {
               </tr>
               {expanded === v.id && (
                 <tr>
-                  <td colSpan={6}>
+                  <td colSpan={7}>
                     <div className="vehicle-detail">
                       <p>
                         <strong>All weapon slots:</strong> {v.weapons.join(", ") || "none"}
@@ -185,6 +210,7 @@ export function VehiclesPage() {
           ))}
         </tbody>
       </table>
+      )}
     </div>
   );
 }

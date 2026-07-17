@@ -127,11 +127,63 @@ export function resolveWeaponStats(
     unresolvedTemplates: [],
   };
 
+  // Resolves a single shell's scope (the contents of a literal
+  // {parameters "shellName" ...} block already present in the source
+  // file, e.g. PIAT's two ammo types) - looks for ("penetration" ...) and
+  // ("armor health"/"human health" ...) calls within just this shell's
+  // own items, not the outer weapon scope. This is a different shape
+  // than the gun-template case (where {parameters "%shell" ...} comes
+  // from macro-expanding a registered template and already contains
+  // direct {projectileDamageTable ...}/{minimumDamageModifier ...}
+  // fields) - here the shell block contains its own nested calls that
+  // still need registry resolution.
+  function resolveShellScope(items: Node[]): { damage: number | null; table: PenetrationPoint[] | null } {
+    let damage: number | null = null;
+    let table: PenetrationPoint[] | null = null;
+
+    for (const item of items) {
+      if (item.kind !== "list" || item.bracket !== "(" || item.items[0]?.kind !== "string") continue;
+      const name = item.items[0].value;
+      const bindings = invocationBindings(item);
+
+      if ((name === "human health" || name === "armor health") && bindings?.keyword?.["damage"]) {
+        const dmgNode = bindings.keyword["damage"];
+        const val = dmgNode.kind === "word" ? numberValue(dmgNode) : evalExpr(dmgNode);
+        if (val !== null) damage = val;
+      } else if (name === "penetration" && bindings) {
+        const body = registry.get("penetration");
+        if (body) {
+          const resolved = resolvePenetrationTable(body, bindings);
+          if (resolved) table = resolved;
+        }
+      }
+    }
+
+    return { damage, table };
+  }
+
   function process(items: Node[], depth: number) {
     if (depth > maxDepth) return;
 
     for (const item of items) {
       if (item.kind !== "list") continue;
+
+      // literal shell block already present in the source file, e.g.
+      // PIAT's {parameters "heat" ...} / {parameters "heata" ...}
+      if (item.bracket === "{" && item.items[0]?.kind === "word" && item.items[0].value === "parameters") {
+        const shellType = item.items[1]?.kind === "string" ? item.items[1].value : null;
+        if (shellType) {
+          const { damage, table } = resolveShellScope(item.items.slice(2));
+          let entry = stats.shells.find((s) => s.shellType === shellType);
+          if (!entry) {
+            entry = { shellType, damage: null, penetrationTable: null };
+            stats.shells.push(entry);
+          }
+          if (damage !== null) entry.damage = damage;
+          if (table !== null) entry.penetrationTable = table;
+          continue; // don't also let this shell's calls leak into the outer scope below
+        }
+      }
 
       // literal field, e.g. {calibre 7.92}
       if (item.bracket === "{" && item.items[0]?.kind === "word") {

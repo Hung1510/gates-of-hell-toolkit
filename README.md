@@ -416,4 +416,212 @@ distinct complications found and solved:
   many are cars/trailers/planes without cannon-type weapons), shown
   honestly rather than hidden.
 
+## Inspired by other games' community sites
+Four additions after reviewing real fan-built stat hubs for other
+wargames (coh3stats.com, tanks.gg):
+
+- **Weapons Browser** (new "Weapons" tab, `GET /api/weapons`): every
+  resolved weapon across all categories (rifle/mgun/gun/pistol/bazooka/
+  smg/mortar), independent of which soldier/vehicle carries it - 457
+  weapons with meaningful stats. Building this caught a real bug in the
+  filtering logic: an early version excluded anything with "bipod"/
+  "scope"/"bayonet" in its name as a non-weapon accessory, which wrongly
+  dropped `mg13_no_bipod_x2` - a genuine distinct MG13 configuration
+  variant, not an attachment. Fixed to rely purely on whether the
+  resolver produces meaningful stats, not filename patterns.
+- **Open Data page** (new "Open Data" tab): download the full parsed
+  datasets (squads, tech tree, vehicles, weapons, unit costs) as JSON,
+  matching the convention COH3 Stats uses for their open-data page - free
+  to build on, with a clear note that the underlying data belongs to the
+  game's publishers, not this project.
+- **Site footer**: fan-made disclaimer + GitHub link, standard practice
+  on every community stat site reviewed - previously the app had no
+  footer at all.
+- **Overmatch tiers in Armor vs Gun** (previously binary Penetrates/
+  Bounces): now four tiers based on the penetration-to-armor ratio -
+  Overmatch (≥1.5x), Penetrates (≥1x), Marginal (0.8-1x), Bounces (<0.8x),
+  inspired by tanks.gg's red/green/purple/blue penetration-outcome
+  convention. The exact thresholds are a stated heuristic, not the game's
+  own RNG/angle formula (which isn't exposed in these files) - the UI
+  says so.
+
+## Weapon resolver fixes and Best Counter finder
+Three follow-ups after shipping the Weapons Browser:
+
+- **Investigated the flame/melee gap (confirmed real, not a bug)**:
+  flamethrowers and melee weapons (knives, shovels) resolve to zero
+  weapons in the browser. Traced this all the way through - checked
+  `set/registry/hitpoints.reg` (a damage-multiplier table by weapon tag,
+  e.g. `flame_thrower` ×3 vs Human/×1 vs Tank, `sharp_edge` ×1 vs Human/×0
+  vs Tank - confirms knives deal zero damage to vehicles, which makes
+  sense, but this is a multiplier layer, not the base damage), and
+  searched the entire `gamelogic.pak` extraction for the base
+  `"pattern flame_thrower"`/`"pattern throwable"` templates these weapons
+  reference - neither is defined anywhere in the data available. These
+  mechanics (continuous fire damage-over-time, melee combat) genuinely
+  live in a different subsystem not exposed in these files, not a gap in
+  the parser.
+- **Fixed a real bug: PIAT's two ammo types were silently colliding.**
+  PIAT has two distinct rounds (`heat` Bomb Mk.IA, `heata` Bomb Mk.IV),
+  written as literal `{parameters "shellname" ...}` blocks directly in
+  the weapon file - a different shape than the tank-gun case (where that
+  wrapper comes from *expanding* a registered template with already-flat
+  fields). The resolver only recognized the template-expansion shape, so
+  these literal blocks' nested calls leaked into the outer scope and the
+  second ammo type's values silently overwrote the first's. Fixed with a
+  dedicated `resolveShellScope` path for literal shell blocks; both ammo
+  types now resolve correctly (80mm and 100mm penetration, matching the
+  raw source args exactly) and are covered by a regression test.
+- **Fixed panzershreck_54 resolving to nothing.** Its file uses
+  `{from "weapon panzershreck_43"}` - a `"weapon "`-prefixed reference to
+  a sibling file (`panzershreck_43.weapon`), distinct from the far more
+  common `"pattern X"`/`"knife X"` prefixes (2367 and 5 occurrences
+  respectively) which are template references, not files. Checked before
+  generalizing: this exact convention only appears once in the whole
+  dataset, so the fix is scoped narrowly rather than assumed to be a
+  general pattern.
+- **Best Counter finder** (new "Best Counter" tab): given a target
+  vehicle, ranks every vehicle in an opposing faction by their single
+  best shot (best ammo type, best range) against the target's effective
+  frontal armor - reuses the same armor/penetration logic as Armor vs Gun
+  (extracted into `frontend/src/lib/armor.ts` to avoid duplicating it).
+  Vehicles without a resolvable gun are excluded rather than shown as
+  false negatives.
+
+## Real client-side routing (SEO)
+Every tool now has its own real URL (`/vehicles`, `/weapons`,
+`/armor-vs-gun`, `/best-counter`, etc. - 13 routes total via
+`react-router-dom`), not just tab-switches on a single page. This
+mattered for SEO: the site had grown to 12 tools but only one indexable
+URL (`/`) - search engines couldn't index individual tools, and nobody
+could bookmark or share a direct link to one.
+
+- Per-route `<title>` via a small `DocumentTitle` component reading
+  `useLocation()`.
+- `sitemap.xml` expanded from 1 URL to all 13, with priority/changefreq
+  reflecting how often each page's underlying data changes.
+- Meta description/keywords and Open Graph/JSON-LD updated to mention the
+  full current feature set (vehicles, weapons, armor/penetration/DPS),
+  not just the original squad-database scope.
+- `vite.config.ts` now explicitly sets `appType: "spa"` (Vite's own
+  default, but stated rather than implicit) - this is what makes the
+  static preview server fall back to `index.html` for unknown paths like
+  `/vehicles`, which client-side routing needs for direct navigation and
+  page refresh to work instead of 404ing.
+
+**What's actually verified vs. not**: direct navigation to a client-side
+route (simulating a refresh) was tested against a real built
+`vite preview` server, not just asserted from documentation - confirmed
+200 responses with correct content for `/vehicles`, `/best-counter`,
+`/open-data`. What's NOT verified is whether Vercel's newer **Services**
+deployment model (used by this project - see the Deployment section
+above) wraps the Vite-detected frontend service in a way that preserves
+this exact fallback behavior in production; that's a different question
+than what a local `vite preview` test can answer, and the two entrypoint/
+dependency bugs found earlier in this same Services setup are a reason
+for real caution here, not assumed confidence. If a direct route 404s in
+production after deploying, that's the first thing to check - the
+documented general fix (an explicit rewrite to `/index.html`) is a known,
+well-established pattern, just not proven to be the exact mechanism at
+play under this specific deployment model.
+
+## Closing disclosed gaps + 4 new tools
+Three diagnostics/fixes plus four new tools built in one pass:
+
+- **Squad name coverage improved substantially** (a "not fixable" gap
+  re-checked and found to actually be fixable): a fresh listing of
+  `default.pak`'s full contents turned up
+  `desc_squad_doctrines_<faction>.pot` files, never checked before -
+  "doctrine_"-prefixed squad names covering mostly vehicle-crewed squad
+  unlocks. Verified real before trusting it: 60/158 previously-unnamed
+  German squads matched exactly (`tiger1h` -> "Tiger Ausf. H",
+  `jagdpanther` -> "Jagdpanther", etc.). After merging (stripping the
+  `doctrine_` prefix so keys align with the standard lookup pattern),
+  coverage roughly doubled across the board: ger 65->125, rus 67->118,
+  usa 62->65, eng 78->120, fin 76->95 (out of 223/208/173/272/185 squads
+  respectively).
+- **Mobile nav fixed**: checked and confirmed a real problem - 13 nav
+  tabs with `flex-wrap` would stack into 5-6 rows on a phone screen,
+  burying content below a wall of buttons. Fixed with horizontal scroll
+  instead of wrapping (`overflow-x: auto`, standard pattern for tab-heavy
+  mobile nav) plus a fade-edge hint. Wide data tables (6-7 columns) get
+  the same treatment via `display: block; overflow-x: auto` on the table
+  element itself - no wrapper markup needed.
+- **Side/rear armor facing** added to Armor vs Gun and Best Counter -
+  but checked the real data first: zero vehicles across any faction have
+  an explicit Side armor value, so "Side" isn't offered as an option
+  (it would always silently show the same generic fallback, not real
+  distinct data). Front and Rear are offered, since Rear has real
+  coverage (40-85% depending on faction).
+- **Squad Best Counter finder** (new "Squad Counter" tab): ranks
+  opposing-faction squads by DPS and cost against a target squad. Shows
+  DPS, cost, and DPS-per-cost as separate columns rather than one
+  combined "counter score" - collapsing them into a single ranking
+  number would hide the real tradeoff between them.
+- **Tech Path Finder** (new "Tech Path" tab): walks a tech node's
+  `requires` chain backward via post-order DFS to produce a valid
+  research order (every prerequisite before what needs it) with
+  cumulative cost. Verified against real data:
+  `defense_level_3` (ger) resolves to a 9-step path totaling 22 research
+  points, correctly excluding the one unresolved step
+  (`single_officer(ger)`, the same known quirk documented elsewhere)
+  from the cost total rather than silently treating it as free.
+- **Per-squad DPS breakdown** in Compare: an expandable row showing
+  each unit's individual damage/rate/count contribution to the squad's
+  total DPS, not just one aggregate number.
+- **Global search** (in the header, every page): one search box across
+  squads, vehicles, weapons, and tech nodes at once. Known, disclosed
+  tradeoff: this fetches all 5 factions' data client-side per search
+  (debounced 400ms) rather than using a dedicated backend search
+  endpoint - a reasonable MVP given the toolkit's data size, but a real
+  backend search endpoint would scale better if this becomes a
+  bottleneck.
+- Extracted shared logic to avoid duplicating it across the new pages:
+  `frontend/src/lib/dps.ts` (squad DPS + per-unit breakdown),
+  `frontend/src/lib/squadCost.ts` (squad cost), `frontend/src/lib/techPath.ts`
+  (prerequisite pathfinding) - alongside the existing `armor.ts`.
+
+## Favorites, shareable links, weapon compare, and polish
+- **Favorites** (new "Favorites" tab, `hooks/useFavorites.ts`): star any
+  squad or vehicle row to save it, backed by real `localStorage` (this is
+  a live deployed site, not a Claude artifact, so persistence needed to
+  be real rather than in-memory-only). Explicitly disclosed in the UI
+  that this is per-browser, not account-synced. Not added to
+  `sitemap.xml` - it's a personalized, empty-by-default page with nothing
+  useful for a search crawler to index.
+- **Shareable comparison links**: Compare, Armor vs Gun, Best Counter,
+  Squad Best Counter, and the new Weapon Compare all sync their
+  selections into the URL query string via `useSearchParams`, so a link
+  to a specific comparison works directly without re-selecting anything.
+  Compare/Armor vs Gun/Weapon Compare also have an explicit "Copy share
+  link" button.
+- **Weapon-to-weapon comparison** (new "Weapon Compare" tab): same
+  resolved data as the Weapons Browser, side by side.
+- **"Report a data issue" link** in the site footer - a pre-filled
+  GitHub issue template (what looks wrong / where you saw it / what you
+  expected), given the PIAT and Panzerschreck bugs were only caught
+  because they were checked by hand; a lightweight way for others to
+  flag similar issues.
+- **Loading skeletons**: Browse, Vehicles, and Weapons now show shimmer
+  placeholder rows while fetching instead of a blank table or plain
+  "Loading..." text. Respects `prefers-reduced-motion` (already handled
+  by the existing global rule, extended to cover `animation` too, not
+  just `transition`).
+- **Accessibility pass** (real, disclosed scope - not claimed as
+  exhaustive): keyboard support (`Enter`/`Space`) + `role="button"` +
+  `aria-expanded` added to every click-to-toggle table row (Vehicles'
+  expandable rows, Compare's DPS breakdown, Weapons Browser's sortable
+  headers, which also got `aria-sort`); `aria-label`/`aria-pressed` on
+  the favorite star buttons; `aria-live="polite"` + `role="listbox"` on
+  Global Search's results so screen readers announce new matches;
+  `scope="col"` on table headers where missing. NOT done: a full
+  screen-reader pass of the React Flow tech-tree graph (it already uses
+  React Flow's own accessible `Controls` component for zoom, but the
+  graph canvas itself wasn't specifically audited) - a real gap, not
+  hidden.
+- **Google Search Console submission**: this is an action on your end
+  (verify domain ownership, submit `sitemap.xml`), not something doable
+  from here - now that real routing exists (see the routing/SEO section
+  above), this is worth actually doing to get indexing started.
+
 
